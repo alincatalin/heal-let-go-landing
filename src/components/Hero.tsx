@@ -1,14 +1,21 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
 import { ArrowRight } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export const Hero = () => {
+  const { ref, isVisible } = useScrollAnimation();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated background glow */}
       <div className="absolute inset-0 bg-gradient-glow animate-glow-pulse" />
       
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div 
+        ref={ref}
+        className={`container mx-auto px-4 py-20 relative z-10 transition-all duration-1000 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="space-y-8 animate-float">

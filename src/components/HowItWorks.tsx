@@ -1,4 +1,7 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 export const HowItWorks = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const steps = [
     {
       number: "1",
@@ -24,7 +27,12 @@ export const HowItWorks = () => {
 
   return (
     <section className="py-20 relative">
-      <div className="container mx-auto px-4">
+      <div 
+        ref={ref}
+        className={`container mx-auto px-4 transition-all duration-1000 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">How It Works</h2>

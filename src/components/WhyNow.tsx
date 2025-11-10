@@ -1,7 +1,15 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 export const WhyNow = () => {
+  const { ref, isVisible } = useScrollAnimation();
   return (
     <section className="py-20 relative">
-      <div className="container mx-auto px-4">
+      <div 
+        ref={ref}
+        className={`container mx-auto px-4 transition-all duration-1000 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold">
             Why <span className="text-primary">Now?</span>

@@ -1,6 +1,8 @@
 import { Check } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export const Problem = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const painPoints = [
     "You've broken no contact more times than you can count",
     "Late nights are the hardest - that's when you're weakest",
@@ -11,7 +13,12 @@ export const Problem = () => {
 
   return (
     <section className="py-20 relative">
-      <div className="container mx-auto px-4">
+      <div 
+        ref={ref}
+        className={`container mx-auto px-4 transition-all duration-1000 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold">

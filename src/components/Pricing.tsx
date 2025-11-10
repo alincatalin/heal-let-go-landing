@@ -1,11 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export const Pricing = () => {
+  const { ref, isVisible } = useScrollAnimation();
   return (
     <section className="py-20 relative">
-      <div className="container mx-auto px-4">
+      <div 
+        ref={ref}
+        className={`container mx-auto px-4 transition-all duration-1000 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">Pricing</h2>
