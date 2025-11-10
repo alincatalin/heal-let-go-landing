@@ -1,0 +1,72 @@
+import { MessageSquare, Bot, BarChart3, BookOpen, Target, Wind } from "lucide-react";
+import { Card } from "@/components/ui/card";
+
+export const Features = () => {
+  const features = [
+    {
+      icon: MessageSquare,
+      title: "Fake Texting",
+      description: "Write the message you want to send your ex - but instead of sending it, our AI talks you through why you want to reach out. Get the relief of venting without the regret of actually texting them."
+    },
+    {
+      icon: Bot,
+      title: "AI Coach (Available 24/7)",
+      description: "Choose your tone: Supportive, Direct, or Empathetic. Get real-time guidance when you're spiraling. No judgment. No therapist fees. Just help when you need it most."
+    },
+    {
+      icon: BarChart3,
+      title: "No-Contact Tracker",
+      description: "See how many days you've stayed strong. Celebrate milestones. Understand that every day without contact is a day of choosing yourself."
+    },
+    {
+      icon: BookOpen,
+      title: "Private Journal",
+      description: "Dump your thoughts, track your progress, process your emotions. Your words stay private - never shared, never judged."
+    },
+    {
+      icon: Target,
+      title: "6 Stages of Healing",
+      description: "Guided practices for each stage of breakup recovery. From shock to acceptance, we meet you where you are."
+    },
+    {
+      icon: Wind,
+      title: "Breathing & Calm",
+      description: "When panic hits at 3am, calm your nervous system with guided exercises designed for heartbreak."
+    }
+  ];
+
+  return (
+    <section className="py-20 relative">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto space-y-12">
+          <div className="text-center space-y-4">
+            <h2 className="text-4xl md:text-5xl font-bold">
+              Meet your{" "}
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                24/7 breakup recovery companion
+              </span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Heal: Let Go catches you in your weakest moments and helps you heal instead of hurting yourself more.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {features.map((feature, index) => (
+              <Card 
+                key={index} 
+                className="p-6 space-y-4 bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all hover:shadow-glow"
+              >
+                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center">
+                  <feature.icon className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold">{feature.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
