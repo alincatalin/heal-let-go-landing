@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-image.jpg";
 import { ArrowRight } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { PhoneMockup } from "@/components/PhoneMockup";
 
 export const Hero = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -46,14 +46,9 @@ export const Hero = () => {
             </p>
           </div>
           
-          {/* Right image */}
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl" />
-            <img 
-              src={heroImage} 
-              alt="Person contemplating their phone in emotional lighting"
-              className="relative rounded-2xl shadow-glow-strong w-full"
-            />
+          {/* Right mockup */}
+          <div className="relative flex items-center justify-center">
+            <PhoneMockup />
           </div>
         </div>
       </div>
