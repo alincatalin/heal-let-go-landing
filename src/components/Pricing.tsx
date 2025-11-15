@@ -26,7 +26,7 @@ export const Pricing = () => {
                   <h3 className="text-3xl font-bold">Beta Access</h3>
                   <div className="text-5xl font-bold">FREE</div>
                   <p className="text-primary-foreground/80">
-                    Be one of the first 50 people to use Heal: Let Go
+                    Be one of the first 50 people to use Heal: Let Them Go
                   </p>
                 </div>
                 

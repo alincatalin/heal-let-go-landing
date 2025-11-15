@@ -54,7 +54,7 @@ export const Features = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Heal: Let Go catches you in your weakest moments and helps you heal instead of hurting yourself more.
+              Heal: Let Them Go catches you in your weakest moments and helps you heal instead of hurting yourself more.
             </p>
           </div>
           
