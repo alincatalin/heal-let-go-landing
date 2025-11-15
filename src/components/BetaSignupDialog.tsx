@@ -74,7 +74,8 @@ export const BetaSignupDialog = ({ open, onOpenChange }: BetaSignupDialogProps) 
         <DialogHeader>
           <DialogTitle>Join the Beta</DialogTitle>
           <DialogDescription>
-            Be among the first to start your healing journey. Enter your details below and we'll notify you when we launch.
+            Start your healing journey for free! Test all features with limited access. 
+            Unlock everything for $12.99/month, or get <span className="font-semibold text-foreground">50% off ($6.49/month)</span> as a beta tester.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
