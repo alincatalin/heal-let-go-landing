@@ -4,19 +4,22 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { PhoneMockup } from "@/components/PhoneMockup";
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
+import { BetaSignupDialog } from "@/components/BetaSignupDialog";
 import appScreen1 from "@/assets/app-screen-1.png";
 import appScreen2 from "@/assets/app-screen-2.png";
 import appScreen3 from "@/assets/app-screen-3.png";
 
 const screenshots = [
+  { src: appScreen3, alt: "Daily check-in and home screen" },
   { src: appScreen1, alt: "App onboarding - They left" },
-  { src: appScreen2, alt: "Healing path progress tracker" },
-  { src: appScreen3, alt: "Daily check-in and home screen" }
+  { src: appScreen2, alt: "Healing path progress tracker" }
 ];
 
 export const Hero = () => {
   const { ref, isVisible } = useScrollAnimation();
   const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [signupOpen, setSignupOpen] = useState(false);
 
   useEffect(() => {
     if (!api) return;
@@ -26,6 +29,16 @@ export const Hero = () => {
     }, 3000);
 
     return () => clearInterval(interval);
+  }, [api]);
+
+  useEffect(() => {
+    if (!api) return;
+
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
   }, [api]);
 
   return (
@@ -55,7 +68,12 @@ export const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="group"
+                onClick={() => setSignupOpen(true)}
+              >
                 Join the Beta
                 <ArrowRight className="transition-transform group-hover:translate-x-1" />
               </Button>
@@ -64,13 +82,15 @@ export const Hero = () => {
               </Button>
             </div>
             
+            <BetaSignupDialog open={signupOpen} onOpenChange={setSignupOpen} />
+            
             <p className="text-sm text-muted-foreground">
               iOS & Android • Free Beta Access • No Credit Card Required
             </p>
           </div>
           
           {/* Right mockup carousel */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex flex-col items-center justify-center gap-6">
             <Carousel 
               setApi={setApi}
               opts={{
@@ -86,6 +106,22 @@ export const Hero = () => {
                 ))}
               </CarouselContent>
             </Carousel>
+            
+            {/* Carousel indicators */}
+            <div className="flex gap-2">
+              {screenshots.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => api?.scrollTo(index)}
+                  className={`h-2 rounded-full transition-all ${
+                    index === current 
+                      ? "w-8 bg-primary" 
+                      : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
