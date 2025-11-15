@@ -2,9 +2,32 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { PhoneMockup } from "@/components/PhoneMockup";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
+import appScreen1 from "@/assets/app-screen-1.png";
+import appScreen2 from "@/assets/app-screen-2.png";
+import appScreen3 from "@/assets/app-screen-3.png";
+
+const screenshots = [
+  { src: appScreen1, alt: "App onboarding - They left" },
+  { src: appScreen2, alt: "Healing path progress tracker" },
+  { src: appScreen3, alt: "Daily check-in and home screen" }
+];
 
 export const Hero = () => {
   const { ref, isVisible } = useScrollAnimation();
+  const [api, setApi] = useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) return;
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated background glow */}
@@ -46,9 +69,23 @@ export const Hero = () => {
             </p>
           </div>
           
-          {/* Right mockup */}
+          {/* Right mockup carousel */}
           <div className="relative flex items-center justify-center">
-            <PhoneMockup />
+            <Carousel 
+              setApi={setApi}
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+            >
+              <CarouselContent>
+                {screenshots.map((screen, index) => (
+                  <CarouselItem key={index}>
+                    <PhoneMockup screenshot={screen.src} alt={screen.alt} />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
         </div>
       </div>
