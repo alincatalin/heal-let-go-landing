@@ -85,7 +85,7 @@ export const Hero = () => {
             <BetaSignupDialog open={signupOpen} onOpenChange={setSignupOpen} />
             
             <p className="text-sm text-muted-foreground">
-              iOS & Android • Free Beta Access • No Credit Card Required
+              iOS & Android • Free Access with Limited Features • 50% Off for Beta Testers
             </p>
           </div>
           
