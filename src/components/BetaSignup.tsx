@@ -65,7 +65,7 @@ export const BetaSignup = () => {
                 Join the Beta Waitlist
               </h2>
               <p className="text-muted-foreground text-lg">
-                Be one of the first 50 people to get early access to Heal: Let Go
+                Be one of the first 50 people to get early access to Heal: Let Them Go
               </p>
             </div>
 
