@@ -55,7 +55,7 @@ export const Pricing = () => {
               <div className="space-y-2">
                 <h3 className="text-3xl font-bold">After Beta</h3>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-bold">$9.99</span>
+                  <span className="text-5xl font-bold">$12.99</span>
                   <span className="text-muted-foreground">/month</span>
                 </div>
                 <p className="text-muted-foreground">
