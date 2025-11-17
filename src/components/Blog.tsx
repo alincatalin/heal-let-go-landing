@@ -2,30 +2,8 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar } from "lucide-react";
-
-const blogPosts = [
-  {
-    title: "Why No Contact Is the Hardest (and Most Important) Thing You'll Do",
-    description: "Breaking no contact feels good for 5 minutes. Then the regret hits. Here's why staying strong matters more than you think.",
-    category: "Recovery",
-    date: "March 15, 2024",
-    readTime: "5 min read",
-  },
-  {
-    title: "The 6 Stages of Breakup Healing: Where Are You Right Now?",
-    description: "Healing isn't linear, but there are patterns. Understanding which stage you're in helps you know what to do next.",
-    category: "Healing Journey",
-    date: "March 12, 2024",
-    readTime: "7 min read",
-  },
-  {
-    title: "3AM and You Want to Text Them: A Survival Guide",
-    description: "Late nights are when you're most vulnerable. Here's exactly what to do when the urge hits hardest.",
-    category: "Tips",
-    date: "March 8, 2024",
-    readTime: "4 min read",
-  },
-];
+import { blogPosts } from "@/data/blogPosts";
+import { useNavigate } from "react-router-dom";
 
 export const Blog = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -59,6 +37,7 @@ export const Blog = () => {
 
 const BlogCard = ({ post, index }: { post: typeof blogPosts[0]; index: number }) => {
   const { ref, isVisible } = useScrollAnimation(0.2);
+  const navigate = useNavigate();
 
   return (
     <div
@@ -68,7 +47,10 @@ const BlogCard = ({ post, index }: { post: typeof blogPosts[0]; index: number })
       }`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <Card className="h-full hover:shadow-glow transition-all duration-300 hover:-translate-y-1 cursor-pointer bg-card/50 backdrop-blur-sm border-border">
+      <Card 
+        className="h-full hover:shadow-glow transition-all duration-300 hover:-translate-y-1 cursor-pointer bg-card/50 backdrop-blur-sm border-border"
+        onClick={() => navigate(`/blog/${post.slug}`)}
+      >
         <CardHeader>
           <div className="flex items-center gap-2 mb-2">
             <Badge variant="secondary" className="text-xs">
