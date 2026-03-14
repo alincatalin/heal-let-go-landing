@@ -23,7 +23,7 @@ export const FAQ = () => {
     },
     {
       question: "Does this replace therapy?",
-      answer: "No. If you're in crisis or dealing with severe mental health issues, please see a professional. This app is for people who are functional but struggling with the daily challenge of getting over someone."
+      answer: "No. This isn't a replacement for therapy. If you need immediate emotional support, visit findahelpline.com to connect with local helplines, and talk to a professional."
     },
     {
       question: "Can my ex see what I write in the app?",

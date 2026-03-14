@@ -1,14 +1,11 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { Heart, TrendingUp, Shield, Sparkles } from "lucide-react";
 import { PhoneMockup } from "@/components/PhoneMockup";
-import { BetaSignupDialog } from "@/components/BetaSignupDialog";
-import { useState } from "react";
+import { StoreButtons } from "@/components/StoreButtons";
 
 export const AppPromotion = () => {
   const { ref, isVisible } = useScrollAnimation();
-  const [showBetaDialog, setShowBetaDialog] = useState(false);
 
   const features = [
     {
@@ -47,7 +44,7 @@ export const AppPromotion = () => {
               {/* Left side - Content */}
               <div className="space-y-6">
                 <div className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium">
-                  🎉 Beta Access Available
+                  📱 Now on the App Store & Google Play
                 </div>
                 
                 <h2 className="text-4xl md:text-5xl font-bold">
@@ -55,7 +52,7 @@ export const AppPromotion = () => {
                 </h2>
                 
                 <p className="text-xl text-muted-foreground">
-                  Join thousands who are healing with Heal: Let Them Go. Get personalized support, track your progress, and finally move forward.
+                  Download Heal: Let Them Go for guided support, progress tracking, and daily check-ins that keep you moving forward.
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-4 py-6">
@@ -75,29 +72,22 @@ export const AppPromotion = () => {
                   })}
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
-                    size="lg" 
-                    className="text-lg px-8"
-                    onClick={() => setShowBetaDialog(true)}
-                  >
-                    Join Beta - 50% Off
-                  </Button>
-                  <Button 
-                    size="lg" 
-                    variant="outline"
-                    className="text-lg px-8"
-                    onClick={() => {
-                      const pricingSection = document.getElementById('pricing');
-                      pricingSection?.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                  >
-                    See Pricing
-                  </Button>
-                </div>
+                <StoreButtons className="sm:items-stretch" />
+
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="text-lg px-8 w-full sm:w-auto"
+                  onClick={() => {
+                    const pricingSection = document.getElementById('pricing');
+                    pricingSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  See Pricing
+                </Button>
 
                 <p className="text-sm text-muted-foreground">
-                  Beta testers get 50% off forever when they subscribe. Limited spots available.
+                  Start free, then upgrade anytime inside the app.
                 </p>
               </div>
 
@@ -110,11 +100,6 @@ export const AppPromotion = () => {
           </div>
         </div>
       </section>
-
-      <BetaSignupDialog 
-        open={showBetaDialog}
-        onOpenChange={setShowBetaDialog}
-      />
     </>
   );
 };

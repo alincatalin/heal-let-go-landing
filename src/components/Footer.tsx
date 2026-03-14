@@ -18,7 +18,10 @@ export const Footer = () => {
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 TikTok
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="mailto:healletgo@proton.me"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Email
               </a>
             </div>
@@ -29,7 +32,16 @@ export const Footer = () => {
               Built by someone who's been exactly where you are
             </p>
             <p className="text-xs text-muted-foreground">
-              If you're in crisis, please contact: National Suicide Prevention Lifeline: 988
+              Need immediate support? Visit{" "}
+              <a
+                href="https://findahelpline.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-primary transition-colors"
+              >
+                findahelpline.com
+              </a>{" "}
+              to connect with a local helpline.
             </p>
           </div>
         </div>

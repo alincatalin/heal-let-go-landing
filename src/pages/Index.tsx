@@ -5,15 +5,16 @@ import { Testimonials } from "@/components/Testimonials";
 import { HowItWorks } from "@/components/HowItWorks";
 import { WhyNow } from "@/components/WhyNow";
 import { Pricing } from "@/components/Pricing";
-import { BetaSignup } from "@/components/BetaSignup";
+import { FeaturedGuide } from "@/components/FeaturedGuide";
 import { Blog } from "@/components/Blog";
 import { FAQ } from "@/components/FAQ";
+import { Support } from "@/components/Support";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Hero />
       <Problem />
       <Features />
@@ -21,9 +22,10 @@ const Index = () => {
       <HowItWorks />
       <WhyNow />
       <Pricing />
-      <BetaSignup />
+      <FeaturedGuide />
       <Blog />
       <FAQ />
+      <Support />
       <FinalCTA />
       <Footer />
     </div>

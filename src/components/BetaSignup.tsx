@@ -35,21 +35,48 @@ export const BetaSignup = () => {
     }
 
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Welcome to the beta!",
-      description: "We'll send you an invite link soon.",
-    });
-    
-    setFormData({ name: "", email: "" });
-    setIsSubmitting(false);
+
+    try {
+      const response = await fetch("/beta-signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(result.data),
+      });
+
+      if (!response.ok) {
+        const errorBody = await response.json().catch(() => null);
+        const message =
+          errorBody?.error ||
+          errorBody?.message ||
+          "Something went wrong. Please try again.";
+        throw new Error(message);
+      }
+
+      toast({
+        title: "Welcome to the beta!",
+        description: "We'll send you an invite link soon.",
+      });
+
+      setFormData({ name: "", email: "" });
+    } catch (error) {
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Something went wrong. Please try again.";
+      toast({
+        title: "We couldn't add you right now",
+        description: message,
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section id="beta-signup" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-glow opacity-30" />
       
       <div 

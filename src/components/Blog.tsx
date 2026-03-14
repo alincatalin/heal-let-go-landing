@@ -11,11 +11,10 @@ export const Blog = () => {
   return (
     <section className="py-20 relative">
       <div className="container mx-auto px-4">
-        <div 
+        <div
           ref={ref}
-          className={`text-center space-y-4 mb-12 transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`text-center space-y-4 mb-12 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           <h2 className="text-4xl md:text-5xl font-bold">
             Healing Wisdom
@@ -26,7 +25,7 @@ export const Blog = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {blogPosts.map((post, index) => (
+          {blogPosts.slice(0, 3).map((post, index) => (
             <BlogCard key={index} post={post} index={index} />
           ))}
         </div>
@@ -42,12 +41,11 @@ const BlogCard = ({ post, index }: { post: typeof blogPosts[0]; index: number })
   return (
     <div
       ref={ref}
-      className={`transition-all duration-1000 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+      className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <Card 
+      <Card
         className="h-full hover:shadow-glow transition-all duration-300 hover:-translate-y-1 cursor-pointer bg-card/50 backdrop-blur-sm border-border"
         onClick={() => navigate(`/blog/${post.slug}`)}
       >

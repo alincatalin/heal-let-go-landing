@@ -15,4 +15,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Enable top-level await by targeting modern JavaScript.
+    target: 'esnext',
+  },
 }));

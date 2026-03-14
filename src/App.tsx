@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import BlogHomepage from "./pages/BlogHomepage";
 import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
+import WinBackSurvey from "./pages/WinBackSurvey";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/win-back-survey" element={<WinBackSurvey />} />
           <Route path="/blog" element={<BlogHomepage />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

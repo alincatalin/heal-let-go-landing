@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { StoreButtons } from "@/components/StoreButtons";
 
 export const FinalCTA = () => {
   return (
@@ -15,23 +14,12 @@ export const FinalCTA = () => {
               </h2>
               
               <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-                Join 50 beta testers who are choosing themselves over their ex - one day at a time.
+                Download Heal: Let Them Go and get the support you need when the urge to text hits hardest.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button variant="accent" size="lg" className="group">
-                  Join the Beta - iOS
-                  <ArrowRight className="transition-transform group-hover:translate-x-1" />
-                </Button>
-                <Button variant="accent" size="lg" className="group">
-                  Join the Beta - Android
-                  <ArrowRight className="transition-transform group-hover:translate-x-1" />
-                </Button>
+                <StoreButtons />
               </div>
-              
-              <p className="text-sm text-primary-foreground/70">
-                Beta spots limited. No credit card required.
-              </p>
             </div>
           </div>
         </div>

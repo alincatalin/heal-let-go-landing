@@ -7,8 +7,16 @@ import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
 const signupSchema = z.object({
-  name: z.string().trim().min(1, { message: "Name is required" }).max(100, { message: "Name must be less than 100 characters" }),
-  email: z.string().trim().email({ message: "Invalid email address" }).max(255, { message: "Email must be less than 255 characters" })
+  name: z
+    .string()
+    .trim()
+    .min(2, { message: "Name must be at least 2 characters" })
+    .max(100, { message: "Name must be less than 100 characters" }),
+  email: z
+    .string()
+    .trim()
+    .email({ message: "Invalid email address" })
+    .max(255, { message: "Email must be less than 255 characters" })
 });
 
 interface BetaSignupDialogProps {
@@ -44,24 +52,40 @@ export const BetaSignupDialog = ({ open, onOpenChange }: BetaSignupDialogProps) 
     setIsSubmitting(true);
 
     try {
-      // TODO: Save to database when ready
-      // For now, just simulate success
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch("/beta-signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(result.data),
+      });
+
+      if (!response.ok) {
+        const errorBody = await response.json().catch(() => null);
+        const message =
+          errorBody?.error ||
+          errorBody?.message ||
+          "Something went wrong. Please try again.";
+        throw new Error(message);
+      }
 
       toast({
         title: "You're on the list! 🎉",
         description: "We'll notify you when the beta launches.",
       });
 
-      // Reset form and close dialog
       setName("");
       setEmail("");
       onOpenChange(false);
     } catch (error) {
+      const description =
+        error instanceof Error
+          ? error.message
+          : "Please try again later.";
       toast({
         variant: "destructive",
-        title: "Something went wrong",
-        description: "Please try again later.",
+        title: "We couldn't save your info",
+        description,
       });
     } finally {
       setIsSubmitting(false);

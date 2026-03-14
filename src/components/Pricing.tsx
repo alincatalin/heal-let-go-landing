@@ -2,34 +2,34 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { StoreButtons } from "@/components/StoreButtons";
 
 export const Pricing = () => {
   const { ref, isVisible } = useScrollAnimation();
   return (
-    <section className="py-20 relative">
-      <div 
+    <section id="pricing" className="py-20 relative">
+      <div
         ref={ref}
-        className={`container mx-auto px-4 transition-all duration-1000 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}
+        className={`container mx-auto px-4 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
       >
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">Pricing</h2>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8 space-y-6 bg-gradient-primary relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-glow opacity-50" />
               <div className="relative z-10">
                 <div className="space-y-2">
-                  <h3 className="text-3xl font-bold">Beta Access</h3>
-                  <div className="text-5xl font-bold">FREE</div>
+                  <h3 className="text-3xl font-bold">Start Free</h3>
+                  <div className="text-5xl font-bold">Free</div>
                   <p className="text-primary-foreground/80">
-                    Be one of the first 50 people to use Heal: Let Them Go
+                    Download Heal: Let Them Go and start your 7-day free trial. Get daily guidance, exercises, and support right away.
                   </p>
                 </div>
-                
+
                 <div className="space-y-3 py-6">
                   <div className="flex items-center gap-3">
                     <Check className="w-5 h-5" />
@@ -37,23 +37,25 @@ export const Pricing = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="w-5 h-5" />
-                    <span>Help shape the product</span>
+                    <span>On-demand AI healing coach</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Check className="w-5 h-5" />
-                    <span>Direct feedback to founders</span>
+                    <span>Daily practices and check-ins</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="w-5 h-5" />
+                    <span>Available on iOS & Android</span>
                   </div>
                 </div>
-                
-                <Button variant="accent" size="lg" className="w-full">
-                  Join the Beta
-                </Button>
+
+                <StoreButtons />
               </div>
             </Card>
-            
+
             <Card className="p-8 space-y-6 bg-card/50 backdrop-blur-sm border-border">
               <div className="space-y-2">
-                <h3 className="text-3xl font-bold">After Beta</h3>
+                <h3 className="text-3xl font-bold">After Trial</h3>
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-bold">$12.99</span>
                   <span className="text-muted-foreground">/month</span>
@@ -62,7 +64,7 @@ export const Pricing = () => {
                   No commitment. Cancel anytime.
                 </p>
               </div>
-              
+
               <div className="space-y-3 py-6">
                 <div className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary" />
@@ -81,9 +83,9 @@ export const Pricing = () => {
                   <span>Private journaling</span>
                 </div>
               </div>
-              
+
               <Button variant="outline" size="lg" className="w-full" disabled>
-                Coming Soon
+                Upgrade inside the app
               </Button>
             </Card>
           </div>
