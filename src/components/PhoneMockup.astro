@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  screenshot: ImageMetadata;
+  alt: string;
+  eager?: boolean;
+}
+const { screenshot, alt, eager = false } = Astro.props;
+---
+
+<div class="relative mx-auto w-[300px] animate-float">
+  <div class="relative bg-card border-2 border-border rounded-[3rem] p-3 shadow-glow-strong">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-background rounded-b-3xl z-10"></div>
+    <div class="relative bg-background rounded-[2.5rem] overflow-hidden aspect-[9/19.5]">
+      <Image
+        src={screenshot}
+        alt={alt}
+        width={552}
+        class="w-full h-full object-cover"
+        loading={eager ? "eager" : "lazy"}
+        fetchpriority={eager ? "high" : "auto"}
+      />
+    </div>
+    <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-border rounded-full"></div>
+  </div>
+  <div class="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl -z-10"></div>
+</div>

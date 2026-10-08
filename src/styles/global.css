@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens. All colors are HSL. */
+@layer base {
+  :root {
+    --background: 240 20% 6%;
+    --foreground: 280 10% 95%;
+
+    --card: 240 18% 10%;
+    --card-foreground: 280 10% 95%;
+
+    --popover: 240 18% 10%;
+    --popover-foreground: 280 10% 95%;
+
+    --primary: 271 70% 62%;
+    --primary-foreground: 280 10% 98%;
+
+    --secondary: 240 15% 15%;
+    --secondary-foreground: 280 10% 95%;
+
+    --muted: 240 15% 18%;
+    --muted-foreground: 280 8% 65%;
+
+    --accent: 280 65% 60%;
+    --accent-foreground: 280 10% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 280 10% 98%;
+
+    --border: 240 15% 20%;
+    --input: 240 15% 20%;
+    --ring: 271 70% 62%;
+
+    --radius: 0.75rem;
+
+    --violet: 271 91% 65%;
+    --fuchsia: 320 86% 60%;
+    --orange: 31 91% 50%;
+    --rose: 330 81% 51%;
+    --teal: 173 80% 40%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(271 91% 65%), hsl(262 83% 58%), hsl(320 86% 60%));
+    --gradient-accent: linear-gradient(90deg, hsl(31 91% 50%), hsl(25 95% 53%));
+    --gradient-glow: radial-gradient(circle at center, hsl(271 91% 65% / 0.15), transparent 70%);
+
+    --shadow-glow: 0 0 60px hsl(271 91% 65% / 0.3);
+    --shadow-glow-strong: 0 0 80px hsl(271 91% 65% / 0.5);
+
+    color-scheme: dark;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2;
+  }
+  .btn svg {
+    @apply pointer-events-none size-4 shrink-0;
+  }
+  .btn-lg {
+    @apply h-12 rounded-lg px-10 text-base;
+  }
+  .btn-default {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow hover:shadow-glow-strong;
+  }
+  .btn-outline {
+    @apply border border-border bg-card/50 backdrop-blur-sm hover:bg-card hover:border-primary/50;
+  }
+  .btn-hero {
+    @apply bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow-strong font-semibold;
+  }
+  .btn-accent {
+    @apply bg-gradient-accent text-primary-foreground hover:opacity-90 font-semibold;
+  }
+  .card {
+    @apply rounded-lg border bg-card text-card-foreground shadow-sm;
+  }
+  .field {
+    @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring md:text-sm;
+  }
+}
+
+/* Scroll reveal. Content stays visible when JS is off. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(2.5rem);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* FAQ disclosure chevron */
+details[open] > summary .chevron {
+  transform: rotate(180deg);
+}
+summary::-webkit-details-marker {
+  display: none;
+}

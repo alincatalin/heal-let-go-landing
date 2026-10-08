@@ -1,0 +1,31 @@
+---
+import { Quote } from "@lucide/astro";
+
+const testimonials = [
+  { text: "I was about to text my ex for the 100th time. This app stopped me.", author: "Beta tester" },
+  { text: "Finally, something that actually understands what I'm going through at night.", author: "Beta tester" },
+  { text: "The fake texting feature saved me from so many regrets.", author: "Beta tester" },
+];
+---
+
+<section class="py-20 relative">
+  <div class="reveal container mx-auto px-4">
+    <div class="max-w-6xl mx-auto space-y-12">
+      <div class="text-center space-y-4">
+        <h2 class="text-4xl md:text-5xl font-bold">Real people. Real healing.</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {
+          testimonials.map((testimonial) => (
+            <figure class="card p-8 space-y-4 bg-card/50 backdrop-blur-sm border-border relative">
+              <Quote class="w-10 h-10 text-primary/20 absolute top-6 right-6" />
+              <blockquote class="text-lg leading-relaxed relative z-10">{testimonial.text}</blockquote>
+              <figcaption class="text-sm text-muted-foreground">— {testimonial.author}</figcaption>
+            </figure>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

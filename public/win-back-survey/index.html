@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heal Win-Back Survey</title>
+  <meta name="description" content="2-3 minute survey to help Heal improve the trial experience." />
+  <meta name="robots" content="noindex" />
+  <style>
+    :root {
+      --bg: hsl(240 20% 6%);
+      --fg: hsl(280 10% 95%);
+      --card: hsl(240 18% 10%);
+      --muted: hsl(240 15% 18%);
+      --muted-fg: hsl(280 8% 65%);
+      --border: hsl(240 15% 20%);
+      --primary: hsl(271 70% 62%);
+      --primary-strong: hsl(271 91% 65%);
+      --accent: hsl(320 86% 60%);
+      --radius: 14px;
+      --shadow: 0 0 60px hsl(271 91% 65% / 0.3);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      min-height: 100vh;
+    }
+
+    .page {
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
+    }
+
+    .glow {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, hsl(271 91% 65% / 0.18), transparent 70%);
+      animation: pulse 4s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    .blob {
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 999px;
+      filter: blur(80px);
+      opacity: 0.35;
+      z-index: 0;
+    }
+
+    .blob.primary {
+      top: -120px;
+      right: -80px;
+      background: linear-gradient(135deg, var(--primary-strong), var(--accent));
+    }
+
+    .blob.accent {
+      bottom: -140px;
+      left: -80px;
+      background: linear-gradient(135deg, hsl(31 91% 50%), hsl(25 95% 53%));
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 72px 24px 96px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted-fg);
+    }
+
+    h1 {
+      margin: 16px 0 12px;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.1;
+    }
+
+    p.lead {
+      margin: 0;
+      color: var(--muted-fg);
+      font-size: 16px;
+    }
+
+    .card {
+      background: color-mix(in oklab, var(--card) 88%, transparent);
+      border: 1px solid color-mix(in oklab, var(--border) 70%, transparent);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .section+.section {
+      margin-top: 28px;
+    }
+
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .section p {
+      margin: 0 0 16px;
+      color: var(--muted-fg);
+      font-size: 14px;
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 6px;
+      color: var(--muted-fg);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      background: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 12px;
+      color: var(--fg);
+      font-size: 14px;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
+    }
+
+    .option {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid color-mix(in oklab, var(--border) 65%, transparent);
+      background: color-mix(in oklab, var(--card) 85%, transparent);
+    }
+
+    .option input {
+      margin-top: 3px;
+    }
+
+    .option span {
+      font-size: 14px;
+    }
+
+    .radio-group {
+      display: grid;
+      gap: 10px;
+    }
+
+    .actions {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      justify-content: space-between;
+    }
+
+    .note {
+      font-size: 12px;
+      color: var(--muted-fg);
+    }
+
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    button:hover:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 30px hsl(271 91% 65% / 0.3);
+    }
+
+    .status {
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    .success-content {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    .success-icon {
+      font-size: 48px;
+      margin-bottom: 24px;
+      display: block;
+      animation: scaleIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .success-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--fg);
+    }
+
+    .success-text {
+      font-size: 16px;
+      color: var(--muted-fg);
+      line-height: 1.6;
+      max-width: 480px;
+      margin: 0 auto 16px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="glow"></div>
+    <div class="blob primary"></div>
+    <div class="blob accent"></div>
+    <div class="container">
+      <header>
+        <h1>Help us build a better Heal.</h1>
+        <p class="lead">Your feedback shapes the future of the app. It only takes a moment.</p>
+      </header>
+
+      <div class="card">
+        <form id="surveyForm">
+          <input id="email" name="email" type="hidden" />
+
+          <div class="section">
+            <h2>Why did you cancel your Heal trial?</h2>
+            <p>Select all that apply.</p>
+            <div class="options">
+              <label class="option"><input type="checkbox" name="cancel_reasons"
+                  value="Didn't see results / didn't help" /><span>Didn't see results / didn't help</span></label>
+              <label class="option"><input type="checkbox" name="cancel_reasons" value="Too expensive" /><span>Too
+                  expensive</span></label>
+              <label class="option"><input type="checkbox" name="cancel_reasons"
+                  value="Didn't understand how to use it" /><span>Didn't understand how to use it</span></label>
+              <label class="option"><input type="checkbox" name="cancel_reasons"
+                  value="Found another app / solution" /><span>Found another app / solution</span></label>
+              <label class="option"><input type="checkbox" name="cancel_reasons"
+                  value="Just wasn't ready to commit" /><span>Just wasn't ready to commit</span></label>
+              <label class="option"><input type="checkbox" id="cancelOtherToggle" name="cancel_reasons"
+                  value="Other" /><span>Other</span></label>
+            </div>
+            <div class="field" id="cancelOtherField" style="display: none; margin-top: 12px;">
+              <textarea id="cancelOther" placeholder="Tell us what happened" style="min-height: 80px;"></textarea>
+            </div>
+
+            <!-- Logic: Show this only if "Didn't see results" is selected above -->
+            <div id="cancelReasonDetailsSection"
+              style="display: none; margin-top: 20px; padding: 20px; background: var(--muted); border-radius: var(--radius); border: 1px solid var(--border);">
+              <h3 style="margin-top: 0; font-size: 16px; color: var(--fg);">What best describes that?</h3>
+              <p style="margin-top: 4px; margin-bottom: 12px; font-size: 13px; color: var(--muted-fg);">Select all that
+                apply.</p>
+              <div class="options">
+                <label class="option"><input type="checkbox" name="cancel_reason_details"
+                    value="I didn't feel better emotionally" /><span>I didn't feel better emotionally</span></label>
+                <label class="option"><input type="checkbox" name="cancel_reason_details"
+                    value="The advice felt generic" /><span>The advice felt generic</span></label>
+                <label class="option"><input type="checkbox" name="cancel_reason_details"
+                    value="It didn't match my situation" /><span>It didn't match my situation</span></label>
+                <label class="option"><input type="checkbox" name="cancel_reason_details"
+                    value="I didn't use it long enough" /><span>I didn't use it long enough</span></label>
+                <label class="option"><input type="checkbox" name="cancel_reason_details"
+                    value="I didn't understand what progress should look like" /><span>I didn't understand what progress
+                    should look like</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>When did you cancel your trial?</h2>
+            <div class="radio-group">
+              <label class="option"><input type="radio" name="usage_duration" value="Before using it" /><span>Before
+                  even really using it</span></label>
+              <label class="option"><input type="radio" name="usage_duration" value="After 1 session" /><span>After
+                  trying 1 session</span></label>
+              <label class="option"><input type="radio" name="usage_duration" value="After 2-3 sessions" /><span>After
+                  2–3 sessions</span></label>
+              <label class="option"><input type="radio" name="usage_duration" value="After several days" /><span>After
+                  several days of use</span></label>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>What was missing that made Heal not worth paying for?</h2>
+            <p>Select all that apply.</p>
+            <div class="options">
+              <label class="option"><input type="checkbox" name="return_reasons"
+                  value="Clear progress or results" /><span>Clear progress or results</span></label>
+              <label class="option"><input type="checkbox" name="return_reasons"
+                  value="More structure / guidance" /><span>More structure / guidance</span></label>
+              <label class="option"><input type="checkbox" name="return_reasons"
+                  value="Better personalization" /><span>Better personalization</span></label>
+              <label class="option"><input type="checkbox" name="return_reasons"
+                  value="Clearer next steps" /><span>Clearer next steps</span></label>
+              <label class="option"><input type="checkbox" name="return_reasons"
+                  value="Emotional support" /><span>Emotional support</span></label>
+              <label class="option"><input type="checkbox" name="return_reasons"
+                  value="Practical actions" /><span>Practical actions</span></label>
+              <label class="option"><input type="checkbox" name="return_reasons"
+                  value="I didn't reach the 'aha' moment" /><span>I didn't reach the “aha” moment</span></label>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>If you could change ONE thing about Heal that would have made you keep it, what would it be?</h2>
+            <textarea id="improvement" placeholder="Be honest — we can handle it."></textarea>
+          </div>
+
+          <div class="section">
+            <h2>Are you using something else to help with your breakup?</h2>
+            <p>Select all that apply.</p>
+            <div class="options">
+              <label class="option"><input type="checkbox" name="alternatives"
+                  value="Therapy" /><span>Therapy</span></label>
+              <label class="option"><input type="checkbox" id="altAppToggle" name="alternatives"
+                  value="Another app" /><span>Another app (which one?)</span></label>
+              <label class="option"><input type="checkbox" name="alternatives"
+                  value="Friends/family support" /><span>Friends/family support</span></label>
+              <label class="option"><input type="checkbox" name="alternatives"
+                  value="Just trying to move on alone" /><span>Just trying to move on alone</span></label>
+              <label class="option"><input type="checkbox" id="altOtherToggle" name="alternatives"
+                  value="Other" /><span>Other</span></label>
+            </div>
+            <div class="field" id="altAppField" style="display: none; margin-top: 12px;">
+              <input type="text" id="altApp" placeholder="Which app?" />
+            </div>
+            <div class="field" id="altOtherField" style="display: none; margin-top: 12px;">
+              <input type="text" id="altOther" placeholder="Tell us more" />
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Optional: If you tried another app or solution, what did it do better?</h2>
+            <textarea id="competitorFeedback" placeholder="This helps us understand where we fall short."></textarea>
+          </div>
+
+          <div class="section">
+            <h2>Can we email you in the future when we've addressed your feedback?</h2>
+            <div class="radio-group">
+              <label class="option"><input type="radio" name="consent" value="yes" /><span>Yes, let me
+                  know</span></label>
+              <label class="option"><input type="radio" name="consent" value="no" /><span>No, thanks</span></label>
+            </div>
+          </div>
+
+          <div class="actions">
+            <span class="note">We store your response securely. No spam.</span>
+            <button id="submitButton" type="submit">Send feedback</button>
+          </div>
+          <div id="status" class="status" aria-live="polite"></div>
+        </form>
+
+        <div id="successMessage" class="success-content">
+          <span class="success-icon">💜</span>
+          <div class="success-title">Thank you for sharing</div>
+          <p class="success-text">
+            We really appreciate your honesty. Breakups are incredibly hard, and we respect your decision to do what's
+            right for you.
+          </p>
+          <p class="success-text">
+            We're rooting for your healing journey—whether that's with us or on your own path. And if you ever need
+            support again, we’ll be here.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const emailInput = document.getElementById("email");
+      const statusEl = document.getElementById("status");
+      const submitButton = document.getElementById("submitButton");
+
+      const emailPrefill = params.get("email") || params.get("e") || "";
+      if (emailPrefill) emailInput.value = emailPrefill;
+
+      const tracking = {
+        userId: params.get("user_id") || params.get("uid") || params.get("customer_id") || params.get("cid") || null,
+        linkId: params.get("link_id") || params.get("lid") || params.get("link") || null,
+        utmSource: params.get("utm_source"),
+        utmMedium: params.get("utm_medium"),
+        utmCampaign: params.get("utm_campaign"),
+        utmContent: params.get("utm_content"),
+        utmTerm: params.get("utm_term"),
+        referrer: document.referrer || null,
+        pathname: window.location.pathname,
+        rawParams: Object.fromEntries(params.entries())
+      };
+
+      const anonKey = "heal_winback_anon_id";
+      let anonId = localStorage.getItem(anonKey);
+      if (!anonId) {
+        anonId = crypto.randomUUID();
+        localStorage.setItem(anonKey, anonId);
+      }
+
+      let openEventId = null;
+
+      const toggleField = (checkboxId, fieldId) => {
+        const checkbox = document.getElementById(checkboxId);
+        const field = document.getElementById(fieldId);
+        if (!checkbox || !field) return;
+        field.style.display = checkbox.checked ? "block" : "none";
+      };
+
+      const toggleRadioField = (name, valueToMatch, fieldId) => {
+        const selected = document.querySelector(`input[name="${name}"]:checked`);
+        const field = document.getElementById(fieldId);
+        if (!field) return;
+        field.style.display = (selected && selected.value === valueToMatch) ? "block" : "none";
+      };
+
+      const setHandlers = () => {
+        // Checkbox toggles
+        ["cancelOtherToggle", "altAppToggle", "altOtherToggle"].forEach((id) => {
+          const checkbox = document.getElementById(id);
+          if (checkbox) {
+            checkbox.addEventListener("change", () => {
+              if (id === "cancelOtherToggle") toggleField(id, "cancelOtherField");
+              if (id === "altAppToggle") toggleField(id, "altAppField");
+              if (id === "altOtherToggle") toggleField(id, "altOtherField");
+            });
+            // init
+            checkbox.dispatchEvent(new Event("change"));
+          }
+        });
+
+        // Cancel Reason logic for "Didn't see results"
+        document.querySelectorAll('input[name="cancel_reasons"]').forEach(checkbox => {
+          checkbox.addEventListener('change', () => {
+            const detailsSection = document.getElementById('cancelReasonDetailsSection');
+            const isNoResults = document.querySelector('input[name="cancel_reasons"][value="Didn\'t see results / didn\'t help"]')?.checked;
+            if (detailsSection) {
+              detailsSection.style.display = isNoResults ? 'block' : 'none';
+            }
+          });
+          // init
+          checkbox.dispatchEvent(new Event("change"));
+        });
+      };
+
+      setHandlers();
+
+      const recordOpen = async () => {
+        try {
+          const response = await fetch("https://heal-backend.onrender.com/winback-survey/open", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              email: emailInput.value || null,
+              anonId,
+              userId: tracking.userId,
+              linkId: tracking.linkId,
+              utmSource: tracking.utmSource,
+              utmMedium: tracking.utmMedium,
+              utmCampaign: tracking.utmCampaign,
+              utmContent: tracking.utmContent,
+              utmTerm: tracking.utmTerm,
+              referrer: tracking.referrer,
+              pathname: tracking.pathname,
+              rawParams: tracking.rawParams
+            })
+          });
+
+          if (response.ok) {
+            const data = await response.json().catch(() => null);
+            openEventId = data && data.eventId ? data.eventId : null;
+          }
+        } catch (err) {
+          // swallow - open tracking should never block the survey
+        }
+      };
+
+      recordOpen();
+
+      const collectValues = (name) =>
+        Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map((el) => el.value);
+
+      const getRadioValue = (name) => {
+        const el = document.querySelector(`input[name="${name}"]:checked`);
+        return el ? el.value : null;
+      }
+
+      document.getElementById("surveyForm").addEventListener("submit", async (event) => {
+        event.preventDefault();
+        statusEl.textContent = "";
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting...";
+
+        try {
+          const payload = {
+            email: emailInput.value || null,
+            anonId,
+            openEventId,
+            userId: tracking.userId,
+            linkId: tracking.linkId,
+            utmSource: tracking.utmSource,
+            utmMedium: tracking.utmMedium,
+            utmCampaign: tracking.utmCampaign,
+            utmContent: tracking.utmContent,
+            utmTerm: tracking.utmTerm,
+            referrer: tracking.referrer,
+            pathname: tracking.pathname,
+            rawParams: tracking.rawParams,
+
+            /* Updated Fields */
+            cancelReasons: collectValues("cancel_reasons"),
+            cancelReasonDetails: collectValues("cancel_reason_details"),
+            cancelReasonOther: document.getElementById("cancelOther").value || null,
+
+            usageDuration: getRadioValue("usage_duration"),
+
+            /* Mapped "What was missing" to returnReasons */
+            returnReasons: collectValues("return_reasons"),
+            returnReasonOther: null, // Removed "Other" from this section per request
+
+            alternatives: collectValues("alternatives"),
+            alternativeApp: document.getElementById("altApp").value || null,
+            alternativeOther: document.getElementById("altOther").value || null,
+
+            competitorFeedback: document.getElementById("competitorFeedback").value || null,
+
+            improvement: document.getElementById("improvement").value || null,
+            consent: getRadioValue("consent")
+          };
+
+          const response = await fetch("https://heal-backend.onrender.com/winback-survey", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+          });
+
+          if (!response.ok) {
+            throw new Error("Failed to submit");
+          }
+
+          // statusEl.innerHTML = "Thank you — your feedback helps us improve.<br>You can close this tab now.";
+          // submitButton.style.display = 'none';
+
+          document.getElementById('surveyForm').style.display = 'none';
+          document.getElementById('successMessage').style.display = 'block';
+          document.querySelector('header').style.display = 'none'; // Optional: hide header to focus on card
+          document.querySelector('.card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } catch (err) {
+          statusEl.textContent = "We couldn't save your response. Please try again.";
+          submitButton.disabled = false;
+          submitButton.textContent = "Send feedback";
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>
