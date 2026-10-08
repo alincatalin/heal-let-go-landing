@@ -1,16 +1,47 @@
 import { articleUrl, type Article } from "./site";
 
-// Same-category posts first, then the newest of the rest.
-export function relatedArticles(current: { id: string; category: string }, all: Article[], count = 3) {
+export const CLUSTER_NAMES: Record<NonNullable<Article["data"]["cluster"]>, string> = {
+  "no-contact": "No contact",
+  "texting-your-ex": "Texting your ex",
+  "getting-over": "Getting over someone",
+};
+
+interface Current {
+  id: string;
+  category: string;
+  cluster?: Article["data"]["cluster"];
+}
+
+const toLink = (post: Article) => ({ href: articleUrl(post), title: post.data.title });
+
+// Same-cluster posts first, then same category, then the newest of the rest.
+export function relatedArticles(current: Current, all: Article[], count = 3) {
   const others = all.filter((post) => post.id !== current.id);
-  const sameCategory = others.filter((post) => post.data.category === current.category);
-  const rest = others.filter((post) => post.data.category !== current.category);
-  return [...sameCategory, ...rest].slice(0, count).map((post) => ({
-    href: articleUrl(post),
-    title: post.data.title,
-    excerpt: post.data.excerpt,
-    category: post.data.category,
-    date: post.data.date,
-    readTime: post.data.readTime,
-  }));
+  const rank = (post: Article) =>
+    current.cluster && post.data.cluster === current.cluster ? 0 : post.data.category === current.category ? 1 : 2;
+  return [...others]
+    .sort((a, b) => rank(a) - rank(b))
+    .slice(0, count)
+    .map((post) => ({
+      ...toLink(post),
+      excerpt: post.data.excerpt,
+      category: post.data.category,
+      date: post.data.date,
+      readTime: post.data.readTime,
+    }));
+}
+
+// A pillar links to every post in its cluster; any other post links to its pillar and two siblings.
+export function clusterLinks(current: Current, all: Article[]) {
+  if (!current.cluster) return undefined;
+  const members = all.filter((post) => post.data.cluster === current.cluster);
+  const pillar = members.find((post) => post.data.pillar);
+  const others = members.filter((post) => post.id !== current.id && post !== pillar);
+  const isPillar = pillar?.id === current.id;
+  return {
+    name: CLUSTER_NAMES[current.cluster],
+    isPillar,
+    pillar: pillar && !isPillar ? toLink(pillar) : undefined,
+    posts: (isPillar ? others : others.slice(0, 2)).map(toLink),
+  };
 }

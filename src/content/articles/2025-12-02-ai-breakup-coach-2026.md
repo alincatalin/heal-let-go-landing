@@ -6,6 +6,10 @@ category: "Breakup Psychology"
 readTime: "6 min"
 excerpt: "Breakup recovery in 2026 looks nothing like the old journal-and-cry-in-bed routine. Here’s how AI coaches are changing the way we heal."
 author: "Heal Team"
+cluster: "getting-over"
+cta:
+  title: "Try an AI breakup coach"
+  text: "Heal's coach is there at 2am, and its SOS button catches you right before you text them."
 ---
 
 Breakups used to look like this: crying on the bathroom floor, scrolling their Instagram, asking your group chat the same question for the 400th time - *“Should I text them?”*

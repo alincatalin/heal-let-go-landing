@@ -6,6 +6,12 @@ category: "No Contact"
 readTime: "10 min"
 excerpt: "Thinking about texting your ex? Read this first. Find out when it's okay to reach out, when it's a mistake, and how to test your message before you hit send."
 author: "Heal Team"
+cluster: "texting-your-ex"
+pillar: true
+updated: "2026-10-08"
+cta:
+  title: "About to text your ex? Open Heal first."
+  text: "Write the message in Heal's fake text. It never sends. You get a reality check before you decide anything."
 ---
 
 Short answer: **Probably not right now.**
@@ -20,7 +26,7 @@ This guide will help you figure out whether texting is the right move, what actu
 
 ___
 
-Thinking about sending that text? **Try Heal's fake text coach first on [iOS](https://apps.apple.com/us/app/heal-let-them-go/id6754834593) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal).**
+Thinking about sending that text? **Try Heal's fake text coach first on [iOS](https://apps.apple.com/app/id6754834593?ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb).**
 
 ___
 
@@ -43,6 +49,19 @@ It's not okay to text your ex if:
 *   ❌ You're lonely and just want to feel something.
 *   ❌ You're checking to see if they're thinking about you.
 *   ❌ You've been drinking or it's late at night (the regret hits hard in the morning).
+
+### Anxiety or necessity?
+
+Before you type a single word, name *why* you want to send it. Most texts to an ex come from anxiety, not necessity.
+
+*   **Anxiety** says: "If I don't text them, they'll forget me."
+*   **Necessity** says: "I need to arrange picking up my things so I can move on."
+
+If it's anxiety, the text won't fix the feeling. It hands the feeling to them and waits for a reply.
+
+### The 24-hour rule
+
+If the urge hits suddenly (late at night, or right after seeing something of theirs online), wait 24 hours. If it's truly important, it will still be important tomorrow. If it was an emotional wave, it will have passed.
 
 **Reality check:** Most people who text their ex regret it within hours — not because texting is wrong, but because the reason they texted wasn't aligned with healing.
 
@@ -98,7 +117,7 @@ But unless the core issues that caused the breakup have been addressed, you're h
 
 **Bottom line:** Texting usually creates more confusion than clarity.
 
-Before you text, reality-check the message with Heal's AI coach. **Try it free on [iOS](https://apps.apple.com/us/app/heal-let-them-go/id6754834593) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal).**
+Before you text, reality-check the message with Heal's AI coach. **Try it free on [iOS](https://apps.apple.com/app/id6754834593?ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb).**
 
 ## Should I Text My Ex After No Contact?
 
@@ -171,7 +190,7 @@ Heal's fake text feature lets you practice the message, get an AI reality-check,
 
 Most people who use fake text realize they don't actually want to send it — they just needed to release the feeling.
 
-**Try Heal's fake text your ex (free) on [iOS](https://apps.apple.com/us/app/heal-let-them-go/id6754834593) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal) →**
+**Try Heal's fake text your ex (free) on [iOS](https://apps.apple.com/app/id6754834593?ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb) →**
 
 ## When the Urge to Text Your Ex Feels Unbearable
 
@@ -204,7 +223,7 @@ Instead of texting, try this:
 
 Every urge you survive makes the next one easier.
 
-Related: [The Urge to Text Your Ex: A Survival Guide](/blog/articles/urge-to-text-ex-survival-guide)
+Related: [The Urge to Text Your Ex: A Survival Guide](/blog/articles/urge-to-text-ex-survival-guide/)
 
 ## Signs You're Ready to Text (If You Ever Are)
 
@@ -266,7 +285,7 @@ Type what you want to send. Get a reality-check. Let the urge pass.
 
 You'll thank yourself tomorrow.
 
-**Try Heal free on [iOS](https://apps.apple.com/us/app/heal-let-them-go/id6754834593) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal) →**
+**Try Heal free on [iOS](https://apps.apple.com/app/id6754834593?ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb) →**
 
 ## FAQ: Should I Text My Ex?
 
@@ -287,12 +306,12 @@ You're human. It happens. Don't spiral. Don't send a follow-up trying to explain
 
 ## Related Articles
 
-*   [The Urge to Text Your Ex: A Survival Guide](/blog/articles/urge-to-text-ex-survival-guide)
-*   [Why Is No Contact So Hard? (And How to Survive It)](/blog/articles/no-contact-hardest-thing)
-*   [The Hardest Day of No Contact (And What Comes After)](/blog/articles/hardest-day-no-contact)
-*   [Stop Checking Your Ex's Instagram (Here's How)](/blog/articles/stop-checking-ex-instagram)
-*   [Breakup Healing Stages: What to Expect](/blog/articles/breakup-healing-stages-guide)
+*   [The Urge to Text Your Ex: A Survival Guide](/blog/articles/urge-to-text-ex-survival-guide/)
+*   [Why Is No Contact So Hard? (And How to Survive It)](/blog/articles/no-contact-hardest-thing/)
+*   [The Hardest Day of No Contact (And What Comes After)](/blog/articles/hardest-day-no-contact/)
+*   [Stop Checking Your Ex's Instagram (Here's How)](/blog/articles/stop-checking-ex-instagram/)
+*   [The 7 Stages of a Breakup](/blog/articles/7-stages-of-breakup/)
 
 **Download the Heal app:**
-- **iOS**: [Download from App Store](https://apps.apple.com/us/app/heal-let-them-go/id6754834593)
-- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal)
+- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?ct=blog&mt=8)
+- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb)

@@ -6,6 +6,10 @@ category: "No Contact"
 readTime: "6 min"
 excerpt: "Late nights are when you're most vulnerable. Here's exactly what to do when the urge hits hardest."
 author: "Heal Team"
+cluster: "texting-your-ex"
+cta:
+  title: "Ride out the urge, not alone"
+  text: "Heal's SOS is built for the 2am minute before you hit send: breathe, reality-check the text, read your reasons."
 ---
 
 It usually hits at night.

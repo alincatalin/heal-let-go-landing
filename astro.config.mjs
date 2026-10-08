@@ -10,5 +10,10 @@ export default defineConfig({
     "/blog/hardest-day-no-contact": "/blog/articles/hardest-day-no-contact/",
     "/blog/should-i-text-my-ex": "/blog/articles/should-i-text-my-ex/",
     "/blog/7-stages-of-breakup": "/blog/articles/7-stages-of-breakup/",
+    // Duplicate posts merged into the stronger page (Oct 2026)
+    "/blog/guides/text-your-ex-guide": "/blog/articles/should-i-text-my-ex/",
+    "/blog/articles/breakup-healing-stages-guide": "/blog/articles/7-stages-of-breakup/",
+    // Stray URL that shows up in Search Console
+    "/blog/articles/should-i-text-your-ex": "/blog/articles/should-i-text-my-ex/",
   },
 });

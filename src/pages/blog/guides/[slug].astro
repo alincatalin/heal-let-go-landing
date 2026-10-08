@@ -18,6 +18,6 @@ const { Content } = await render(entry);
 const articles = await getArticles();
 ---
 
-<Post kind="Guide" {...entry.data} related={relatedArticles({ id: entry.id, category: entry.data.category }, articles)}>
+<Post kind="Guide" {...entry.data} cluster={undefined} related={relatedArticles({ id: entry.id, category: entry.data.category }, articles)}>
   <Content />
 </Post>

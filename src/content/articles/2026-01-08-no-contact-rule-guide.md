@@ -7,6 +7,11 @@ readTime: "15 min"
 excerpt: "What it is, why it works, when to break it, and how to stop second-guessing yourself"
 author: "Heal Team"
 keywords: "no contact rule, no contact rule guide, what is no contact rule, no contact after breakup, how to do no contact, no contact rule explained, no contact rule benefits"
+cluster: "no-contact"
+pillar: true
+cta:
+  title: "Day one starts tonight"
+  text: "Heal counts your no-contact days, and when the urge hits, SOS walks you through it before you reach for their name."
 ---
 
 You're reading this because you're either about to start no contact, you've already broken it twice, or you're three days in and wondering if you're doing it wrong.
@@ -469,5 +474,5 @@ That's not nothing. That's everything.
 *Starting your no contact journey? Download Heal to track your progress and get daily support designed specifically for what you're going through.*
 
 **Download the Heal app:**
-- **iOS**: [Download from App Store](https://apps.apple.com/us/app/heal-let-them-go/id6754834593)
-- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal)
+- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?ct=blog&mt=8)
+- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb)
