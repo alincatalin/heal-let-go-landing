@@ -1,0 +1,71 @@
+---
+import { Check } from "@lucide/astro";
+import StoreButtons from "./StoreButtons.astro";
+
+const trialPerks = [
+  "Full access to all features",
+  "On-demand AI healing coach",
+  "Daily practices and check-ins",
+  "Available on iOS & Android",
+];
+const paidPerks = ["24/7 AI Coach access", "Unlimited fake texting", "All healing practices", "Private journaling"];
+---
+
+<section id="pricing" class="py-20 relative">
+  <div class="reveal container mx-auto px-4">
+    <div class="max-w-4xl mx-auto space-y-12">
+      <div class="text-center space-y-4">
+        <h2 class="text-4xl md:text-5xl font-bold">Pricing</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card p-8 space-y-6 bg-gradient-primary relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-glow opacity-50"></div>
+          <div class="relative z-10">
+            <div class="space-y-2">
+              <h3 class="text-3xl font-bold">Start Free</h3>
+              <div class="text-5xl font-bold">Free</div>
+              <p class="text-primary-foreground/80">
+                Download Heal: Let Them Go and start your 7-day free trial. Get daily guidance, exercises, and support
+                right away.
+              </p>
+            </div>
+            <ul class="space-y-3 py-6">
+              {
+                trialPerks.map((perk) => (
+                  <li class="flex items-center gap-3">
+                    <Check class="w-5 h-5" />
+                    <span>{perk}</span>
+                  </li>
+                ))
+              }
+            </ul>
+            <StoreButtons stacked />
+          </div>
+        </div>
+
+        <div class="card p-8 space-y-6 bg-card/50 backdrop-blur-sm border-border">
+          <div class="space-y-2">
+            <h3 class="text-3xl font-bold">After Trial</h3>
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-bold">$12.99</span>
+              <span class="text-muted-foreground">/month</span>
+            </div>
+            <p class="text-muted-foreground">No commitment. Cancel anytime.</p>
+          </div>
+          <ul class="space-y-3 py-6">
+            {
+              paidPerks.map((perk) => (
+                <li class="flex items-center gap-3">
+                  <Check class="w-5 h-5 text-primary" />
+                  <span>{perk}</span>
+                </li>
+              ))
+            }
+          </ul>
+          <button type="button" class="btn btn-lg btn-outline w-full" disabled>Upgrade inside the app</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,71 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import Problem from "../components/Problem.astro";
+import Features from "../components/Features.astro";
+import Testimonials from "../components/Testimonials.astro";
+import HowItWorks from "../components/HowItWorks.astro";
+import WhyNow from "../components/WhyNow.astro";
+import Pricing from "../components/Pricing.astro";
+import FeaturedGuide from "../components/FeaturedGuide.astro";
+import Blog from "../components/Blog.astro";
+import FAQ from "../components/FAQ.astro";
+import Support from "../components/Support.astro";
+import FinalCTA from "../components/FinalCTA.astro";
+import Footer from "../components/Footer.astro";
+import { faqs } from "../lib/faqs";
+import { APP_STORE_URL, PLAY_STORE_URL, SITE_NAME } from "../lib/site";
+
+const site = Astro.site!.toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Heal",
+    url: site,
+    logo: new URL("/assets/logo.png", site).toString(),
+    email: "healletgo@proton.me",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    name: SITE_NAME,
+    operatingSystem: "iOS, Android",
+    applicationCategory: "HealthApplication",
+    description: "AI-powered breakup recovery: a 24/7 AI coach, fake texting to your ex, a no-contact tracker and a guided healing journey.",
+    installUrl: [APP_STORE_URL, PLAY_STORE_URL],
+    offers: { "@type": "Offer", price: "12.99", priceCurrency: "USD" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  },
+];
+---
+
+<Base
+  title="Heal: Let Them Go - AI-Powered Breakup Recovery App"
+  description="Stop texting your ex. Start choosing yourself. AI-powered breakup recovery for when it's 2am and you're about to make a mistake."
+  jsonLd={jsonLd}
+>
+  <main class="min-h-screen bg-background overflow-x-hidden">
+    <Hero />
+    <Problem />
+    <Features />
+    <Testimonials />
+    <HowItWorks />
+    <WhyNow />
+    <Pricing />
+    <FeaturedGuide />
+    <Blog />
+    <FAQ />
+    <Support />
+    <FinalCTA />
+  </main>
+  <Footer />
+</Base>

@@ -1,0 +1,145 @@
+---
+import { ArrowLeft } from "@lucide/astro";
+import Base from "./Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Footer from "../components/Footer.astro";
+import FinalCTA from "../components/FinalCTA.astro";
+import PostCard from "../components/PostCard.astro";
+import { formatDate, readTimeLabel } from "../lib/site";
+
+interface Related {
+  href: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  date: Date;
+  readTime: string;
+}
+
+interface Props {
+  kind: "Article" | "Guide";
+  title: string;
+  excerpt: string;
+  category: string;
+  date: Date;
+  updated?: Date;
+  readTime: string;
+  author: string;
+  image?: string;
+  related: Related[];
+}
+
+const { kind, title, excerpt, category, date, updated, readTime, author, image, related } = Astro.props;
+const site = Astro.site!.toString();
+const url = new URL(Astro.url.pathname, site).toString();
+const imageUrl = new URL(image ?? "/heal_let_them_go_app.png", site).toString();
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description: excerpt,
+    image: imageUrl,
+    datePublished: date.toISOString(),
+    dateModified: (updated ?? date).toISOString(),
+    author: { "@type": "Organization", name: author, url: site },
+    publisher: {
+      "@type": "Organization",
+      name: "Heal",
+      logo: { "@type": "ImageObject", url: new URL("/assets/logo.png", site).toString() },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    articleSection: category,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Blog", item: new URL("/blog/", site).toString() },
+      { "@type": "ListItem", position: 3, name: title, item: url },
+    ],
+  },
+];
+---
+
+<Base
+  title={`${title} - Heal ${kind === "Guide" ? "Guide" : "Blog"}`}
+  description={excerpt}
+  type="article"
+  image={image}
+  jsonLd={jsonLd}
+  publishedTime={date}
+  modifiedTime={updated}
+>
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="absolute inset-x-0 top-0 h-[480px] bg-gradient-glow pointer-events-none"></div>
+    <article class="container mx-auto px-4 py-12 md:py-16 relative">
+      <div class="max-w-3xl mx-auto">
+        <nav aria-label="Breadcrumb" class="mb-8">
+          <a href="/blog/" class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+            <ArrowLeft class="w-4 h-4" /> All articles
+          </a>
+        </nav>
+
+        <header class="space-y-5 mb-10">
+          <span class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">
+            {kind === "Guide" ? `Guide · ${category}` : category}
+          </span>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">{title}</h1>
+          <p class="text-lg md:text-xl text-muted-foreground">{excerpt}</p>
+          <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
+            <span>By {author}</span>
+            <span aria-hidden="true">•</span>
+            <time datetime={date.toISOString().slice(0, 10)}>{formatDate(date)}</time>
+            {
+              updated && (
+                <>
+                  <span aria-hidden="true">•</span>
+                  <span>
+                    Updated <time datetime={updated.toISOString().slice(0, 10)}>{formatDate(updated)}</time>
+                  </span>
+                </>
+              )
+            }
+            <span aria-hidden="true">•</span>
+            <span>{readTimeLabel(readTime)}</span>
+          </div>
+        </header>
+
+        <div class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:scroll-mt-24 prose-a:text-primary prose-strong:text-foreground prose-blockquote:border-primary prose-hr:border-border">
+          <slot />
+        </div>
+
+        <aside class="mt-12 rounded-2xl border border-border bg-card/60 p-6 text-sm text-muted-foreground">
+          Heal is not a substitute for professional help. If you're struggling, visit
+          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-primary underline">findahelpline.com</a>
+          to reach a local helpline.
+        </aside>
+      </div>
+    </article>
+
+    <FinalCTA
+      title="Want support at 2am?"
+      text="Heal: Let Them Go gives you an AI coach, a no-contact tracker and a place to vent instead of texting them."
+    />
+
+    {
+      related.length > 0 && (
+        <section class="container mx-auto px-4 pb-20">
+          <div class="max-w-6xl mx-auto space-y-8">
+            <h2 class="text-2xl md:text-3xl font-bold">Keep reading</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+              {related.map((post) => (
+                <PostCard {...post} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )
+    }
+  </main>
+  <Footer />
+</Base>

@@ -1,0 +1,23 @@
+---
+import { render } from "astro:content";
+import Post from "../../../layouts/Post.astro";
+import { getArticles, getGuides, type Guide } from "../../../lib/site";
+import { relatedArticles } from "../../../lib/related";
+
+export async function getStaticPaths() {
+  const guides = await getGuides();
+  return guides.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+interface Props {
+  entry: Guide;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const articles = await getArticles();
+---
+
+<Post kind="Guide" {...entry.data} related={relatedArticles({ id: entry.id, category: entry.data.category }, articles)}>
+  <Content />
+</Post>

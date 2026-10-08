@@ -1,0 +1,28 @@
+---
+import { ChevronDown } from "@lucide/astro";
+import { faqs } from "../lib/faqs";
+---
+
+<section class="py-20 relative">
+  <div class="reveal container mx-auto px-4">
+    <div class="max-w-3xl mx-auto space-y-12">
+      <div class="text-center space-y-4">
+        <h2 class="text-4xl md:text-5xl font-bold">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="w-full">
+        {
+          faqs.map((faq) => (
+            <details name="faq" class="border-b group">
+              <summary class="flex flex-1 cursor-pointer list-none items-center justify-between py-4 text-left text-lg font-semibold transition-all hover:underline">
+                <h3>{faq.question}</h3>
+                <ChevronDown class="chevron h-4 w-4 shrink-0 transition-transform duration-200" />
+              </summary>
+              <p class="pb-4 text-muted-foreground text-base leading-relaxed">{faq.answer}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

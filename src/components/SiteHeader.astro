@@ -1,0 +1,17 @@
+---
+import { Heart } from "@lucide/astro";
+import { APP_STORE_URL } from "../lib/site";
+---
+
+<header class="border-b border-border/60 bg-background/80 backdrop-blur-sm sticky top-0 z-40">
+  <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2">
+      <Heart class="w-5 h-5 text-primary" />
+      <span class="font-semibold">Heal</span>
+    </a>
+    <nav class="flex items-center gap-6 text-sm" aria-label="Main">
+      <a href="/blog/" class="text-muted-foreground hover:text-primary transition-colors">Blog</a>
+      <a href={APP_STORE_URL} target="_blank" rel="noreferrer" class="btn btn-hero h-9 px-4">Get the app</a>
+    </nav>
+  </div>
+</header>

@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+# tryheal.app
 
-## Project info
+The landing page and blog for **Heal: Let Them Go**, built with [Astro](https://astro.build) as a fully static site and deployed to GitHub Pages.
 
-**URL**: https://lovable.dev/projects/1e074e95-2c28-4934-843d-e308f63b8663
+Every push to `main` builds the site and publishes it (see `.github/workflows/deploy.yml`).
 
-## How can I edit this code?
+## Write a blog post
 
-There are several ways of editing your application.
+1. Add a Markdown file to `src/content/articles/` (or `src/content/guides/` for a long-form guide). Name it `YYYY-MM-DD-short-name.md`.
+2. Start it with this frontmatter:
 
-**Use Lovable**
+   ```markdown
+   ---
+   title: "Should I Text My Ex? Read This Before You Hit Send"
+   slug: "should-i-text-my-ex"
+   date: "2026-02-08"
+   category: "No Contact"
+   readTime: "10 min"
+   excerpt: "One or two sentences. Used as the meta description and on the post card."
+   author: "Heal Team"
+   keywords: "optional, comma separated"
+   # updated: "2026-03-01"   # optional, shown as "Updated" and used as dateModified
+   # image: "/images/blog/should-i-text-my-ex.png"   # optional social image, put the file in public/
+   # draft: true             # optional, hides the post
+   ---
+   ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1e074e95-2c28-4934-843d-e308f63b8663) and start prompting.
+3. Write the body in Markdown. Use `##` and `###` for headings; the page already renders the title as the `<h1>`.
+4. Commit and push to `main`. The post appears at `/blog/articles/<slug>/` (or `/blog/guides/<slug>/`), and the blog index, homepage "Healing Wisdom" cards, `sitemap.xml` and `blog/rss.xml` update automatically.
 
-Changes made via Lovable will be committed automatically to this repo.
+## What's where
 
-**Use your preferred IDE**
+| Path | What it is |
+| --- | --- |
+| `src/pages/index.astro` | Homepage (sections live in `src/components/`) |
+| `src/pages/blog/` | Blog index, article and guide pages, RSS feed |
+| `src/pages/sitemap.xml.ts` | `sitemap.xml` |
+| `src/layouts/Base.astro` | `<head>`: title, description, canonical, Open Graph, JSON-LD |
+| `src/content/` | Blog posts (Markdown) |
+| `public/privacy`, `public/terms`, `public/delete-account` | Legal pages linked from the app and the stores |
+| `public/win-back-survey` | Win-back survey; it posts to `heal-backend.onrender.com` |
+| `public/CNAME` | Custom domain for GitHub Pages |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Run locally
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # outputs dist/
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1e074e95-2c28-4934-843d-e308f63b8663) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
