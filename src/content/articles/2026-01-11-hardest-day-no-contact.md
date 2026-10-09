@@ -1,5 +1,6 @@
 ---
-title: "Why Day 3 of No Contact Is the Hardest (And How to Actually Survive It)"
+title: "Hardest Day of No Contact: Why Day 3 Hits Worst"
+updated: "2026-10-09"
 slug: "hardest-day-no-contact"
 date: "2026-01-11"
 category: "No Contact"
