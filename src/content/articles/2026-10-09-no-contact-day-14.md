@@ -62,7 +62,7 @@ Two weeks of silence is when some exes test the water: a meme, a "hey stranger",
 
 It's one of the most searched questions at this point, so here's the honest answer: you can't know, and nobody online can tell you. Some people feel relief a week or two after a breakup, some feel regret, and plenty feel both on the same day. None of it changes what's good for you right now.
 
-What you can know is what you're thinking. When the question loops, try turning it around: what are you hoping the answer is, and what would you do with it? Usually the hope is "they miss me, so maybe I should reach out." That's the urge talking, dressed up as curiosity. Write it down, read your reasons list, and let the question go unanswered tonight.
+What you can know is what you're thinking. When the question loops, try turning it around: what are you hoping the answer is, and what would you do with it? Usually the hope is "they miss me, so maybe I should reach out." That's the urge talking, dressed up as curiosity. Write it down, read your reasons list, and let the question go unanswered tonight. More on this in [what is he thinking during no contact](/blog/articles/what-is-he-thinking-during-no-contact/).
 
 ## What Helps at Two Weeks
 
