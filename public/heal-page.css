@@ -1,0 +1,107 @@
+/* Heal design tokens for the standalone pages (privacy, terms, delete account, survey). Mirrors src/styles/global.css. */
+:root {
+  --night: #0c0a16;
+  --surface-1: #13101f;
+  --surface-2: #1a1629;
+  --surface-3: #221d34;
+  --surface-4: #2b2540;
+  --hairline: rgba(236, 228, 255, 0.07);
+  --hairline-strong: rgba(236, 228, 255, 0.14);
+  --ink: #f3eef8;
+  --ink-soft: #c9c0d6;
+  --ink-muted: #a39ab5;
+  --lavender: #c4b5fd;
+  --violet: #a48bf7;
+  --violet-deep: #6d3bd8;
+  --plum: #8e3bb8;
+  --ember: #f6c98b;
+  --sage: #86d4ac;
+  --rose: #f49aa7;
+  --dusk: linear-gradient(135deg, #6d3bd8 0%, #8e3bb8 100%);
+  --elev-1: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 2px rgba(4, 2, 12, 0.45);
+  --elev-2: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 12px 30px -12px rgba(4, 2, 12, 0.75);
+  --glow-dusk: 0 14px 32px -14px rgba(142, 59, 184, 0.7);
+  --display: "Fraunces", Georgia, serif;
+  --sans: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body.heal-page {
+  margin: 0;
+  max-width: none;
+  padding: 0;
+  font: 400 16px/1.7 var(--sans);
+  color: var(--ink-soft);
+  background:
+    radial-gradient(60% 40% at 10% 0%, rgba(58, 40, 130, 0.45) 0%, rgba(12, 10, 22, 0) 70%),
+    var(--night);
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+.heal-bar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px max(20px, calc((100% - 880px) / 2));
+  background: rgba(12, 10, 22, 0.8); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--hairline);
+}
+.heal-page .heal-bar a { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font: 400 20px/1 var(--display); }
+.heal-page .heal-bar a:hover { color: var(--ink); }
+.heal-bar img { width: 32px; height: 32px; border-radius: 10px; box-shadow: var(--elev-1); }
+.heal-page .heal-bar .back { font: 600 14px/1 var(--sans); color: var(--lavender); }
+
+.heal-page .container {
+  max-width: 880px;
+  margin: 32px auto 64px;
+  padding: 40px 28px;
+  background: var(--surface-1);
+  border: 1px solid var(--hairline);
+  border-top-color: rgba(255, 255, 255, 0.07);
+  border-radius: 28px;
+  box-shadow: var(--elev-2);
+}
+@media (min-width: 720px) { .heal-page .container { padding: 56px 64px; } }
+
+.heal-page h1, .heal-page h2, .heal-page h3 {
+  font-family: var(--display); font-weight: 400; color: var(--ink); letter-spacing: -0.015em; border: 0;
+}
+.heal-page h1 { font-size: clamp(2.2rem, 5vw, 3rem); line-height: 1.1; margin: 0 0 12px; padding: 0; }
+.heal-page h2 { font-size: 1.6rem; line-height: 1.25; margin: 40px 0 12px; }
+.heal-page h3 { font-size: 1.2rem; margin: 24px 0 8px; }
+.heal-page p, .heal-page li { margin: 0 0 12px; }
+.heal-page ul, .heal-page ol { padding-left: 22px; }
+.heal-page li::marker { color: var(--violet); }
+.heal-page strong { color: var(--ink); }
+.heal-page a { color: var(--lavender); text-decoration: underline; text-decoration-color: rgba(196, 181, 253, 0.4); text-underline-offset: 4px; }
+.heal-page a:hover { text-decoration-color: var(--lavender); color: var(--ink); }
+
+.heal-page .last-updated { font: italic 400 1.05rem/1.5 var(--display); color: var(--ink-muted); margin-bottom: 32px; }
+.heal-page .section { margin-bottom: 24px; }
+
+.heal-page .highlight, .heal-page .warning, .heal-page .info-box, .heal-page .contact, .heal-page .steps {
+  margin: 24px 0; padding: 20px 22px; border-radius: 18px; border: 1px solid var(--hairline); background: var(--surface-2); color: var(--ink-soft);
+}
+.heal-page .highlight { background: rgba(246, 201, 139, 0.07); border-color: rgba(246, 201, 139, 0.22); }
+.heal-page .warning { background: rgba(244, 154, 167, 0.07); border-color: rgba(244, 154, 167, 0.25); }
+.heal-page .info-box { background: rgba(164, 139, 247, 0.07); border-color: rgba(164, 139, 247, 0.22); }
+.heal-page .contact { background: var(--surface-2); box-shadow: var(--elev-1); }
+
+.heal-page .step { position: relative; padding-left: 40px; margin-bottom: 16px; }
+.heal-page .step-number {
+  position: absolute; left: 0; top: 0; width: 28px; height: 28px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--dusk); color: #fff; font: 400 15px/1 var(--display); box-shadow: var(--glow-dusk);
+}
+
+.heal-page .data-table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 20px 0; border: 1px solid var(--hairline-strong); border-radius: 16px; overflow: hidden; font-size: 15px; }
+.heal-page .data-table th, .heal-page .data-table td { border: 0; border-bottom: 1px solid var(--hairline); padding: 12px 14px; text-align: left; }
+.heal-page .data-table th { background: var(--surface-3); color: var(--ink); font-weight: 600; }
+.heal-page .data-table tr:nth-child(even) { background: rgba(255, 255, 255, 0.015); }
+.heal-page .data-table tr:last-child td { border-bottom: 0; }
+.heal-page .deleted { color: var(--rose); font-weight: 600; }
+.heal-page .retained { color: var(--sage); font-weight: 600; }
+
+.heal-page .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--hairline); color: var(--ink-muted); font-size: 14px; }

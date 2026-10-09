@@ -7,17 +7,31 @@ interface Props {
   stacked?: boolean;
   /** On phones, show only the button for the visitor's store. */
   matchDevice?: boolean;
+  /** On a dusk background, the second button turns light so both stay readable. */
+  onDusk?: boolean;
 }
-const { class: className = "", stacked = false, matchDevice = false } = Astro.props;
+const { class: className = "", stacked = false, matchDevice = false, onDusk = false } = Astro.props;
 ---
 
-<div class:list={["flex flex-col gap-3 w-full max-w-full", !stacked && "sm:flex-row", className]} data-match-device={matchDevice ? "" : undefined}>
-  <a href={APP_STORE_URL} data-platform="ios" target="_blank" rel="noreferrer" class="btn btn-lg btn-hero w-full">
-    <Apple class="h-5 w-5" />
+<div class:list={["flex flex-col gap-3 w-full max-w-full", !stacked && "sm:flex-row sm:w-auto", className]} data-match-device={matchDevice ? "" : undefined}>
+  <a
+    href={APP_STORE_URL}
+    data-platform="ios"
+    target="_blank"
+    rel="noreferrer"
+    class:list={["btn btn-lg w-full sm:w-auto", onDusk ? "bg-ink text-night hover:bg-white" : "btn-primary"]}
+  >
+    <Apple />
     Download on the App Store
   </a>
-  <a href={PLAY_STORE_URL} data-platform="android" target="_blank" rel="noreferrer" class="btn btn-lg btn-accent w-full">
-    <Play class="h-5 w-5" />
+  <a
+    href={PLAY_STORE_URL}
+    data-platform="android"
+    target="_blank"
+    rel="noreferrer"
+    class:list={["btn btn-lg w-full sm:w-auto", onDusk ? "border border-white/30 bg-white/10 text-white hover:bg-white/20" : "btn-secondary"]}
+  >
+    <Play />
     Get it on Google Play
   </a>
 </div>

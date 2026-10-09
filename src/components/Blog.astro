@@ -1,41 +1,34 @@
 ---
 import { ArrowRight } from "@lucide/astro";
 import PostCard from "./PostCard.astro";
+import Section from "./Section.astro";
 import { articleUrl, getArticles } from "../lib/site";
 
 const latest = (await getArticles()).slice(0, 3);
 ---
 
-<section class="py-20 relative">
-  <div class="container mx-auto px-4">
-    <div class="reveal text-center space-y-4 mb-12">
-      <h2 class="text-4xl md:text-5xl font-bold">Healing Wisdom</h2>
-      <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
-        Real advice for real heartbreak. No toxic positivity, just honest guidance from people who've been there.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-      {
-        latest.map((post, index) => (
-          <div class="reveal" style={`transition-delay: ${index * 150}ms`}>
-            <PostCard
-              href={articleUrl(post)}
-              title={post.data.title}
-              excerpt={post.data.excerpt}
-              category={post.data.category}
-              date={post.data.date}
-              readTime={post.data.readTime}
-            />
-          </div>
-        ))
-      }
-    </div>
-
-    <div class="text-center mt-12">
-      <a href="/blog/" class="btn btn-lg btn-outline group">
-        Read all articles <ArrowRight class="transition-transform group-hover:translate-x-1" />
-      </a>
-    </div>
+<Section
+  eyebrow="From the blog"
+  title="Healing Wisdom"
+  lede="Real advice for real heartbreak. No toxic positivity, just honest guidance from people who've been there."
+>
+  <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+    {
+      latest.map((post) => (
+        <PostCard
+          href={articleUrl(post)}
+          title={post.data.title}
+          excerpt={post.data.excerpt}
+          category={post.data.category}
+          date={post.data.date}
+          readTime={post.data.readTime}
+        />
+      ))
+    }
   </div>
-</section>
+  <div class="mt-12 text-center">
+    <a href="/blog/" class="btn btn-lg btn-secondary group">
+      Read all articles <ArrowRight class="transition-transform group-hover:translate-x-1" />
+    </a>
+  </div>
+</Section>

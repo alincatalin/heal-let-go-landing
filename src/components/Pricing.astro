@@ -1,5 +1,6 @@
 ---
 import { Check } from "@lucide/astro";
+import Section from "./Section.astro";
 import StoreButtons from "./StoreButtons.astro";
 
 const trialPerks = [
@@ -11,61 +12,50 @@ const trialPerks = [
 const paidPerks = ["24/7 AI Coach access", "Unlimited fake texting", "All healing practices", "Private journaling"];
 ---
 
-<section id="pricing" class="py-20 relative">
-  <div class="reveal container mx-auto px-4">
-    <div class="max-w-4xl mx-auto space-y-12">
-      <div class="text-center space-y-4">
-        <h2 class="text-4xl md:text-5xl font-bold">Pricing</h2>
+<Section id="pricing" eyebrow="Pricing" title="Start free. Stay if it helps.">
+  <div class="mx-auto grid max-w-4xl gap-5 md:grid-cols-2">
+    <div class="card-raised card-selected flex flex-col gap-6 p-8 md:p-10">
+      <div class="space-y-3">
+        <p class="eyebrow text-lavender">Start free</p>
+        <p class="font-display text-6xl font-light leading-none">Free</p>
+        <p class="text-[15px] leading-relaxed text-ink-soft">
+          Download Heal: Let Them Go and start your 7-day free trial. Get daily guidance, exercises, and support right
+          away.
+        </p>
       </div>
+      <ul class="space-y-3 text-[15px]">
+        {
+          trialPerks.map((perk) => (
+            <li class="flex items-center gap-3">
+              <Check class="h-[18px] w-[18px] text-sage" />
+              <span>{perk}</span>
+            </li>
+          ))
+        }
+      </ul>
+      <StoreButtons stacked class="mt-auto" />
+    </div>
 
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="card p-8 space-y-6 bg-gradient-primary relative overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-glow opacity-50"></div>
-          <div class="relative z-10">
-            <div class="space-y-2">
-              <h3 class="text-3xl font-bold">Start Free</h3>
-              <div class="text-5xl font-bold">Free</div>
-              <p class="text-primary-foreground/80">
-                Download Heal: Let Them Go and start your 7-day free trial. Get daily guidance, exercises, and support
-                right away.
-              </p>
-            </div>
-            <ul class="space-y-3 py-6">
-              {
-                trialPerks.map((perk) => (
-                  <li class="flex items-center gap-3">
-                    <Check class="w-5 h-5" />
-                    <span>{perk}</span>
-                  </li>
-                ))
-              }
-            </ul>
-            <StoreButtons stacked />
-          </div>
-        </div>
-
-        <div class="card p-8 space-y-6 bg-card/50 backdrop-blur-sm border-border">
-          <div class="space-y-2">
-            <h3 class="text-3xl font-bold">After Trial</h3>
-            <div class="flex items-baseline gap-2">
-              <span class="text-5xl font-bold">$12.99</span>
-              <span class="text-muted-foreground">/month</span>
-            </div>
-            <p class="text-muted-foreground">No commitment. Cancel anytime.</p>
-          </div>
-          <ul class="space-y-3 py-6">
-            {
-              paidPerks.map((perk) => (
-                <li class="flex items-center gap-3">
-                  <Check class="w-5 h-5 text-primary" />
-                  <span>{perk}</span>
-                </li>
-              ))
-            }
-          </ul>
-          <button type="button" class="btn btn-lg btn-outline w-full" disabled>Upgrade inside the app</button>
-        </div>
+    <div class="card-raised flex flex-col gap-6 p-8 md:p-10">
+      <div class="space-y-3">
+        <p class="eyebrow">After the trial</p>
+        <p class="flex items-baseline gap-2">
+          <span class="font-display text-6xl font-light leading-none">$12.99</span>
+          <span class="text-ink-muted">/month</span>
+        </p>
+        <p class="text-[15px] text-ink-soft">No commitment. Cancel anytime.</p>
       </div>
+      <ul class="space-y-3 text-[15px]">
+        {
+          paidPerks.map((perk) => (
+            <li class="flex items-center gap-3">
+              <Check class="h-[18px] w-[18px] text-sage" />
+              <span>{perk}</span>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="mt-auto rounded-2xl border border-hairline bg-surface-1 px-5 py-4 text-center text-sm text-ink-muted">Upgrade inside the app</p>
     </div>
   </div>
-</section>
+</Section>

@@ -1,6 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
 import Hero from "../components/Hero.astro";
+import Inside from "../components/Inside.astro";
 import Problem from "../components/Problem.astro";
 import Features from "../components/Features.astro";
 import Testimonials from "../components/Testimonials.astro";
@@ -53,9 +55,11 @@ const jsonLd = [
   description="Stop texting your ex. Start choosing yourself. AI-powered breakup recovery for when it's 2am and you're about to make a mistake."
   jsonLd={jsonLd}
 >
-  <main class="min-h-screen bg-background overflow-x-hidden">
+  <SiteHeader />
+  <main class="min-h-screen overflow-x-hidden">
     <Hero />
     <Problem />
+    <Inside />
     <Features />
     <Testimonials />
     <HowItWorks />

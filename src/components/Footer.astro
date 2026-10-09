@@ -1,33 +1,27 @@
 ---
-import { Heart } from "@lucide/astro";
+import Logo from "./Logo.astro";
 import { SUPPORT_EMAIL } from "../lib/site";
 ---
 
-<footer class="py-12 border-t border-border">
-  <div class="container mx-auto px-4">
-    <div class="max-w-6xl mx-auto space-y-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-        <a href="/" class="flex items-center gap-2">
-          <Heart class="w-6 h-6 text-primary" />
-          <span class="text-xl font-semibold">Heal: Let them go</span>
-        </a>
-
-        <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2" aria-label="Footer">
-          <a href="/blog/" class="text-muted-foreground hover:text-primary transition-colors">Blog</a>
-          <a href="/privacy/" class="text-muted-foreground hover:text-primary transition-colors">Privacy</a>
-          <a href="/terms/" class="text-muted-foreground hover:text-primary transition-colors">Terms</a>
-          <a href={`mailto:${SUPPORT_EMAIL}`} class="text-muted-foreground hover:text-primary transition-colors">Email</a>
-        </nav>
-      </div>
-
-      <div class="text-center space-y-2">
-        <p class="text-sm text-muted-foreground">Built by someone who's been exactly where you are</p>
-        <p class="text-xs text-muted-foreground">
-          Need immediate support? Visit{" "}
-          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary transition-colors">findahelpline.com</a>{" "}
-          to connect with a local helpline.
-        </p>
-      </div>
+<footer class="border-t border-hairline bg-surface-1/40">
+  <div class="mx-auto max-w-6xl space-y-10 px-4 py-14 sm:px-6">
+    <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+      <Logo size="md" label="Heal: Let them go" />
+      <nav class="flex flex-wrap justify-center gap-x-7 gap-y-2 text-[15px]" aria-label="Footer">
+        <a href="/blog/" class="text-ink-soft transition-colors hover:text-lavender">Blog</a>
+        <a href="/privacy/" class="text-ink-soft transition-colors hover:text-lavender">Privacy</a>
+        <a href="/terms/" class="text-ink-soft transition-colors hover:text-lavender">Terms</a>
+        <a href={`mailto:${SUPPORT_EMAIL}`} class="text-ink-soft transition-colors hover:text-lavender">Email</a>
+      </nav>
+    </div>
+    <div class="hairline"></div>
+    <div class="space-y-3 text-center">
+      <p class="quote text-lg text-ink-soft">Built by someone who's been exactly where you are</p>
+      <p class="text-[13px] text-ink-muted">
+        Need immediate support? Visit{" "}
+        <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-[#f49aa7] underline underline-offset-4 hover:text-ink">findahelpline.com</a>{" "}
+        to connect with a local helpline.
+      </p>
     </div>
   </div>
 </footer>

@@ -1,105 +1,46 @@
 ---
-import { ArrowRight } from "@lucide/astro";
+import { ArrowDown } from "@lucide/astro";
 import PhoneMockup from "./PhoneMockup.astro";
 import StoreButtons from "./StoreButtons.astro";
-import appScreen1 from "../assets/app-screen-1.png";
-import appScreen2 from "../assets/app-screen-2.png";
-import appScreen3 from "../assets/app-screen-3.png";
-
-const screenshots = [
-  { src: appScreen3, alt: "Daily check-in and home screen" },
-  { src: appScreen1, alt: "App onboarding - They left" },
-  { src: appScreen2, alt: "Healing path progress tracker" },
-];
+import today from "../assets/screens/today.png";
+import breathe from "../assets/screens/sos-breathe.png";
 ---
 
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-glow animate-glow-pulse"></div>
-
-  <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-      <div class="space-y-6 md:space-y-8 animate-float">
-        <div class="space-y-4">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-            Stop texting your ex.{" "}
-            <span class="bg-gradient-primary bg-clip-text text-transparent">Start choosing yourself.</span>
-          </h1>
-          <p class="text-lg sm:text-xl md:text-2xl text-muted-foreground">
-            AI-powered breakup recovery for when it's 2am and you're about to make a mistake.
-          </p>
-        </div>
-
-        <div class="space-y-3">
-          <StoreButtons />
-          <a href="#pricing" class="btn btn-lg btn-outline group w-full">
-            Learn More
-            <ArrowRight class="transition-transform group-hover:translate-x-1" />
-          </a>
-        </div>
-
-        <p class="text-sm text-muted-foreground">Now available on iOS and Android. Start your healing journey today.</p>
+<section class="relative overflow-hidden">
+  <div class="mx-auto grid max-w-6xl items-center gap-14 px-4 pb-20 pt-14 sm:px-6 md:pt-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:pb-28">
+    <div class="space-y-8">
+      <p class="eyebrow text-lavender">Breakup recovery, for the hard moments</p>
+      <h1 class="text-[2.6rem] leading-[1.08] sm:text-6xl lg:text-[3.9rem]">
+        <span class="lg:whitespace-nowrap">Stop texting your ex.</span>
+        <span class="block italic text-lavender">Start choosing yourself.</span>
+      </h1>
+      <p class="lede max-w-xl">
+        AI-powered breakup recovery for when it's 2am and you're about to make a mistake.
+      </p>
+      <StoreButtons />
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-ink-muted">
+        <span>Now on iOS and Android</span>
+        <a href="#inside" class="inline-flex items-center gap-1.5 font-semibold text-lavender hover:text-ink transition-colors">
+          See inside the app <ArrowDown class="h-4 w-4" />
+        </a>
       </div>
+    </div>
 
-      <div class="relative flex flex-col items-center justify-center gap-6 w-full max-w-[320px] mx-auto lg:max-w-none" data-carousel>
-        <div class="w-full overflow-hidden">
-          <div class="flex transition-transform duration-500 ease-out" data-track>
-            {
-              screenshots.map((screen, index) => (
-                <div class="min-w-full flex items-center justify-center py-4" aria-hidden={index === 0 ? "false" : "true"}>
-                  <PhoneMockup screenshot={screen.src} alt={screen.alt} eager={index === 0} />
-                </div>
-              ))
-            }
-          </div>
-        </div>
-        <div class="flex gap-2">
-          {
-            screenshots.map((_, index) => (
-              <button
-                type="button"
-                data-dot={index}
-                class:list={[
-                  "h-2 rounded-full transition-all",
-                  index === 0 ? "w-8 bg-primary" : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50",
-                ]}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))
-          }
-        </div>
-      </div>
+    <div class="relative mx-auto flex w-full max-w-[460px] justify-center lg:justify-end">
+      <PhoneMockup
+        screenshot={breathe}
+        alt="SOS: a guided breath, 'Pause with me for a minute'"
+        width={250}
+        glow={false}
+        class="!absolute left-0 top-16 hidden rotate-[-6deg] opacity-80 sm:block"
+      />
+      <PhoneMockup
+        screenshot={today}
+        alt="Today: days without contact, the next milestone and where you are"
+        width={290}
+        eager
+        class="relative sm:translate-x-16"
+      />
     </div>
   </div>
 </section>
-
-<script>
-  const root = document.querySelector<HTMLElement>("[data-carousel]");
-  if (root) {
-    const track = root.querySelector<HTMLElement>("[data-track]")!;
-    const slides = Array.from(track.children) as HTMLElement[];
-    const dots = Array.from(root.querySelectorAll<HTMLButtonElement>("[data-dot]"));
-    let current = 0;
-
-    const show = (index: number) => {
-      current = (index + slides.length) % slides.length;
-      track.style.transform = `translateX(-${current * 100}%)`;
-      slides.forEach((slide, i) => slide.setAttribute("aria-hidden", String(i !== current)));
-      dots.forEach((dot, i) => {
-        const active = i === current;
-        dot.classList.toggle("w-8", active);
-        dot.classList.toggle("bg-primary", active);
-        dot.classList.toggle("w-2", !active);
-        dot.classList.toggle("bg-muted-foreground/30", !active);
-      });
-    };
-
-    let timer = window.setInterval(() => show(current + 1), 3000);
-    dots.forEach((dot, i) =>
-      dot.addEventListener("click", () => {
-        window.clearInterval(timer);
-        show(i);
-        timer = window.setInterval(() => show(current + 1), 3000);
-      }),
-    );
-  }
-</script>

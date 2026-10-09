@@ -1,4 +1,7 @@
 ---
+import "@fontsource-variable/fraunces/opsz.css";
+import "@fontsource-variable/fraunces/opsz-italic.css";
+import "@fontsource-variable/figtree/wght.css";
 import "../styles/global.css";
 
 interface Props {
@@ -41,9 +44,12 @@ const imageUrl = new URL(image, Astro.site);
     <meta name="author" content="Heal" />
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex" />}
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="alternate" type="application/rss+xml" title="Heal Blog" href="/blog/rss.xml" />
-    <meta name="theme-color" content="#0d0d13" />
+    <meta name="theme-color" content="#0c0a16" />
 
     <meta property="og:site_name" content="Heal: Let Them Go" />
     <meta property="og:type" content={type} />
@@ -64,7 +70,7 @@ const imageUrl = new URL(image, Astro.site);
 
     <script is:inline>document.documentElement.classList.add("js");</script>
   </head>
-  <body class="min-h-screen bg-background" data-store-source={storeSource} data-store-campaign={storeCampaign}>
+  <body class="min-h-screen bg-night text-ink font-sans" data-store-source={storeSource} data-store-campaign={storeCampaign}>
     <slot />
     <script>
       import { tagStoreLinks } from "../lib/store";

@@ -1,0 +1,27 @@
+---
+interface Props {
+  id?: string;
+  eyebrow?: string;
+  title?: string;
+  lede?: string;
+  align?: "center" | "left";
+  class?: string;
+  width?: "narrow" | "wide";
+}
+const { id, eyebrow, title, lede, align = "center", class: className = "", width = "wide" } = Astro.props;
+---
+
+<section id={id} class:list={["relative py-20 md:py-28", className]}>
+  <div class:list={["reveal mx-auto px-4 sm:px-6", width === "narrow" ? "max-w-3xl" : "max-w-6xl"]}>
+    {
+      (eyebrow || title || lede) && (
+        <header class:list={["mb-12 md:mb-16 space-y-4", align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-2xl"]}>
+          {eyebrow && <p class="eyebrow text-lavender">{eyebrow}</p>}
+          {title && <h2 class="text-4xl leading-[1.12] md:text-5xl" set:html={title} />}
+          {lede && <p class="lede">{lede}</p>}
+        </header>
+      )
+    }
+    <slot />
+  </div>
+</section>

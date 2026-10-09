@@ -34,31 +34,28 @@ const jsonLd = [
 >
   <SiteHeader />
   <main class="relative overflow-hidden">
-    <div class="absolute inset-x-0 top-0 h-[420px] bg-gradient-glow pointer-events-none"></div>
-    <div class="container mx-auto px-4 py-16 relative">
-      <header class="max-w-3xl mx-auto text-center space-y-4 mb-14">
-        <h1 class="text-4xl md:text-6xl font-bold">
-          Breakup Recovery <span class="bg-gradient-primary bg-clip-text text-transparent">Blog</span>
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-20">
+      <header class="mx-auto mb-14 max-w-3xl space-y-5 text-center md:mb-20">
+        <p class="eyebrow text-lavender">The Heal blog</p>
+        <h1 class="text-5xl leading-[1.08] md:text-6xl">
+          Breakup recovery, <span class="italic text-lavender">honestly</span>
         </h1>
-        <p class="text-xl text-muted-foreground">
+        <p class="lede">
           Real advice for real heartbreak. No toxic positivity, just honest guidance from people who've been there.
         </p>
       </header>
 
       {
         guides.length > 0 && (
-          <section class="max-w-6xl mx-auto mb-16 space-y-6" aria-labelledby="guides-heading">
-            <h2 id="guides-heading" class="text-2xl font-bold">Guides</h2>
+          <section class="mb-16 space-y-6" aria-labelledby="guides-heading">
+            <h2 id="guides-heading" class="eyebrow">Guides</h2>
             {guides.map((guide) => (
-              <a
-                href={guideUrl(guide)}
-                class="group block rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/15 to-card p-8 transition-all hover:shadow-glow"
-              >
-                <span class="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary mb-4">Ultimate Guide</span>
-                <h3 class="text-2xl md:text-3xl font-bold mb-3 group-hover:text-primary transition-colors">{guide.data.title}</h3>
-                <p class="text-muted-foreground text-lg max-w-3xl mb-4">{guide.data.excerpt}</p>
-                <span class="inline-flex items-center gap-2 text-primary font-medium">
-                  Read the guide <ArrowRight class="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <a href={guideUrl(guide)} class="card-hearth group block p-8 transition-transform hover:-translate-y-0.5 md:p-10">
+                <p class="eyebrow text-ember">Ultimate guide</p>
+                <h3 class="mt-3 text-3xl leading-tight md:text-4xl">{guide.data.title}</h3>
+                <p class="mt-3 max-w-3xl text-lg text-ink-soft">{guide.data.excerpt}</p>
+                <span class="mt-6 inline-flex items-center gap-2 font-semibold text-ember">
+                  Read the guide <ArrowRight class="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </a>
             ))}
@@ -66,9 +63,9 @@ const jsonLd = [
         )
       }
 
-      <section class="max-w-6xl mx-auto space-y-6" aria-labelledby="articles-heading">
-        <h2 id="articles-heading" class="text-2xl font-bold">Articles</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section class="space-y-6" aria-labelledby="articles-heading">
+        <h2 id="articles-heading" class="eyebrow">All articles</h2>
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {
             articles.map((post) => (
               <PostCard

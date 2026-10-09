@@ -1,36 +1,51 @@
 ---
-import { ArrowRight } from "@lucide/astro";
+import { ArrowRight, Hourglass, Scale, PenLine } from "@lucide/astro";
+import Section from "./Section.astro";
 import { articleUrl, getArticles } from "../lib/site";
 
 const guide = (await getArticles()).find((post) => post.id === "should-i-text-my-ex");
+
+// The three checks the guide walks through, in its own words.
+const checks = [
+  { icon: Scale, tint: "text-lavender", title: "Anxiety or necessity?", sub: "Is this about logistics, or about the feeling?" },
+  { icon: Hourglass, tint: "text-ember", title: "The 24-hour rule", sub: "If it still matters tomorrow, it can wait until then." },
+  { icon: PenLine, tint: "text-orchid", title: "Test before you send", sub: "Write the fake text first and see how it feels." },
+];
 ---
 
 {
   guide && (
-    <section class="py-24 bg-gradient-to-b from-background to-secondary/20">
-      <div class="container px-4 md:px-6">
-        <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-          <div class="flex flex-col justify-center space-y-4">
-            <div class="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary w-fit">Guide</div>
-            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Should You Text Your Ex?</h2>
-            <p class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Stop guessing and spiraling. We've built the ultimate decision-making framework to help you decide if
-              reaching out is a good idea—or a huge mistake.
-            </p>
-            <div class="flex flex-col gap-2 min-[400px]:flex-row">
-              <a href={articleUrl(guide)} class="btn btn-lg btn-default gap-2">
-                Read the Guide <ArrowRight class="w-4 h-4" />
-              </a>
+    <Section>
+      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="space-y-6">
+          <span class="chip">Guide</span>
+          <h2 class="text-4xl leading-[1.12] md:text-5xl">
+            Should you <span class="italic text-lavender">text your ex?</span>
+          </h2>
+          <p class="lede max-w-xl">
+            Stop guessing and spiraling. We've built the ultimate decision-making framework to help you decide if
+            reaching out is a good idea—or a huge mistake.
+          </p>
+          <a href={articleUrl(guide)} class="btn btn-lg btn-primary group">
+            Read the guide <ArrowRight class="transition-transform group-hover:translate-x-1" />
+          </a>
+        </div>
+
+        <div class="card-raised space-y-3 p-5 md:p-6">
+          <p class="eyebrow px-1 pb-1">Before you hit send</p>
+          {checks.map((c) => (
+            <div class="flex items-center gap-4 rounded-[18px] border border-hairline bg-surface-1 p-4 shadow-elev-1">
+              <span class:list={["well", c.tint]}>
+                <c.icon class="h-5 w-5" stroke-width={1.75} />
+              </span>
+              <span class="min-w-0">
+                <span class="block text-[15px] font-semibold text-ink">{c.title}</span>
+                <span class="block text-sm text-ink-soft">{c.sub}</span>
+              </span>
             </div>
-          </div>
-          <div class="mx-auto aspect-video overflow-hidden rounded-xl sm:w-full lg:order-last border border-border/50 shadow-2xl bg-muted/50 flex items-center justify-center">
-            <div class="text-center p-8">
-              <span class="text-6xl mb-4 block" aria-hidden="true">📱</span>
-              <p class="text-xl font-medium text-muted-foreground">The "Text Your Ex" Decision Matrix</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }

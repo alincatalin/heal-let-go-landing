@@ -6,24 +6,27 @@ interface Props {
   screenshot: ImageMetadata;
   alt: string;
   eager?: boolean;
+  /** Rendered width in px at the largest size. */
+  width?: number;
+  class?: string;
+  glow?: boolean;
 }
-const { screenshot, alt, eager = false } = Astro.props;
+const { screenshot, alt, eager = false, width = 300, class: className = "", glow = true } = Astro.props;
 ---
 
-<div class="relative mx-auto w-[300px] animate-float">
-  <div class="relative bg-card border-2 border-border rounded-[3rem] p-3 shadow-glow-strong">
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-background rounded-b-3xl z-10"></div>
-    <div class="relative bg-background rounded-[2.5rem] overflow-hidden aspect-[9/19.5]">
+<figure class:list={["relative mx-auto", className]} style={`width: min(${width}px, 100%);`}>
+  {glow && <div class="pointer-events-none absolute -inset-8 -z-10 rounded-[4rem] bg-dusk opacity-30 blur-3xl" aria-hidden="true" />}
+  <div class="relative rounded-[2.75rem] bg-surface-3 p-[7px] shadow-elev-3 ring-1 ring-white/10">
+    <div class="overflow-hidden rounded-[2.35rem] bg-night ring-1 ring-black/60">
       <Image
         src={screenshot}
         alt={alt}
-        width={552}
-        class="w-full h-full object-cover"
+        widths={[width, width * 2]}
+        sizes={`${width}px`}
+        class="block h-auto w-full"
         loading={eager ? "eager" : "lazy"}
         fetchpriority={eager ? "high" : "auto"}
       />
     </div>
-    <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-border rounded-full"></div>
   </div>
-  <div class="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl -z-10"></div>
-</div>
+</figure>

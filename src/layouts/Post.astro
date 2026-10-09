@@ -98,49 +98,46 @@ const jsonLd = [
 >
   <SiteHeader />
   <main class="relative overflow-hidden">
-    <div class="absolute inset-x-0 top-0 h-[480px] bg-gradient-glow pointer-events-none"></div>
-    <article class="container mx-auto px-4 py-12 md:py-16 relative">
-      <div class="max-w-3xl mx-auto">
-        <nav aria-label="Breadcrumb" class="mb-8">
-          <a href="/blog/" class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
-            <ArrowLeft class="w-4 h-4" /> All articles
+    <article class="mx-auto px-4 py-12 sm:px-6 md:py-16">
+      <div class="mx-auto max-w-[44rem]">
+        <nav aria-label="Breadcrumb" class="mb-10">
+          <a href="/blog/" class="inline-flex items-center gap-2 text-sm font-semibold text-lavender transition-colors hover:text-ink">
+            <ArrowLeft class="h-4 w-4" /> All articles
           </a>
         </nav>
 
-        <header class="space-y-5 mb-10">
-          <span class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">
-            {kind === "Guide" ? `Guide · ${category}` : category}
-          </span>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">{title}</h1>
-          <p class="text-lg md:text-xl text-muted-foreground">{excerpt}</p>
-          <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
-            <span>By {author}</span>
-            <span aria-hidden="true">•</span>
+        <header class="mb-12 space-y-6">
+          <p class="eyebrow text-lavender">{kind === "Guide" ? `Guide · ${category}` : category}</p>
+          <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl md:text-[3.4rem]">{title}</h1>
+          <p class="quote text-xl leading-relaxed text-ink-soft md:text-[1.4rem]">{excerpt}</p>
+          <div class="flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-hairline pt-6 text-sm text-ink-muted">
+            <span class="text-ink-soft">By {author}</span>
+            <span aria-hidden="true">·</span>
             <time datetime={date.toISOString().slice(0, 10)}>{formatDate(date)}</time>
             {
               updated && (
                 <>
-                  <span aria-hidden="true">•</span>
+                  <span aria-hidden="true">·</span>
                   <span>
                     Updated <time datetime={updated.toISOString().slice(0, 10)}>{formatDate(updated)}</time>
                   </span>
                 </>
               )
             }
-            <span aria-hidden="true">•</span>
+            <span aria-hidden="true">·</span>
             <span>{readTimeLabel(readTime)}</span>
           </div>
         </header>
 
         {
           series && series.length > 1 && (
-            <nav aria-label="No contact day by day" class="mb-6 flex flex-wrap items-center gap-2 text-sm">
-              <span class="text-muted-foreground mr-1">No contact day by day:</span>
+            <nav aria-label="No contact day by day" class="mb-8 flex flex-wrap items-center gap-2 text-sm">
+              <span class="eyebrow mr-2">No contact, day by day</span>
               {series.map((post) =>
                 isCurrent(post.href) ? (
-                  <span aria-current="page" class="rounded-full bg-primary px-3 py-1 text-primary-foreground">{post.label}</span>
+                  <span aria-current="page" class="rounded-full bg-dusk px-3.5 py-1.5 font-semibold text-white shadow-glow">{post.label}</span>
                 ) : (
-                  <a href={post.href} title={post.title} class="rounded-full border border-border px-3 py-1 text-muted-foreground hover:border-primary hover:text-primary transition-colors">{post.label}</a>
+                  <a href={post.href} title={post.title} class="rounded-full border border-hairline bg-surface-1 px-3.5 py-1.5 text-ink-soft transition-colors hover:border-lavender/40 hover:text-ink">{post.label}</a>
                 ),
               )}
             </nav>
@@ -149,32 +146,32 @@ const jsonLd = [
 
         {
           cluster?.pillar && (
-            <p class="mb-8 rounded-xl border border-primary/30 bg-primary/5 px-5 py-4 text-sm text-muted-foreground">
+            <p class="card mb-10 px-6 py-4 text-[15px] text-ink-soft">
               Part of our {cluster.name.toLowerCase()} guide. Start with{" "}
-              <a href={cluster.pillar.href} class="text-primary underline">{cluster.pillar.title}</a>.
+              <a href={cluster.pillar.href} class="text-lavender underline decoration-lavender/40 underline-offset-4">{cluster.pillar.title}</a>.
             </p>
           )
         }
 
-        <div class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:scroll-mt-24 prose-a:text-primary prose-strong:text-foreground prose-blockquote:border-primary prose-hr:border-border">
+        <div class="prose-heal">
           <slot />
         </div>
 
         {
           cluster && (cluster.pillar || cluster.posts.length > 0) && (
-            <nav aria-labelledby="cluster-heading" class="mt-12 rounded-2xl border border-border bg-card/60 p-6">
-              <h2 id="cluster-heading" class="text-xl font-bold mb-4">
+            <nav aria-labelledby="cluster-heading" class="card-raised mt-14 p-7">
+              <h2 id="cluster-heading" class="mb-4 text-2xl">
                 {cluster.isPillar ? `Everything in our ${cluster.name.toLowerCase()} guide` : `More on ${cluster.name.toLowerCase()}`}
               </h2>
-              <ul class="space-y-2">
+              <ul class="divide-y divide-hairline">
                 {cluster.pillar && (
                   <li>
-                    <a href={cluster.pillar.href} class="text-primary hover:underline">{cluster.pillar.title}</a>
+                    <a href={cluster.pillar.href} class="block py-3 text-[15px] text-lavender hover:text-ink">{cluster.pillar.title}</a>
                   </li>
                 )}
                 {cluster.posts.map((post) => (
                   <li>
-                    <a href={post.href} class="text-primary hover:underline">{post.title}</a>
+                    <a href={post.href} class="block py-3 text-[15px] text-lavender hover:text-ink">{post.title}</a>
                   </li>
                 ))}
               </ul>
@@ -182,10 +179,13 @@ const jsonLd = [
           )
         }
 
-        <aside class="mt-12 rounded-2xl border border-border bg-card/60 p-6 text-sm text-muted-foreground">
-          Heal is not a substitute for professional help. If you're struggling, visit
-          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-primary underline">findahelpline.com</a>
-          to reach a local helpline.
+        <aside class="mt-10 flex gap-4 rounded-[1.25rem] border border-[#f49aa7]/25 bg-[#f49aa7]/[0.06] p-5 text-sm leading-relaxed text-ink-soft">
+          <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#f49aa7]" aria-hidden="true"></span>
+          <span>
+            Heal is not a substitute for professional help. If you're struggling, visit
+            <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-[#f49aa7] underline underline-offset-4">findahelpline.com</a>
+            to reach a local helpline.
+          </span>
         </aside>
       </div>
     </article>
@@ -198,10 +198,10 @@ const jsonLd = [
 
     {
       related.length > 0 && (
-        <section class="container mx-auto px-4 pb-20">
-          <div class="max-w-6xl mx-auto space-y-8">
-            <h2 class="text-2xl md:text-3xl font-bold">Keep reading</h2>
-            <div class="grid md:grid-cols-3 gap-6">
+        <section class="mx-auto max-w-6xl px-4 pb-24 sm:px-6">
+          <div class="space-y-8">
+            <h2 class="text-3xl md:text-4xl">Keep reading</h2>
+            <div class="grid gap-5 md:grid-cols-3">
               {related.map((post) => (
                 <PostCard {...post} />
               ))}
