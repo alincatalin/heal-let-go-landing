@@ -73,6 +73,12 @@ By now you've probably noticed a pattern: the urge spikes at certain times, like
 
 You don't have to fix the heavy feeling. Grief that's allowed tends to move. Grief that's fought tends to stick. Cry if you need to, talk to someone, write it down, then go to bed.
 
+## "What Is He Thinking on Day 7 of No Contact?"
+
+It's one of the most searched questions at this point, so here's the honest answer: you can't know, and nobody online can tell you. Some people feel relief a week or two after a breakup, some feel regret, and plenty feel both on the same day. None of it changes what's good for you right now.
+
+What you can know is what you're thinking. When the question loops, try turning it around: what are you hoping the answer is, and what would you do with it? Usually the hope is "they miss me, so maybe I should reach out." That's the urge talking, dressed up as curiosity. Write it down, read your reasons list, and let the question go unanswered tonight.
+
 ## How to Tell You're Making Progress
 
 Progress at one week rarely feels like progress. Look for these instead:

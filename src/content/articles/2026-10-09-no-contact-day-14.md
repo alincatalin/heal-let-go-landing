@@ -58,6 +58,12 @@ You'll have a day this week that feels as bad as day three. It doesn't erase the
 
 Two weeks of silence is when some exes test the water: a meme, a "hey stranger", a question that didn't need asking. You don't have to answer anything that isn't genuinely practical. Notice how it makes you feel, write it down, and decide tomorrow, not tonight.
 
+## "What Is He Thinking on Day 14 of No Contact?"
+
+It's one of the most searched questions at this point, so here's the honest answer: you can't know, and nobody online can tell you. Some people feel relief a week or two after a breakup, some feel regret, and plenty feel both on the same day. None of it changes what's good for you right now.
+
+What you can know is what you're thinking. When the question loops, try turning it around: what are you hoping the answer is, and what would you do with it? Usually the hope is "they miss me, so maybe I should reach out." That's the urge talking, dressed up as curiosity. Write it down, read your reasons list, and let the question go unanswered tonight.
+
 ## What Helps at Two Weeks
 
 ### Give the loneliness somewhere to go

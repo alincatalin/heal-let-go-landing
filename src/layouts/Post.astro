@@ -124,9 +124,9 @@ const jsonLd = [
               <span class="text-muted-foreground mr-1">No contact day by day:</span>
               {series.map((post) =>
                 isCurrent(post.href) ? (
-                  <span aria-current="page" class="rounded-full bg-primary px-3 py-1 text-primary-foreground">Day {post.day}</span>
+                  <span aria-current="page" class="rounded-full bg-primary px-3 py-1 text-primary-foreground">{post.label}</span>
                 ) : (
-                  <a href={post.href} title={post.title} class="rounded-full border border-border px-3 py-1 text-muted-foreground hover:border-primary hover:text-primary transition-colors">Day {post.day}</a>
+                  <a href={post.href} title={post.title} class="rounded-full border border-border px-3 py-1 text-muted-foreground hover:border-primary hover:text-primary transition-colors">{post.label}</a>
                 ),
               )}
             </nav>

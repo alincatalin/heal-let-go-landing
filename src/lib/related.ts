@@ -48,8 +48,10 @@ export function clusterLinks(current: Current, all: Article[]) {
 
 // The "No contact day by day" series, in day order.
 export function seriesLinks(all: Article[]) {
-  return all
+  const hub = all.find((post) => post.data.seriesHub);
+  const days = all
     .filter((post) => post.data.seriesDay)
     .sort((a, b) => a.data.seriesDay! - b.data.seriesDay!)
-    .map((post) => ({ ...toLink(post), day: post.data.seriesDay! }));
+    .map((post) => ({ ...toLink(post), label: `Day ${post.data.seriesDay}` }));
+  return hub ? [{ ...toLink(hub), label: "All days" }, ...days] : days;
 }
