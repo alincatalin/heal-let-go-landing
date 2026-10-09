@@ -40,6 +40,9 @@ Every push to `main` builds the site and publishes it (see `.github/workflows/de
 | `public/privacy`, `public/terms`, `public/delete-account` | Legal pages linked from the app and the stores |
 | `public/win-back-survey` | Win-back survey; it posts to `heal-backend.onrender.com` |
 | `public/CNAME` | Custom domain for GitHub Pages |
+| `src/styles/global.css` | Heal design tokens (colors, depth, type) shared with the app, plus buttons, cards and reading styles |
+| `public/heal-page.css` | The same tokens for the standalone pages in `public/` |
+| `src/assets/screens/` | App screenshots used on the homepage |
 
 ## Run locally
 

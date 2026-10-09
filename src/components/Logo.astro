@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import icon from "../assets/heal-icon.png";
+
+interface Props {
+  size?: "sm" | "md";
+  label?: string;
+}
+const { size = "sm", label = "Heal" } = Astro.props;
+---
+
+<a href="/" class="group inline-flex items-center gap-2.5">
+  <Image
+    src={icon}
+    alt=""
+    loading="eager"
+    width={size === "sm" ? 32 : 40}
+    height={size === "sm" ? 32 : 40}
+    class:list={["rounded-[10px] shadow-elev-1 ring-1 ring-white/10", size === "sm" ? "w-8 h-8" : "w-10 h-10"]}
+  />
+  <span class:list={["font-display tracking-tight text-ink", size === "sm" ? "text-xl" : "text-2xl"]}>{label}</span>
+</a>

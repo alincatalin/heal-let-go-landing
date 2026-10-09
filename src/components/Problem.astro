@@ -1,5 +1,5 @@
 ---
-import { Check } from "@lucide/astro";
+import Section from "./Section.astro";
 
 const painPoints = [
   "You've broken no contact more times than you can count",
@@ -10,35 +10,28 @@ const painPoints = [
 ];
 ---
 
-<section class="py-20 relative">
-  <div class="reveal container mx-auto px-4">
-    <div class="max-w-4xl mx-auto text-center space-y-12">
-      <div class="space-y-6">
-        <h2 class="text-4xl md:text-5xl font-bold">
-          You know you shouldn't text them.{" "}
-          <span class="text-primary">But you can't stop thinking about it.</span>
-        </h2>
-        <p class="text-xl text-muted-foreground leading-relaxed">
-          It's 2am. You've had a few drinks. You're scrolling through old photos. Your thumb hovers over their name.
-        </p>
-        <p class="text-xl text-foreground">
-          You know it won't help. You know you'll regret it. But the urge is overwhelming.
-        </p>
-        <p class="text-2xl font-semibold text-primary">Sound familiar?</p>
-      </div>
+<Section
+  eyebrow="Sound familiar?"
+  title={`You know you shouldn't text them. <span class="italic text-lavender">But you can't stop thinking about it.</span>`}
+  width="narrow"
+>
+  <div class="space-y-10 text-center">
+    <p class="quote text-2xl leading-relaxed md:text-[1.7rem] text-ink-soft">
+      It's 2am. You've had a few drinks. You're scrolling through old photos. Your thumb hovers over their name.
+    </p>
+    <p class="lede">You know it won't help. You know you'll regret it. But the urge is overwhelming.</p>
 
-      <div class="bg-card border border-border rounded-2xl p-8 space-y-4">
-        {
-          painPoints.map((point) => (
-            <div class="flex items-start gap-4 text-left">
-              <Check class="w-6 h-6 text-teal mt-1 flex-shrink-0" />
-              <p class="text-lg text-foreground">{point}</p>
-            </div>
-          ))
-        }
-      </div>
+    <ul class="card-raised divide-y divide-hairline overflow-hidden text-left">
+      {
+        painPoints.map((point) => (
+          <li class="flex items-start gap-4 px-6 py-5 md:px-8">
+            <span class="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-ember shadow-glow-ember" aria-hidden="true" />
+            <span class="text-[17px] leading-relaxed text-ink">{point}</span>
+          </li>
+        ))
+      }
+    </ul>
 
-      <p class="text-xl text-foreground font-medium">You're not weak. You're human. And you deserve support.</p>
-    </div>
+    <p class="font-display text-2xl text-ink">You're not weak. You're human. <span class="italic text-lavender">And you deserve support.</span></p>
   </div>
-</section>
+</Section>
