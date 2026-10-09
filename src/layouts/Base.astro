@@ -10,6 +10,8 @@ interface Props {
   noindex?: boolean;
   publishedTime?: Date;
   modifiedTime?: Date;
+  storeSource?: string;
+  storeCampaign?: string;
 }
 
 const {
@@ -21,6 +23,8 @@ const {
   noindex = false,
   publishedTime,
   modifiedTime,
+  storeSource = "landing",
+  storeCampaign,
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -60,9 +64,12 @@ const imageUrl = new URL(image, Astro.site);
 
     <script is:inline>document.documentElement.classList.add("js");</script>
   </head>
-  <body class="min-h-screen bg-background">
+  <body class="min-h-screen bg-background" data-store-source={storeSource} data-store-campaign={storeCampaign}>
     <slot />
     <script>
+      import { tagStoreLinks } from "../lib/store";
+      tagStoreLinks(document, window.location, navigator.userAgent);
+
       const observer = new IntersectionObserver(
         (entries) => {
           for (const entry of entries) {

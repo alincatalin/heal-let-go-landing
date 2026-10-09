@@ -7,6 +7,12 @@ readTime: "14 min"
 excerpt: "A brutally honest timeline of heartbreak—and why you're not broken, you're in stage 3."
 author: "Heal Team"
 keywords: "7 stages of a breakup, 7 stages of a break up, stages of getting over a break up, breakup stages timeline, stages of heartbreak, breakup grief stages, stages of breakup recovery"
+cluster: "getting-over"
+pillar: true
+updated: "2026-10-08"
+cta:
+  title: "Support for whichever stage you're in"
+  text: "An AI coach to talk to, a journal for what you can't say out loud, and a no-contact count that shows progress you can't feel yet."
 ---
 
 *A brutally honest timeline of heartbreak—and why you're not broken, you're in stage 3*
@@ -117,7 +123,7 @@ The danger of denial is when it becomes permanent—when you stay in "maybe" ter
 
 Bargaining is your brain's attempt to regain agency in a situation where you feel powerless. If you can find the thing you did wrong, then theoretically you could fix it. If you can identify the mistake, then you're not helpless.
 
-This is also the stage where people break [no contact](/blog/no-contact-rule-guide) most often. Because bargaining whispers that maybe one more conversation would change everything.
+This is also the stage where people break [no contact](/blog/articles/no-contact-rule-guide/) most often. Because bargaining whispers that maybe one more conversation would change everything.
 
 It won't. I'm sorry. But your brain will try anyway, because trying feels better than accepting that some things are outside your control.
 
@@ -184,6 +190,18 @@ Acceptance isn't about forgetting or not caring anymore. It's about integration�
 You don't reach acceptance and stay there permanently. You'll have days where you slip back into anger or sadness or even denial. But acceptance becomes your baseline. The place you return to.
 
 **How long it lasts:** Acceptance isn't a destination. It's a direction.
+
+---
+
+## After acceptance: rebuilding a life that's yours
+
+Acceptance isn't the end of the story. What tends to come after it is quieter, and easy to miss while it's happening.
+
+**Your identity comes back online.** You remember the hobbies you dropped and the friends you stopped calling. You go a few hours, then a whole day, without thinking about them. Small habits do most of the work here: a walk, some sun, a few sentences in a journal, time with people who feel safe rather than people you have to perform being okay for.
+
+**Things get lighter.** Their name comes up and you don't spiral. The breakup stops being your main story. You think about the future and feel something other than dread. Protect the boundaries you rebuilt to get here; some of them were hard-won.
+
+**You move forward, not just on.** You look back with understanding instead of longing. You don't need closure from them, because you gave it to yourself. If you date again, you're not looking for someone to fix you. You're looking for someone who matches the person you've become.
 
 ---
 
@@ -274,10 +292,10 @@ But you won't be here forever.
 ---
 
 **Related Reading:**
-- [No Contact Rule: The Only Guide You Actually Need](/blog/no-contact-rule-guide)
-- [Signs You're Actually Healing From a Breakup (Even If It Doesn't Feel Like It)](/blog/breakup-healing-stages-guide)
-- [Breakup Withdrawal Is Real: The Science of Why It Hurts This Much](/blog/hardest-day-no-contact)
+- [No Contact Rule: The Only Guide You Actually Need](/blog/articles/no-contact-rule-guide/)
+- [Should I Text My Ex? Read This Before You Hit Send](/blog/articles/should-i-text-my-ex/)
+- [Why Day 3 of No Contact Is the Hardest](/blog/articles/hardest-day-no-contact/)
 
 **Download the Heal app:**
-- **iOS**: [Download from App Store](https://apps.apple.com/us/app/heal-let-them-go/id6754834593)
-- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal)
+- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8)
+- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb)

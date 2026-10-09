@@ -6,6 +6,10 @@ category: "No Contact"
 readTime: "6 min"
 excerpt: "You're not weak for checking. You're in withdrawal. Here's what's actually happening in your brain - and how to break the cycle before it breaks you."
 author: "Heal Team"
+cluster: "no-contact"
+cta:
+  title: "Your thumb is already on the app"
+  text: "Open Heal instead. SOS gives the urge somewhere to go, and your no-contact count shows what checking would cost."
 ---
 
 Instagram stalking after a breakup isn't a willpower problem - it's a brain chemistry problem. Your attachment system is in overdrive, scanning for information that will never actually make you feel better. The only way out is to make checking harder, replace the habit, and stop assigning meaning to things that don't have any.

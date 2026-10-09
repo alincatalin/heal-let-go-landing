@@ -64,6 +64,10 @@
     @apply bg-background text-foreground;
     overflow-x: hidden;
   }
+
+  [hidden] {
+    display: none !important;
+  }
 }
 
 @layer components {

@@ -14,6 +14,11 @@ const post = z.object({
   keywords: z.string().optional(),
   image: z.string().optional(),
   draft: z.boolean().default(false),
+  // Topic cluster: each post links to its cluster's pillar, and the pillar links to every post in it.
+  cluster: z.enum(["no-contact", "texting-your-ex", "getting-over"]).optional(),
+  pillar: z.boolean().default(false),
+  // Closing call to action, written for this post's topic.
+  cta: z.object({ title: z.string(), text: z.string() }).optional(),
 });
 
 const articles = defineCollection({

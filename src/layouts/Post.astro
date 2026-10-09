@@ -6,6 +6,7 @@ import Footer from "../components/Footer.astro";
 import FinalCTA from "../components/FinalCTA.astro";
 import PostCard from "../components/PostCard.astro";
 import { formatDate, readTimeLabel } from "../lib/site";
+import type { clusterLinks } from "../lib/related";
 
 interface Related {
   href: string;
@@ -27,9 +28,12 @@ interface Props {
   author: string;
   image?: string;
   related: Related[];
+  slug?: string;
+  cluster?: ReturnType<typeof clusterLinks>;
+  cta?: { title: string; text: string };
 }
 
-const { kind, title, excerpt, category, date, updated, readTime, author, image, related } = Astro.props;
+const { kind, title, excerpt, category, date, updated, readTime, author, image, related, slug, cluster, cta } = Astro.props;
 const site = Astro.site!.toString();
 const url = new URL(Astro.url.pathname, site).toString();
 const imageUrl = new URL(image ?? "/heal_let_them_go_app.png", site).toString();
@@ -65,13 +69,15 @@ const jsonLd = [
 ---
 
 <Base
-  title={`${title} - Heal ${kind === "Guide" ? "Guide" : "Blog"}`}
+  title={title}
   description={excerpt}
   type="article"
   image={image}
   jsonLd={jsonLd}
   publishedTime={date}
   modifiedTime={updated}
+  storeSource="blog"
+  storeCampaign={slug}
 >
   <SiteHeader />
   <main class="relative overflow-hidden">
@@ -109,9 +115,40 @@ const jsonLd = [
           </div>
         </header>
 
+        {
+          cluster?.pillar && (
+            <p class="mb-8 rounded-xl border border-primary/30 bg-primary/5 px-5 py-4 text-sm text-muted-foreground">
+              Part of our {cluster.name.toLowerCase()} guide. Start with{" "}
+              <a href={cluster.pillar.href} class="text-primary underline">{cluster.pillar.title}</a>.
+            </p>
+          )
+        }
+
         <div class="prose prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:scroll-mt-24 prose-a:text-primary prose-strong:text-foreground prose-blockquote:border-primary prose-hr:border-border">
           <slot />
         </div>
+
+        {
+          cluster && (cluster.pillar || cluster.posts.length > 0) && (
+            <nav aria-labelledby="cluster-heading" class="mt-12 rounded-2xl border border-border bg-card/60 p-6">
+              <h2 id="cluster-heading" class="text-xl font-bold mb-4">
+                {cluster.isPillar ? `Everything in our ${cluster.name.toLowerCase()} guide` : `More on ${cluster.name.toLowerCase()}`}
+              </h2>
+              <ul class="space-y-2">
+                {cluster.pillar && (
+                  <li>
+                    <a href={cluster.pillar.href} class="text-primary hover:underline">{cluster.pillar.title}</a>
+                  </li>
+                )}
+                {cluster.posts.map((post) => (
+                  <li>
+                    <a href={post.href} class="text-primary hover:underline">{post.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )
+        }
 
         <aside class="mt-12 rounded-2xl border border-border bg-card/60 p-6 text-sm text-muted-foreground">
           Heal is not a substitute for professional help. If you're struggling, visit
@@ -122,8 +159,9 @@ const jsonLd = [
     </article>
 
     <FinalCTA
-      title="Want support at 2am?"
-      text="Heal: Let Them Go gives you an AI coach, a no-contact tracker and a place to vent instead of texting them."
+      title={cta?.title ?? "Want support at 2am?"}
+      text={cta?.text ?? "Heal: Let Them Go gives you an AI coach, a no-contact tracker and a place to vent instead of texting them."}
+      matchDevice
     />
 
     {

@@ -4,10 +4,12 @@ import StoreButtons from "./StoreButtons.astro";
 interface Props {
   title?: string;
   text?: string;
+  matchDevice?: boolean;
 }
 const {
   title = "Ready to stop the cycle?",
   text = "Download Heal: Let Them Go and get the support you need when the urge to text hits hardest.",
+  matchDevice = false,
 } = Astro.props;
 ---
 
@@ -20,7 +22,7 @@ const {
           <h2 class="text-4xl md:text-5xl font-bold">{title}</h2>
           <p class="text-xl text-primary-foreground/90 max-w-2xl mx-auto">{text}</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <StoreButtons />
+            <StoreButtons matchDevice={matchDevice} />
           </div>
         </div>
       </div>

@@ -1,8 +1,9 @@
 import { getCollection, type CollectionEntry } from "astro:content";
+import { appStoreUrl, playStoreUrl } from "./store";
 
 export const SITE_NAME = "Heal: Let Them Go";
-export const APP_STORE_URL = "https://apps.apple.com/ro/app/heal-let-them-go/id6754834593";
-export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=co.betafocus.heal";
+export const APP_STORE_URL = appStoreUrl("landing");
+export const PLAY_STORE_URL = playStoreUrl("landing");
 export const SUPPORT_EMAIL = "healletgo@proton.me";
 
 export type Article = CollectionEntry<"articles">;

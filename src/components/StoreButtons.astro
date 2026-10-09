@@ -5,16 +5,18 @@ import { APP_STORE_URL, PLAY_STORE_URL } from "../lib/site";
 interface Props {
   class?: string;
   stacked?: boolean;
+  /** On phones, show only the button for the visitor's store. */
+  matchDevice?: boolean;
 }
-const { class: className = "", stacked = false } = Astro.props;
+const { class: className = "", stacked = false, matchDevice = false } = Astro.props;
 ---
 
-<div class:list={["flex flex-col gap-3 w-full max-w-full", !stacked && "sm:flex-row", className]}>
-  <a href={APP_STORE_URL} target="_blank" rel="noreferrer" class="btn btn-lg btn-hero w-full">
+<div class:list={["flex flex-col gap-3 w-full max-w-full", !stacked && "sm:flex-row", className]} data-match-device={matchDevice ? "" : undefined}>
+  <a href={APP_STORE_URL} data-platform="ios" target="_blank" rel="noreferrer" class="btn btn-lg btn-hero w-full">
     <Apple class="h-5 w-5" />
     Download on the App Store
   </a>
-  <a href={PLAY_STORE_URL} target="_blank" rel="noreferrer" class="btn btn-lg btn-accent w-full">
+  <a href={PLAY_STORE_URL} data-platform="android" target="_blank" rel="noreferrer" class="btn btn-lg btn-accent w-full">
     <Play class="h-5 w-5" />
     Get it on Google Play
   </a>

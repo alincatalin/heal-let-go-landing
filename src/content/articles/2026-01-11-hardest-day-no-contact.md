@@ -7,6 +7,10 @@ readTime: "12 min"
 excerpt: "The science behind the 72-hour crash and what to do when your brain is screaming at you to text them"
 author: "Heal Team"
 keywords: "hardest day of no contact, no contact day 3, day 3 no contact, no contact withdrawal, no contact hardest part, first week no contact"
+cluster: "no-contact"
+cta:
+  title: "Day 3 is when people break"
+  text: "Tap SOS before you text: breathe, reality-check the message, then read your own reasons. It's built for this exact day."
 ---
 
 You made it through day one. Then day two. You thought you were doing okay.
@@ -35,7 +39,7 @@ Research on attachment and loss shows that the 48-72 hour window often represent
 
 This is why day three feels qualitatively different from days one and two. It's not that you're getting worse at no contact. It's that your brain chemistry is hitting its lowest point.
 
-The good news? This is also typically when things start to turn. If you can get through today, tomorrow will likely feel at least slightly more manageable. (For a detailed timeline of what to expect, see our guide on [when no contact gets easier](/blog/when-no-contact-gets-easier).)
+The good news? This is also typically when things start to turn. If you can get through today, tomorrow will likely feel at least slightly more manageable. (For a detailed timeline of what to expect, see our guide on [when no contact gets easier](/blog/articles/no-contact-hardest-thing/#when-no-contact-gets-easier).)
 
 ## An Hour-by-Hour Survival Guide for Day 3
 
@@ -59,7 +63,7 @@ Here's the truth about those what-ifs: they're not insights. They're symptoms. Y
 
 **Interrupt the loop.** Change your physical location. If you're at home, go outside—even just to walk around the block. If you're at work, take your break somewhere different than usual. Environmental change is one of the fastest ways to break a rumination cycle.
 
-This is also a good time to check in with the actual purpose of no contact. You're not doing this to get them back. You're doing this to get yourself back. (If you need a refresher on why this matters, revisit our [complete no contact rule guide](/blog/no-contact-rule-guide).)
+This is also a good time to check in with the actual purpose of no contact. You're not doing this to get them back. You're doing this to get yourself back. (If you need a refresher on why this matters, revisit our [complete no contact rule guide](/blog/articles/no-contact-rule-guide/).)
 
 ### Evening (6 PM - 10 PM): The Danger Zone
 
@@ -136,5 +140,5 @@ You just have to get through this one.
 *Starting your no contact journey? Download Heal to track your progress and get daily support designed specifically for what you're going through.*
 
 **Download the Heal app:**
-- **iOS**: [Download from App Store](https://apps.apple.com/us/app/heal-let-them-go/id6754834593)
-- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal)
+- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8)
+- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb)
