@@ -26,7 +26,7 @@ This guide will help you figure out whether texting is the right move, what actu
 
 ___
 
-Thinking about sending that text? **Try Heal's fake text coach first on [iOS](https://apps.apple.com/app/id6754834593?ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb).**
+Thinking about sending that text? **Try Heal's fake text coach first on [iOS](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb).**
 
 ___
 
@@ -117,7 +117,7 @@ But unless the core issues that caused the breakup have been addressed, you're h
 
 **Bottom line:** Texting usually creates more confusion than clarity.
 
-Before you text, reality-check the message with Heal's AI coach. **Try it free on [iOS](https://apps.apple.com/app/id6754834593?ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb).**
+Before you text, reality-check the message with Heal's AI coach. **Try it free on [iOS](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb).**
 
 ## Should I Text My Ex After No Contact?
 
@@ -190,7 +190,7 @@ Heal's fake text feature lets you practice the message, get an AI reality-check,
 
 Most people who use fake text realize they don't actually want to send it — they just needed to release the feeling.
 
-**Try Heal's fake text your ex (free) on [iOS](https://apps.apple.com/app/id6754834593?ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb) →**
+**Try Heal's fake text your ex (free) on [iOS](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb) →**
 
 ## When the Urge to Text Your Ex Feels Unbearable
 
@@ -285,7 +285,7 @@ Type what you want to send. Get a reality-check. Let the urge pass.
 
 You'll thank yourself tomorrow.
 
-**Try Heal free on [iOS](https://apps.apple.com/app/id6754834593?ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb) →**
+**Try Heal free on [iOS](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb) →**
 
 ## FAQ: Should I Text My Ex?
 
@@ -313,5 +313,5 @@ You're human. It happens. Don't spiral. Don't send a follow-up trying to explain
 *   [The 7 Stages of a Breakup](/blog/articles/7-stages-of-breakup/)
 
 **Download the Heal app:**
-- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?ct=blog&mt=8)
+- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8)
 - **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb)

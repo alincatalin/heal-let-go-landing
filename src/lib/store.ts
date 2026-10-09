@@ -3,7 +3,7 @@
 // App Store: `ct` is reported in App Store Connect only when `pt` (provider token) is set.
 export const APP_STORE_ID = "6754834593";
 export const PLAY_PACKAGE = "co.betafocus.heal";
-export const APP_STORE_PROVIDER_TOKEN = "";
+export const APP_STORE_PROVIDER_TOKEN = "127837885";
 
 export function appStoreUrl(source: string, campaign?: string) {
   const url = new URL(`https://apps.apple.com/app/id${APP_STORE_ID}`);

@@ -297,5 +297,5 @@ But you won't be here forever.
 - [Why Day 3 of No Contact Is the Hardest](/blog/articles/hardest-day-no-contact/)
 
 **Download the Heal app:**
-- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?ct=blog&mt=8)
+- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8)
 - **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb)
