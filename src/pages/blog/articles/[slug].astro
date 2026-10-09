@@ -24,7 +24,7 @@ const { Content } = await render(entry);
   slug={entry.id}
   related={relatedArticles({ id: entry.id, ...entry.data }, articles)}
   cluster={clusterLinks({ id: entry.id, ...entry.data }, articles)}
-  series={entry.data.seriesDay ? seriesLinks(articles) : undefined}
+  series={entry.data.seriesDay || entry.data.seriesHub ? seriesLinks(articles) : undefined}
 >
   <Content />
 </Post>

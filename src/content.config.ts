@@ -19,6 +19,8 @@ const post = z.object({
   pillar: z.boolean().default(false),
   // Day number in the "No contact day by day" series.
   seriesDay: z.number().int().positive().optional(),
+  // The overview page for that series, linked first in its strip.
+  seriesHub: z.boolean().default(false),
   // Closing call to action, written for this post's topic.
   cta: z.object({ title: z.string(), text: z.string() }).optional(),
 });
