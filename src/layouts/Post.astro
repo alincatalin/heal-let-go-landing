@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 import FinalCTA from "../components/FinalCTA.astro";
 import PostCard from "../components/PostCard.astro";
 import { formatDate, readTimeLabel } from "../lib/site";
-import type { clusterLinks } from "../lib/related";
+import type { clusterLinks, seriesLinks } from "../lib/related";
 
 interface Related {
   href: string;
@@ -31,9 +31,12 @@ interface Props {
   slug?: string;
   cluster?: ReturnType<typeof clusterLinks>;
   cta?: { title: string; text: string };
+  series?: ReturnType<typeof seriesLinks>;
 }
 
-const { kind, title, excerpt, category, date, updated, readTime, author, image, related, slug, cluster, cta } = Astro.props;
+const { kind, title, excerpt, category, date, updated, readTime, author, image, related, slug, cluster, cta, series } = Astro.props;
+const seriesPath = (href: string) => href.replace(/\/$/, "");
+const isCurrent = (href: string) => seriesPath(href) === seriesPath(Astro.url.pathname);
 const site = Astro.site!.toString();
 const url = new URL(Astro.url.pathname, site).toString();
 const imageUrl = new URL(image ?? "/heal_let_them_go_app.png", site).toString();
@@ -114,6 +117,21 @@ const jsonLd = [
             <span>{readTimeLabel(readTime)}</span>
           </div>
         </header>
+
+        {
+          series && series.length > 1 && (
+            <nav aria-label="No contact day by day" class="mb-6 flex flex-wrap items-center gap-2 text-sm">
+              <span class="text-muted-foreground mr-1">No contact day by day:</span>
+              {series.map((post) =>
+                isCurrent(post.href) ? (
+                  <span aria-current="page" class="rounded-full bg-primary px-3 py-1 text-primary-foreground">Day {post.day}</span>
+                ) : (
+                  <a href={post.href} title={post.title} class="rounded-full border border-border px-3 py-1 text-muted-foreground hover:border-primary hover:text-primary transition-colors">Day {post.day}</a>
+                ),
+              )}
+            </nav>
+          )
+        }
 
         {
           cluster?.pillar && (

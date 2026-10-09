@@ -8,12 +8,13 @@ excerpt: "The science behind the 72-hour crash and what to do when your brain is
 author: "Heal Team"
 keywords: "hardest day of no contact, no contact day 3, day 3 no contact, no contact withdrawal, no contact hardest part, first week no contact"
 cluster: "no-contact"
+seriesDay: 3
 cta:
   title: "Day 3 is when people break"
   text: "Tap SOS before you text: breathe, reality-check the message, then read your own reasons. It's built for this exact day."
 ---
 
-You made it through day one. Then day two. You thought you were doing okay.
+You made it through [day one](/blog/articles/no-contact-day-1/). Then day two. You thought you were doing okay.
 
 Then day three hit.
 
@@ -101,7 +102,7 @@ So here are some things to tell yourself that aren't about logic. They're about 
 
 Here's what you need to know: if you can get through today, tomorrow will be different. Not necessarily easier—but different. The intensity will shift. The pattern will start to change.
 
-By day four, most people report that while the urges are still there, they're slightly less consuming. By day seven, you'll likely have moments—maybe just seconds at first—where you're not actively thinking about them. Those moments get longer.
+By day four, most people report that while the urges are still there, they're slightly less consuming. By [day seven](/blog/articles/no-contact-day-7/), you'll likely have moments—maybe just seconds at first—where you're not actively thinking about them. Those moments get longer.
 
 This doesn't mean the first week of no contact is easy. It's not. It's probably the hardest thing you've done in a while. But day three is typically the peak of the acute phase. You're not at the beginning of a climb that goes on forever. You're approaching the summit of the steepest part.
 
