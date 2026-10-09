@@ -45,3 +45,11 @@ export function clusterLinks(current: Current, all: Article[]) {
     posts: (isPillar ? others : others.slice(0, 2)).map(toLink),
   };
 }
+
+// The "No contact day by day" series, in day order.
+export function seriesLinks(all: Article[]) {
+  return all
+    .filter((post) => post.data.seriesDay)
+    .sort((a, b) => a.data.seriesDay! - b.data.seriesDay!)
+    .map((post) => ({ ...toLink(post), day: post.data.seriesDay! }));
+}

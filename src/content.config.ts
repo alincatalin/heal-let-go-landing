@@ -17,6 +17,8 @@ const post = z.object({
   // Topic cluster: each post links to its cluster's pillar, and the pillar links to every post in it.
   cluster: z.enum(["no-contact", "texting-your-ex", "getting-over"]).optional(),
   pillar: z.boolean().default(false),
+  // Day number in the "No contact day by day" series.
+  seriesDay: z.number().int().positive().optional(),
   // Closing call to action, written for this post's topic.
   cta: z.object({ title: z.string(), text: z.string() }).optional(),
 });

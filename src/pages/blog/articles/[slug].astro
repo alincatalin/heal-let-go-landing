@@ -2,7 +2,7 @@
 import { render } from "astro:content";
 import Post from "../../../layouts/Post.astro";
 import { getArticles, type Article } from "../../../lib/site";
-import { clusterLinks, relatedArticles } from "../../../lib/related";
+import { clusterLinks, relatedArticles, seriesLinks } from "../../../lib/related";
 
 export async function getStaticPaths() {
   const articles = await getArticles();
@@ -24,6 +24,7 @@ const { Content } = await render(entry);
   slug={entry.id}
   related={relatedArticles({ id: entry.id, ...entry.data }, articles)}
   cluster={clusterLinks({ id: entry.id, ...entry.data }, articles)}
+  series={entry.data.seriesDay ? seriesLinks(articles) : undefined}
 >
   <Content />
 </Post>
