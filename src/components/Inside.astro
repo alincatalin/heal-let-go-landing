@@ -6,6 +6,8 @@ import breathe from "../assets/screens/sos-breathe.png";
 import help from "../assets/screens/sos-help.png";
 import where from "../assets/screens/sos-where.png";
 import done from "../assets/screens/sos-done.png";
+import progressPath from "../assets/screens/progress-path.png";
+import progressSlips from "../assets/screens/progress-slips.png";
 
 const sosSteps = [
   { src: happening, step: "1", label: "Name it", alt: "SOS step 1: What's happening? I can't stop thinking about them, I want to text or call them, I'm checking their socials" },
@@ -72,6 +74,37 @@ const sosSteps = [
         </p>
       </div>
       <PhoneMockup screenshot={done} alt="SOS done: It passed. You rode it out. That's exactly how this gets easier." width={290} />
+    </div>
+    <!-- Progress -->
+    <div class="reveal grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+      <div class="space-y-5 lg:order-2">
+        <p class="eyebrow text-lavender">Progress</p>
+        <h2 class="text-4xl leading-[1.12] md:text-5xl">See how far you've come, <span class="italic text-lavender">and what's ahead</span></h2>
+        <p class="lede">
+          Where you are on the path and what's normal there, the phase that comes next, and every day without contact
+          laid out square by square. Slips show up in context, next to all the days around them.
+        </p>
+        <ul class="space-y-3 pt-2 text-[15px] text-ink-soft">
+          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-lavender"></span>Five phases, from the first days to moving forward</li>
+          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sage"></span>How your urges ended, and which tool helps you most</li>
+          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ember"></span>Mood, milestones and your hardest times, from what you log</li>
+        </ul>
+      </div>
+      <div class="relative mx-auto flex w-full max-w-[460px] justify-center lg:order-1">
+        <PhoneMockup
+          screenshot={progressSlips}
+          alt="Progress: every day so far as squares, and an 'If you slip' card"
+          width={240}
+          glow={false}
+          class="!absolute right-0 top-14 hidden rotate-[5deg] opacity-80 sm:block"
+        />
+        <PhoneMockup
+          screenshot={progressPath}
+          alt="Progress: your path through five phases, what's normal now and what's ahead, and days without contact"
+          width={290}
+          class="relative sm:-translate-x-14"
+        />
+      </div>
     </div>
   </div>
 </section>
