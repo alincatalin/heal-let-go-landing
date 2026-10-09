@@ -163,7 +163,7 @@ One month. Usually not the end of missing them, but often the first point where 
 
 It's one of the most common things people search alongside a day number, so here's the honest answer for every day on this page: you can't know. People react to breakups very differently. Some feel relief, some regret, many feel both. Their silence, or a message from them, tells you very little about what they feel.
 
-What you can know is what you're thinking. If the question keeps looping, ask what you hope the answer is and what you'd do with it. Usually it's "they miss me, so maybe I should reach out," which is the urge in a more reasonable-sounding form.
+What you can know is what you're thinking. If the question keeps looping, ask what you hope the answer is and what you'd do with it. Usually it's "they miss me, so maybe I should reach out," which is the urge in a more reasonable-sounding form. More on this in [what is he thinking during no contact](/blog/articles/what-is-he-thinking-during-no-contact/).
 
 ## If You Broke No Contact
 

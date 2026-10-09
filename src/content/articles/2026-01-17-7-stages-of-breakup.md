@@ -283,6 +283,23 @@ You're not broken. You're in the middle. And the middle is the hardest part.
 
 But you won't be here forever.
 
+## FAQ: The Stages of a Breakup
+
+**What are the 7 stages of a breakup?**
+Shock, denial, bargaining, anger, depression, testing and acceptance. They're a vocabulary for what you're feeling, not a fixed order.
+
+**Do you go through the stages in order?**
+Rarely. Most people move back and forth, feel several stages in one day, or skip one and meet it months later. What matters is that you're moving, not the sequence.
+
+**How long does it take to get over a breakup?**
+There's no fixed timeline. Many people feel a real shift after the first month or two, but it depends on the length of the relationship, how it ended, and the support you have.
+
+**Which stage is the hardest?**
+For many people it's bargaining or depression: bargaining because it pulls you toward reaching out, depression because it can feel like it will never lift. Both pass.
+
+**When should I get help?**
+If you can't eat, sleep or function, if the low mood isn't lifting at all, or if you have thoughts of harming yourself, please talk to a doctor or therapist, or contact a local helpline.
+
 ---
 
 > **Not sure what stage you're in?** Heal's guided check-ins help you understand where you are in the process—and give you the right support for exactly that moment. Not generic advice. Actual tools for what you're facing today.

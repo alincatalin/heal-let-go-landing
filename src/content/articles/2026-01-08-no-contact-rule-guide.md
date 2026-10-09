@@ -469,6 +469,23 @@ But you're also going to learn that you can do hard things. That you can survive
 
 That's not nothing. That's everything.
 
+## FAQ: The No Contact Rule
+
+**How long should no contact last?**
+Thirty days is the most common minimum. Sixty days suits most breakups, and 90 days helps after long or on-and-off relationships. If you still feel a strong pull to reach out when your time is up, extend it.
+
+**Does liking or viewing their posts break no contact?**
+Yes. Likes, story views and comments are all contact, and checking their profile keeps you emotionally attached even when they can't see it. Mute or unfollow them for the duration.
+
+**What if we share kids, a home or a job?**
+Use limited contact instead: only practical topics, in writing where possible, short and polite. No catching up, no relationship talk.
+
+**What if they reach out during no contact?**
+You don't owe an immediate reply. If it's practical, answer the practical part briefly. If it isn't, it's okay not to reply, or to wait until you're calm enough to decide.
+
+**I broke no contact. Do I have to start over?**
+Restart the count, but not the learning. You now know your danger moments, and that the urge passes. Our [day-by-day guide](/blog/articles/no-contact-day-by-day/) covers what each stage tends to feel like.
+
 ---
 
 *Starting your no contact journey? Download Heal to track your progress and get daily support designed specifically for what you're going through.*
