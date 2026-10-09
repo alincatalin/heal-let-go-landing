@@ -88,6 +88,7 @@ If none of that sounds like you yet, that's okay too. Two weeks is still early. 
 
 ## What Comes Next
 
+*   **Day 21:** Three weeks in, life gets steadier and the dips get rarer but sharper. Here's [what day 21 tends to bring](/blog/articles/no-contact-day-21/).
 *   **Looking back:** If week two feels like a setback, re-read [what day 7 is like](/blog/articles/no-contact-day-7/) and [how to survive day 3](/blog/articles/hardest-day-no-contact/). You've already done the hardest stretch.
 *   **The bigger picture:** Most people aim for at least 30 days. Our [no contact rule guide](/blog/articles/no-contact-rule-guide/) covers how long to go and what happens after.
 *   **If the stages feel confusing:** [The 7 stages of a breakup](/blog/articles/7-stages-of-breakup/) explains why you can feel angry, sad and hopeful in the same afternoon.
