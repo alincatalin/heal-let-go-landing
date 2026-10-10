@@ -3,13 +3,13 @@ import { Check } from "@lucide/astro";
 import Section from "./Section.astro";
 import StoreButtons from "./StoreButtons.astro";
 
-const trialPerks = [
-  "Full access to all features",
-  "On-demand AI healing coach",
-  "Daily practices and check-ins",
-  "Available on iOS & Android",
+const freePerks = [
+  "No contact tracker and SOS button",
+  "5 AI coach messages a day",
+  "Private journal and mood tracking",
+  "7-day free trial of everything",
 ];
-const paidPerks = ["24/7 AI Coach access", "Unlimited fake texting", "All healing practices", "Private journaling"];
+const paidPerks = ["Unlimited AI coach messages", "Unlimited fake texting", "Streak Protection", "Every healing practice"];
 ---
 
 <Section id="pricing" eyebrow="Pricing" title="Start free. Stay if it helps.">
@@ -19,13 +19,13 @@ const paidPerks = ["24/7 AI Coach access", "Unlimited fake texting", "All healin
         <p class="eyebrow text-lavender">Start free</p>
         <p class="font-display text-6xl font-light leading-none">Free</p>
         <p class="text-[15px] leading-relaxed text-ink-soft">
-          Download Heal: No Contact & Breakup and start your 7-day free trial. Get daily guidance, exercises, and support right
-          away.
+          Download Heal: No Contact & Breakup free on iOS or Android. The core tools stay free, and you can try everything
+          free for 7 days.
         </p>
       </div>
       <ul class="space-y-3 text-[15px]">
         {
-          trialPerks.map((perk) => (
+          freePerks.map((perk) => (
             <li class="flex items-center gap-3">
               <Check class="h-[18px] w-[18px] text-sage" />
               <span>{perk}</span>
@@ -38,12 +38,12 @@ const paidPerks = ["24/7 AI Coach access", "Unlimited fake texting", "All healin
 
     <div class="card-raised flex flex-col gap-6 p-8 md:p-10">
       <div class="space-y-3">
-        <p class="eyebrow">After the trial</p>
+        <p class="eyebrow">Heal Premium</p>
         <p class="flex items-baseline gap-2">
           <span class="font-display text-6xl font-light leading-none">$12.99</span>
           <span class="text-ink-muted">/month</span>
         </p>
-        <p class="text-[15px] text-ink-soft">No commitment. Cancel anytime.</p>
+        <p class="text-[15px] text-ink-soft">Or $124.99 a year. No commitment. Cancel anytime.</p>
       </div>
       <ul class="space-y-3 text-[15px]">
         {
