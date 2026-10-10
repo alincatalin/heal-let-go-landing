@@ -20,7 +20,7 @@ export async function GET(context: APIContext) {
 
   return rss({
     title: "Heal Blog",
-    description: "Honest, practical breakup recovery advice from the team behind Heal: Let Them Go.",
+    description: "Honest, practical breakup recovery advice from the team behind Heal: No Contact & Breakup.",
     site: context.site!,
     items,
   });
