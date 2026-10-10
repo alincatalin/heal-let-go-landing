@@ -33,9 +33,10 @@ interface Props {
   cta?: { title: string; text: string };
   series?: ReturnType<typeof seriesLinks>;
   faq?: { question: string; answer: string }[];
+  storePage?: string;
 }
 
-const { kind, title, excerpt, category, date, updated, readTime, author, image, related, slug, cluster, cta, series, faq = [] } = Astro.props;
+const { kind, title, excerpt, category, date, updated, readTime, author, image, related, slug, cluster, cta, series, faq = [], storePage } = Astro.props;
 const seriesPath = (href: string) => href.replace(/\/$/, "");
 const isCurrent = (href: string) => seriesPath(href) === seriesPath(Astro.url.pathname);
 const site = Astro.site!.toString();
@@ -95,6 +96,7 @@ const jsonLd = [
   modifiedTime={updated}
   storeSource="blog"
   storeCampaign={slug}
+  storePage={storePage}
 >
   <SiteHeader />
   <main class="relative overflow-hidden">
