@@ -25,3 +25,9 @@ dist-ssr
 
 # Astro
 .astro
+
+# Claude SEO skills runtime (local venv + Playwright browsers)
+.claude/claude-seo/.venv*
+.claude/claude-seo/ms-playwright
+.claude/claude-seo/runtime-state.json
+.claude/claude-seo/.setup.lock
