@@ -1,12 +1,10 @@
-// Plausible custom events. Goals with these exact names are set up in the Plausible dashboard.
-// The stub in Base.astro queues calls made before the script has loaded.
+// Umami custom events (loaded in Base.astro); they show up under Events in the Umami dashboard.
 export type AnalyticsEvent = "Store Click" | "Tool Completed" | "Email Signup";
 
-type Plausible = (event: string, options?: { props?: Record<string, string> }) => void;
+type Umami = { track: (event: string, data?: Record<string, string>) => void };
 
-export function track(event: AnalyticsEvent, props?: Record<string, string>) {
-  const plausible = (window as unknown as { plausible?: Plausible }).plausible;
-  plausible?.(event, props ? { props } : undefined);
+export function track(event: AnalyticsEvent, data?: Record<string, string>) {
+  (window as unknown as { umami?: Umami }).umami?.track(event, data);
 }
 
 // One "Store Click" per tap on any App Store or Google Play link, with which store and which
