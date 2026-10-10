@@ -332,7 +332,7 @@ const jsonLd = [
 </Base>
 
 <script>
-  type Plausible = (event: string, options?: { props?: Record<string, string> }) => void;
+  type Umami = { track: (event: string, data?: Record<string, string>) => void };
 
   const form = document.getElementById("quiz-form") as HTMLFormElement;
   const steps = [...form.querySelectorAll<HTMLFieldSetElement>("fieldset[data-step]")];
@@ -367,9 +367,7 @@ const jsonLd = [
     bar.style.width = "100%";
     results.forEach((r) => (r.hidden = r.dataset.result !== result));
     document.getElementById("quiz")!.scrollIntoView({ behavior: "smooth", block: "start" });
-    (window as unknown as { plausible?: Plausible }).plausible?.("Tool Completed", {
-      props: { tool: "should-i-text-my-ex", result },
-    });
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "should-i-text-my-ex", result });
   }
 
   form.addEventListener("change", () => {
