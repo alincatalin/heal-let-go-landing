@@ -41,7 +41,7 @@ const seriesPath = (href: string) => href.replace(/\/$/, "");
 const isCurrent = (href: string) => seriesPath(href) === seriesPath(Astro.url.pathname);
 const site = Astro.site!.toString();
 const url = new URL(Astro.url.pathname, site).toString();
-const imageUrl = new URL(image ?? "/heal_let_them_go_app.png", site).toString();
+const imageUrl = new URL(image ?? "/heal-og.png", site).toString();
 
 const jsonLd = [
   {
