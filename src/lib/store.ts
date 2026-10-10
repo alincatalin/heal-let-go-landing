@@ -5,9 +5,26 @@ export const APP_STORE_ID = "6754834593";
 export const PLAY_PACKAGE = "co.betafocus.heal";
 export const APP_STORE_PROVIDER_TOKEN = "127837885";
 
-export function appStoreUrl(source: string, campaign?: string) {
+// Smart App Banner on iPhone Safari. Off until v2.1 with the rating reset is live, so the
+// banner doesn't send blog readers to a 1.0-star listing (aso-daily-plan, Fri Oct 23).
+export const SHOW_SMART_APP_BANNER = false;
+
+// Custom product pages in App Store Connect, by blog cluster: each opens the store page whose
+// first screenshot matches what the reader came for. Empty ids fall back to the default page.
+export const APP_STORE_PAGES: Record<string, string> = {
+  "texting-your-ex": "", // "Stop texting your ex"
+  "no-contact": "", // "No contact tracker"
+  "getting-over": "", // "Get over him"
+};
+
+export function appStorePage(cluster?: string) {
+  return (cluster && APP_STORE_PAGES[cluster]) || undefined;
+}
+
+export function appStoreUrl(source: string, campaign?: string, page?: string) {
   const url = new URL(`https://apps.apple.com/app/id${APP_STORE_ID}`);
   if (APP_STORE_PROVIDER_TOKEN) url.searchParams.set("pt", APP_STORE_PROVIDER_TOKEN);
+  if (page) url.searchParams.set("ppid", page);
   url.searchParams.set("ct", (campaign ? `${source}-${campaign}` : source).slice(0, 40));
   url.searchParams.set("mt", "8");
   return url.toString();
@@ -38,17 +55,18 @@ export function tagStoreLinks(doc: Document, location: Location, userAgent: stri
   const body = doc.body.dataset;
   const source = params.get("utm_source") ?? body.storeSource ?? "web";
   const campaign = params.get("utm_campaign") ?? body.storeCampaign ?? undefined;
+  const page = body.storePage || undefined;
   const medium = params.get("utm_medium") ?? undefined;
   const platform = detectPlatform(userAgent);
 
   doc.querySelectorAll<HTMLAnchorElement>('a[href^="https://apps.apple.com/"]').forEach((a) => {
-    a.href = appStoreUrl(source, campaign);
+    a.href = appStoreUrl(source, campaign, page);
   });
   doc.querySelectorAll<HTMLAnchorElement>('a[href^="https://play.google.com/store/"]').forEach((a) => {
     a.href = playStoreUrl(source, campaign, medium);
   });
   doc.querySelectorAll<HTMLAnchorElement>('a[data-platform="auto"]').forEach((a) => {
-    a.href = platform === "android" ? playStoreUrl(source, campaign, medium) : appStoreUrl(source, campaign);
+    a.href = platform === "android" ? playStoreUrl(source, campaign, medium) : appStoreUrl(source, campaign, page);
   });
   if (platform) {
     doc.querySelectorAll<HTMLElement>("[data-match-device] [data-platform]").forEach((el) => {

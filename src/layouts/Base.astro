@@ -3,6 +3,7 @@ import "@fontsource-variable/fraunces/opsz.css";
 import "@fontsource-variable/fraunces/opsz-italic.css";
 import "@fontsource-variable/figtree/wght.css";
 import "../styles/global.css";
+import { APP_STORE_ID, SHOW_SMART_APP_BANNER } from "../lib/store";
 
 interface Props {
   title: string;
@@ -15,6 +16,7 @@ interface Props {
   modifiedTime?: Date;
   storeSource?: string;
   storeCampaign?: string;
+  storePage?: string;
 }
 
 const {
@@ -28,6 +30,7 @@ const {
   modifiedTime,
   storeSource = "landing",
   storeCampaign,
+  storePage,
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -50,6 +53,7 @@ const imageUrl = new URL(image, Astro.site);
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="alternate" type="application/rss+xml" title="Heal Blog" href="/blog/rss.xml" />
     <meta name="theme-color" content="#0c0a16" />
+    {SHOW_SMART_APP_BANNER && <meta name="apple-itunes-app" content={`app-id=${APP_STORE_ID}`} />}
 
     <meta property="og:site_name" content="Heal: Let Them Go" />
     <meta property="og:type" content={type} />
@@ -70,7 +74,7 @@ const imageUrl = new URL(image, Astro.site);
 
     <script is:inline>document.documentElement.classList.add("js");</script>
   </head>
-  <body class="min-h-screen bg-night text-ink font-sans" data-store-source={storeSource} data-store-campaign={storeCampaign}>
+  <body class="min-h-screen bg-night text-ink font-sans" data-store-source={storeSource} data-store-campaign={storeCampaign} data-store-page={storePage}>
     <slot />
     <script>
       import { tagStoreLinks } from "../lib/store";

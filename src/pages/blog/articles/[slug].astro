@@ -4,6 +4,7 @@ import Post from "../../../layouts/Post.astro";
 import { getArticles, type Article } from "../../../lib/site";
 import { extractFaq } from "../../../lib/faq";
 import { clusterLinks, relatedArticles, seriesLinks } from "../../../lib/related";
+import { appStorePage } from "../../../lib/store";
 
 export async function getStaticPaths() {
   const articles = await getArticles();
@@ -27,6 +28,7 @@ const { Content } = await render(entry);
   cluster={clusterLinks({ id: entry.id, ...entry.data }, articles)}
   faq={extractFaq(entry.body)}
   series={entry.data.seriesDay || entry.data.seriesHub ? seriesLinks(articles) : undefined}
+  storePage={appStorePage(entry.data.cluster)}
 >
   <Content />
 </Post>
