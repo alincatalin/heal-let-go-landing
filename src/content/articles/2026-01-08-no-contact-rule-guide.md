@@ -112,6 +112,8 @@ You might realize:
 
 This clarity is impossible to access when you're in constant contact. Your brain can't process something it's still actively experiencing.
 
+If you've been reading advice about "female psychology" during no contact, our guide to [the no contact rule for women](/blog/articles/no-contact-rule-for-women/) separates what's real from the mind games.
+
 ---
 
 ## How Long Should No Contact Last?
