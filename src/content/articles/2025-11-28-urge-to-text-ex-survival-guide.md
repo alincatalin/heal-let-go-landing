@@ -26,7 +26,8 @@ And before you realize it, your thumb is hovering over their name.
 If this is you right now, take a deep breath.  
 **The urge to text your ex is a nervous system response — not a sign that reaching out will help.**
 
-This guide is your emergency plan for the moments when self-control feels impossible.
+This guide is your emergency plan for the moments when self-control feels impossible.  
+If it's the middle of the night and you need something to do in the next ten minutes, start with our list of [what to do instead of texting your ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/).
 
 Below is exactly what to do, step by step, depending on where you are in your healing stage.
 

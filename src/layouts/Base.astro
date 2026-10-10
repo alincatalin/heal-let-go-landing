@@ -69,12 +69,15 @@ const imageUrl = new URL(image, Astro.site);
     {jsonLd.map((data) => <script type="application/ld+json" set:html={JSON.stringify(data)} />)}
 
     <script is:inline>document.documentElement.classList.add("js");</script>
+    <script is:inline defer src="https://cloud.umami.is/script.js" data-website-id="7154e013-7126-49fd-bee9-b2a9e1b2cfaa"></script>
   </head>
   <body class="min-h-screen bg-night text-ink font-sans" data-store-source={storeSource} data-store-campaign={storeCampaign}>
     <slot />
     <script>
       import { tagStoreLinks } from "../lib/store";
+      import { trackStoreClicks } from "../lib/analytics";
       tagStoreLinks(document, window.location, navigator.userAgent);
+      trackStoreClicks(document);
 
       const observer = new IntersectionObserver(
         (entries) => {

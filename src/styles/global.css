@@ -374,6 +374,30 @@ summary::-webkit-details-marker {
   border: 1px solid var(--hairline);
 }
 
+/* A short app pitch inside an article, written as raw HTML in the markdown:
+ * <aside class="inline-cta not-prose" data-cta="inline"><p class="inline-cta-title">…</p><p>…</p><a data-platform="auto" …>…</a></aside> */
+.inline-cta {
+  margin: 2.5rem 0;
+  padding: 1.5rem 1.75rem;
+  border-radius: 1.5rem;
+  background: radial-gradient(90% 120% at 100% 0%, rgba(109, 59, 216, 0.22) 0%, transparent 65%), var(--surface-2);
+  border: 1px solid rgba(164, 139, 247, 0.22);
+  box-shadow: var(--elev-2);
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.inline-cta .inline-cta-title {
+  margin-bottom: 0.4rem;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.inline-cta a {
+  margin-top: 1rem;
+}
+
 /* The selected state from the app's choice rows: a violet edge, not a fill. */
 .card-selected {
   border-color: rgba(164, 139, 247, 0.55);
