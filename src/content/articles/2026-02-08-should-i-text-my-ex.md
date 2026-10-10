@@ -198,7 +198,7 @@ You're not broken for wanting to reach out.
 
 The urge is a nervous system response — your brain searching for the person it used to go to for comfort.
 
-Instead of texting, try this:
+Instead of texting, try this (or see our full list of [what to do instead of texting your ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/)):
 
 **Immediate strategies (0-10 minutes):**
 
@@ -279,13 +279,11 @@ What will help:
 
 If you're struggling right now, if the urge feels unbearable, if you just need someone to talk you through it:
 
-**Talk to Heal instead of texting your ex.**
-
-Type what you want to send. Get a reality-check. Let the urge pass.
-
-You'll thank yourself tomorrow.
-
-**Try Heal free on [iOS](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb) →**
+<aside class="inline-cta not-prose" data-cta="inline">
+<p class="inline-cta-title">Talk to Heal instead of texting your ex</p>
+<p>Type what you want to send. Get a reality check. Let the urge pass. You'll thank yourself tomorrow.</p>
+<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Try Heal free</a>
+</aside>
 
 ## FAQ: Should I Text My Ex?
 
