@@ -21,7 +21,7 @@ You don't need a lecture right now. You need something to do with the next ten m
 
 You don't have to decide never to text them. You only have to decide not to text them in the next ten minutes.
 
-That's a promise you can keep. Late-night urges tend to rise, peak and fall, and they usually feel very different once they've passed. If you still want to send it in the morning, read our guide on [whether to text your ex](/blog/articles/should-i-text-my-ex/) first, in daylight.
+That's a promise you can keep. Late-night urges tend to rise, peak and fall, and they usually feel very different once they've passed. If you still want to send it in the morning, take our 2-minute [should I text my ex? quiz](/tools/should-i-text-my-ex/) or read our guide on [whether to text your ex](/blog/articles/should-i-text-my-ex/) first, in daylight.
 
 Now pick something from the list.
 
