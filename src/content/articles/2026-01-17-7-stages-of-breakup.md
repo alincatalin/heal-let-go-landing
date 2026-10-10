@@ -29,6 +29,8 @@ What I will give you is something more useful: a framework for understanding wha
 
 This will be comprehensive.
 
+If you want a practical plan rather than a map, start with [how to get over him: a plan for the first 30 days](/blog/articles/how-to-get-over-him/).
+
 This isn't one of those articles you skim and forget.
 
 This is something you'll want to come back to when you're convinced you're going crazy, because you're not. You're just in stage 4. Or stage 2. Or oscillating between five of them in a single afternoon.

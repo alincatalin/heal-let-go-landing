@@ -1,6 +1,6 @@
 # tryheal.app
 
-The landing page and blog for **Heal: Let Them Go**, built with [Astro](https://astro.build) as a fully static site and deployed to GitHub Pages.
+The landing page and blog for **Heal: No Contact & Breakup**, built with [Astro](https://astro.build) as a fully static site and deployed to GitHub Pages.
 
 Every push to `main` builds the site and publishes it (see `.github/workflows/deploy.yml`).
 
