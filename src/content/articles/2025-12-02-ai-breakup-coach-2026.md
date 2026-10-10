@@ -133,6 +133,8 @@ And here’s the wild part:
 People aren’t getting “colder.”  
 They’re healing in a way that finally centers their needs, not their ex’s reactions.
 
+Comparing options? We put six breakup apps side by side, with prices, in [the best breakup apps in 2026](/blog/articles/best-breakup-apps/).
+
 ## The Future Isn’t About Replacing Anyone
 
 AI won’t replace friends.  
