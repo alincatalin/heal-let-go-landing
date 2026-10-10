@@ -12,13 +12,17 @@ export type Guide = CollectionEntry<"guides">;
 export const articleUrl = (entry: Article) => `/blog/articles/${entry.id}/`;
 export const guideUrl = (entry: Guide) => `/blog/guides/${entry.id}/`;
 
+// A post dated in the future stays hidden until a build on or after that date (UTC);
+// the deploy workflow rebuilds daily so scheduled posts go live on their own.
+const isPublished = ({ draft, date }: { draft: boolean; date: Date }) => !draft && date.getTime() <= Date.now();
+
 export async function getArticles(): Promise<Article[]> {
-  const entries = await getCollection("articles", ({ data }) => !data.draft);
+  const entries = await getCollection("articles", ({ data }) => isPublished(data));
   return entries.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 }
 
 export async function getGuides(): Promise<Guide[]> {
-  const entries = await getCollection("guides", ({ data }) => !data.draft);
+  const entries = await getCollection("guides", ({ data }) => isPublished(data));
   return entries.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 }
 

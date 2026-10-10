@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Daily rebuild at 06:00 UTC publishes posts whose date has arrived.
+  schedule:
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
