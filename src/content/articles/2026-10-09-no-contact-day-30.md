@@ -74,7 +74,7 @@ If you hoped to wake up on day 30 feeling over it and didn't, it's easy to decid
 
 ### Measuring progress by their behavior
 
-Whether they've reached out, posted, or started seeing someone isn't a measure of how you're doing. Your progress is in how you spend your days, how fast the bad moments pass, and what you understand now that you didn't a month ago.
+Whether they've reached out, posted, or started seeing someone isn't a measure of how you're doing. Your progress is in how you spend your days, how fast the bad moments pass, and what you understand now that you didn't a month ago. Here are more [signs no contact is working](/blog/articles/signs-no-contact-is-working/).
 
 ## What Helps After a Month
 
