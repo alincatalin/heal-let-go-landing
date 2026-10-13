@@ -97,7 +97,7 @@ If you want all of that in one place, that's what Heal's SOS button is for: it w
 
 It happens more than you'd think, especially if the breakup was recent.
 
-You don't owe an immediate answer. You don't owe an answer at all unless it's genuinely practical (kids, keys, shared bills). If it is, keep the reply short and about the practical thing only. If it isn't, it's okay to not reply, and it's okay to feel shaken. Write down what you'd want to say, and read it again tomorrow. Our guide on [whether to text your ex](/blog/articles/should-i-text-my-ex/) goes deeper on this.
+You don't owe an immediate answer. You don't owe an answer at all unless it's genuinely practical (kids, keys, shared bills). If it is, keep the reply short and about the practical thing only. If it isn't, it's okay to not reply, and it's okay to feel shaken. Write down what you'd want to say (our [unsent text tool](/tools/unsent-text/) is a chat that never sends), and read it again tomorrow. Our guide on [whether to text your ex](/blog/articles/should-i-text-my-ex/) goes deeper on this.
 
 ## What Counts as Success Today
 
