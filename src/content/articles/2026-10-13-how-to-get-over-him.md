@@ -57,7 +57,7 @@ You won't stop thinking about him in week one. The goal is to stop thinking abou
 
 ## Week 2: What Do I Do When I Miss Him?
 
-Week two is when the shock wears off and the missing gets quieter but deeper. You might feel fine on Tuesday and wrecked on Thursday. That's normal.
+Week two is when the shock wears off and the missing gets quieter but deeper (here's [why you miss your ex so much](/blog/articles/why-do-i-miss-my-ex/)). You might feel fine on Tuesday and wrecked on Thursday. That's normal.
 
 When you miss him, try this in order:
 
