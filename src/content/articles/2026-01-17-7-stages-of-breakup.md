@@ -111,7 +111,7 @@ If you're in shock right now, don't try to force yourself to feel. Don't think s
 
 Denial isn't delusion. It's a bridge. Your brain can't go from "we're together" to "we're never speaking again" in a single leap. Denial gives you a space to adjust incrementally. You're not ready to fully accept the loss yet, so your mind creates a soft landing zone.
 
-The danger of denial is when it becomes permanent—when you stay in "maybe" territory for months, refusing to accept what's actually happened. But in the early days, some denial is normal and even necessary.
+The danger of denial is when it becomes permanent, when you stay in "maybe" territory for months, refusing to accept what's actually happened (common after a [situationship](/blog/articles/how-to-get-over-a-situationship/) that never had a clear ending). But in the early days, some denial is normal and even necessary.
 
 **How long it lasts:** Days to a few weeks. It typically fades as reality keeps refusing to cooperate with your hopes.
 
