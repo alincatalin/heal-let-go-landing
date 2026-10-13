@@ -153,7 +153,7 @@ Ninety days is for when you need serious distance to undo serious patterns.
 90 days works best if:
 
 - The relationship was 3+ years
-- The relationship was toxic or codependent
+- The relationship was toxic or codependent (if it swung between hurt and warmth, read [what a trauma bond is](/blog/articles/what-is-a-trauma-bond/))
 - You've tried shorter periods and kept breaking
 - You genuinely need to rebuild your identity outside this person
 
