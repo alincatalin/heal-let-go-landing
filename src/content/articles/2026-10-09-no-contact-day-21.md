@@ -60,7 +60,7 @@ People who held firm on texting sometimes slip on checking at this point, becaus
 
 ### Plan around your triggers
 
-By now you probably know the dates, places and times that get to you. Look at the next two weeks and mark the risky ones: a birthday, a holiday, a weekend you'd normally have spent together. Plan something specific for each, with someone if you can.
+By now you probably know the dates, places and times that get to you. Look at the next two weeks and mark the risky ones: a birthday, a holiday, a weekend you'd normally have spent together. Plan something specific for each, with someone if you can. If it's the holiday season, here's [how to get through the holidays after a breakup](/blog/articles/holidays-after-a-breakup/).
 
 ### Put the restlessness to work
 
