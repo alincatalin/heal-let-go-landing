@@ -212,7 +212,7 @@ Instead of texting, try this (or see our full list of [what to do instead of tex
 **Short-term strategies (next few hours):**
 
 *   Read your "reasons it ended" list.
-*   Remember their actions, not your fantasy version of them.
+*   Remember their actions, not your fantasy version of them. (Idealizing someone is a classic sign of [limerence](/blog/articles/what-is-limerence/).)
 *   Journal: "What am I actually craving right now? Connection? Reassurance? Validation?"
 *   Talk to Heal's AI coach instead of spiraling alone.
 
