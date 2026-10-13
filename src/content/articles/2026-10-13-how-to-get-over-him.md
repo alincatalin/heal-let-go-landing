@@ -23,7 +23,7 @@ Because your brain is treating him like something it needs.
 
 When researchers scanned people who had recently been rejected but were still in love, looking at a photo of their ex lit up the same reward and craving systems involved in addiction ([Fisher et al., 2010](https://doi.org/10.1152/jn.00784.2009)). Another study found that thinking about an ex who had rejected you activates brain areas that also process physical pain ([Kross et al., 2011](https://doi.org/10.1073/pnas.1102693108)).
 
-So when you say "it physically hurts" or "I can't stop thinking about him," that's not drama. It's how heartbreak works. It also explains why every text, every look at his profile and every "just checking how he's doing" makes it worse: each one feeds the craving a little.
+So when you say "it physically hurts" or "I can't stop thinking about him," that's not drama. It's how heartbreak works, even if you [never officially dated](/blog/articles/how-to-get-over-someone-you-never-dated/). It also explains why every text, every look at his profile and every "just checking how he's doing" makes it worse: each one feeds the craving a little.
 
 The good news is that cravings fade when they stop being fed. That's the whole plan in one sentence.
 
