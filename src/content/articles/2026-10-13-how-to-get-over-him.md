@@ -45,7 +45,7 @@ You won't stop thinking about him in week one. The goal is to stop thinking abou
 
 **Give the thoughts a slot.** Pick 20 minutes a day, same time, to think about him on purpose: cry, replay, write. When he comes into your head at other times, tell yourself "not now, at 8pm." It sounds odd, but containing the thoughts is easier than fighting them.
 
-**Write the text instead of sending it.** When you want to message him, write the whole thing out somewhere it can't reach him. Read it back. Ask what you were hoping he'd reply, and what's more likely to happen. Most of the time, the urge was about getting it out of your head, not about him reading it.
+**Write the text instead of sending it.** When you want to message him, write the whole thing out somewhere it can't reach him, like a text in Heal or an [unsent letter](/blog/articles/unsent-letter-to-ex/). Read it back. Ask what you were hoping he'd reply, and what's more likely to happen. Most of the time, the urge was about getting it out of your head, not about him reading it.
 
 **Plan for the nights.** Most of the urges hit late. Decide now where your phone sleeps and what you'll do instead. Here's our list of [what to do instead of texting your ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/).
 
