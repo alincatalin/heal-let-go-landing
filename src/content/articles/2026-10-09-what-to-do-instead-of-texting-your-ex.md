@@ -37,7 +37,7 @@ Breathe in for four counts and out for six, for two minutes. A longer out-breath
 
 ### 3. Write the text, but don't send it
 
-Write exactly what you want to say, in full, somewhere it can't reach them: your notes app, a journal, or Heal's fake text, which never sends. Often the urge isn't about them reading it. It's about getting it out of your head.
+Write exactly what you want to say, in full, somewhere it can't reach them: your notes app, a journal, our free [unsent text tool](/tools/unsent-text/) right here in your browser, or Heal's fake text, which never sends. Often the urge isn't about them reading it. It's about getting it out of your head.
 
 Then read it back. Ask: what am I hoping they'll reply? What's more likely to happen? If they don't reply at all, how will I feel tomorrow?
 

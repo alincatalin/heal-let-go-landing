@@ -1,0 +1,66 @@
+---
+import Base from "../../layouts/Base.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import Footer from "../../components/Footer.astro";
+import ToolCard from "../../components/ToolCard.astro";
+import { tools } from "../../lib/tools";
+
+const site = Astro.site!.toString();
+const url = new URL("/tools/", site).toString();
+const description =
+  "Free breakup tools for the moment you want to text your ex: write the text in a chat that never sends, or take a 2-minute quiz. Nothing is saved.";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Free Breakup Tools",
+    url,
+    description,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: tools.map((tool, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: tool.name,
+        url: new URL(tool.href, site).toString(),
+      })),
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Free Tools", item: url },
+    ],
+  },
+];
+---
+
+<Base title="Free Breakup Tools - Heal: No Contact & Breakup" description={description} jsonLd={jsonLd}>
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 md:py-20">
+      <header class="mx-auto mb-14 max-w-3xl space-y-5 text-center">
+        <p class="eyebrow text-lavender">Free tools</p>
+        <h1 class="text-5xl leading-[1.08] md:text-6xl">
+          For when you want to <span class="italic text-lavender">text them</span>
+        </h1>
+        <p class="lede">No download, no sign-up. Nothing you type is sent or saved.</p>
+      </header>
+
+      <div class="grid gap-5 md:grid-cols-2">
+        {tools.map((tool) => <ToolCard tool={tool} headingLevel="h2" />)}
+      </div>
+
+      <p class="mt-14 text-center text-ink-soft">
+        Want more than a quick fix? Read our guide to{" "}
+        <a href="/blog/articles/should-i-text-my-ex/" class="text-lavender underline underline-offset-4">whether you should text your ex</a>{" "}
+        or browse{" "}
+        <a href="/blog/" class="text-lavender underline underline-offset-4">the blog</a>.
+      </p>
+    </div>
+  </main>
+  <Footer />
+</Base>
