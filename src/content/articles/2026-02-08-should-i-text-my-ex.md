@@ -24,6 +24,8 @@ The urge to text your ex is one of the most universal experiences after a breaku
 
 This guide will help you figure out whether texting is the right move, what actually happens when you reach out, and what to do instead when the craving feels unbearable.
 
+Short on time? Take our [2-minute should I text my ex quiz](/tools/should-i-text-my-ex/) for a quick, honest answer.
+
 ___
 
 Thinking about sending that text? **Try Heal's fake text coach first on [iOS](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8) or [Android](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb).**

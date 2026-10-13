@@ -1,0 +1,395 @@
+---
+import { ArrowLeft, ArrowRight, RotateCcw } from "@lucide/astro";
+import Base from "../../layouts/Base.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import Footer from "../../components/Footer.astro";
+import { APP_STORE_URL } from "../../lib/site";
+
+const title = "Should I Text My Ex? Take the 2-Minute Quiz";
+const description =
+  "Answer 8 quick questions about why you want to text your ex, when and what you hope will happen. Get an honest answer, and what to do instead if it's not a good idea.";
+
+// Each answer adds to a "risk" score; practical answers mark the text as logistics.
+const questions = [
+  {
+    id: "why",
+    text: "Why do you want to text them?",
+    options: [
+      { label: "I miss them", score: 3 },
+      { label: "I want answers or closure", score: 2 },
+      { label: "I want to know if they miss me too", score: 3 },
+      { label: "To say sorry or wish them well", score: 1 },
+      { label: "Something practical: keys, bills, kids, a pet", score: 0, practical: true },
+    ],
+  },
+  {
+    id: "when",
+    text: "When are you thinking of sending it?",
+    options: [
+      { label: "Right now, and it's late at night", score: 3 },
+      { label: "Right now, during the day", score: 1 },
+      { label: "Sometime in the next few days", score: 0 },
+    ],
+  },
+  {
+    id: "drinking",
+    text: "Have you been drinking?",
+    options: [
+      { label: "Yes", score: 3 },
+      { label: "No", score: 0 },
+    ],
+  },
+  {
+    id: "since",
+    text: "How long ago did you break up?",
+    options: [
+      { label: "Less than 2 weeks", score: 3 },
+      { label: "2 weeks to a month", score: 2 },
+      { label: "1 to 3 months", score: 1 },
+      { label: "More than 3 months", score: 0 },
+    ],
+  },
+  {
+    id: "nocontact",
+    text: "Are you doing no contact right now?",
+    options: [
+      { label: "Yes", score: 2 },
+      { label: "No", score: 0 },
+    ],
+  },
+  {
+    id: "hope",
+    text: "What do you hope happens after you send it?",
+    options: [
+      { label: "We get back together", score: 3 },
+      { label: "They explain why it ended", score: 2 },
+      { label: "They reassure me or say they miss me", score: 3 },
+      { label: "Nothing, I just need to say it", score: 1 },
+      { label: "The practical thing gets sorted", score: 0, practical: true },
+    ],
+  },
+  {
+    id: "noreply",
+    text: "If they don't reply at all, how will you feel tomorrow?",
+    options: [
+      { label: "Crushed", score: 3 },
+      { label: "Bad, but I'd cope", score: 1 },
+      { label: "Fine, honestly", score: 0 },
+    ],
+  },
+  {
+    id: "written",
+    text: "Have you written the message somewhere it can't send, and read it back?",
+    options: [
+      { label: "Not yet", score: 1 },
+      { label: "Yes, and I still want to send it", score: 0 },
+    ],
+  },
+];
+
+const results = [
+  {
+    id: "wait",
+    eyebrow: "Your answer",
+    title: "Don't send it tonight.",
+    text: "Right now the urge is doing the talking. You're early in the breakup, it's late, or you're hoping their reply will fix how you feel, and a text is unlikely to give you that. That doesn't mean never. It means not now.",
+    steps: [
+      "Write the whole message out somewhere it can't reach them.",
+      "Put your phone across the room for ten minutes.",
+      "Come back to this quiz tomorrow, in daylight, and see if your answers change.",
+    ],
+    cta: "Write it in Heal instead",
+    ctaText: "Heal gives you a chat that looks like theirs but never sends, and an SOS button for the next ten minutes.",
+  },
+  {
+    id: "sleep",
+    eyebrow: "Your answer",
+    title: "Sleep on it first.",
+    text: "Some of your reasons are clear-headed and some are the urge. Give it 48 hours. If the message still feels right after two days and a good night's sleep, it'll still be right then, and you'll send it calmer.",
+    steps: [
+      "Write it out now, without sending, so it's out of your head.",
+      "Read it back in two days and cut anything that asks for a reply you need.",
+      "Ask one friend to read it before it goes.",
+    ],
+    cta: "Draft it in Heal",
+    ctaText: "Write it where it can't send, and talk it through with Heal's coach before you decide.",
+  },
+  {
+    id: "ok",
+    eyebrow: "Your answer",
+    title: "You're probably clear enough to send it.",
+    text: "You've had some time, you're not expecting the text to fix anything, and you'd be okay without a reply. Keep it short and kind, and send it in daylight. Then put the phone down and get on with your day.",
+    steps: [
+      "Keep it to two or three sentences.",
+      "Don't ask questions you need answered.",
+      "Decide now that silence is an answer too.",
+    ],
+    cta: "Get Heal for the days after",
+    ctaText: "Whatever they say, Heal has a coach and a journal for what comes next.",
+  },
+  {
+    id: "practical",
+    eyebrow: "Your answer",
+    title: "Send it, and keep it practical.",
+    text: "Logistics are a fair reason to get in touch. Say what needs sorting, suggest a time or a way to do it, and leave it there. No small talk, no \"how are you\", no sign-off that invites a longer chat.",
+    steps: [
+      "One topic per message: the keys, the bill, the pickup.",
+      "Send it during the day.",
+      "Keep any feelings for your journal, not the thread.",
+    ],
+    cta: "Get Heal for everything else",
+    ctaText: "For the feelings that come up when you see their name again, Heal has a place to put them.",
+  },
+];
+
+const faq = [
+  {
+    question: "Should I text my ex if I miss them?",
+    answer:
+      "Missing them is normal, but it's rarely a good reason to text. A message sent to ease the missing usually brings a few seconds of relief and then a long wait for a reply. Write it out first and see if the urge passes.",
+  },
+  {
+    question: "How long should I wait before texting my ex?",
+    answer:
+      "If you're doing no contact, at least 30 days. If not, wait until you'd be okay with no reply at all. That is usually the clearest sign you're texting for the right reasons.",
+  },
+  {
+    question: "Is it ever okay to text an ex?",
+    answer:
+      "Yes. Practical matters like shared kids, money or belongings are fair reasons, and so is a short, sincere apology or birthday message once you've had real time apart. Keep it brief and don't expect anything back.",
+  },
+  {
+    question: "What should I do instead of texting my ex?",
+    answer:
+      "Put the phone out of reach, write the message somewhere it can't send, read your reasons the relationship ended, and text a friend instead. Most urges peak and pass within minutes.",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/tools/should-i-text-my-ex/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Should I Text My Ex? Quiz",
+    url,
+    description,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Any",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    publisher: { "@type": "Organization", name: "Heal", url: site },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Should I Text My Ex? Quiz", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="should-i-text-my-ex">
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
+      <header class="mb-10 space-y-5 text-center">
+        <p class="eyebrow text-lavender">Free quiz · 2 minutes</p>
+        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">Should I text my ex?</h1>
+        <p class="lede">Eight quick questions. An honest answer, and what to do instead if now isn't the time.</p>
+      </header>
+
+      <div id="quiz" class="card-raised scroll-mt-24 p-6 md:p-9">
+        <div class="mb-6 flex items-center justify-between gap-4 text-sm text-ink-muted">
+          <span id="quiz-count" aria-live="polite">Question 1 of {questions.length}</span>
+          <button id="quiz-back" type="button" class="btn btn-quiet h-9 px-3 text-sm" hidden>
+            <ArrowLeft /> Back
+          </button>
+        </div>
+        <div class="mb-8 h-1.5 overflow-hidden rounded-full bg-surface-3" aria-hidden="true">
+          <div id="quiz-bar" class="h-full rounded-full transition-all duration-300" style={`width: ${100 / questions.length}%; background: var(--progress);`}></div>
+        </div>
+
+        <form id="quiz-form">
+          {
+            questions.map((q, qi) => (
+              <fieldset data-step={qi} hidden={qi > 0} class="space-y-3">
+                <legend class="mb-5 font-display text-2xl leading-snug text-ink md:text-[1.7rem]">{q.text}</legend>
+                {q.options.map((o, oi) => (
+                  <label class="quiz-option card card-link flex cursor-pointer items-center gap-4 px-5 py-4 text-[16px] text-ink-soft">
+                    <input
+                      type="radio"
+                      name={q.id}
+                      value={oi}
+                      data-score={o.score}
+                      data-practical={o.practical ? "" : undefined}
+                      class="h-4 w-4 shrink-0 accent-[#a48bf7]"
+                    />
+                    <span>{o.label}</span>
+                  </label>
+                ))}
+              </fieldset>
+            ))
+          }
+        </form>
+
+        {
+          results.map((r) => (
+            <section data-result={r.id} hidden class="space-y-5" aria-live="polite">
+              <p class="eyebrow text-lavender">{r.eyebrow}</p>
+              <h2 class="text-3xl leading-tight md:text-4xl">{r.title}</h2>
+              <p class="text-[17px] leading-relaxed text-ink-soft">{r.text}</p>
+              <ul class="space-y-3 text-[16px] text-ink-soft">
+                {r.steps.map((s) => (
+                  <li class="flex gap-3">
+                    <span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-lavender" />
+                    <span>{s}</span>
+                  </li>
+                ))}
+              </ul>
+              <div class="rounded-[1.25rem] border border-lavender/20 bg-surface-1 p-5" data-cta="tool">
+                <p class="text-[15px] leading-relaxed text-ink-soft">{r.ctaText}</p>
+                <a href={APP_STORE_URL} data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary mt-4">
+                  {r.cta} <ArrowRight />
+                </a>
+              </div>
+              <button type="button" data-restart class="btn btn-quiet h-10 px-3 text-sm">
+                <RotateCcw /> Take it again
+              </button>
+            </section>
+          ))
+        }
+      </div>
+
+      <div class="prose-heal mt-16">
+        <h2>How this quiz works</h2>
+        <p>
+          The urge to text an ex usually comes from one of two places: something that genuinely needs saying, or a feeling
+          you want the text to fix. This quiz looks at the things that most often separate the two: why you want to send
+          it, what time it is, whether you've been drinking, how recent the breakup is, and what you're hoping they'll say
+          back.
+        </p>
+        <p>
+          The single most telling question is the one about silence. If you'd be crushed by no reply, the text is really a
+          request, and you're handing your next few days to someone who may not answer. If you'd be fine either way, you're
+          much more likely to be texting for the right reasons.
+        </p>
+        <p>
+          It isn't a test you pass or fail, and it can't know your situation the way you do. Treat the answer as a second
+          opinion from a friend who wants you to be okay tomorrow morning.
+        </p>
+
+        <h2>What to do with your result</h2>
+        <p>
+          If your answer was to wait, the most useful thing you can do is write the message anyway, somewhere it can't
+          reach them. Most of the pressure is about getting the words out of your head, and once they're out, the urge
+          often fades. Our list of <a href="/blog/articles/what-to-do-instead-of-texting-your-ex/">what to do instead of
+          texting your ex at 2am</a> has twelve more ideas for the next ten minutes.
+        </p>
+        <p>
+          If your answer was that you're probably clear to send it, keep it short, send it in daylight, and decide in
+          advance that silence is an answer too. For the full picture, including what to say and what to avoid, read our
+          guide <a href="/blog/articles/should-i-text-my-ex/">Should I text my ex? Read this before you hit send</a>.
+        </p>
+        <p>
+          And if you're in the middle of <a href="/blog/articles/no-contact-rule-guide/">no contact</a>, every urge you
+          ride out makes the next one a little easier. Count it.
+        </p>
+
+        <h2>FAQ: Should I text my ex?</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+      </div>
+
+      <aside class="mt-12 flex gap-4 rounded-[1.25rem] border border-[#f49aa7]/25 bg-[#f49aa7]/[0.06] p-5 text-sm leading-relaxed text-ink-soft">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#f49aa7]" aria-hidden="true"></span>
+        <span>
+          This quiz is not a substitute for professional help. If you're struggling or feel unsafe, visit
+          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-[#f49aa7] underline underline-offset-4">findahelpline.com</a>
+          to reach a local helpline.
+        </span>
+      </aside>
+    </div>
+  </main>
+  <Footer />
+</Base>
+
+<script>
+  type Umami = { track: (event: string, data?: Record<string, string>) => void };
+
+  const form = document.getElementById("quiz-form") as HTMLFormElement;
+  const steps = [...form.querySelectorAll<HTMLFieldSetElement>("fieldset[data-step]")];
+  const results = [...document.querySelectorAll<HTMLElement>("[data-result]")];
+  const count = document.getElementById("quiz-count")!;
+  const bar = document.getElementById("quiz-bar")!;
+  const back = document.getElementById("quiz-back")!;
+  let current = 0;
+
+  function show(index: number) {
+    current = index;
+    steps.forEach((step, i) => (step.hidden = i !== index));
+    results.forEach((r) => (r.hidden = true));
+    form.hidden = false;
+    count.textContent = `Question ${index + 1} of ${steps.length}`;
+    bar.style.width = `${((index + 1) / steps.length) * 100}%`;
+    back.hidden = index === 0;
+  }
+
+  function finish() {
+    const checked = [...form.querySelectorAll<HTMLInputElement>("input:checked")];
+    const score = checked.reduce((sum, input) => sum + Number(input.dataset.score), 0);
+    const practical = checked.filter((input) => input.dataset.practical !== undefined).length;
+    const late = (form.elements.namedItem("when") as RadioNodeList).value === "0";
+    const drinking = (form.elements.namedItem("drinking") as RadioNodeList).value === "0";
+    // Late at night or after drinking is always "not tonight"; otherwise logistics, then the score, decide.
+    const result = late || drinking ? "wait" : practical === 2 ? "practical" : score >= 13 ? "wait" : score >= 7 ? "sleep" : "ok";
+
+    form.hidden = true;
+    back.hidden = true;
+    count.textContent = "Your result";
+    bar.style.width = "100%";
+    results.forEach((r) => (r.hidden = r.dataset.result !== result));
+    document.getElementById("quiz")!.scrollIntoView({ behavior: "smooth", block: "start" });
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "should-i-text-my-ex", result });
+  }
+
+  form.addEventListener("change", () => {
+    window.setTimeout(() => (current < steps.length - 1 ? show(current + 1) : finish()), 220);
+  });
+  back.addEventListener("click", () => show(Math.max(0, current - 1)));
+  document.querySelectorAll("[data-restart]").forEach((button) =>
+    button.addEventListener("click", () => {
+      form.reset();
+      show(0);
+    }),
+  );
+</script>
+
+<style>
+  .quiz-option:has(input:checked) {
+    border-color: rgba(164, 139, 247, 0.55);
+    box-shadow: var(--elev-2), inset 0 0 0 1px rgba(164, 139, 247, 0.35);
+    color: var(--ink);
+  }
+  .quiz-option:has(input:focus-visible) {
+    outline: 2px solid var(--lavender-hex);
+    outline-offset: 2px;
+  }
+</style>
