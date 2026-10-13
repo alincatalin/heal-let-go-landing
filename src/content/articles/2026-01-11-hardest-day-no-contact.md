@@ -55,7 +55,7 @@ The hardest part of morning is often the first five minutes. You wake up, and fo
 
 Instead, give yourself one small physical task: make your bed, take a shower, drink a full glass of water. These aren't going to heal your heartbreak, but they're going to get you moving before your brain has time to spiral.
 
-If you absolutely need to vent about them before noon, write it down somewhere. A notes app. A journal. The Heal app's fake text feature, where you can draft every message you want to send and watch it disappear into the void where it belongs.
+If you absolutely need to vent about them before noon, write it down somewhere. A notes app. A journal. Our free [unsent text tool](/tools/unsent-text/), which works in your browser. The Heal app's fake text feature, where you can draft every message you want to send and watch it disappear into the void where it belongs.
 
 ### Afternoon (12 PM - 6 PM): The Rumination Hours
 

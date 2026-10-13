@@ -24,7 +24,7 @@ The urge to text your ex is one of the most universal experiences after a breaku
 
 This guide will help you figure out whether texting is the right move, what actually happens when you reach out, and what to do instead when the craving feels unbearable.
 
-Short on time? Take our [2-minute should I text my ex quiz](/tools/should-i-text-my-ex/) for a quick, honest answer.
+Short on time? Take our [2-minute should I text my ex quiz](/tools/should-i-text-my-ex/) for a quick, honest answer, or get it out of your head first with our [unsent text tool](/tools/unsent-text/), a chat that never sends.
 
 ___
 
@@ -177,7 +177,7 @@ Here's the move that saves people from regret:
 
 Instead:
 
-1.  Open Heal (or your notes app).
+1.  Open Heal, our free [unsent text tool](/tools/unsent-text/), or your notes app.
 2.  Type exactly what you want to send.
 3.  Read it out loud.
 4.  Ask yourself: "If I got this text from them, how would I feel?"
