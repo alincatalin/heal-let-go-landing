@@ -18,6 +18,7 @@ import FinalCTA from "../components/FinalCTA.astro";
 import Footer from "../components/Footer.astro";
 import { faqs } from "../lib/faqs";
 import { APP_STORE_URL, PLAY_STORE_URL, SITE_NAME } from "../lib/site";
+import { APP_STORE_ID, PLAY_PACKAGE } from "../lib/store";
 
 const site = Astro.site!.toString();
 const jsonLd = [
@@ -28,6 +29,7 @@ const jsonLd = [
     url: site,
     logo: new URL("/assets/logo.png", site).toString(),
     email: "healletgo@proton.me",
+    sameAs: [`https://apps.apple.com/app/id${APP_STORE_ID}`, `https://play.google.com/store/apps/details?id=${PLAY_PACKAGE}`],
   },
   {
     "@context": "https://schema.org",
