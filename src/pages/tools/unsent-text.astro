@@ -1,0 +1,322 @@
+---
+import { ArrowRight, RotateCcw, Send } from "@lucide/astro";
+import Base from "../../layouts/Base.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import Footer from "../../components/Footer.astro";
+import { APP_STORE_URL } from "../../lib/site";
+
+const title = "Write the Text. We Won't Send It. | Unsent Text to Your Ex";
+const description =
+  "Write the text you want to send your ex in a chat that never delivers. Nothing leaves your browser. Then read it back with three honest questions.";
+
+// Asked one at a time after the message "fails" to send. Answers stay on the page.
+const prompts = [
+  "What were you hoping they'd write back?",
+  "What's more likely to happen if you send it?",
+  "What do you need right now that you could get somewhere else?",
+];
+
+const faq = [
+  {
+    question: "Does this actually send anything?",
+    answer:
+      "No. There is no send. What you type stays in this browser tab, it isn't saved or uploaded, and it's gone when you close the page.",
+  },
+  {
+    question: "Why write a text you won't send?",
+    answer:
+      "Most of the pressure behind a late-night text is the need to get the words out of your head. Writing them down does that part. Once they're out, it's easier to look at what you actually wanted from sending it.",
+  },
+  {
+    question: "What if I still want to send it after writing it?",
+    answer:
+      "Wait until tomorrow and read it again in daylight. If it still feels right, keep it short and decide in advance that no reply is an answer too. Our quiz can help you decide.",
+  },
+  {
+    question: "Is this the same as Heal's unsent texts?",
+    answer:
+      "It's a small version of it. In the Heal app, unsent texts live in a chat that looks like theirs, you can keep them in a private journal, and an AI coach replies instead of your ex.",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/tools/unsent-text/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Unsent Text to Your Ex",
+    url,
+    description,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Any",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    publisher: { "@type": "Organization", name: "Heal", url: site },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Free Tools", item: new URL("/tools/", site).toString() },
+      { "@type": "ListItem", position: 3, name: "Unsent Text to Your Ex", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="unsent-text">
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
+      <header class="mb-10 space-y-5 text-center">
+        <p class="eyebrow text-lavender">Free tool · nothing gets sent</p>
+        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">Write the text. We won't send it.</h1>
+        <p class="lede">Type the message you want to send them. Say all of it. It goes nowhere, and then we'll read it back together.</p>
+      </header>
+
+      <div id="unsent" class="card-raised scroll-mt-24 overflow-hidden p-0">
+        <div class="flex items-center gap-3 border-b border-white/5 px-5 py-4">
+          <span class="grid h-9 w-9 place-items-center rounded-full bg-surface-3 font-display text-ink" id="chat-initial" aria-hidden="true">?</span>
+          <label class="min-w-0 flex-1">
+            <span class="sr-only">Their name</span>
+            <input id="chat-name" type="text" maxlength="30" placeholder="Their name" autocomplete="off" class="w-full bg-transparent text-[16px] font-semibold text-ink placeholder:text-ink-muted focus:outline-none" />
+          </label>
+          <span class="text-xs text-ink-muted">Not connected</span>
+        </div>
+
+        <div id="chat-log" class="min-h-[14rem] space-y-3 px-5 py-6" aria-live="polite">
+          <p id="chat-empty" class="pt-10 text-center text-sm text-ink-muted">Nothing here goes to them. Start typing below.</p>
+        </div>
+
+        <form id="chat-form" class="flex items-end gap-3 border-t border-white/5 px-4 py-4">
+          <label class="min-w-0 flex-1">
+            <span class="sr-only">Your message</span>
+            <textarea id="chat-input" rows="2" maxlength="4000" placeholder="I know I shouldn't text you but…" class="block max-h-48 w-full resize-none rounded-2xl bg-surface-1 px-4 py-3 text-[16px] leading-relaxed text-ink placeholder:text-ink-muted focus:outline-none focus:ring-2 focus:ring-[#a48bf7]/50"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary h-11 w-11 shrink-0 p-0" aria-label="Send (it won't)">
+            <Send />
+          </button>
+        </form>
+      </div>
+
+      <section id="reflect" hidden class="card-raised mt-6 space-y-5 p-6 md:p-9" aria-live="polite">
+        <p class="eyebrow text-lavender">It didn't send</p>
+        <h2 class="text-3xl leading-tight md:text-4xl">Good. Now read it back.</h2>
+        <p class="text-[17px] leading-relaxed text-ink-soft">
+          Take a breath and answer these for yourself. You don't have to write anything down.
+        </p>
+        <ol class="space-y-4">
+          {
+            prompts.map((p, i) => (
+              <li class="flex gap-4">
+                <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-surface-3 text-sm text-lavender">{i + 1}</span>
+                <span class="pt-0.5 text-[17px] leading-relaxed text-ink">{p}</span>
+              </li>
+            ))
+          }
+        </ol>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <button type="button" id="let-go" class="btn btn-primary">Let it go</button>
+          <button type="button" id="keep" class="btn btn-quiet">Copy it to keep</button>
+        </div>
+        <p id="keep-msg" class="text-sm text-ink-muted" hidden></p>
+      </section>
+
+      <section id="after" hidden class="card-raised mt-6 space-y-5 p-6 md:p-9" aria-live="polite">
+        <p class="eyebrow text-lavender">Done</p>
+        <h2 class="text-3xl leading-tight md:text-4xl">That's one you didn't send.</h2>
+        <p class="text-[17px] leading-relaxed text-ink-soft">
+          The urge usually peaks and then passes. If it comes back tonight, you can write here again, or put your phone in
+          another room for ten minutes.
+        </p>
+        <div class="rounded-[1.25rem] border border-lavender/20 bg-surface-1 p-5" data-cta="tool">
+          <p class="text-[15px] leading-relaxed text-ink-soft">
+            In Heal, unsent texts go in a chat that looks like theirs, an AI coach answers instead of them, and the SOS
+            button gets you through the next ten minutes. Free to start.
+          </p>
+          <a href={APP_STORE_URL} data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary mt-4">
+            Write it in Heal next time <ArrowRight />
+          </a>
+        </div>
+        <button type="button" data-restart class="btn btn-quiet h-10 px-3 text-sm">
+          <RotateCcw /> Write another
+        </button>
+      </section>
+
+      <div class="prose-heal mt-16">
+        <h2>Why write a text you won't send?</h2>
+        <p>
+          When you want to text an ex, most of the pressure is about getting the words out. The message has been going round
+          your head for an hour, and sending it feels like the only way to make it stop. Writing it somewhere it can't reach
+          them gets the words out without handing your night to whether they reply.
+        </p>
+        <p>
+          There's research behind this too. Writing about painful experiences, rather than keeping them in, is linked to
+          better wellbeing in many studies, and you don't need anyone to read it for that to work. Our guide to
+          <a href="/blog/articles/unsent-letter-to-ex/">writing an unsent letter to your ex</a> goes deeper, with examples.
+        </p>
+
+        <h2>Is anything saved?</h2>
+        <p>
+          No. What you type stays in this tab. It isn't stored, it isn't sent to us, and it's gone when you close the page or
+          tap "Let it go". We only count that someone used the tool, never what they wrote.
+        </p>
+
+        <h2>Still want to send it?</h2>
+        <p>
+          That's allowed. Wait until tomorrow, read it again, and take our
+          <a href="/tools/should-i-text-my-ex/">2-minute "Should I text my ex?" quiz</a>. If it's late, you've been
+          drinking or you'd be crushed by no reply, give it one more day. Our list of
+          <a href="/blog/articles/what-to-do-instead-of-texting-your-ex/">what to do instead of texting your ex at 2am</a>
+          has more ideas for the next ten minutes.
+        </p>
+
+        <h2>FAQ: Unsent texts</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+      </div>
+
+      <aside class="mt-12 flex gap-4 rounded-[1.25rem] border border-[#f49aa7]/25 bg-[#f49aa7]/[0.06] p-5 text-sm leading-relaxed text-ink-soft">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#f49aa7]" aria-hidden="true"></span>
+        <span>
+          This tool is not a substitute for professional help. If you're struggling or feel unsafe, visit
+          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-[#f49aa7] underline underline-offset-4">findahelpline.com</a>
+          to reach a local helpline.
+        </span>
+      </aside>
+    </div>
+  </main>
+  <Footer />
+</Base>
+
+<script>
+  type Umami = { track: (event: string, data?: Record<string, string>) => void };
+  // Only the action is tracked, never what someone wrote.
+  const track = (result: string) =>
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "unsent-text", result });
+
+  const form = document.getElementById("chat-form") as HTMLFormElement;
+  const input = document.getElementById("chat-input") as HTMLTextAreaElement;
+  const nameInput = document.getElementById("chat-name") as HTMLInputElement;
+  const initial = document.getElementById("chat-initial")!;
+  const log = document.getElementById("chat-log")!;
+  const empty = document.getElementById("chat-empty")!;
+  const reflect = document.getElementById("reflect")!;
+  const after = document.getElementById("after")!;
+  const keepMsg = document.getElementById("keep-msg")!;
+  const written: string[] = [];
+
+  nameInput.addEventListener("input", () => {
+    initial.textContent = nameInput.value.trim().charAt(0).toUpperCase() || "?";
+  });
+
+  input.addEventListener("input", () => {
+    input.style.height = "auto";
+    input.style.height = `${input.scrollHeight}px`;
+  });
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      form.requestSubmit();
+    }
+  });
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const text = input.value.trim();
+    if (!text) return;
+    written.push(text);
+    empty.hidden = true;
+
+    const row = document.createElement("div");
+    row.className = "flex flex-col items-end gap-1";
+    const bubble = document.createElement("p");
+    bubble.className =
+      "unsent-bubble max-w-[85%] whitespace-pre-wrap rounded-2xl rounded-br-md px-4 py-2.5 text-[16px] leading-relaxed text-white";
+    bubble.textContent = text;
+    const status = document.createElement("span");
+    status.className = "text-xs text-[#f49aa7]";
+    status.textContent = "Not delivered. This one stays with you.";
+    row.append(bubble, status);
+    log.append(row);
+
+    input.value = "";
+    input.style.height = "auto";
+    if (reflect.hidden) {
+      reflect.hidden = false;
+      track("written");
+    }
+  });
+
+  function clearAll() {
+    written.length = 0;
+    log.querySelectorAll(":scope > div").forEach((el) => el.remove());
+    empty.hidden = false;
+    keepMsg.hidden = true;
+  }
+
+  document.getElementById("let-go")!.addEventListener("click", () => {
+    log.querySelectorAll(".unsent-bubble").forEach((el) => el.classList.add("letting-go"));
+    window.setTimeout(() => {
+      clearAll();
+      reflect.hidden = true;
+      after.hidden = false;
+      after.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 600);
+    track("let-go");
+  });
+
+  document.getElementById("keep")!.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(written.join("\n\n"));
+      keepMsg.textContent = "Copied. Paste it somewhere private, like your notes, not your chat with them.";
+    } catch {
+      keepMsg.textContent = "Couldn't copy here. Select the text above and copy it by hand.";
+    }
+    keepMsg.hidden = false;
+    track("kept");
+  });
+
+  document.querySelectorAll("[data-restart]").forEach((button) =>
+    button.addEventListener("click", () => {
+      clearAll();
+      after.hidden = true;
+      document.getElementById("unsent")!.scrollIntoView({ behavior: "smooth", block: "start" });
+      input.focus();
+    }),
+  );
+</script>
+
+<style>
+  :global(.unsent-bubble) {
+    background: linear-gradient(135deg, #8b6cf0 0%, #b77fe0 100%);
+    transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
+  }
+  :global(.unsent-bubble.letting-go) {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.96);
+    filter: blur(4px);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :global(.unsent-bubble) {
+      transition: none;
+    }
+  }
+</style>

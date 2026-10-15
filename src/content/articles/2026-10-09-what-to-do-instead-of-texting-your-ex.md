@@ -5,6 +5,7 @@ date: "2026-10-09"
 category: "No Contact"
 readTime: "7 min"
 excerpt: "It's late, you're awake, and their name is right there. Here are 12 things to do instead of texting your ex, starting with the next ten minutes."
+answer: "When you want to text your ex at 2am, give it ten minutes before you decide, put the phone out of reach, and write the message somewhere it can't send. Then read your reasons for the breakup or message a friend instead. The urge is strongest at night because you're tired and alone, and it passes."
 author: "Heal Team"
 keywords: "what to do instead of texting your ex, how to stop texting your ex, want to text my ex at night, urge to text ex at 2am, things to do instead of texting your ex"
 cluster: "texting-your-ex"
@@ -37,7 +38,7 @@ Breathe in for four counts and out for six, for two minutes. A longer out-breath
 
 ### 3. Write the text, but don't send it
 
-Write exactly what you want to say, in full, somewhere it can't reach them: your notes app, a journal, or Heal's fake text, which never sends. Often the urge isn't about them reading it. It's about getting it out of your head.
+Write exactly what you want to say, in full, somewhere it can't reach them: your notes app, a journal, our free [unsent text tool](/tools/unsent-text/) right here in your browser, or Heal's fake text, which never sends. Often the urge isn't about them reading it. It's about getting it out of your head.
 
 Then read it back. Ask: what am I hoping they'll reply? What's more likely to happen? If they don't reply at all, how will I feel tomorrow?
 
