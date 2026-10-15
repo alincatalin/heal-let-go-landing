@@ -7,13 +7,13 @@ readTime: "5 min"
 excerpt: "Limerence is an involuntary, all-consuming longing for one person. Here's where the word comes from, the signs, how it differs from love, and how it fades."
 author: "Heal Team"
 keywords: "what is limerence, limerence, limerence meaning, limerence vs love, signs of limerence, limerence after breakup, how to get over limerence, limerent object"
+answer: "Limerence is an involuntary, consuming longing for one person. You think about them constantly, you badly need them to feel the same, and your mood rises and falls with every sign that they might. Psychologist Dorothy Tennov coined the word in her 1979 book Love and Limerence. It feels like love, but it runs on uncertainty."
+term: "Limerence"
 cluster: "getting-over"
 cta:
   title: "Someone to talk to at 2am"
   text: "When your head is full of one person, Heal's coach is there to talk it through, day or night, and nothing you write ever reaches them."
 ---
-
-Limerence is an involuntary, consuming longing for one person. You think about them constantly, you badly need them to feel the same, and your mood rises and falls with every sign that they might. Psychologist Dorothy Tennov coined the word and introduced it in her 1979 book *Love and Limerence*. It feels like love, but it runs on uncertainty.
 
 If you've ever reread one text from him forty times trying to decode a full stop, you know the feeling already. Now it has a name.
 
@@ -43,6 +43,14 @@ They overlap, and limerence is often how love starts. The difference is what eac
 Love does fine with certainty. You know where you stand, you can see his annoying habits, and you still choose him.
 
 Limerence needs doubt. Once you're sure, either way, it usually cools. And it's mostly about getting a response (will he text, does he feel it too), with much less room for who he actually is.
+
+| | Limerence | Love |
+|---|---|---|
+| What keeps it going | Uncertainty and hope | Knowing where you stand |
+| What it focuses on | Getting a response from them | Who they actually are |
+| Their flaws | Edited out | Seen, and you choose them anyway |
+| Once you get a clear answer | Usually cools, either way | Holds up |
+| How it feels day to day | Highs and crashes | Mostly calm |
 
 A quick check: if he texted you right now, would you feel calm or high? Calm leans toward love.
 
@@ -96,6 +104,12 @@ Anywhere from a few weeks to years. It fades faster once there's nothing left to
 
 **Can you have limerence for an ex?**
 Yes. A breakup adds the uncertainty it feeds on, so it often gets stronger after the ending.
+
+**How do I stop limerence after a breakup?**
+Take away what feeds it. Stop texting, stop checking their profile and stop asking friends about them, so there's nothing left to decode. Writing down a few real things that didn't work helps when your mind replays only the good parts.
+
+**What is a limerent object?**
+It's Tennov's term for the person you feel limerence for, the one your thoughts and moods revolve around.
 
 **Is limerence a mental illness?**
 No. It isn't a diagnosis, and healthy people go through it. If it's taking over your sleep or work, a therapist can help.
