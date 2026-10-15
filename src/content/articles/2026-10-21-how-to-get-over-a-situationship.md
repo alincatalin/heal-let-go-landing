@@ -7,13 +7,12 @@ readTime: "8 min"
 excerpt: "How to get over a situationship when there was no label and no breakup: why the not-knowing hurts so much, how to end it yourself, and what helps next."
 author: "Heal Team"
 keywords: "how to get over a situationship, getting over a situationship, situationship ended, situationship breakup, how to end a situationship, why does a situationship hurt so much, grieving a situationship"
+answer: "To get over a situationship, treat it as a real loss, because it was one. Let yourself grieve it. Decide it's over yourself instead of waiting for them to say so, then cut the contact that keeps the \"maybe\" alive. Not knowing where you stood is a big part of why it hurts, and ending it is the first step."
 cluster: "getting-over"
 cta:
   title: "Someone to talk to at 2am"
   text: "Heal's AI coach is there when it's late and you can't explain this to anyone else. Write the text you won't send, talk it through, and see what's normal where you are."
 ---
-
-To get over a situationship, treat it as a real loss, because it was one. Give yourself permission to grieve it. Decide it's over yourself instead of waiting for them to say so. Then cut the contact that keeps the "maybe" alive. The ambiguity is a big part of why it hurts, and ending it is the first step.
 
 If you're here, you probably can't point to the day it ended. Maybe the texts got slower. Maybe they started seeing someone else and you found out on Instagram. Maybe you're technically still talking and you already know it's over.
 
@@ -35,6 +34,17 @@ A situationship can also hurt in ways a normal breakup doesn't:
 That last one matters more than it sounds. In a small study, women looked at the profiles of men who had supposedly rated them. Women who didn't know whether the men liked them a lot or only a bit thought about those men more, and felt more drawn to them, than women who were told the men liked them best ([Whitchurch, Wilson and Gilbert, 2011](https://doi.org/10.1177/0956797610393745)). It was one short experiment with strangers, so we can't stretch it too far. But it puts a name to something you may know: not knowing where you stand keeps someone on your mind.
 
 A situationship can be months of exactly that.
+
+## How Is a Situationship Ending Different From a Breakup?
+
+A breakup has a day, a conversation and usually some sympathy. A situationship often has none of those, which changes what getting over it takes.
+
+| | Breakup | Situationship ending |
+|---|---|---|
+| How it ends | A conversation, a date you can point to | Slower replies, a fade, or finding out they're seeing someone |
+| What you're left with | Grief, but a clear "it's over" | Grief plus "was it even anything?" |
+| What friends say | "I'm so sorry" | Sometimes "you weren't even together" |
+| What helps first | Distance and time | Deciding it's over yourself, then distance and time |
 
 ## Am I Allowed to Grieve a Relationship That Never Had a Label?
 
@@ -122,6 +132,9 @@ There's no fixed time. Some people feel lighter in a couple of weeks. For others
 You'll know it's working when you notice you went a whole day without checking whether they've watched your story. Then two days. For most people it happens like that, slowly, and you only see it looking back.
 
 ## FAQ: Getting Over a Situationship
+
+**What is a situationship?**
+A situationship is a romantic or sexual connection that never gets a clear label or commitment. You act like more than friends, but you never agree on what you are, which is why it can end without a breakup and still hurt like one.
 
 **Why is a situationship so hard to get over?**
 Because there's usually no clear ending, and uncertainty keeps people on your mind. You may also feel like you're not allowed to grieve, which makes it harder to talk about and move through.
