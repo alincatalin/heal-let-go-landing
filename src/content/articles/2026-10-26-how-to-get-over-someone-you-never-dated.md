@@ -7,13 +7,12 @@ readTime: "8 min"
 excerpt: "Getting over someone you never dated is real grief, even with no breakup to point to. Why it hurts this much, and what helps you let go of what never was."
 author: "Heal Team"
 keywords: "get over someone you never dated, how to get over someone you never dated, getting over a crush, how to get over unrequited love, how to get over someone who doesn't like you back, almost relationship, grieving a relationship that never happened"
+answer: "To get over someone you never dated, treat it as a real loss, because it is one. Stop feeding the hope: no rereading old messages, no checking their stories. Let yourself grieve the future you imagined as well as the person. Then give that energy to people who give some back. Your brain doesn't care whether it was official."
 cluster: "getting-over"
 cta:
   title: "Someone to talk to at 2am"
   text: "No breakup, no closure, and nobody who quite gets it? Heal's coach does. Talk it through any time, and write what you'd say to them where it never sends."
 ---
-
-To get over someone you never dated, treat it as a real loss, because it is one. Stop feeding the hope: no rereading old messages, no checking their stories. Let yourself grieve the future you imagined as well as the person. Then give that energy to people who give some back. Your brain doesn't care whether it was official.
 
 Maybe it was a friend you fell for. A coworker who flirted every Thursday and then got a girlfriend. Someone you talked to for six weeks and never actually met. Whatever it was, there was no breakup, so nobody brought you ice cream. You're still crying in the car, though, and this guide is for that.
 
@@ -48,6 +47,13 @@ With **unrequited love**, you said something (or it was obvious) and they don't 
 An **almost-relationship** is the one where you talked every day, maybe kissed, maybe more, and it never got a name. It overlaps with a situationship, and our guide on [how to get over a situationship](/blog/articles/how-to-get-over-a-situationship/) goes deeper. Treat it like any breakup. You need distance and you need time.
 
 Falling for a friend is the cruelest version, because you can't easily step away. More on that below.
+
+| What it was | What makes it hard | What letting go looks like |
+|---|---|---|
+| A crush you never acted on | The "what if" | Mostly work in your own head: stop collecting evidence |
+| Unrequited love | You have your answer, and it hurts | Accepting the answer instead of hunting for a better one |
+| An almost-relationship | It felt real but never got a name | Treat it like a breakup: distance and time |
+| Falling for a friend | You can't easily step away | Less contact for a while, not none |
 
 ## How Do I Actually Let Go?
 
@@ -117,6 +123,9 @@ Because you're grieving a future you imagined as well as the person, and that ve
 
 **Is it OK to grieve a relationship that never happened?**
 Yes. Grief that others don't recognize is called disenfranchised grief, and it's just as real. It often feels heavier because you don't get the usual support.
+
+**How do I get over a crush that never went anywhere?**
+Stop feeding the hope. Mute their stories, stop rereading old messages and stop asking about them. Write down what you imagined so it becomes a loss you can be sad about, then put that energy into people who give some back.
 
 **Should I tell them how I feel to get closure?**
 Only if you can accept any answer, including silence. If you're secretly hoping it changes their mind, write it out first somewhere it won't send and see how you feel the next day.
