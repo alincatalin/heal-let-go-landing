@@ -12,6 +12,7 @@ interface Related {
   href: string;
   title: string;
   excerpt: string;
+  answer?: string;
   category: string;
   date: Date;
   readTime: string;
@@ -36,7 +37,7 @@ interface Props {
   storePage?: string;
 }
 
-const { kind, title, excerpt, category, date, updated, readTime, author, image, related, slug, cluster, cta, series, faq = [], storePage } = Astro.props;
+const { kind, title, excerpt, answer, category, date, updated, readTime, author, image, related, slug, cluster, cta, series, faq = [], storePage } = Astro.props;
 const seriesPath = (href: string) => href.replace(/\/$/, "");
 const isCurrent = (href: string) => seriesPath(href) === seriesPath(Astro.url.pathname);
 const site = Astro.site!.toString();
@@ -49,6 +50,7 @@ const jsonLd = [
     "@type": "BlogPosting",
     headline: title,
     description: excerpt,
+    ...(answer ? { abstract: answer } : {}),
     image: imageUrl,
     datePublished: date.toISOString(),
     dateModified: (updated ?? date).toISOString(),
@@ -130,6 +132,15 @@ const jsonLd = [
             <span>{readTimeLabel(readTime)}</span>
           </div>
         </header>
+
+        {
+          answer && (
+            <section aria-label="Short answer" class="card mb-10 px-6 py-5">
+              <p class="eyebrow mb-2 text-lavender">Short answer</p>
+              <p class="text-[17px] leading-relaxed text-ink">{answer}</p>
+            </section>
+          )
+        }
 
         {
           series && series.length > 1 && (
