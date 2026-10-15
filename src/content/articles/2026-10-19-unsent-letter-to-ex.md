@@ -127,7 +127,7 @@ Mostly the moment.
 
 A letter is something you sit down to write, at a time you choose. An unsent text is what you write when the urge grabs you. It's 11:40pm, you've seen his name in someone's story, and your thumbs are already typing. That message needs somewhere to go right now, not in a calm hour tomorrow.
 
-Most people need both. If the late-night kind is your problem, we wrote a whole list of [what to do instead of texting your ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/).
+Most people need both. For the late-night kind, our free [unsent text tool](/tools/unsent-text/) gives you a chat that never sends, right in your browser. And we wrote a whole list of [what to do instead of texting your ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/).
 
 ## What Does an Unsent Text Look Like in Heal?
 

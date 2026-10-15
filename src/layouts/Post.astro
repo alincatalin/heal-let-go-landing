@@ -5,7 +5,8 @@ import SiteHeader from "../components/SiteHeader.astro";
 import Footer from "../components/Footer.astro";
 import FinalCTA from "../components/FinalCTA.astro";
 import PostCard from "../components/PostCard.astro";
-import { formatDate, readTimeLabel } from "../lib/site";
+import { formatDate, readTimeLabel, SITE_NAME } from "../lib/site";
+import { APP_STORE_ID, PLAY_PACKAGE } from "../lib/store";
 import type { clusterLinks, seriesLinks } from "../lib/related";
 
 interface Related {
@@ -22,6 +23,8 @@ interface Props {
   kind: "Article" | "Guide";
   title: string;
   excerpt: string;
+  answer?: string;
+  term?: string;
   category: string;
   date: Date;
   updated?: Date;
@@ -37,12 +40,22 @@ interface Props {
   storePage?: string;
 }
 
-const { kind, title, excerpt, answer, category, date, updated, readTime, author, image, related, slug, cluster, cta, series, faq = [], storePage } = Astro.props;
+const { kind, title, excerpt, answer, term, category, date, updated, readTime, author, image, related, slug, cluster, cta, series, faq = [], storePage } = Astro.props;
 const seriesPath = (href: string) => href.replace(/\/$/, "");
 const isCurrent = (href: string) => seriesPath(href) === seriesPath(Astro.url.pathname);
 const site = Astro.site!.toString();
 const url = new URL(Astro.url.pathname, site).toString();
 const imageUrl = new URL(image ?? "/heal-og.png", site).toString();
+// Same @id as the homepage entities, so answer engines tie every post to one "Heal" organization and app.
+const organization = { "@type": "Organization", "@id": `${site}#organization`, name: "Heal", url: site };
+const app = {
+  "@type": "MobileApplication",
+  "@id": `${site}#app`,
+  name: SITE_NAME,
+  operatingSystem: "iOS, Android",
+  applicationCategory: "HealthApplication",
+  sameAs: [`https://apps.apple.com/app/id${APP_STORE_ID}`, `https://play.google.com/store/apps/details?id=${PLAY_PACKAGE}`],
+};
 
 const jsonLd = [
   {
@@ -56,13 +69,24 @@ const jsonLd = [
     dateModified: (updated ?? date).toISOString(),
     author: { "@type": "Organization", name: author, url: site },
     publisher: {
-      "@type": "Organization",
-      name: "Heal",
+      ...organization,
       logo: { "@type": "ImageObject", url: new URL("/assets/logo.png", site).toString() },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     articleSection: category,
+    mentions: [app],
   },
+  ...(term && answer
+    ? [
+        {
+          "@context": "https://schema.org",
+          "@type": "DefinedTerm",
+          name: term,
+          description: answer,
+          url,
+        },
+      ]
+    : []),
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

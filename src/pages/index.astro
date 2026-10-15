@@ -25,6 +25,7 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${site}#organization`,
     name: "Heal",
     url: site,
     logo: new URL("/assets/logo.png", site).toString(),
@@ -34,6 +35,7 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
+    "@id": `${site}#app`,
     name: SITE_NAME,
     operatingSystem: "iOS, Android",
     applicationCategory: "HealthApplication",

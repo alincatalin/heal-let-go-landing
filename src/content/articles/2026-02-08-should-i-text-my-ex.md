@@ -149,7 +149,7 @@ Breaking no contact before you've healed keeps you stuck in the cycle instead of
 
 ## What to Text Your Ex After a Breakup (If You Actually Need To)
 
-If you've thought it through and texting is genuinely necessary, here's how to do it without spiraling:
+If you've thought it through and texting is genuinely necessary, here's how to do it without spiraling (our guide on [what to text your ex](/blog/articles/what-to-text-your-ex/) has more example texts):
 
 ### Keep it short and clear
 
