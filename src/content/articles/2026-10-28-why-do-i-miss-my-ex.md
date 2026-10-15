@@ -7,17 +7,29 @@ readTime: "8 min"
 excerpt: "Why you miss your ex so much, even when it was right to end: attachment, craving, habit, rose-tinted memories, loneliness and a self tangled up in theirs."
 author: "Heal Team"
 keywords: "why do i miss my ex, why do i miss my ex so much, why do i still miss my ex, why do i miss my ex even though they hurt me, is it normal to miss your ex, why do i miss my ex boyfriend, missing my ex"
+answer: "You miss your ex so much because your brain and your days were built around them. Attachment makes their absence feel like danger, the reward system craves them, your habits still point at them, memory edits out the bad parts, and part of who you are got mixed up with theirs. None of it means you should go back."
 cluster: "getting-over"
 cta:
   title: "Someone to talk to when you miss them"
   text: "Heal's coach is there at 2am when missing your ex gets loud. Say what you'd say to them, and get a kind, honest reply instead of silence. Free to start."
 ---
 
-You miss your ex so much because your brain and your days were built around them. Attachment makes their absence feel like danger, the reward system craves them, your habits still point at them, memory edits out the bad parts, and part of who you are got mixed up with theirs. None of it means you should go back.
-
 Missing someone and wanting them back are different things, even when they feel identical at 1am.
 
 This post is only about the why. For a week-by-week plan, see [how to get over him](/blog/articles/how-to-get-over-him/). For the bigger picture, see [the 7 stages of a breakup](/blog/articles/7-stages-of-breakup/). Here we'll take the missing apart, because it's easier to sit with once you know what it's made of.
+
+## What Are the 6 Reasons You Miss Your Ex?
+
+Here they are at a glance. Each one gets its own section below.
+
+| Reason | What's going on | What helps |
+|---|---|---|
+| Craving | Your brain's reward system still expects them | Cut the supply: mute them, stop checking |
+| Attachment | They used to help calm you down | Let friends do some of the calming while you relearn it |
+| Rosy memory | Memory keeps the good parts and drops the rest | A short list of real reasons it ended |
+| Habit | Your days still point at them | Change one thing about the hardest time of day |
+| Loneliness | You miss having someone, not only them | Name what you miss and get some of it from others |
+| Identity | Part of who you are got mixed up with them | Fill the gap with things that are yours |
 
 ## Is It Normal to Miss Your Ex This Much?
 
@@ -129,6 +141,12 @@ Ending a relationship doesn't end the attachment. You can know it was the right 
 
 **Why do I miss my ex even though they treated me badly?**
 Attachment and craving don't check whether a person was good for you, and memory tends to keep the good moments. When kindness was unpredictable, those moments can feel even more precious. Missing them doesn't mean leaving was a mistake.
+
+**Why can't I stop thinking about my ex?**
+Your brain learned to expect them, so it keeps reaching for them, and every look at their profile tops that up. Habits and unanswered questions keep the loop going too. The thoughts usually get quieter with distance, not with willpower.
+
+**Is it normal to still miss my ex after 3 months?**
+Yes. Missing an ex often comes in waves for months, set off by a song, a place or a bad day. What matters is whether it's easing overall, even slowly. If it isn't easing at all and you can't sleep or work, talk to a doctor or therapist.
 
 **How long will I keep missing my ex?**
 There's no fixed timeline. Many people notice it easing over the first month or two without contact, though bad days can show up for longer. Every check-in tends to top the craving back up, so distance helps.
