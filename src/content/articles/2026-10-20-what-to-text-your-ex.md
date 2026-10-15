@@ -7,13 +7,12 @@ readTime: "8 min"
 excerpt: "What to text your ex when you really need to: example texts for logistics, getting your things back and a real apology, plus the texts better left unsent."
 author: "Heal Team"
 keywords: "what to text your ex, what to say to your ex, texts to send your ex, how to text your ex, apology text to ex, text ex to get stuff back, what to reply to your ex"
+answer: "Text your ex only when there's a real reason: logistics, returning things, shared kids or pets, or a sincere apology after real time apart. Keep it short and easy to answer. Most other texts, especially late-night ones about missing them, are better written somewhere they won't send. Write it first, wait until morning, then decide."
 cluster: "texting-your-ex"
 cta:
   title: "Draft it in Heal before you send it"
   text: "Write the text in a chat that looks like theirs. It never sends. The coach helps you check what you're hoping for, so you send only what you'd still send tomorrow."
 ---
-
-Text your ex when there's a real reason: logistics, returning things, shared kids or pets, or a sincere apology after real time apart. Keep it short and easy to answer. Most other texts, especially late-night ones about missing them, are better written somewhere they won't reach. Write it first, wait, then decide.
 
 We make an app that exists because so many people want to text their ex. So you might expect us to say "never." We won't. Some texts are fine, and a few are the right thing to do. The trick is telling which kind you're holding at 11pm with your thumb over the send button.
 
@@ -29,7 +28,18 @@ That's the test we use. A message about returning a coat makes sense from a cowo
 - A real apology, weeks or months later, when you don't need anything back.
 - Big news they'd want to hear from you, like a death in the family or something that affects them directly.
 
-If your reason isn't on this list, it might still be fine. But it's worth slowing down. Our longer guide, [should I text my ex?](/blog/articles/should-i-text-my-ex/), walks through the in-between cases, and the two-minute [Should I text my ex? quiz](/tools/should-i-text-my-ex/) is there for when you want an outside opinion fast.
+Here's the short version.
+
+| The text | Send it? | Why |
+|---|---|---|
+| Splitting a bill, rent or a subscription | Yes | One practical topic, easy to answer |
+| Getting your things back | Yes | Name the items, offer a time |
+| Kids or a shared pet | Yes, about them only | Contact you can't avoid |
+| A real apology, months later | Maybe | Only if you need nothing back |
+| "Happy birthday" | Usually not, during no contact | It tends to open a conversation |
+| "Are you awake?" or "I miss you" | Not tonight | Write it where it can't send, decide after you sleep |
+
+If your reason isn't in the table, it might still be fine. But it's worth slowing down. Our longer guide, [should I text my ex?](/blog/articles/should-i-text-my-ex/), walks through the in-between cases, and the two-minute [Should I text my ex? quiz](/tools/should-i-text-my-ex/) is there for when you want an outside opinion fast.
 
 ## What Should I Text My Ex About Logistics?
 
@@ -156,6 +166,12 @@ Wait until you don't need a reply. Name the specific thing you did, say you're s
 
 **Is it okay to text my ex late at night?**
 It's rarely a good idea. Late at night you're tired and more emotional, and texts written then often feel very different in the morning. Write it somewhere it can't send and decide after you've slept.
+
+**Should I text my ex for closure?**
+Usually not. A closure text tends to ask them for something, like an explanation or an apology, and you can't control whether you get it. Write it as an [unsent letter](/blog/articles/unsent-letter-to-ex/) first. If you still want to send something a week later, keep it short and don't end with a question.
+
+**Is there an app where you can text your ex without sending it?**
+Yes. Heal (listed as Heal: No Contact & Breakup on the App Store and Google Play) has a chat that looks like your chat with your ex, but nothing you type ever sends, and an AI coach replies instead. For a quick version in your browser, try our free [unsent text tool](/tools/unsent-text/).
 
 **What if my ex doesn't reply to a practical text?**
 Send one polite follow-up after a day or two. If there's still nothing, ask a mutual friend to help, or decide whether the item is worth more of your energy.
