@@ -10,6 +10,7 @@ import HowItWorks from "../components/HowItWorks.astro";
 import WhyNow from "../components/WhyNow.astro";
 import Pricing from "../components/Pricing.astro";
 import FeaturedGuide from "../components/FeaturedGuide.astro";
+import FreeTools from "../components/FreeTools.astro";
 import Blog from "../components/Blog.astro";
 import FAQ from "../components/FAQ.astro";
 import Support from "../components/Support.astro";
@@ -17,6 +18,7 @@ import FinalCTA from "../components/FinalCTA.astro";
 import Footer from "../components/Footer.astro";
 import { faqs } from "../lib/faqs";
 import { APP_STORE_URL, PLAY_STORE_URL, SITE_NAME } from "../lib/site";
+import { APP_STORE_ID, PLAY_PACKAGE } from "../lib/store";
 
 const site = Astro.site!.toString();
 const jsonLd = [
@@ -27,6 +29,7 @@ const jsonLd = [
     url: site,
     logo: new URL("/assets/logo.png", site).toString(),
     email: "healletgo@proton.me",
+    sameAs: [`https://apps.apple.com/app/id${APP_STORE_ID}`, `https://play.google.com/store/apps/details?id=${PLAY_PACKAGE}`],
   },
   {
     "@context": "https://schema.org",
@@ -66,6 +69,7 @@ const jsonLd = [
     <WhyNow />
     <Pricing />
     <FeaturedGuide />
+    <FreeTools />
     <Blog />
     <FAQ />
     <Support />

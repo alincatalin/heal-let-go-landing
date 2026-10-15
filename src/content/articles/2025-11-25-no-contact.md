@@ -60,6 +60,7 @@ Knowing why no contact matters is one thing. Actually doing it is another. Here 
 - **Delete their number.** Not just from your contacts—actually delete it. If you have it memorized, change your own number if you have to.
 - **Block them everywhere.** Instagram, Facebook, Twitter, TikTok, LinkedIn—everywhere. Yes, even LinkedIn. This isn't about being petty; it's about protecting your peace.
 - **Use the Heal app's fake texting feature.** When the urge hits, type out everything you want to say to them in the app. Our AI will receive it, process it, and help you understand why sending it would be a mistake.
+- **Write it where it can't send.** No app handy? Our free [unsent text tool](/tools/unsent-text/) lets you type the whole message in your browser. Nothing gets sent or saved.
 - **Read before you text.** If you're struggling with the urge right now, read our [guide to whether you should text your ex](/blog/articles/should-i-text-my-ex/) for a step-by-step decision framework.
 - **Create a "reasons why" list.** Write down every reason the relationship ended. Every red flag. Every time they hurt you. Read it when you're tempted to reach out.
 - **Have an accountability partner.** Tell a friend about your no contact commitment. Make them promise to talk you down when you're weak.

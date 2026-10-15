@@ -1,0 +1,16 @@
+---
+import Section from "./Section.astro";
+import ToolCard from "./ToolCard.astro";
+import { tools } from "../lib/tools";
+---
+
+<Section
+  id="tools"
+  eyebrow="Free tools"
+  title="Want to text them <span class='italic text-lavender'>right now?</span>"
+  lede="Start here. No download, no sign-up, and nothing you type leaves your browser."
+>
+  <div class="mx-auto grid max-w-4xl gap-5 md:grid-cols-2">
+    {tools.map((tool) => <ToolCard tool={tool} />)}
+  </div>
+</Section>

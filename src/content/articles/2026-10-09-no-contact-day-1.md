@@ -5,6 +5,7 @@ date: "2026-10-09"
 category: "No Contact"
 readTime: "8 min"
 excerpt: "The first day of no contact is less about willpower and more about setup. Here's what day 1 usually feels like, and the few things that make the next 24 hours survivable."
+answer: "Day 1 of no contact usually isn't the hardest day. Some people feel oddly calm, others feel sick and check their phone constantly, and both are normal. Use today's clarity to prepare: define your rule in one sentence, mute their chat and profiles, write your reasons list, tell one friend, and plan tonight."
 author: "Heal Team"
 keywords: "no contact day 1, first day of no contact, starting no contact, no contact first 24 hours, how to start no contact"
 cluster: "no-contact"
@@ -97,7 +98,7 @@ If you want all of that in one place, that's what Heal's SOS button is for: it w
 
 It happens more than you'd think, especially if the breakup was recent.
 
-You don't owe an immediate answer. You don't owe an answer at all unless it's genuinely practical (kids, keys, shared bills). If it is, keep the reply short and about the practical thing only. If it isn't, it's okay to not reply, and it's okay to feel shaken. Write down what you'd want to say, and read it again tomorrow. Our guide on [whether to text your ex](/blog/articles/should-i-text-my-ex/) goes deeper on this.
+You don't owe an immediate answer. You don't owe an answer at all unless it's genuinely practical (kids, keys, shared bills). If it is, keep the reply short and about the practical thing only. If it isn't, it's okay to not reply, and it's okay to feel shaken. Write down what you'd want to say (our [unsent text tool](/tools/unsent-text/) is a chat that never sends), and read it again tomorrow. Our guide on [whether to text your ex](/blog/articles/should-i-text-my-ex/) goes deeper on this.
 
 ## What Counts as Success Today
 
