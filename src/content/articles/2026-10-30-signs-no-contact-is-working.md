@@ -7,15 +7,26 @@ readTime: "8 min"
 excerpt: "The real signs no contact is working: fewer urges, quieter thoughts, more of you. Plus the signs it isn't yet, and what to change if you're stuck."
 author: "Heal Team"
 keywords: "signs no contact is working, is no contact working, how to know if no contact is working, signs no contact is not working, no contact progress, no contact working on him, signs of healing after a breakup"
+answer: "No contact is working when the urges to reach out come less often and pass faster, when whole hours go by without thinking about them, and when you start making plans that are only about you. Some days will still hurt. What changes is the pull, which gets weaker slowly and unevenly."
 cluster: "no-contact"
 cta:
   title: "See how far you've come"
   text: "Heal's tracker lays out every day without contact on a calendar, so on the hard nights you can see the progress you can't feel. Free to start."
 ---
 
-No contact is working when the urges to reach out come less often and pass faster, when whole hours go by without thinking about them, and when you start making plans that are only about you. Some days will still hurt. What changes is the pull, which gets weaker slowly and unevenly.
-
 Before the list, one gentle thing. A lot of articles about "signs no contact is working" mean signs that your ex is coming back. This isn't one of those. No contact is for you, so the signs below are about you. If part of you is still hoping it brings them back, that's human, and we'll come to it.
+
+## Is No Contact Working? A Quick Check
+
+| Signs it's working | Signs it isn't working yet |
+|---|---|
+| Urges come less often and pass faster | You still watch their stories and profile |
+| You forget to check their profile | You're counting days until they crack |
+| They're not your first thought every morning | You break it every week or two |
+| You say "I" more than "we" | Weeks in, you still replay it for hours a day |
+| Bad days are further apart | You can't sleep, eat or work, and it isn't lifting |
+
+Each one is explained below, along with what to change if you're stuck.
 
 ## What Does It Mean for No Contact to Be "Working"?
 
@@ -132,6 +143,9 @@ Not really. Their reaching out says something about them, not about your healing
 
 **Why do I feel worse during no contact?**
 The first weeks often feel worse before they feel better, because you've cut off the thing your brain was craving. Feeling worse early on is usually withdrawal, not a sign of failure. If it doesn't ease or you can't function, talk to a doctor or therapist.
+
+**Is it normal to miss my ex during no contact?**
+Yes. Missing them is part of how the attachment loosens, and it can come in waves even when no contact is working. What changes is how long the missing lasts and how often it sends you to your phone.
 
 **Does breaking no contact mean I have to start over?**
 You start counting from today, but you don't lose what you learned in the days before. One slip doesn't undo weeks of progress. What matters is not following it with a second message.
