@@ -10,6 +10,8 @@ const post = z.object({
   category: z.string(),
   readTime: z.string(),
   excerpt: z.string(),
+  // Answer-first summary (40 to 60 words) shown under the header, for readers and AI answer engines.
+  answer: z.string().optional(),
   author: z.string().default("Heal Team"),
   keywords: z.string().optional(),
   image: z.string().optional(),
