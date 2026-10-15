@@ -6,6 +6,7 @@ date: "2026-01-11"
 category: "No Contact"
 readTime: "12 min"
 excerpt: "The science behind the 72-hour crash and what to do when your brain is screaming at you to text them"
+answer: "For many people, day 3 is the hardest day of no contact. The shock and adrenaline of the first two days have worn off, and the craving for the person peaks. It usually turns after that: if you get through today, tomorrow tends to feel at least slightly more manageable. Plan the evening, when most people break."
 author: "Heal Team"
 keywords: "hardest day of no contact, no contact day 3, day 3 no contact, no contact withdrawal, no contact hardest part, first week no contact"
 cluster: "no-contact"
@@ -55,7 +56,7 @@ The hardest part of morning is often the first five minutes. You wake up, and fo
 
 Instead, give yourself one small physical task: make your bed, take a shower, drink a full glass of water. These aren't going to heal your heartbreak, but they're going to get you moving before your brain has time to spiral.
 
-If you absolutely need to vent about them before noon, write it down somewhere. A notes app. A journal. The Heal app's fake text feature, where you can draft every message you want to send and watch it disappear into the void where it belongs.
+If you absolutely need to vent about them before noon, write it down somewhere. A notes app. A journal. Our free [unsent text tool](/tools/unsent-text/), which works in your browser. The Heal app's fake text feature, where you can draft every message you want to send and watch it disappear into the void where it belongs.
 
 ### Afternoon (12 PM - 6 PM): The Rumination Hours
 
