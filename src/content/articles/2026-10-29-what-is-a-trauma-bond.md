@@ -7,13 +7,15 @@ readTime: "5 min"
 excerpt: "What a trauma bond is, where the term comes from, how to tell it apart from an ordinary hard breakup, and why distance is what finally loosens it."
 author: "Heal Team"
 keywords: "trauma bond breakup, what is a trauma bond, trauma bond meaning, trauma bonding, signs of a trauma bond, how to break a trauma bond, trauma bond no contact"
+answer: "A trauma bond is a strong emotional attachment to someone who hurts you, formed when harm and affection come in an unpredictable mix. The term comes from psychologists Donald Dutton and Susan Painter's research on abusive relationships. It isn't a clinical diagnosis, and online it's often used for breakups that were painful but not abusive."
+term: "Trauma bond"
 cluster: "no-contact"
 cta:
   title: "Keep the distance, one day at a time"
   text: "Heal counts every day without contact, catches you with an SOS when the pull gets strong, and keeps slips in context instead of resetting you to zero."
 ---
 
-A trauma bond is a strong emotional attachment to someone who hurts you, formed when harm and affection come in an unpredictable mix. The term comes from psychologists Donald Dutton and Susan Painter's research on abusive relationships. It isn't a clinical diagnosis, and online it's often used for breakups that were painful but not abusive.
+If you keep missing someone who hurt you, or keep going back, here's what the term means, when it fits and why distance helps.
 
 ## Where Does the Term "Trauma Bond" Come From?
 
@@ -36,6 +38,13 @@ No. Online, the phrase now gets used for almost any ex you can't stop thinking a
 Missing someone badly, wanting them back, replaying the good times: those are normal after any breakup, including healthy relationships that ended. We explain that side in [why you miss your ex so much](/blog/articles/why-do-i-miss-my-ex/), and if you're stuck on someone you barely dated, [limerence](/blog/articles/what-is-limerence/) may fit better.
 
 The term fits best when there was a real pattern of harm (control, cruelty, threats, violence, being made to feel small) mixed with warmth, and a power imbalance you couldn't easily push back against. A review of the research in a different setting, sex trafficking, described similar features: a power imbalance, a deliberate mix of good and bad treatment, gratitude for small kindnesses, and self-blame for the abuse ([Casassa, Knight and Mengo, 2022](https://doi.org/10.1177/1524838020985542)).
+
+| | Trauma bond | Hard breakup |
+|---|---|---|
+| The pattern | Harm and warmth in a repeated, unpredictable cycle | No pattern of harm |
+| Power | An imbalance you couldn't easily push back against | Roughly equal |
+| What you miss most | The relief when the good version came back | The person, the routines, the future you pictured |
+| Where to get help | A domestic abuse advocate or therapist, plus distance | Friends, time and distance |
 
 ## How Does No Contact Help Break a Trauma Bond?
 
@@ -74,6 +83,9 @@ No. It's a concept from research on abusive relationships, not a diagnosis in th
 
 **How do I know if it's a trauma bond or just a hard breakup?**
 A trauma bond involves a repeated pattern of harm mixed with affection, usually with a power imbalance. Missing an ex intensely, without that pattern, is a normal part of grief.
+
+**What are the signs of a trauma bond?**
+A repeated cycle of harm followed by apologies or warmth, living for the good days, feeling you can't push back, blaming yourself for how they treated you, and still feeling pulled toward them after you've left. If that sounds familiar, a domestic abuse advocate or therapist can help.
 
 **How long does it take to break a trauma bond?**
 There's no research-based timeline. Distance and support from people outside the relationship tend to help, and many people need a therapist or domestic abuse advocate for this.
