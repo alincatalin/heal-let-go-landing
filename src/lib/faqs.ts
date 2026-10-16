@@ -2,7 +2,7 @@ export const faqs = [
   {
     question: "Is Heal free?",
     answer:
-      "Yes. Heal is free to download, and the core tools stay free, including the no contact tracker, the SOS button and 5 AI coach messages a day. Heal Premium ($12.99 a month or $124.99 a year) adds unlimited coach messages, unlimited fake texting and Streak Protection, and you can try it free for 7 days.",
+      "Yes. Heal is free to download, and the core tools stay free, including the no contact tracker, the SOS button and 5 AI coach messages a day. Heal Premium ($12.99 a month or $124.99 a year) adds 25x more coach messages a day, unlimited fake texting and Streak Protection, and you can try it free for 7 days.",
   },
   {
     question: "Is my data private?",
