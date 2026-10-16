@@ -103,7 +103,7 @@ You're on day 9. You've done well, but tonight you want to send him a long messa
 
 You write the message. It looks like a chat with him, but it never sends. The coach replies instead, gently asking what you're hoping he'd say back.
 
-If you get through it, Heal counts the night. If you don't, the slip shows up on your progress calendar next to all the days you did make it, not as a reset to zero. One bad night doesn't erase nine good ones.
+If you get through it, Heal counts the night. If you don't, the slip shows up on your progress calendar next to all the days you did make it. Your streak starts again, but your total doesn't. One bad night doesn't erase nine good ones.
 
 ## What Happens When No Contact Ends?
 

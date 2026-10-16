@@ -48,7 +48,7 @@ Heal is our app, built around one situation: it's late, you're on your own, and 
 
 - **Unsent texts.** A chat that looks like theirs, where you write what you want to say. It never sends. The AI coach replies instead and helps you think about what you're hoping for.
 - **SOS button.** One tap when the urge hits: name what's happening, breathe for a minute, then pick what helps (write it out, read your reasons, talk to the coach).
-- **No contact tracker.** Every day without contact, laid out on a calendar. Slips show up next to the days around them instead of resetting you to zero.
+- **No contact tracker.** Every day without contact, laid out on a calendar. A slip restarts your streak, but your total stays and the slip shows up next to the days around it.
 - **AI coach, private journal and a phase-by-phase path** that shows what's normal where you are.
 
 **Price:** free to download with a 7-day trial of everything, then $12.99 a month or $124.99 a year. A free tier stays after the trial.
@@ -150,7 +150,7 @@ Yes. No Contact App's core features are free, and Heal is free to download with 
 Yes. Heal gives you a chat that looks like your ex's but never sends, plus an SOS button for when the urge hits. Writing the message out without sending it often takes the pressure off.
 
 **What is the best no contact tracker app?**
-Most breakup apps include one. For tracking alone, No Contact Tracker is free to start and No Contact App is free. Heal's tracker shows slips in context rather than resetting you to zero.
+Most breakup apps include one. For tracking alone, No Contact Tracker is free to start and No Contact App is free. Heal's tracker shows slips in context and keeps your total when the streak restarts.
 
 **Can a breakup app replace therapy?**
 No. Breakup apps help with daily habits and hard moments, but they aren't therapy. If you're struggling to function or feel unsafe, talk to a doctor or therapist, or find a local helpline at findahelpline.com.

@@ -10,8 +10,8 @@ author: "Heal Team"
 keywords: "broke no contact, i broke no contact, texted my ex during no contact, broke no contact now what, what to do after breaking no contact, does breaking no contact reset"
 cluster: "no-contact"
 cta:
-  title: "A slip isn't a reset"
-  text: "Heal's tracker shows a slip next to every day you made it, not a zero. And the SOS button is there for the next time the urge hits."
+  title: "One slip doesn't erase the days you made it"
+  text: "Heal's tracker restarts your streak but keeps your total, with the slip shown next to every day you made it. And the SOS button is there for the next time the urge hits."
 ---
 
 You sent it. Maybe it was "hey," maybe it was three paragraphs at 1am. Now your stomach has dropped and you're staring at the screen.
@@ -55,8 +55,8 @@ Most slips have a pattern, and it's usually not random. Look back at the moment:
 There's no shame in any of these. They're just the moments to plan for.
 
 <aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">A slip isn't a reset</p>
-<p>Heal's no contact tracker shows a slip next to all the days you made it, instead of sending you back to zero. When the urge comes back, the SOS button is one tap away. Free to start.</p>
+<p class="inline-cta-title">One slip doesn't erase the days you made it</p>
+<p>Heal's no contact tracker restarts your streak, but your total and your calendar keep every day you made it, with the slip shown in context. When the urge comes back, the SOS button is one tap away. Free to start.</p>
 <a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Keep my streak going</a>
 </aside>
 
