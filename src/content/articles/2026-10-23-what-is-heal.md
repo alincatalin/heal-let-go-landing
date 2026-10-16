@@ -35,7 +35,7 @@ Yes. Heal is free to download, and the core tools stay free. You can also try ev
 | | Free | Premium |
 | --- | --- | --- |
 | No contact tracker and SOS button | Yes | Yes |
-| AI coach messages | 5 a day | Many more each day |
+| AI coach messages | 5 a day | 25x more each day |
 | Unsent texts | Included | Unlimited |
 | Private journal and mood tracking | Yes | Yes |
 | Streak Protection after a slip | No | Yes |
