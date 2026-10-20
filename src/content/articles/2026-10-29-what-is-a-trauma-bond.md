@@ -21,7 +21,7 @@ If you keep missing someone who hurt you, or keep going back, here's what the te
 
 Dutton and Painter developed the idea of traumatic bonding in the early 1980s, working with women who had been in abusive relationships. They pointed to two ingredients: a big imbalance of power, and treatment that swings between harm and warmth with no reliable pattern.
 
-In a later study, they interviewed 75 women who had recently left abusive partners and followed up six months later. The women's attachment to the partner often persisted after they left, and the best predictors of it were how intermittent the abuse had been and shifts in the balance of power ([Dutton and Painter, 1993](https://doi.org/10.1891/0886-6708.8.2.105)).
+In a later study, they studied 75 women who had recently left abusive partners and followed up six months later. The women's attachment to the partner often persisted after they left, and the best predictors of it were how intermittent the abuse had been and shifts in the balance of power ([Dutton and Painter, 1993](https://doi.org/10.1891/0886-6708.8.2.105)).
 
 ## Why Does Intermittent Treatment Create Such a Strong Bond?
 
@@ -37,7 +37,7 @@ No. Online, the phrase now gets used for almost any ex you can't stop thinking a
 
 Missing someone badly, wanting them back, replaying the good times: those are normal after any breakup, including healthy relationships that ended. We explain that side in [why you miss your ex so much](/blog/articles/why-do-i-miss-my-ex/), and if you're stuck on someone you barely dated, [limerence](/blog/articles/what-is-limerence/) may fit better.
 
-The term fits best when there was a real pattern of harm (control, cruelty, threats, violence, being made to feel small) mixed with warmth, and a power imbalance you couldn't easily push back against. A review of the research in a different setting, sex trafficking, described similar features: a power imbalance, a deliberate mix of good and bad treatment, gratitude for small kindnesses, and self-blame for the abuse ([Casassa, Knight and Mengo, 2022](https://doi.org/10.1177/1524838020985542)).
+The term fits best when there was a real pattern of harm (control, cruelty, threats, violence, being made to feel small) mixed with warmth, and a power imbalance you couldn't easily push back against. A review of the research in a different setting, sex trafficking, described similar features: a power imbalance, a deliberate mix of good and bad treatment, gratitude for the good moments, self-blame for the bad ones, and coming to see yourself the way the abuser sees you ([Casassa, Knight and Mengo, 2022](https://doi.org/10.1177/1524838020985542)).
 
 | | Trauma bond | Hard breakup |
 |---|---|---|
