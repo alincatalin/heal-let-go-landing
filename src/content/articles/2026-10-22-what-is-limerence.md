@@ -19,7 +19,7 @@ If you've ever reread one text from him forty times trying to decode a full stop
 
 ## Where Does the Word "Limerence" Come From?
 
-Tennov interviewed people about what being in love actually felt like. Many described the same thing: intrusive thoughts, a racing heart when the person walked in, and an almost painful need to know if it was mutual. She decided the state needed its own word ([Tennov, 1979](https://www.psychologytoday.com/us/basics/limerence)).
+Tennov studied what being in love actually felt like and noticed the same pattern again and again: persistent, intrusive thoughts about one person, a racing heart just thinking about them, and agony when the feelings weren't returned. She coined a word for it in her 1979 book, *Love and Limerence* ([Tennov, 1979](https://www.psychologytoday.com/us/basics/limerence)).
 
 She called the person at the center of it the "limerent object." Clinical, but a little comforting: enough people go through this that it needed its own term.
 
@@ -34,7 +34,7 @@ You won't have every one of these, but the pattern is easy to spot.
 - Your body joins in: racing heart, flushed face, a jittery, weak feeling.
 - Hope keeps it going. As Psychology Today puts it, "Uncertainty is necessary for limerence" ([Psychology Today](https://www.psychologytoday.com/us/basics/limerence)).
 
-In one study of six people who'd been through it, their accounts included intrusive rumination, anxiety, low mood and a sense of losing themselves. Many related to two versions of the person at once, the real one and an idealized version they'd built in their heads ([Willmott and Bentley, 2015](https://sussex.figshare.com/articles/journal_contribution/Exploring_the_lived-experience_of_limerence_a_journey_toward_authenticity/23397428)).
+In one study of six people who'd been through it, their accounts included constant rumination, anxiety, depression and a feeling that their sense of self was coming apart. The researchers concluded that people were relating to two versions of the person at once, the real one and an idealized one ([Willmott and Bentley, 2015](https://sussex.figshare.com/articles/journal_contribution/Exploring_the_lived-experience_of_limerence_a_journey_toward_authenticity/23397428)).
 
 ## How Is Limerence Different From Love?
 
