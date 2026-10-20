@@ -34,7 +34,7 @@ You won't have every one of these, but the pattern is easy to spot.
 - Your body joins in: racing heart, flushed face, a jittery, weak feeling.
 - Hope keeps it going. As Psychology Today puts it, "Uncertainty is necessary for limerence" ([Psychology Today](https://www.psychologytoday.com/us/basics/limerence)).
 
-In one study of six people who'd been through it, their accounts included intrusive rumination, anxiety, low mood and a sense of losing themselves. Many related to two versions of the person at once, the real one and an idealized version they'd built in their heads ([Willmott and Bentley, 2015](https://doi.org/10.46743/2160-3715/2015.1420)).
+In one study of six people who'd been through it, their accounts included intrusive rumination, anxiety, low mood and a sense of losing themselves. Many related to two versions of the person at once, the real one and an idealized version they'd built in their heads ([Willmott and Bentley, 2015](https://sussex.figshare.com/articles/journal_contribution/Exploring_the_lived-experience_of_limerence_a_journey_toward_authenticity/23397428)).
 
 ## How Is Limerence Different From Love?
 
