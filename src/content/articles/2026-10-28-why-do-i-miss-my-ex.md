@@ -47,7 +47,7 @@ That's why missing them can feel physical: the restless hands, the urge to check
 
 ## What Does Attachment Have to Do With It?
 
-A lot. Over months or years together, two people start to regulate each other. Your partner's voice calmed you down. Their presence at night helped you sleep. Your stress levels got tuned to theirs.
+A lot. Over months or years together, two people start to regulate each other. Your partner's voice calmed you down. Their presence at night helped you sleep. Your stress levels got tuned to theirs. It's one reason [a breakup hurts more at night](/blog/articles/why-breakups-hurt-more-at-night/).
 
 Psychologists David Sbarra and Cindy Hazan describe this as coregulation: in a close relationship, partners' bodies and moods become linked, and losing that partner can leave your sleep and stress levels off balance for a while ([Sbarra and Hazan, 2008](https://doi.org/10.1177/1088868308315702)). Recovery, in their account, mostly comes from learning to settle yourself again.
 
