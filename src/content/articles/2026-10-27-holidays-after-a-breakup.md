@@ -47,7 +47,7 @@ Pick one sentence now and practice it out loud once. Any of these work.
 
 The trick is the second half: answer, then steer somewhere else. You don't owe anyone the story. If there's one relative you trust, tell them before the day and ask them to step in if it comes up again.
 
-If someone pushes ("but you were so good together!"), you can repeat yourself. "I know. It still ended." Saying the same thing twice works better than explaining.
+If someone pushes ("but you were so good together!"), you can repeat yourself. "I know. It still ended." Saying the same thing twice works better than explaining, and we've collected more [lines for when family asks about your breakup](/blog/articles/what-to-say-when-family-asks-about-breakup/), sorted by who's asking.
 
 ## How Do I Get Through Thanksgiving?
 
