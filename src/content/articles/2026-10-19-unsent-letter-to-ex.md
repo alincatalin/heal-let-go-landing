@@ -1,11 +1,13 @@
 ---
-title: "How to Write an Unsent Letter to Your Ex (With Examples)"
+title: "Unsent Letter to Your Ex: How to Write One + 3 Examples"
 slug: "unsent-letter-to-ex"
 date: "2026-10-19"
 category: "Texting Your Ex"
 readTime: "8 min"
 excerpt: "How to write an unsent letter to your ex: what to put in it, what to do with it after, and three example letters for when they ended it, you did, or it faded."
+answer: "An unsent letter to your ex is a letter you write to them and never send. You say everything you didn't get to say, then keep it, burn it or delete it. It gets the words out of your head without reopening contact, and research on expressive writing suggests it can help."
 author: "Heal Team"
+updated: "2026-10-28"
 keywords: "unsent letter to ex, unsent letter to my ex, letter to ex you never send, unsent letter examples, how to write an unsent letter, closure letter to ex, writing a letter to your ex"
 cluster: "texting-your-ex"
 cta:
@@ -13,9 +15,9 @@ cta:
   text: "Heal gives you a chat that looks like your chat with your ex. Write the letter, the text, the 2am paragraph. Nothing leaves your phone, and the coach replies instead."
 ---
 
-An unsent letter to your ex is a letter you write to them and never send. You say everything you didn't get to say, in your own words, then keep it, burn it or delete it. It works because it gets the words out of your head without reopening contact, and research on expressive writing suggests it can help.
-
 You don't need to be a writer, and it doesn't need to be fair or finished. A notes app and twenty minutes is enough. The whole point is that you get to be honest with someone who will never read it.
+
+If you'd rather type it like a text, our free [unsent text tool](/tools/unsent-text/) gives you a chat with your ex that never sends.
 
 ## Why Write a Letter You'll Never Send?
 
@@ -124,6 +126,13 @@ If that sounds like you, try these instead.
 ## What's the Difference Between an Unsent Letter and an Unsent Text?
 
 Mostly the moment.
+
+| | Unsent letter | Unsent text | Sending it |
+| --- | --- | --- | --- |
+| When | A calm time you choose | The moment the urge hits | Usually the moment the urge hits |
+| Length | As long as you need | A few lines | A few lines |
+| What it's for | Saying everything, making sense of it | Getting through the next ten minutes | Hoping for a reply |
+| What happens after | You keep, burn or delete it | Nothing, and the urge passes | Waiting, checking, often regret |
 
 A letter is something you sit down to write, at a time you choose. An unsent text is what you write when the urge grabs you. It's 11:40pm, you've seen his name in someone's story, and your thumbs are already typing. That message needs somewhere to go right now, not in a calm hour tomorrow.
 
