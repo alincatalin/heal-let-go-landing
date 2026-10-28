@@ -46,11 +46,13 @@ It isn't a clinical or scientific term. It comes from writing about abusive rela
 
 The clearest test: **how do they react when you say no?** Someone who has really changed respects it. Hoovering usually escalates: more messages, more guilt, someone else asked to "talk sense into you".
 
+Getting back together isn't rare. Breaking up and reuniting is common among young adults, but couples who go through that on-again, off-again cycle tend to report more conflict and less satisfaction than couples who don't ([Halpern-Meekin et al., 2013](https://doi.org/10.1177/0743558412464524)).
+
 ## Why Is Hoovering So Hard to Resist?
 
 Because it arrives when you're hurting, and it offers exactly what you've been wishing for. The apology, the "I miss you", proof that you mattered.
 
-If the relationship swung between hurt and warmth, the pull can be even stronger. That pattern is at the center of what psychologists call [traumatic bonding](/blog/articles/what-is-a-trauma-bond/): warmth that comes back after harm can bind you more tightly than steady kindness would.
+If the relationship swung between hurt and warmth, the pull can be even stronger. That pattern is at the center of what psychologists call [traumatic bonding](/blog/articles/what-is-a-trauma-bond/): warmth that comes back after harm can bind you more tightly than steady kindness would ([Dutton and Painter, 1993](https://doi.org/10.1891/0886-6708.8.2.105)).
 
 <aside class="inline-cta not-prose" data-cta="inline">
 <p class="inline-cta-title">Their message just arrived</p>
