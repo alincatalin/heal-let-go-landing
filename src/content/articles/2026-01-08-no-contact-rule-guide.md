@@ -213,7 +213,7 @@ Mute them on everything:
 - TikTok
 - Anywhere else they show up
 
-If you can't trust yourself not to manually check their profile, block them. Your healing matters more than being polite.
+If you can't trust yourself not to manually check their profile, block them. Your healing matters more than being polite. Not sure which? See [should I block my ex](/blog/articles/should-i-block-my-ex/).
 
 And if they follow your close friends account or you share a private story with them? Remove them. This isn't petty. This is self-protection.
 
