@@ -46,7 +46,7 @@ It isn't a clinical or scientific term. It comes from writing about abusive rela
 
 The clearest test: **how do they react when you say no?** Someone who has really changed respects it. Hoovering usually escalates: more messages, more guilt, someone else asked to "talk sense into you".
 
-Getting back together isn't rare. Breaking up and reuniting is common among young adults, but couples who go through that on-again, off-again cycle tend to report more conflict and less satisfaction than couples who don't ([Halpern-Meekin et al., 2013](https://doi.org/10.1177/0743558412464524)).
+Getting pulled back isn't rare. In a study of nearly 800 young adults, close to half of those in relationships had broken up and got back together at least once ([Halpern-Meekin et al., 2013](https://doi.org/10.1177/0743558412464524)).
 
 ## Why Is Hoovering So Hard to Resist?
 
