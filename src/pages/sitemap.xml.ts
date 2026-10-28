@@ -1,7 +1,10 @@
 import type { APIContext } from "astro";
 import { articleUrl, getArticles, getGuides, guideUrl } from "../lib/site";
 
-const day = (date: Date) => date.toISOString().slice(0, 10);
+// Never advertise a lastmod later than the build: posts merged ahead of their date would otherwise
+// send future dates to Google.
+const buildTime = new Date();
+const day = (date: Date) => (date > buildTime ? buildTime : date).toISOString().slice(0, 10);
 
 export async function GET(context: APIContext) {
   const site = context.site!;
