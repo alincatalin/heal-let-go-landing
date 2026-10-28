@@ -63,7 +63,7 @@ Name the things, offer a time, and make the handover easy. If you can, suggest a
 
 > I've put your things in a box: the speaker, two jackets and your books. I can drop it at your building on Thursday evening, or your brother could grab it. Whatever's easier.
 
-If they don't answer in a day or two, one follow-up is fine. After that, ask a mutual friend or let it go. Some hoodies aren't worth it.
+If they don't answer in a day or two, one follow-up is fine. After that, ask a mutual friend or let it go. Some hoodies aren't worth it. (Here's [what to do with the rest of your ex's stuff](/blog/articles/what-to-do-with-your-exs-stuff/).)
 
 ## How Do I Apologize to My Ex Over Text?
 

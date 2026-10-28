@@ -52,6 +52,8 @@ Returning belongings is one of the few kinds of contact that doesn't break no co
 
 Not sure what to keep? Don't decide now. Put everything that hurts into one box and put it somewhere you don't see every day: a closet, a high shelf, a friend's garage.
 
+Out of sight really does help. When researchers showed people who had just been rejected a photo of their ex, it lit up the brain's reward and craving areas ([Fisher et al., 2010](https://doi.org/10.1152/jn.00784.2009)). Every object you see each day is a small version of that photo.
+
 Breakups make everything feel urgent, including throwing things away. Deleting every photo in the first week can feel good on the day and sad a year later. A box gives you distance now and choice later.
 
 Set a reminder for three months from now. Open the box then and decide what you want to keep. It's often easier than you expect, and some things you were sure you'd throw out turn out to be fine to keep.
@@ -68,7 +70,7 @@ Some reminders aren't objects. A pillow that smells like them, a playlist, the s
 
 - Wash the bedding. Swap which side you sleep on for a while.
 - Make a new playlist of your own and leave the shared ones alone for a while.
-- Move one piece of furniture or redecorate one corner. Making a space feel like yours helps more than people expect.
+- Move one piece of furniture or redecorate one corner. Making a space feel like yours helps more than people expect. Breakups can blur your sense of who you are, and that loss of clarity is linked to more distress afterward ([Slotter, Gardner and Finkel, 2010](https://doi.org/10.1177/0146167209352250)).
 
 If you shared a home for a long time, our guide to [getting over a long-term relationship](/blog/articles/how-to-get-over-a-long-term-relationship/) has more on rebuilding your space and routines.
 
