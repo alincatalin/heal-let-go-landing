@@ -76,7 +76,7 @@ The goal isn't to shame yourself into stopping. The goal is to build systems tha
 
 This sounds obvious, but most people skip it because it feels dramatic. It's not dramatic. It's necessary.
 
-Unfollow them. Mute them. Remove them from close friends. Log out of Instagram, or delete the app entirely for a while. If you need to, block them - not to be petty, but to protect yourself from a habit your brain can't resist on its own.
+Unfollow them. Mute them. Remove them from close friends. Log out of Instagram, or delete the app entirely for a while. If you need to, block them - not to be petty, but to protect yourself from a habit your brain can't resist on its own. (Not sure? Here's [how to decide whether to block your ex](/blog/articles/should-i-block-my-ex/).)
 
 Blocking isn't about them. It's about you. It's choosing peace over pain.
 
