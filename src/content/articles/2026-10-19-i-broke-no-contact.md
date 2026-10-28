@@ -54,6 +54,8 @@ Most slips have a pattern, and it's usually not random. Look back at the moment:
 
 There's no shame in any of these. They're just the moments to plan for.
 
+If you keep going back to someone who also hurt you, and the pull is strongest right after they apologize, read [what a trauma bond is](/blog/articles/what-is-a-trauma-bond/). That pattern isn't a willpower problem, and it's worth getting support for.
+
 <aside class="inline-cta not-prose" data-cta="inline">
 <p class="inline-cta-title">One slip doesn't erase the days you made it</p>
 <p>Heal's no contact tracker restarts your streak, but your total and your calendar keep every day you made it, with the slip shown in context. When the urge comes back, the SOS button is one tap away. Free to start.</p>
