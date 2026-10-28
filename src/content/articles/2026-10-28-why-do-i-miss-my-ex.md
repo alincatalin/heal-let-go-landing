@@ -6,9 +6,10 @@ category: "Breakup Healing"
 readTime: "8 min"
 excerpt: "Why you miss your ex so much, even when it was right to end: attachment, craving, habit, rose-tinted memories, loneliness and a self tangled up in theirs."
 author: "Heal Team"
-keywords: "why do i miss my ex, why do i miss my ex so much, why do i still miss my ex, why do i miss my ex even though they hurt me, is it normal to miss your ex, why do i miss my ex boyfriend, missing my ex"
+keywords: "why do i miss my ex, why do i miss my ex so much, why do i still miss my ex, why do i miss my ex even though they hurt me, is it normal to miss your ex, why do i miss my ex boyfriend, missing my ex, why do i miss my ex more as time goes on"
 answer: "You miss your ex so much because your brain and your days were built around them. Attachment makes their absence feel like danger, the reward system craves them, your habits still point at them, memory edits out the bad parts, and part of who you are got mixed up with theirs. None of it means you should go back."
 cluster: "getting-over"
+updated: "2026-10-28"
 cta:
   title: "Someone to talk to when you miss them"
   text: "Heal's coach is there at 2am when missing your ex gets loud. Say what you'd say to them, and get a kind, honest reply instead of silence. Free to start."
@@ -144,6 +145,9 @@ Attachment and craving don't check whether a person was good for you, and memory
 
 **Why can't I stop thinking about my ex?**
 Your brain learned to expect them, so it keeps reaching for them, and every look at their profile tops that up. Habits and unanswered questions keep the loop going too. The thoughts usually get quieter with distance, not with willpower.
+
+**Why do I miss my ex more as time goes on?**
+Often because the first weeks were numbed by shock and busyness, and the loss only feels real once that wears off. Friends check in less, memory keeps softening the bad parts, and dates like birthdays come round. It usually peaks and then eases, especially if you're not checking on them.
 
 **Is it normal to still miss my ex after 3 months?**
 Yes. Missing an ex often comes in waves for months, set off by a song, a place or a bad day. What matters is whether it's easing overall, even slowly. If it isn't easing at all and you can't sleep or work, talk to a doctor or therapist.
