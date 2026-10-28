@@ -1,7 +1,7 @@
 ---
 title: "What Counts as Breaking No Contact?"
 slug: "what-counts-as-breaking-no-contact"
-date: "2026-11-03"
+date: "2026-10-28"
 category: "No Contact"
 readTime: "4 min"
 excerpt: "Does liking a post break no contact? Watching their story? Replying to a birthday text? A clear list of what counts, what doesn't and the grey areas in between."

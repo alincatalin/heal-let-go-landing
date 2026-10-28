@@ -1,7 +1,7 @@
 ---
 title: "What Is Breadcrumbing? Signs, Examples and What to Do"
 slug: "what-is-breadcrumbing"
-date: "2026-11-06"
+date: "2026-10-28"
 category: "Breakup Terms"
 readTime: "4 min"
 excerpt: "Breadcrumbing is when someone keeps you interested with small bits of attention but never commits. What it means, how to spot it, why it hurts and how to stop waiting."

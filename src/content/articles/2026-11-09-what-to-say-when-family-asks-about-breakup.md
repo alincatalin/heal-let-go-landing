@@ -1,7 +1,7 @@
 ---
 title: "What to Say When Family Asks About Your Breakup"
 slug: "what-to-say-when-family-asks-about-breakup"
-date: "2026-11-09"
+date: "2026-10-28"
 category: "Breakup Healing"
 readTime: "8 min"
 excerpt: "Copy-and-paste lines for when family asks about your breakup: parents, grandma, the nosy aunt, kids, coworkers, and relatives who still talk to your ex."

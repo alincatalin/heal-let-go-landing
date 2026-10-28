@@ -1,7 +1,7 @@
 ---
 title: "What Is a Trauma Bond (and How No Contact Breaks It)"
 slug: "what-is-a-trauma-bond"
-date: "2026-10-29"
+date: "2026-10-20"
 category: "Breakup Terms"
 readTime: "5 min"
 excerpt: "What a trauma bond is, where the term comes from, how to tell it apart from an ordinary hard breakup, and why distance is what finally loosens it."

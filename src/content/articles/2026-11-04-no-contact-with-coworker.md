@@ -1,7 +1,7 @@
 ---
 title: "No Contact When You Work Together: How to Do It"
 slug: "no-contact-with-coworker"
-date: "2026-11-04"
+date: "2026-10-28"
 category: "No Contact"
 readTime: "4 min"
 excerpt: "You can't go fully no contact with an ex you see at work every day. Here's how to keep it to work only, what to say, what to avoid and how to get through the day."

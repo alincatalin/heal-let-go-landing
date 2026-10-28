@@ -1,7 +1,7 @@
 ---
 title: "How to Get Over a Long-Term Relationship"
 slug: "how-to-get-over-a-long-term-relationship"
-date: "2026-11-05"
+date: "2026-10-28"
 category: "Breakup Healing"
 readTime: "5 min"
 excerpt: "Ending a relationship of many years means losing a partner, a routine, a future and part of who you were. How to get through it, step by step, and what to expect."
