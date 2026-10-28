@@ -26,6 +26,8 @@ People rated reliability and sentimental value as the most important reasons, an
 
 One reason on the list is worth looking at closely: "I still had feelings for them." If that's yours, it's not friendship you're after.
 
+Staying close is also how many couples drift back together. Breaking up and reuniting, often with sex along the way, is common among young adults, and on-again, off-again couples tend to report more conflict and less satisfaction than others ([Halpern-Meekin et al., 2013](https://doi.org/10.1177/0743558412464524)).
+
 ## Friendship or Holding On? A Quick Check
 
 | Sign it could be a real friendship | Sign you're holding on |

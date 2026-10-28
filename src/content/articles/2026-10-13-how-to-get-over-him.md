@@ -140,7 +140,7 @@ The fastest route is the boring one: stop contact, stop checking his profiles, a
 Breakups activate the same reward and craving systems involved in addiction, so your brain keeps reaching for him. Thoughts usually come less often once they stop being fed by contact and social media. Giving them a set time each day can also help.
 
 **Should I stay friends with him?**
-Not yet. Trying to be friends while you still have feelings tends to keep you hoping. If a friendship is right, it will still be possible after you've had real distance and no longer want more.
+Not yet. Trying to be friends while you still have feelings tends to keep you hoping (more in [can you be friends with your ex](/blog/articles/can-you-be-friends-with-your-ex/)). If a friendship is right, it will still be possible after you've had real distance and no longer want more.
 
 **Is there an app to help me get over him?**
 Yes. Heal is built for this: it tracks your days without contact, gives you a place to write texts that never send, and has an AI coach for the moments you want to reach out. It's free to download on iPhone and Android.
