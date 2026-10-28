@@ -27,6 +27,8 @@ This guide goes through the season in order, from Thanksgiving to New Year's Eve
 | Days alone | The empty hours | Plan the day in blocks, mute him, get outside |
 | New Year's Eve | Midnight, couples and a few drinks | Archive the chat before you go, or skip midnight |
 
+Want it written down for your own dates? Our free [Holiday Survival Plan](/tools/holiday-plan/) makes a short plan for each day you're dreading, with a line ready for when someone asks.
+
 ## Why Are the Holidays So Hard After a Breakup?
 
 Because this season is full of things you did together. The drive to his parents'. The ornament you bought on your first Christmas. The New Year's kiss. Every one of those is a cue, and in December they come at you all day.
@@ -47,7 +49,7 @@ Pick one sentence now and practice it out loud once. Any of these work.
 
 The trick is the second half: answer, then steer somewhere else. You don't owe anyone the story. If there's one relative you trust, tell them before the day and ask them to step in if it comes up again.
 
-If someone pushes ("but you were so good together!"), you can repeat yourself. "I know. It still ended." Saying the same thing twice works better than explaining. For telling family before the day, see [how to tell your family about a breakup](/blog/articles/how-to-tell-your-family-about-a-breakup/).
+If someone pushes ("but you were so good together!"), you can repeat yourself. "I know. It still ended." Saying the same thing twice works better than explaining, and we've collected more [lines for when family asks about your breakup](/blog/articles/what-to-say-when-family-asks-about-breakup/), sorted by who's asking.
 
 ## How Do I Get Through Thanksgiving?
 

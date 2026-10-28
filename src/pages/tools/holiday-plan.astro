@@ -1,0 +1,530 @@
+---
+import { ArrowRight, CalendarPlus, Copy, Printer, RotateCcw } from "@lucide/astro";
+import Base from "../../layouts/Base.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import Footer from "../../components/Footer.astro";
+import { APP_STORE_URL } from "../../lib/site";
+
+const title = "Holiday Survival Plan After a Breakup | Free Planner";
+const description =
+  "Pick the holiday days you're dreading after a breakup and get a short plan for each: when the urge to text them hits, what to do instead, and what to say when people ask.";
+
+// Each moment becomes one card in the plan. `date` is how the script finds its day:
+// "thanksgiving" (4th Thursday of November), "MM-DD" for fixed days, or "pick" for a date the person enters.
+const moments = [
+  {
+    id: "thanksgiving",
+    label: "Thanksgiving dinner",
+    date: "thanksgiving",
+    when: "After dinner, when people start asking questions, and on the drive home.",
+    move: "Have your one line ready before you sit down. When you need a break, go help in the kitchen or take a walk around the block.",
+    say: "family",
+  },
+  {
+    id: "friends",
+    label: "Friendsgiving or a holiday party",
+    date: "pick",
+    when: "Late, after a few drinks, when couples start leaving together.",
+    move: "Decide when and how you're getting home before you go. Leave your phone in your coat, not your hand.",
+    say: "friends",
+  },
+  {
+    id: "work",
+    label: "The office holiday party",
+    date: "pick",
+    when: "When someone asks if you're bringing anyone, or after the second drink.",
+    move: "Arrive with a work friend and leave with one. A party you can leave early is easier than one you dread all week.",
+    say: "work",
+  },
+  {
+    id: "xmas-eve",
+    label: "Christmas Eve",
+    date: "12-24",
+    when: "Late in the evening, when the house goes quiet.",
+    move: "Plan the hour after dinner now: a film, a call with a friend, a walk. The quiet hour is where the text gets written.",
+    say: "family",
+  },
+  {
+    id: "xmas-day",
+    label: "Christmas Day",
+    date: "12-25",
+    when: "First thing in the morning, when you'd usually text them. Then again at night.",
+    move: "Send your first Merry Christmas to your person instead of them. \"Just saying Merry Christmas\" is the most common excuse there is.",
+    say: "family",
+  },
+  {
+    id: "nye",
+    label: "New Year's Eve at midnight",
+    date: "12-31",
+    when: "Between 11:30pm and 12:30am, and the next morning.",
+    move: "Be with people at midnight, or be in bed early. Either is fine. Phone face down in a bag at 11:30.",
+    say: "friends",
+  },
+  {
+    id: "birthday",
+    label: "Their birthday",
+    date: "pick",
+    when: "The night before and the morning of.",
+    move: "You don't owe them a happy birthday. Write it in the unsent text tool instead, then plan something for yourself that day.",
+    say: "friends",
+  },
+  {
+    id: "ours",
+    label: "A day that was \"ours\"",
+    date: "pick",
+    when: "All day, in waves.",
+    move: "Do something new that day, not something you did together. Tell one friend what the date is so you're not alone with it.",
+    say: "friends",
+  },
+];
+
+// Extra lines added to every card for the triggers someone ticks.
+const triggers = [
+  { id: "drinking", label: "Drinking", tip: "Two-drink limit, or hand your phone to a friend after the second." },
+  { id: "alone", label: "Being alone", tip: "Line up a call or a plan for the quietest hour of the day." },
+  { id: "couples", label: "Seeing couples", tip: "Give yourself permission to leave early. No one keeps count." },
+  { id: "mentions", label: "Someone mentions them", tip: "Say your line once, then change the subject. You don't owe anyone the story." },
+  { id: "memories", label: "Songs, places, traditions", tip: "Change one thing about the tradition: a new route, a new playlist, a new seat." },
+];
+
+// What to say when someone asks, by who is likely to ask at that moment.
+const lines = {
+  family: "\"We broke up. I'm okay, and I'd rather not go into it today. How's everyone's year been?\"",
+  friends: "\"We're not together anymore. I'm here to have a good night, so tell me something good.\"",
+  work: "\"We're not together anymore. Anyway, how's your December looking?\"",
+};
+
+const faq = [
+  {
+    question: "Why make a holiday plan after a breakup?",
+    answer:
+      "The urge to text an ex is strongest at predictable moments: the quiet hour after dinner, midnight, the morning of a day you used to share. Deciding what you'll do before you get there is much easier than deciding in the moment.",
+  },
+  {
+    question: "Is anything I type saved or sent?",
+    answer:
+      "No. Your plan is built in this browser tab. It isn't stored or sent to us. The calendar file is made on your device and only goes where you open it.",
+  },
+  {
+    question: "What should I say when family asks about my ex?",
+    answer:
+      "One short, true sentence and a change of subject works for most people. For example: \"We broke up. I'm okay, and I'd rather not go into it today.\" You don't owe anyone the full story at the dinner table.",
+  },
+  {
+    question: "What if I break my plan and text them?",
+    answer:
+      "Then you texted them. It isn't a reset to zero. Don't send a second message to explain the first, and pick the plan back up the next day.",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/tools/holiday-plan/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Holiday Survival Plan",
+    url,
+    description,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Any",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    publisher: { "@type": "Organization", name: "Heal", url: site },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Free Tools", item: new URL("/tools/", site).toString() },
+      { "@type": "ListItem", position: 3, name: "Holiday Survival Plan", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="holiday-plan">
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
+      <header class="mb-10 space-y-5 text-center print:hidden">
+        <p class="eyebrow text-lavender">Free tool · takes 2 minutes</p>
+        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">Your holiday survival plan</h1>
+        <p class="lede">
+          Pick the days you're dreading. We'll give you a short plan for each one, so you're not deciding what to do at
+          11:58pm on New Year's Eve.
+        </p>
+      </header>
+
+      <form id="plan-form" class="card-raised space-y-8 p-6 md:p-9 print:hidden">
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">1. Which days are you worried about?</legend>
+          {
+            moments.map((m) => (
+              <div class="plan-option card flex flex-col gap-3 px-5 py-4 text-[16px] text-ink-soft sm:flex-row sm:items-center">
+                <label class="flex flex-1 cursor-pointer items-center gap-4">
+                  <input type="checkbox" name="moment" value={m.id} class="h-4 w-4 shrink-0 accent-[#a48bf7]" />
+                  <span>{m.label}</span>
+                </label>
+                {m.date === "pick" && (
+                  <label class="flex items-center gap-2 text-sm text-ink-muted sm:ml-auto">
+                    <span>Date</span>
+                    <input
+                      type="date"
+                      name={`date-${m.id}`}
+                      class="rounded-xl bg-surface-1 px-3 py-1.5 text-[15px] text-ink focus:outline-none focus:ring-2 focus:ring-[#a48bf7]/50"
+                    />
+                  </label>
+                )}
+              </div>
+            ))
+          }
+        </fieldset>
+
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">2. What usually sets off the urge to text them?</legend>
+          <div class="flex flex-wrap gap-2">
+            {
+              triggers.map((t) => (
+                <label class="plan-chip cursor-pointer rounded-full border border-white/10 px-4 py-2 text-[15px] text-ink-soft">
+                  <input type="checkbox" name="trigger" value={t.id} class="sr-only" />
+                  {t.label}
+                </label>
+              ))
+            }
+          </div>
+        </fieldset>
+
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">3. Who will you text instead?</legend>
+          <label class="block">
+            <span class="sr-only">Name of a friend or family member</span>
+            <input
+              id="person"
+              name="person"
+              type="text"
+              maxlength="40"
+              autocomplete="off"
+              placeholder="A friend, your sister, your mom…"
+              class="w-full rounded-2xl bg-surface-1 px-4 py-3 text-[16px] text-ink placeholder:text-ink-muted focus:outline-none focus:ring-2 focus:ring-[#a48bf7]/50"
+            />
+          </label>
+          <p class="text-sm text-ink-muted">Optional, but it helps to have a name ready before you need it.</p>
+        </fieldset>
+
+        <p id="form-error" class="text-sm text-[#f49aa7]" hidden>Pick at least one day first.</p>
+        <button type="submit" class="btn btn-primary">Make my plan <ArrowRight /></button>
+      </form>
+
+      <section id="plan" hidden class="space-y-6" aria-live="polite">
+        <div class="space-y-3 text-center">
+          <p class="eyebrow text-lavender">Your plan</p>
+          <h2 class="text-3xl leading-tight md:text-4xl">You've got this, one day at a time.</h2>
+          <p class="text-[17px] leading-relaxed text-ink-soft print:hidden">
+            Save it somewhere you'll see it on the day. Put the dates in your calendar and you'll get a nudge the morning of.
+          </p>
+        </div>
+
+        <div id="plan-cards" class="space-y-4"></div>
+
+        <div class="flex flex-wrap justify-center gap-3 print:hidden">
+          <button type="button" id="add-calendar" class="btn btn-primary"><CalendarPlus /> Add to my calendar</button>
+          <button type="button" id="copy-plan" class="btn btn-quiet"><Copy /> Copy my plan</button>
+          <button type="button" id="print-plan" class="btn btn-quiet"><Printer /> Print it</button>
+        </div>
+        <p id="plan-msg" class="text-center text-sm text-ink-muted print:hidden" hidden></p>
+
+        <div class="card-raised space-y-4 p-6 md:p-8 print:hidden" data-cta="tool">
+          <p class="eyebrow text-lavender">For the moment it hits</p>
+          <p class="text-[17px] leading-relaxed text-ink-soft">
+            If you're about to type their name anyway, write the text in our free{" "}
+            <a href="/tools/unsent-text/" class="text-lavender underline underline-offset-4">unsent text tool</a>. It never
+            sends. In the Heal app, the no contact tracker keeps counting right through the holidays, and the SOS button gets
+            you through the next ten minutes. Free to start.
+          </p>
+          <a href={APP_STORE_URL} data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">
+            Get Heal for the holidays <ArrowRight />
+          </a>
+        </div>
+
+        <button type="button" id="restart" class="btn btn-quiet mx-auto flex h-10 px-3 text-sm print:hidden">
+          <RotateCcw /> Change my days
+        </button>
+      </section>
+
+      <div class="prose-heal mt-16 print:hidden">
+        <h2>Why plan the holidays after a breakup?</h2>
+        <p>
+          Because the hard moments are predictable. The question at the dinner table. The quiet hour on Christmas Eve.
+          Midnight on New Year's Eve with a drink in your hand. You know roughly when the urge to text them will hit, so you
+          can decide what you'll do before you're in it, when it's much easier.
+        </p>
+        <p>
+          Our guide to <a href="/blog/articles/holidays-after-a-breakup/">getting through the holidays after a breakup</a>{" "}
+          walks through the season from Thanksgiving to New Year's Day. This tool turns that into a plan for your own dates.
+        </p>
+
+        <h2>Is anything saved?</h2>
+        <p>
+          No. Your plan is built in this tab and isn't sent to us. The calendar file is made on your device. We only count
+          that someone made a plan, never what's in it.
+        </p>
+
+        <h2>What if the plan doesn't hold?</h2>
+        <p>
+          Then you're human. One text isn't the end of no contact. Our guide on{" "}
+          <a href="/blog/articles/i-broke-no-contact/">what to do if you broke no contact</a> covers the next morning. And if
+          you're not sure whether to reach out at all, the <a href="/tools/should-i-text-my-ex/">2-minute quiz</a> can help
+          you decide in daylight.
+        </p>
+
+        <h2>FAQ: Holiday plans after a breakup</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+      </div>
+
+      <aside class="mt-12 flex gap-4 rounded-[1.25rem] border border-[#f49aa7]/25 bg-[#f49aa7]/[0.06] p-5 text-sm leading-relaxed text-ink-soft print:hidden">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#f49aa7]" aria-hidden="true"></span>
+        <span>
+          This tool is not a substitute for professional help. If the holidays are bringing up more than you can carry, or
+          you feel unsafe, visit{" "}
+          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-[#f49aa7] underline underline-offset-4">findahelpline.com</a>{" "}
+          to reach a local helpline.
+        </span>
+      </aside>
+    </div>
+  </main>
+  <Footer />
+</Base>
+
+<script is:inline type="application/json" id="plan-data" set:html={JSON.stringify({ moments, triggers, lines })} />
+
+<script>
+  type Moment = { id: string; label: string; date: string; when: string; move: string; say: "family" | "friends" | "work" };
+  type Trigger = { id: string; label: string; tip: string };
+  type Umami = { track: (event: string, data?: Record<string, string>) => void };
+
+  const { moments, triggers, lines } = JSON.parse(document.getElementById("plan-data")!.textContent!) as {
+    moments: Moment[];
+    triggers: Trigger[];
+    lines: Record<Moment["say"], string>;
+  };
+  // Only which action was taken is tracked, never what's in the plan.
+  const track = (result: string) =>
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "holiday-plan", result });
+
+  const form = document.getElementById("plan-form") as HTMLFormElement;
+  const plan = document.getElementById("plan")!;
+  const cards = document.getElementById("plan-cards")!;
+  const msg = document.getElementById("plan-msg")!;
+  const error = document.getElementById("form-error")!;
+
+  type Item = Moment & { day?: Date; extras: string[]; person: string };
+  let items: Item[] = [];
+
+  // The next time this moment comes round, counting today.
+  function nextDate(m: Moment, picked: string): Date | undefined {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    if (m.date === "pick") return picked ? new Date(`${picked}T00:00:00`) : undefined;
+    for (const year of [today.getFullYear(), today.getFullYear() + 1]) {
+      let d: Date;
+      if (m.date === "thanksgiving") {
+        const first = new Date(year, 10, 1);
+        d = new Date(year, 10, 1 + ((4 - first.getDay() + 7) % 7) + 21);
+      } else {
+        const [mm, dd] = m.date.split("-").map(Number);
+        d = new Date(year, mm - 1, dd);
+      }
+      if (d >= today) return d;
+    }
+  }
+
+  const fmt = (d: Date) => d.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+
+  function el<K extends keyof HTMLElementTagNameMap>(tag: K, className: string, text?: string) {
+    const node = document.createElement(tag);
+    node.className = className;
+    if (text) node.textContent = text;
+    return node;
+  }
+
+  function render() {
+    cards.replaceChildren(
+      ...items.map((item) => {
+        const card = el("article", "card-raised plan-card space-y-4 p-6 md:p-8");
+        const head = el("div", "space-y-1");
+        head.append(el("h3", "text-2xl leading-tight text-ink", item.label));
+        if (item.day) head.append(el("p", "text-sm text-lavender", fmt(item.day)));
+        card.append(head);
+
+        const list = el("dl", "space-y-3 text-[16px] leading-relaxed");
+        const row = (term: string, value: string) => {
+          const wrap = el("div", "");
+          wrap.append(el("dt", "text-sm font-semibold text-ink", term), el("dd", "text-ink-soft", value));
+          list.append(wrap);
+        };
+        row("When it'll probably hit", item.when);
+        row("What you'll do instead", item.move);
+        item.extras.forEach((tip) => row("Because you know yourself", tip));
+        row("Who you'll text instead", item.person || "Pick one person now and tell them the date.");
+        row("If someone asks about them", lines[item.say]);
+        card.append(list);
+        return card;
+      }),
+    );
+  }
+
+  function asText() {
+    return items
+      .map((item) =>
+        [
+          `${item.label}${item.day ? ` (${fmt(item.day)})` : ""}`,
+          `When it'll probably hit: ${item.when}`,
+          `What I'll do instead: ${item.move}`,
+          ...item.extras.map((tip) => `Also: ${tip}`),
+          `Who I'll text instead: ${item.person || "pick one person"}`,
+          `If someone asks: ${lines[item.say]}`,
+        ].join("\n"),
+      )
+      .join("\n\n");
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const chosen = data.getAll("moment") as string[];
+    if (!chosen.length) {
+      error.hidden = false;
+      return;
+    }
+    error.hidden = true;
+    const picked = new Set(data.getAll("trigger") as string[]);
+    const extras = triggers.filter((t) => picked.has(t.id)).map((t) => t.tip);
+    const person = String(data.get("person") ?? "").trim();
+    items = moments
+      .filter((m) => chosen.includes(m.id))
+      .map((m) => ({ ...m, day: nextDate(m, String(data.get(`date-${m.id}`) ?? "")), extras, person }))
+      .sort((a, b) => (a.day?.getTime() ?? Infinity) - (b.day?.getTime() ?? Infinity));
+    render();
+    form.hidden = true;
+    plan.hidden = false;
+    msg.hidden = true;
+    plan.scrollIntoView({ behavior: "smooth", block: "start" });
+    track("plan");
+  });
+
+  // An all-day event per dated moment, with a reminder at 9am that day.
+  function ics() {
+    const pad = (n: number) => String(n).padStart(2, "0");
+    const ymd = (d: Date) => `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}`;
+    const esc = (s: string) => s.replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/([,;])/g, "\\$1");
+    const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+    const events = items
+      .filter((item) => item.day)
+      .map((item) => {
+        const end = new Date(item.day!);
+        end.setDate(end.getDate() + 1);
+        const body = `${item.move}\n${item.extras.join("\n")}\nText instead: ${item.person || "your person"}\nIf asked: ${lines[item.say]}\nIf you're about to text them: tryheal.app/tools/unsent-text/`;
+        return [
+          "BEGIN:VEVENT",
+          `UID:${item.id}-${ymd(item.day!)}@tryheal.app`,
+          `DTSTAMP:${stamp}`,
+          `DTSTART;VALUE=DATE:${ymd(item.day!)}`,
+          `DTEND;VALUE=DATE:${ymd(end)}`,
+          `SUMMARY:${esc(`My plan: ${item.label}`)}`,
+          `DESCRIPTION:${esc(body)}`,
+          "BEGIN:VALARM",
+          "ACTION:DISPLAY",
+          `DESCRIPTION:${esc(`My plan: ${item.label}`)}`,
+          "TRIGGER:PT9H",
+          "END:VALARM",
+          "END:VEVENT",
+        ].join("\r\n");
+      });
+    return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Heal//Holiday Plan//EN", "CALSCALE:GREGORIAN", ...events, "END:VCALENDAR"].join("\r\n");
+  }
+
+  document.getElementById("add-calendar")!.addEventListener("click", () => {
+    if (!items.some((item) => item.day)) {
+      msg.textContent = "None of your days has a date yet. Go back and add one, or copy the plan instead.";
+      msg.hidden = false;
+      return;
+    }
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(new Blob([ics()], { type: "text/calendar" }));
+    link.download = "holiday-plan.ics";
+    link.click();
+    URL.revokeObjectURL(link.href);
+    msg.textContent = "Open the file to add your days. You'll get a reminder at 9am on each one.";
+    msg.hidden = false;
+    track("calendar");
+  });
+
+  document.getElementById("copy-plan")!.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(asText());
+      msg.textContent = "Copied. Paste it into your notes, or send it to the person you'll text instead.";
+    } catch {
+      msg.textContent = "Couldn't copy here. Try printing it instead.";
+    }
+    msg.hidden = false;
+    track("copied");
+  });
+
+  document.getElementById("print-plan")!.addEventListener("click", () => {
+    track("printed");
+    window.print();
+  });
+
+  document.getElementById("restart")!.addEventListener("click", () => {
+    plan.hidden = true;
+    form.hidden = false;
+    form.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+</script>
+
+<style>
+  .plan-option:has(input[type="checkbox"]:checked) {
+    border-color: rgba(164, 139, 247, 0.55);
+    box-shadow: var(--elev-2), inset 0 0 0 1px rgba(164, 139, 247, 0.35);
+    color: var(--ink);
+  }
+  .plan-chip:has(input:checked) {
+    border-color: rgba(164, 139, 247, 0.6);
+    background: rgba(164, 139, 247, 0.14);
+    color: var(--ink);
+  }
+  .plan-option:has(input:focus-visible),
+  .plan-chip:has(input:focus-visible) {
+    outline: 2px solid var(--lavender-hex);
+    outline-offset: 2px;
+  }
+  @media print {
+    :global(header),
+    :global(footer) {
+      display: none !important;
+    }
+    :global(.plan-card) {
+      break-inside: avoid;
+      box-shadow: none;
+      border: 1px solid #ccc;
+    }
+  }
+</style>
