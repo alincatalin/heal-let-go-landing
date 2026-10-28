@@ -44,7 +44,7 @@ It happens in dating, in situationships and very often after a breakup, when an 
 | Breadcrumbing | Keep sending small bits of attention, never commit | Keeps you hoping and waiting |
 | Ghosting | Disappear with no explanation | Leaves you confused and without closure |
 | Orbiting | Stop talking to you but keep watching and liking your posts | Keeps you guessing if they still care |
-| Hoovering | Come back with a big effort to pull you back in | Restarts the cycle |
+| [Hoovering](/blog/articles/what-is-hoovering/) | Come back with a big effort to pull you back in | Restarts the cycle |
 
 ## Why Does Breadcrumbing Hurt So Much?
 

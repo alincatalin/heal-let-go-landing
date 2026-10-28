@@ -139,7 +139,7 @@ Look at your own patterns rather than your ex's. The urges to reach out get shor
 In one study that tracked people's feelings for four weeks after a breakup, love for the ex faded steadily over the month, with plenty of ups and downs along the way. Many people notice small changes in that first month, like shorter urges or a morning that doesn't start with them. Judge it over weeks, not days.
 
 **Is it a sign no contact is working if my ex reaches out?**
-Not really. Their reaching out says something about them, not about your healing. No contact is working if you're feeling steadier, whether or not they get in touch.
+Not really. Their reaching out says something about them, not about your healing. No contact is working if you're feeling steadier, whether or not they get in touch. If they come back with big apologies and promises, read [what is hoovering](/blog/articles/what-is-hoovering/) before you answer.
 
 **Why do I feel worse during no contact?**
 The first weeks often feel worse before they feel better, because you've cut off the thing your brain was craving. Feeling worse early on is usually withdrawal, not a sign of failure. If it doesn't ease or you can't function, talk to a doctor or therapist.
