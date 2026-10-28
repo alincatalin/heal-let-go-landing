@@ -93,7 +93,7 @@ And if you don't have anyone to call? That's what we built the panic button for.
 
 ### Late Night (10 PM - 2 AM): The 2 AM Urge
 
-You know this one. It's late. You can't sleep. Your brain is replaying every good memory on loop, conveniently editing out all the reasons you're not together anymore.
+You know this one. It's late. You can't sleep. Your brain is replaying every good memory on loop, conveniently editing out all the reasons you're not together anymore. (That edited highlight reel is one of the signs of [limerence](/blog/articles/what-is-limerence/).)
 
 The 2 AM urge is real, and it's powerful, and it has ruined more no contact streaks than any other moment. Here's why: late at night, your prefrontal cortex is basically offline. The part of your brain that can rationally evaluate "is this a good idea?" has clocked out. All that's left is the emotional brain, desperate for connection.
 

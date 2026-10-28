@@ -144,6 +144,8 @@ This is also the stage where people break [no contact](/blog/articles/no-contact
 
 It won't. I'm sorry. But your brain will try anyway, because trying feels better than accepting that some things are outside your control.
 
+If the replaying has turned into thinking about them almost every waking hour, with your mood rising and falling on every sign from them, it may be [limerence](/blog/articles/what-is-limerence/), and it eases the same way: by running out of things to decode.
+
 **How long it lasts:** This one tends to recur. It might be dominant for a few weeks, then fade, then resurface whenever you get triggered.
 
 ---
