@@ -1,14 +1,16 @@
 ---
-title: "Should I Text My Ex? Read This Before You Hit Send"
+title: "Should I Text My Ex? An Honest Yes-or-No Checklist"
 slug: "should-i-text-my-ex"
 date: "2026-02-08"
 category: "No Contact"
 readTime: "10 min"
-excerpt: "Thinking about texting your ex? Read this first. Find out when it's okay to reach out, when it's a mistake, and how to test your message before you hit send."
+excerpt: "Should you text your ex? A yes-or-no checklist by situation, what usually happens after you hit send, and a 2-minute quiz if you want a straight answer."
+answer: "Usually not, at least not yet. Text your ex only for a practical reason (belongings, kids, a shared lease) or once you're calm and fine with no reply. If you want them back, feel lonely, or it's late at night, wait 24 hours and write the text somewhere it can't send."
+keywords: "should i text my ex, should i text my ex yes or no, should i message my ex, should you text your ex, should i text my ex quiz, texting your ex after a breakup"
 author: "Heal Team"
 cluster: "texting-your-ex"
 pillar: true
-updated: "2026-10-08"
+updated: "2026-10-28"
 cta:
   title: "About to text your ex? Open Heal first."
   text: "Write the message in Heal's fake text. It never sends. You get a reality check before you decide anything."
@@ -51,6 +53,19 @@ It's not okay to text your ex if:
 *   ❌ You're lonely and just want to feel something.
 *   ❌ You're checking to see if they're thinking about you.
 *   ❌ You've been drinking or it's late at night (the regret hits hard in the morning).
+
+### Should I text my ex? Quick answers by situation
+
+| Your situation | Text them? | Why |
+| --- | --- | --- |
+| You want them back | Not now | A text sent from hope usually gets a reply that hurts, or none |
+| You're lonely, it's late, or you've been drinking | No, wait 24 hours | The urge peaks at night and fades by morning |
+| You need your things back or have a shared lease, pet or kids | Yes, logistics only | Short, practical, no feelings attached |
+| It's their birthday | Usually no | See [should I text my ex happy birthday](/blog/articles/should-i-text-my-ex-happy-birthday/) |
+| You're in no contact | No | Breaking it resets the healing, not the relationship |
+| You've been calm for weeks and won't mind no reply | Maybe | Then it's a choice, not a craving |
+
+Want a straight answer for your situation? Take the [2-minute should I text my ex quiz](/tools/should-i-text-my-ex/).
 
 ### Anxiety or necessity?
 
@@ -289,6 +304,12 @@ If you're struggling right now, if the urge feels unbearable, if you just need s
 
 ## FAQ: Should I Text My Ex?
 
+**Should I text my ex, yes or no?**
+For most people right after a breakup, no. Text only for a practical reason, or once you've been calm for a while and would be fine with no reply. If you're unsure, the [2-minute quiz](/tools/should-i-text-my-ex/) gives you an answer for your situation.
+
+**Should I message my ex if I miss them?**
+Missing them is normal, but it isn't a reason to message them. The feeling usually passes in a few hours; a message can restart weeks of waiting and checking. Write it in an [unsent text](/tools/unsent-text/) instead.
+
 **Is it okay to text my ex after a week of no contact?**
 Probably not. A week isn't enough time to process the breakup or break the emotional dependence. If you're thinking about texting after just a week, it's likely driven by craving, not clarity.
 
@@ -306,6 +327,8 @@ You're human. It happens. Don't spiral. Don't send a follow-up trying to explain
 
 ## Related Articles
 
+*   [What to Text Your Ex (and When Not To)](/blog/articles/what-to-text-your-ex/)
+*   [Should I Text My Ex Happy Birthday?](/blog/articles/should-i-text-my-ex-happy-birthday/)
 *   [The Urge to Text Your Ex: A Survival Guide](/blog/articles/urge-to-text-ex-survival-guide/)
 *   [Why Is No Contact So Hard? (And How to Survive It)](/blog/articles/no-contact-hardest-thing/)
 *   [The Hardest Day of No Contact (And What Comes After)](/blog/articles/hardest-day-no-contact/)
