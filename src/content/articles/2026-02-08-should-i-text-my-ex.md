@@ -240,7 +240,7 @@ Instead of texting, try this (or see our full list of [what to do instead of tex
 
 Every urge you survive makes the next one easier.
 
-Related: [The Urge to Text Your Ex: A Survival Guide](/blog/articles/urge-to-text-ex-survival-guide/)
+Related: [What to Do Instead of Texting Your Ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/)
 
 ## Signs You're Ready to Text (If You Ever Are)
 
@@ -329,7 +329,7 @@ You're human. It happens. Don't spiral. Don't send a follow-up trying to explain
 
 *   [What to Text Your Ex (and When Not To)](/blog/articles/what-to-text-your-ex/)
 *   [Should I Text My Ex Happy Birthday?](/blog/articles/should-i-text-my-ex-happy-birthday/)
-*   [The Urge to Text Your Ex: A Survival Guide](/blog/articles/urge-to-text-ex-survival-guide/)
+*   [What to Do Instead of Texting Your Ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/)
 *   [Why Is No Contact So Hard? (And How to Survive It)](/blog/articles/no-contact-hardest-thing/)
 *   [The Hardest Day of No Contact (And What Comes After)](/blog/articles/hardest-day-no-contact/)
 *   [Stop Checking Your Ex's Instagram (Here's How)](/blog/articles/stop-checking-ex-instagram/)

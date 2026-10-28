@@ -54,7 +54,7 @@ If you made a list of why the relationship ended, read it now. If you haven't, s
 
 ### 5. Name what you actually need
 
-"I want to text my ex" is often shorthand for something else: I'm lonely, I can't sleep, I want to feel wanted, I want to know they're hurting too. Name it. Then ask whether a text to them would actually give you that. Usually it gives you a few seconds of relief and a long wait. If you want to understand why the pull is this strong, our [survival guide to the urge to text](/blog/articles/urge-to-text-ex-survival-guide/) explains what's going on in your head.
+"I want to text my ex" is often shorthand for something else: I'm lonely, I can't sleep, I want to feel wanted, I want to know they're hurting too. Name it. Then ask whether a text to them would actually give you that. Usually it gives you a few seconds of relief and a long wait. If you want to understand why the pull is this strong, [why you miss your ex so much](/blog/articles/why-do-i-miss-my-ex/) explains what's going on in your head.
 
 ## If You Still Can't Sleep
 
