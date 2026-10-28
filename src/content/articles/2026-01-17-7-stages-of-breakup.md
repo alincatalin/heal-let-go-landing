@@ -1,22 +1,22 @@
 ---
-title: "The 7 Stages of a Breakup: What's Actually Happening to Your Brain"
+title: "The 7 Stages of a Breakup and What Each One Is For"
 slug: "7-stages-of-breakup"
 date: "2026-01-17"
 category: "Breakup Healing"
 readTime: "14 min"
-excerpt: "A brutally honest timeline of heartbreak—and why you're not broken, you're in stage 3."
+excerpt: "The 7 stages of a breakup, from shock to acceptance: what each one feels like, why they don't come in order, and how long getting over a breakup takes."
 answer: "The 7 stages of a breakup are shock, denial, bargaining, anger, depression, testing and acceptance. They're a vocabulary for what you feel, not a fixed order: most people move back and forth or feel several in one day. There's no fixed timeline, but many people feel a real shift after the first month or two."
 author: "Heal Team"
-keywords: "7 stages of a breakup, 7 stages of a break up, stages of getting over a break up, breakup stages timeline, stages of heartbreak, breakup grief stages, stages of breakup recovery"
+keywords: "7 stages of a breakup, 7 stages of a break up, stages of getting over a break up, breakup stages timeline, stages of heartbreak, breakup grief stages, stages of breakup recovery, stages of moving on"
 cluster: "getting-over"
 pillar: true
-updated: "2026-10-08"
+updated: "2026-10-28"
 cta:
   title: "Support for whichever stage you're in"
   text: "An AI coach to talk to, a journal for what you can't say out loud, and a no-contact count that shows progress you can't feel yet."
 ---
 
-*A brutally honest timeline of heartbreak—and why you're not broken, you're in stage 3*
+*A brutally honest timeline of heartbreak, and why you're not broken, you're in stage 3*
 
 ---
 
@@ -70,7 +70,7 @@ Then the relationship ends.
 
 And your brain doesn't get the memo that this is supposed to be healthy or growth-oriented or whatever you're telling yourself. All it knows is that a major source of neurochemical reward has been removed, and it responds the same way it would respond to any withdrawal: with panic, craving, and disorientation.
 
-Studies on romantic rejection show activation in the same brain regions involved in addiction withdrawal. The insular cortex. The anterior cingulate. The areas that process physical pain.
+Brain scans of people recently rejected by a partner show activity in reward and craving regions linked to addiction ([Fisher et al., 2010](https://doi.org/10.1152/jn.00784.2009)), and rejection also activates areas that process physical pain ([Kross et al., 2011](https://doi.org/10.1073/pnas.1102693108)).
 
 This is why breakups hurt in your chest, not just your mind. This is why you can't sleep, can't eat, can't focus. Your brain is in survival mode, trying to get you to do whatever it takes to restore the source of reward it's been conditioned to depend on.
 
@@ -84,9 +84,23 @@ Now let's talk about the stages themselves.
 
 I'm going to frame these differently than you've probably seen before. Instead of just describing what each stage feels like, I want to tell you what each stage is *doing*—what function it serves in the larger process of reorganizing your identity after loss.
 
-Because that's what a breakup actually is: an identity crisis. You were someone who was with them. Now you're someone who isn't. And your psyche has to completely restructure itself around that new reality.
+Because that's what a breakup actually is: an identity crisis. In three studies, people felt less sure of who they were after a breakup, and that confusion added to their distress ([Slotter, Gardner and Finkel, 2010](https://doi.org/10.1177/0146167209352250)). You were someone who was with them. Now you're someone who isn't. And your psyche has to completely restructure itself around that new reality.
 
 Each stage is part of that restructuring. They're not obstacles to healing. They *are* the healing.
+
+### The 7 stages of a breakup at a glance
+
+| Stage | What it feels like | What it's doing | What helps |
+| --- | --- | --- | --- |
+| 1. Shock | Numb, unreal, going through the motions | Protecting you from taking it all in at once | Basics: eat, sleep, one person who knows |
+| 2. Denial | "Maybe they'll text", "maybe it's a break" | Easing you into the loss step by step | Mute the chat so you stop waiting |
+| 3. Bargaining | Endless "what if" and replaying | Looking for control | Write the text, [don't send it](/tools/unsent-text/) |
+| 4. Anger | Furious at them, yourself, everyone | Giving you energy and distance | Move your body; vent somewhere private |
+| 5. Depression | Heavy, flat sadness | Doing the actual grieving | Let it come; keep small routines |
+| 6. Testing | Good moments, then guilt | Rebuilding who you are without them | Try new things, without judging the bad days |
+| 7. Acceptance | Peace more than happiness | Folding it into your story | Notice how far you've come |
+
+The order is loose. Most people move back and forth between these, and some feel three in one afternoon.
 
 ---
 
@@ -295,7 +309,10 @@ Shock, denial, bargaining, anger, depression, testing and acceptance. They're a 
 Rarely. Most people move back and forth, feel several stages in one day, or skip one and meet it months later. What matters is that you're moving, not the sequence.
 
 **How long does it take to get over a breakup?**
-There's no fixed timeline. Many people feel a real shift after the first month or two, but it depends on the length of the relationship, how it ended, and the support you have.
+There's no fixed timeline. Many people feel a real shift after the first month or two, but it depends on the length of the relationship, how it ended, and the support you have. In one study that followed young adults daily after a breakup, sadness dropped most in the first weeks ([Sbarra and Emery, 2005](https://doi.org/10.1111/j.1350-4126.2005.00112.x)).
+
+**What are the stages of moving on?**
+The same seven, seen from the far end: shock, denial, bargaining, anger, depression, testing and acceptance. Moving on usually shows up in testing and acceptance, when you start building a life that isn't organized around them.
 
 **Which stage is the hardest?**
 For many people it's bargaining or depression: bargaining because it pulls you toward reaching out, depression because it can feel like it will never lift. Both pass.
