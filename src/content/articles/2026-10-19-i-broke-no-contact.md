@@ -20,7 +20,7 @@ First, breathe. This happens to almost everyone who tries no contact. It doesn't
 
 ## Did I Ruin Everything?
 
-No. The days you went without contact still happened. You still got through them, and you still learned you can.
+No. The days you went without contact still happened. You still got through them, and you still learned you can. (Not sure a like or a story view even counts? See [what counts as breaking no contact](/blog/articles/what-counts-as-breaking-no-contact/).)
 
 What a slip does is reopen the loop for a bit. In a study that followed young adults through the month after a breakup, people who stayed in contact with their ex saw their sadness and love for the ex fade more slowly ([Sbarra and Emery, 2005](https://doi.org/10.1111/j.1350-4126.2005.00112.x)). One message isn't the same as staying in touch. But it's why the next step matters more than the slip itself.
 
