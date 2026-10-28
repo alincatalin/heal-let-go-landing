@@ -56,7 +56,7 @@ No contact creates distance. And distance creates clarity.
 **What No Contact Isn't:**
 
 - A way to punish your ex
-- A manipulation tactic to get them back
+- A manipulation tactic to get them back (more on that in [the no contact rule for women](/blog/articles/no-contact-rule-for-women/))
 - Proof that you don't care
 - Something you're doing to them
 - A guarantee of any specific outcome
