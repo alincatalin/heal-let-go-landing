@@ -1,7 +1,7 @@
 ---
 title: "Why Does a Breakup Hurt More at Night?"
 slug: "why-breakups-hurt-more-at-night"
-date: "2026-11-02"
+date: "2026-10-28"
 category: "Breakup Healing"
 readTime: "4 min"
 excerpt: "Why the hours after midnight are the hardest part of a breakup, what's going on in your brain, and what to do at 2am instead of texting your ex."

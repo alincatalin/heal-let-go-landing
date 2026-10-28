@@ -1,7 +1,7 @@
 ---
 title: "Signs No Contact Is Working (and Signs It Isn't)"
 slug: "signs-no-contact-is-working"
-date: "2026-10-30"
+date: "2026-10-28"
 category: "No Contact"
 readTime: "8 min"
 excerpt: "The real signs no contact is working: fewer urges, quieter thoughts, more of you. Plus the signs it isn't yet, and what to change if you're stuck."
