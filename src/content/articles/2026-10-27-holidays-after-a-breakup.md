@@ -27,6 +27,8 @@ This guide goes through the season in order, from Thanksgiving to New Year's Eve
 | Days alone | The empty hours | Plan the day in blocks, mute him, get outside |
 | New Year's Eve | Midnight, couples and a few drinks | Archive the chat before you go, or skip midnight |
 
+Want it written down for your own dates? Our free [Holiday Survival Plan](/tools/holiday-plan/) makes a short plan for each day you're dreading, with a line ready for when someone asks.
+
 ## Why Are the Holidays So Hard After a Breakup?
 
 Because this season is full of things you did together. The drive to his parents'. The ornament you bought on your first Christmas. The New Year's kiss. Every one of those is a cue, and in December they come at you all day.

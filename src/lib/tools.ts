@@ -9,6 +9,13 @@ export interface Tool {
 
 export const tools: Tool[] = [
   {
+    href: "/tools/holiday-plan/",
+    name: "Holiday Survival Plan",
+    label: "For Thanksgiving to New Year",
+    blurb: "Pick the holiday days you're dreading and get a short plan for each, with what to say when people ask about your ex.",
+    cta: "Make my plan",
+  },
+  {
     href: "/tools/unsent-text/",
     name: "Unsent Text to Your Ex",
     label: "Nothing gets sent",
