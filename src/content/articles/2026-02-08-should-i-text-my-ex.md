@@ -330,7 +330,7 @@ You're human. It happens. Don't spiral. Don't send a follow-up trying to explain
 *   [What to Text Your Ex (and When Not To)](/blog/articles/what-to-text-your-ex/)
 *   [Should I Text My Ex Happy Birthday?](/blog/articles/should-i-text-my-ex-happy-birthday/)
 *   [What to Do Instead of Texting Your Ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/)
-*   [Why Is No Contact So Hard? (And How to Survive It)](/blog/articles/no-contact-hardest-thing/)
+*   [The No Contact Rule: The Only Guide You Need](/blog/articles/no-contact-rule-guide/)
 *   [The Hardest Day of No Contact (And What Comes After)](/blog/articles/hardest-day-no-contact/)
 *   [Stop Checking Your Ex's Instagram (Here's How)](/blog/articles/stop-checking-ex-instagram/)
 *   [The 7 Stages of a Breakup](/blog/articles/7-stages-of-breakup/)
