@@ -1,7 +1,7 @@
 ---
 title: "What Is Orbiting? Meaning, Signs and What to Do"
 slug: "what-is-orbiting"
-date: "2026-11-19"
+date: "2026-10-29"
 category: "Breakup Terms"
 readTime: "5 min"
 excerpt: "Orbiting is when someone stops talking to you but keeps watching your stories and liking your posts. What it means, why exes do it, why it hurts and how to step out of their orbit."
