@@ -23,7 +23,7 @@ That deserves more credit than you're probably giving it. It also comes with a s
 
 ## What Day 7 of No Contact Usually Feels Like
 
-For many people, the first week follows a rough shape: a strange calm or shock on day one, a sharp rise in craving around [day 3](/blog/articles/hardest-day-no-contact/), and then, somewhere around days five to seven, a slow loosening.
+For many people, the first week follows a rough shape: a strange calm or shock on day one, a sharp rise in craving around [day 3](/blog/articles/hardest-day-no-contact/), and then, somewhere around [day 5](/blog/articles/no-contact-day-5/) to day 7, a slow loosening.
 
 Common day 7 experiences:
 

@@ -46,7 +46,7 @@ If day 3 was the peak, day 4 can feel like a hangover: tired, flat, emotionally 
 
 ### Day 5
 
-The urge is often quieter, but rumination is louder: replaying conversations, rewriting arguments, imagining what they're doing. **What helps:** give the loop an exit. Write the conversation you keep replaying, in full, somewhere it can't send. Then close it.
+The urge is often quieter, but rumination is louder: replaying conversations, rewriting arguments, imagining what they're doing. **What helps:** give the loop an exit. Write the conversation you keep replaying, in full, somewhere it can't send. Then close it. **Full guide: [No contact day 5](/blog/articles/no-contact-day-5/).**
 
 ### Day 6
 
