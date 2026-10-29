@@ -86,7 +86,7 @@ If there's a lot more you want to say than fits in a text, write it as a letter 
 
 ## What If They Keep Coming Back?
 
-They might. Situationships are famous for the "hey stranger" text three weeks later, or the story view at 2am, or the "I was just thinking about you" that goes nowhere. That pattern has a name: [breadcrumbing](/blog/articles/what-is-breadcrumbing/).
+They might. Situationships are famous for the "hey stranger" text three weeks later, or the story view at 2am, or the "I was just thinking about you" that goes nowhere. That pattern has a name: [breadcrumbing](/blog/articles/what-is-breadcrumbing/). If they only watch and like without ever messaging, that's [orbiting](/blog/articles/what-is-orbiting/).
 
 Each of those restarts the guessing. One message can undo a week of feeling better, because it reopens the question you were finally putting down.
 

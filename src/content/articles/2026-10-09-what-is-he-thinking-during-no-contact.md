@@ -29,7 +29,7 @@ People react to breakups in very different ways:
 *   Some **distract** themselves hard: work, the gym, going out, dating apps.
 *   Some feel **all of the above** on the same day.
 
-Their silence doesn't tell you which one it is. A story they post doesn't either. Even a message from them is a snapshot of one moment, not a summary of what they feel.
+Their silence doesn't tell you which one it is. A story they post doesn't either. Neither does them watching yours, a habit with its own name: [orbiting](/blog/articles/what-is-orbiting/). Even a message from them is a snapshot of one moment, not a summary of what they feel.
 
 ## Why the Question Feels So Urgent
 
