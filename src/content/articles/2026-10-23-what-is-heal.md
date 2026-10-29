@@ -54,7 +54,7 @@ Prices are the US App Store prices in October 2026 and can differ by country.
 
 Heal is for you if the hardest part of your breakup is not reaching out. Maybe you're trying [no contact](/blog/articles/no-contact-rule-guide/), maybe you keep drafting texts at 2am, or maybe you [broke no contact](/blog/articles/i-broke-no-contact/) last night and want to stop it happening again.
 
-It's probably not what you need if you only want a day counter. A simple free tracker will do that. And Heal isn't therapy. If you're struggling to cope, talk to a doctor or therapist.
+It's probably not what you need if you only want a day counter. A simple free tracker will do that. Comparing apps? See how Heal stacks up against [the Get Over Him app](/blog/articles/heal-vs-get-over-him-app/). And Heal isn't therapy. If you're struggling to cope, talk to a doctor or therapist.
 
 ## What Does Using Heal Look Like?
 
