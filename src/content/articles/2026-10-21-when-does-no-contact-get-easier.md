@@ -57,6 +57,7 @@ Mostly, taking away what keeps the wound open.
 - **Don't test yourself.** "I feel fine, so one message is okay" is how a good week turns into a bad one.
 - **Plan your hardest hour.** For most people it's late at night. Have something to do and someone to message.
 - **Give the feelings somewhere to go.** Write the text you want to send somewhere it can't send.
+- **Name it if the relationship hurt you.** If there was a cycle of cruelty and apologies, the pull can last longer. Our page on [trauma bonds](/blog/articles/what-is-a-trauma-bond/) explains why, and where to get support.
 
 ## What Might a Hard Night Look Like in Heal?
 
