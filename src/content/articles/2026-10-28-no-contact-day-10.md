@@ -1,7 +1,7 @@
 ---
 title: "No Contact Day 10: What to Expect in Double Digits"
 slug: "no-contact-day-10"
-date: "2026-10-28"
+date: "2026-10-29"
 category: "No Contact"
 readTime: "6 min"
 excerpt: "Day 10 of no contact: the urges are usually shorter, but \"maybe I overreacted\" gets louder. What's normal, what he might be thinking, and how to keep going."
