@@ -1,7 +1,7 @@
 ---
 title: "No Contact Day 5: What to Expect and How to Get Through It"
 slug: "no-contact-day-5"
-date: "2026-10-28"
+date: "2026-10-29"
 category: "No Contact"
 readTime: "6 min"
 excerpt: "Day 5 of no contact: the urge to text often gets quieter, but the replaying gets louder. What's normal, what he might be thinking, and what helps today."
