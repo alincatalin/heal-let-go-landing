@@ -1,0 +1,89 @@
+---
+import Base from "../layouts/Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Footer from "../components/Footer.astro";
+import { SUPPORT_EMAIL } from "../lib/site";
+
+const site = Astro.site!.toString();
+const url = new URL("/about/", site).toString();
+const description =
+  "Who makes Heal, the breakup app you open instead of texting your ex, and how we write the Heal blog: cited research, honest limits, clear dates and corrections.";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Heal and How We Write",
+    url,
+    description,
+    mainEntity: { "@id": `${site}#organization` },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "About", item: url },
+    ],
+  },
+];
+---
+
+<Base title="About Heal and How We Write - Heal: No Contact & Breakup" description={description} jsonLd={jsonLd}>
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6 md:py-20">
+      <header class="mb-12 space-y-5">
+        <p class="eyebrow text-lavender">About</p>
+        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">About Heal and how we write</h1>
+        <p class="quote text-xl leading-relaxed text-ink-soft">
+          Heal is a breakup app you open instead of texting your ex. This page explains who's behind it and the rules we follow when we write the blog.
+        </p>
+      </header>
+
+      <div class="prose-heal">
+        <h2>What is Heal?</h2>
+        <p>
+          Heal is an app for iPhone and Android for the hardest part of a breakup: not reaching out. You write the message you want to send in a chat that looks like theirs. It never sends, and an AI coach replies instead. Heal also has an SOS button for the urge, a no contact tracker and a private journal. It's free to download. The full list of features and prices is on <a href="/blog/articles/what-is-heal/">What is Heal?</a>
+        </p>
+        <p>
+          Heal is a self-help app. It isn't therapy and it can't keep anyone safe from another person. If you're struggling to cope or feel unsafe, talk to a doctor or therapist, or find a local helpline at <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer">findahelpline.com</a>.
+        </p>
+
+        <h2>Who makes Heal?</h2>
+        <p>
+          Heal was started by someone who's been exactly where you are. Articles are published under the byline "Heal Team."
+        </p>
+
+        <h2>How do we write the blog?</h2>
+        <p>Every article follows the same rules:</p>
+        <ul>
+          <li><strong>Research claims link to the research.</strong> When we say a study found something, we link to it and list it under Sources at the end of the post. We describe what the study measured, how many people took part, and what it didn't show.</li>
+          <li><strong>We say when the evidence is thin.</strong> Some popular ideas, like exact no contact timelines or how trauma bonds break, have little research behind them. When that's the case, we say so instead of filling the gap.</li>
+          <li><strong>We don't promise to get your ex back.</strong> No contact and the rest of our advice are about your recovery, not a tactic to change someone else's mind.</li>
+          <li><strong>Hard topics come with real support.</strong> Posts about abuse, trauma bonds or not coping point to helplines and professional support, and are clear that an app isn't a replacement for them.</li>
+          <li><strong>Dates are honest.</strong> Each post shows the day it was published. When we revise a post in a meaningful way, it also shows the date it was updated.</li>
+          <li><strong>The app examples are examples.</strong> Posts sometimes show what a moment might look like in Heal. Those messages are written to illustrate, not quoted from real users.</li>
+        </ul>
+
+        <h2>Which sources do we use?</h2>
+        <p>
+          We lean on peer-reviewed research about breakups, attachment and rejection. Examples include brain-imaging studies of people recently rejected in love (Fisher and colleagues, 2010; Kross and colleagues, 2011), daily diary studies of how feelings change after a breakup (Sbarra and Emery, 2005), research on checking an ex's social media (Marshall, 2012) and the original work on traumatic bonding (Dutton and Painter, 1993). For definitions we also cite dictionaries and reference pages, such as Merriam-Webster and Psychology Today.
+        </p>
+
+        <h2>Found a mistake?</h2>
+        <p>
+          If something in a post is wrong, out of date or links to a study that doesn't say what we said, please email <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>. We'll check it and fix the post, and update its date when the change matters.
+        </p>
+
+        <h2>Where to start</h2>
+        <ul>
+          <li>Trying not to reach out? Read the <a href="/blog/articles/no-contact-rule-guide/">no contact rule guide</a>.</li>
+          <li>About to send something? Take the <a href="/tools/should-i-text-my-ex/">should I text my ex quiz</a> or write it in the <a href="/tools/unsent-text/">unsent text tool</a> first.</li>
+          <li>Want everything in one place? Browse <a href="/blog/">the blog</a>.</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+  <Footer />
+</Base>

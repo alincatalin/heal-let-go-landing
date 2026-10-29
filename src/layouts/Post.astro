@@ -67,7 +67,7 @@ const jsonLd = [
     image: imageUrl,
     datePublished: date.toISOString(),
     dateModified: (updated ?? date).toISOString(),
-    author: { "@type": "Organization", name: author, url: site },
+    author: { "@type": "Organization", name: author, url: new URL("/about/", site).toString() },
     publisher: {
       ...organization,
       logo: { "@type": "ImageObject", url: new URL("/assets/logo.png", site).toString() },
@@ -139,7 +139,7 @@ const jsonLd = [
           <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl md:text-[3.4rem]">{title}</h1>
           <p class="quote text-xl leading-relaxed text-ink-soft md:text-[1.4rem]">{excerpt}</p>
           <div class="flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-hairline pt-6 text-sm text-ink-muted">
-            <span class="text-ink-soft">By {author}</span>
+            <span class="text-ink-soft">By <a href="/about/" class="underline-offset-4 hover:text-lavender hover:underline">{author}</a></span>
             <span aria-hidden="true">·</span>
             <time datetime={date.toISOString().slice(0, 10)}>{formatDate(date)}</time>
             {

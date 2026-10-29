@@ -28,6 +28,7 @@ ${posts.map((p) => `- [${p.data.title}](${url(p.href)}): ${p.data.answer ?? p.da
 
 ## Optional
 
+- [About Heal and how we write](${url("/about/")})
 - [Privacy policy](${url("/privacy/")})
 - [Terms](${url("/terms/")})
 `;
