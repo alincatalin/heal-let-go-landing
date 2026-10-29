@@ -21,6 +21,7 @@ export async function GET(context: APIContext) {
     ...articles.map((p) => ({ loc: articleUrl(p), lastmod: day(p.data.updated ?? p.data.date) })),
     { loc: "/tools/unsent-text/" },
     { loc: "/tools/holiday-plan/" },
+    { loc: "/about/" },
     { loc: "/privacy/" },
     { loc: "/terms/" },
     { loc: "/delete-account/" },
