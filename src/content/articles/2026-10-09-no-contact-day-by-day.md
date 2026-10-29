@@ -70,7 +70,7 @@ Many people notice their first real gaps: an hour, maybe a morning, where they d
 
 ### Day 10
 
-Double digits. Day 10 is a common time for "maybe I overreacted" thinking, as memory starts to soften the hard parts. **What helps:** reread your reasons list, slowly, and add anything you'd started to forget.
+Double digits. Day 10 is a common time for "maybe I overreacted" thinking, as memory starts to soften the hard parts. **What helps:** reread your reasons list, slowly, and add anything you'd started to forget. **Full guide: [No contact day 10](/blog/articles/no-contact-day-10/).**
 
 ### Day 11
 
