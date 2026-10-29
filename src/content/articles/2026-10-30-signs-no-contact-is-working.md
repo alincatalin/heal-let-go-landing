@@ -104,7 +104,7 @@ No. Whether they reach out tells you something about them. It doesn't measure yo
 
 Some exes get in touch during no contact and some never do, and neither one is a good measure of whether it's working for you. If the question keeps you up at night, our honest take on [what he's thinking during no contact](/blog/articles/what-is-he-thinking-during-no-contact/) may help.
 
-If you've realized you're doing no contact mainly to get them back, you're not doing anything wrong. That hope is very common. It might help to keep going anyway and see what you want once the craving has quieted. Lots of people find the answer has changed by then.
+If you've realized you're doing no contact mainly to get them back, you're not doing anything wrong. That hope is very common. It might help to keep going anyway and see what you want once the craving has quieted. Lots of people find the answer has changed by then. (We wrote about this in [the no contact rule for women](/blog/articles/no-contact-rule-for-women/).)
 
 ## What Does Progress Look Like in Heal?
 

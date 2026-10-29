@@ -5,15 +5,15 @@ date: "2026-10-14"
 category: "No Contact"
 readTime: "8 min"
 excerpt: "The no contact rule for women, minus the mind games: what it is, how long to do it, what you'll feel, and why it isn't a trick to make him miss you."
+answer: "The no contact rule for women is the same as for anyone: at least 30 days with no texts, calls, likes, story views or check-ins with your ex, longer after a long relationship. Its purpose is to let you heal. It isn't a tactic to make him miss you, even though a lot of advice online sells it that way."
 author: "Heal Team"
-keywords: "no contact rule for women, no contact rule female psychology, female psychology during no contact, no contact rule for women rules, how long should a woman do no contact, does no contact work on men, no contact rule after breakup woman"
+updated: "2026-10-28"
+keywords: "no contact rule for women, no contact rule female psychology, female psychology during no contact, no contact rule for women rules, how long should a woman do no contact, does no contact work on men, no contact rule after breakup woman, 30 day no contact rule female psychology"
 cluster: "no-contact"
 cta:
   title: "Count every day you choose yourself"
   text: "Heal tracks your no contact days, catches you with an SOS when you want to reach out, and keeps slips in context so one bad night doesn't erase your progress."
 ---
-
-The no contact rule for women is the same rule it is for anyone: a set period, usually at least 30 days, with no texts, calls, likes, story views or check-ins with your ex. Its purpose is to let you heal. It isn't a tactic to make him miss you, even though a lot of advice online sells it that way.
 
 If you've been reading about "female psychology during no contact," you've probably found two kinds of advice. One says no contact is a strategy to get him back. The other says it's about you. This guide is the second kind, and it'll explain why that's also the version that works.
 
@@ -61,6 +61,14 @@ This is the biggest thing no contact isn't. Some sites call it "the female no co
 ## How Long Should a Woman Do No Contact?
 
 At least 30 days. If you were together for years, live in the same area or keep slipping, go for 60 or 90.
+
+| Your situation | How long | Why |
+| --- | --- | --- |
+| Short relationship or situationship | 30 days | Long enough for the craving to ease |
+| Together a year or more | 60 days | More habits and memories to unwind |
+| Together for years, or living close by | 90 days | You'll run into reminders more often |
+| You keep slipping | Restart, and add 30 | Each slip tops the craving back up |
+| You share kids, a lease or a job | Modified: logistics only | Full silence isn't possible, so keep it practical |
 
 The first two weeks are usually the hardest. Many people find [day 3 is the worst](/blog/articles/hardest-day-no-contact/), when the adrenaline of the breakup wears off and the missing starts in earnest. If you want to know what's normal along the way, here's what to expect on [day 1](/blog/articles/no-contact-day-1/), [day 7](/blog/articles/no-contact-day-7/), [day 14](/blog/articles/no-contact-day-14/), [day 21](/blog/articles/no-contact-day-21/) and [day 30](/blog/articles/no-contact-day-30/).
 
@@ -114,6 +122,9 @@ Many people find that the space shows them things they couldn't see from inside 
 If you still want to talk to him after that, decide in daylight, with a clear head. Our guide [should I text my ex?](/blog/articles/should-i-text-my-ex/) can help you think it through. And if you're still in the thick of it, our [30-day plan to get over him](/blog/articles/how-to-get-over-him/) breaks the month down week by week.
 
 ## FAQ: The No Contact Rule for Women
+
+**What is the 30 day no contact rule in female psychology?**
+It's the same 30 days of no contact, described through how women often feel during a breakup: replaying everything, wanting closure, missing him most in the first two weeks. Research suggests women often feel a breakup more intensely at first and recover more fully over time. The 30 days are for your recovery, not a test of him.
 
 **Does the no contact rule work on men?**
 No contact isn't meant to work on him. It works on you: it gives the attachment time to loosen so you can think clearly. Some men do reach out during no contact and some don't, and neither outcome is a good measure of whether it worked.
