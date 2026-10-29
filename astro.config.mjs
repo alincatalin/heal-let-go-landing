@@ -15,6 +15,7 @@ export default defineConfig({
     "/blog/articles/breakup-healing-stages-guide": "/blog/articles/7-stages-of-breakup/",
     "/blog/articles/ai-breakup-coach-2026": "/blog/articles/what-is-heal/",
     "/blog/articles/urge-to-text-ex-survival-guide": "/blog/articles/what-to-do-instead-of-texting-your-ex/",
+    "/blog/articles/no-contact-hardest-thing": "/blog/articles/no-contact-rule-guide/",
     // Stray URL that shows up in Search Console
     "/blog/articles/should-i-text-your-ex": "/blog/articles/should-i-text-my-ex/",
   },
