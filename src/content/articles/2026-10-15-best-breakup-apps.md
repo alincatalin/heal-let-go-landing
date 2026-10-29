@@ -69,7 +69,7 @@ Get Over Him is aimed squarely at women getting over a man. It focuses on no con
 
 **Price:** its App Store listing shows weekly, monthly and yearly in-app purchases from $4.99 to $29.99. The listing says there are no free features, so the price you'll actually pay is on the paywall after onboarding.
 
-**Worth knowing:** expect to choose a plan early, before you've had a chance to try it.
+**Worth knowing:** expect to choose a plan early, before you've had a chance to try it. For a feature-by-feature look, see [Get Over Him app vs Heal](/blog/articles/heal-vs-get-over-him-app/).
 
 ## 3. Breakup Buddy
 
