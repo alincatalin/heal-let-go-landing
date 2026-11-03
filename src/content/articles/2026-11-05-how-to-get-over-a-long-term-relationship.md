@@ -75,7 +75,7 @@ There's no fixed rule. Many people feel noticeably better within a few months, w
 Yes. Research shows people's sense of who they are gets less clear after a breakup, and that adds to how hard it feels. It comes back as you rebuild routines, friendships and interests.
 
 **Should I stay friends with my ex after a long relationship?**
-Not right away. Give yourself time and distance first. Friendship, if it ever happens, works best once neither of you hopes for more.
+Not right away. Give yourself time and distance first. Friendship, if it ever happens, works best once neither of you hopes for more. More in [can you be friends with your ex](/blog/articles/can-you-be-friends-with-your-ex/).
 
 **Why do I still miss them even though I ended it?**
 Ending it doesn't stop the grief. You can know it was the right choice and still miss the person, the routines and the life you had.
