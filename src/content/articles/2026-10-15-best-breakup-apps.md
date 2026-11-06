@@ -7,7 +7,7 @@ category: "Breakup Healing"
 readTime: "9 min"
 excerpt: "Six breakup apps compared on what they do, what they cost and who they suit, from no contact trackers to AI coaches. Written by the team behind Heal."
 author: "Heal Team"
-keywords: "best breakup apps, breakup app, get over him app, get over him app free, app to stop texting my ex, breakup recovery app, heartbreak app"
+keywords: "best breakup apps, breakup app, get over him app, get over him app free, breakup recovery app, heartbreak app"
 cluster: "getting-over"
 cta:
   title: "Try the one built for the urge to text"
@@ -149,7 +149,7 @@ It depends on what you struggle with most. For the urge to text your ex, Heal is
 Yes. Let it Go's tracker, journal, affirmations and community are free, and Heal is free to download with a 7-day trial and a free tier after it. Most others have a short trial or a paywall soon after you sign up.
 
 **Is there an app to stop texting my ex?**
-Yes. Heal gives you a chat that looks like your ex's but never sends, plus an SOS button for when the urge hits. Writing the message out without sending it often takes the pressure off.
+Yes. Heal gives you a chat that looks like your ex's but never sends, plus an SOS button for when the urge hits. Writing the message out without sending it often takes the pressure off. Our [app to stop texting your ex](/app-to-stop-texting-your-ex/) page compares five other apps built for that moment.
 
 **What is the best no contact tracker app?**
 Most breakup apps include one. For tracking alone, No Contact Tracker is free to start and No Contact App has a free counter in the browser. Heal's tracker shows slips in context and keeps your total when the streak restarts.

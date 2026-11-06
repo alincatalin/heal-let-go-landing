@@ -1,0 +1,191 @@
+---
+import Base from "../layouts/Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Footer from "../components/Footer.astro";
+import PhoneMockup from "../components/PhoneMockup.astro";
+import StoreButtons from "../components/StoreButtons.astro";
+import FinalCTA from "../components/FinalCTA.astro";
+import { appStorePage } from "../lib/store";
+import sosHelp from "../assets/screens/sos-help.png";
+import breathe from "../assets/screens/sos-breathe.png";
+
+// App-intent landing page for "app to stop texting your ex" / "text your ex app" / "don't text him app"
+// searches (GSC Jul to Oct 2026). Competitor facts come from each app's US App Store listing, checked on the date below.
+const checked = "November 6, 2026";
+const title = "The App to Stop Texting Your Ex (It Never Sends) | Heal";
+const description =
+  "Heal is the app you open instead of texting your ex: write the message in a chat that looks like theirs, it never sends, and an AI coach replies. Free.";
+const answer =
+  "Heal is an app for iPhone and Android that you open instead of texting your ex. You write the message in a chat that looks like theirs. It never sends, and an AI coach replies instead. An SOS button gets you through the urge. It's free to download, and nothing ever reaches your ex.";
+
+const faq = [
+  {
+    question: "Is there an app that stops you from texting your ex?",
+    answer:
+      "Yes. Heal gives you a chat that looks like your ex's where you can write the message without sending it, and an SOS button for the urge. It doesn't lock your phone or block anyone. It gives the urge somewhere else to go, which is usually what stops the text.",
+  },
+  {
+    question: "Can I text my ex without them knowing?",
+    answer:
+      "Yes, if the message never leaves your phone. In Heal's unsent texts, nothing is sent to anyone, so your ex can't see what you wrote or that you wrote it. You can also try the free unsent text tool on this site, which works in your browser.",
+  },
+  {
+    question: "Does Heal block my ex's number?",
+    answer:
+      "No. Heal doesn't block anyone or read your messages. To block a number or profile, use your phone's or the social app's own block settings. Heal is for the moments in between, when you want to reach out anyway.",
+  },
+  {
+    question: "What is a fake text your ex app?",
+    answer:
+      "It's an app with a texting screen that looks real but never sends. You get the words out, which takes away most of the pressure, without the reply you were dreading or the silence. Heal's version adds an AI coach that replies and asks what you were hoping they'd say.",
+  },
+  {
+    question: "Is the app to stop texting your ex free?",
+    answer:
+      "Heal is free to download. The free tier keeps unsent texts, the SOS button, the no contact tracker, the journal and 5 AI coach messages a day. Premium is $12.99 a month or $124.99 a year in the US, with 7 days free to start.",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/app-to-stop-texting-your-ex/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: title,
+    url,
+    description,
+    about: { "@id": `${site}#app` },
+    publisher: { "@id": `${site}#organization` },
+    dateModified: "2026-11-06",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "App to Stop Texting Your Ex", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="landing" storeCampaign="app-to-stop-texting-your-ex" storePage={appStorePage("texting-your-ex")}>
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <section class="relative" data-cta="hero">
+      <div class="mx-auto grid max-w-6xl items-center gap-14 px-4 pb-16 pt-14 sm:px-6 md:pt-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
+        <div class="space-y-7">
+          <p class="eyebrow text-lavender">The app to stop texting your ex</p>
+          <h1 class="text-[2.5rem] leading-[1.08] sm:text-6xl">
+            Write the text. <span class="block italic text-lavender">It never sends.</span>
+          </h1>
+          <p class="lede max-w-xl">{answer}</p>
+          <StoreButtons matchDevice />
+          <p class="text-sm text-ink-muted">
+            Free on iPhone and Android. Not ready to download? Try the <a href="/tools/unsent-text/" class="font-semibold text-lavender hover:text-ink">free unsent text tool</a> in your browser.
+          </p>
+        </div>
+        <div class="relative mx-auto flex w-full max-w-[360px] justify-center">
+          <PhoneMockup screenshot={sosHelp} alt="Heal's SOS screen: 'What would help right now?' with Write it here instead, Write your reasons, Talk it through and Add someone to text" width={290} eager />
+        </div>
+      </div>
+    </section>
+
+    <article class="mx-auto max-w-3xl px-4 pb-8 sm:px-6">
+      <div class="prose-heal">
+        <h2>How does an app stop you from texting your ex?</h2>
+        <p>
+          It doesn't take your phone away. It catches the minute before you send. The urge usually hits late, when you're alone, after a trigger: a photo, a song, a date on the calendar. Urges rise and then pass, and the trick is having something to do with your hands while this one does.
+        </p>
+        <p>Here's what Heal gives you in that minute:</p>
+        <table>
+          <thead>
+            <tr><th>When this happens</th><th>Do this in Heal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>You've typed the message and your thumb is on send</td><td>Write it in unsent texts instead. A chat that looks like theirs, but nothing leaves the app</td></tr>
+            <tr><td>You need them to know how you feel</td><td>Keep writing. The AI coach replies and asks what you were hoping they'd say back</td></tr>
+            <tr><td>The urge is physical: racing heart, can't sit still</td><td>Tap SOS: name what's happening, then breathe with it for a minute</td></tr>
+            <tr><td>You forgot why you stopped talking</td><td>Read the reasons you wrote down on a better day</td></tr>
+            <tr><td>You need a real person</td><td>Text one of up to three people you trust, straight from SOS</td></tr>
+            <tr><td>You sent it anyway</td><td>Log the slip. Your total days stay, and a new streak starts today</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Why write the text instead of sending it?</h2>
+        <p>
+          Most of the pull behind a late-night text is the need to get the words out of your head. Writing them down does that part, without the reply you were dreading or the silence that hurts more. Writing about painful feelings has helped people across dozens of studies (<a href="https://doi.org/10.1111/j.1467-9280.1997.tb00403.x" target="_blank" rel="noopener noreferrer">Pennebaker, 1997</a>).
+        </p>
+        <p>
+          Reaching back toward an ex tends to keep the hurt going. People who kept checking an ex's profile after a breakup reported more distress and longing and less personal growth (<a href="https://doi.org/10.1089/cyber.2012.0125" target="_blank" rel="noopener noreferrer">Marshall, 2012</a>). A text is the same pull, with a reply attached.
+        </p>
+      </div>
+
+      <div class="my-12 flex justify-center">
+        <PhoneMockup screenshot={breathe} alt="Heal's SOS breathing screen: 'Pause with me for a minute'" width={280} />
+      </div>
+
+      <div class="prose-heal">
+        <h2>Other apps to stop texting your ex</h2>
+        <p>
+          A handful of "don't text" apps launched in 2025 and 2026. They take different approaches, so here's what each one does, from their US App Store listings on {checked}:
+        </p>
+        <table>
+          <thead>
+            <tr><th>App</th><th>How it works</th><th>Price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Heal: No Contact & Breakup</td><td>Unsent texts with an AI coach replying, SOS button, no contact tracker. iPhone and Android</td><td>Free tier. $12.99/mo or $124.99/yr</td></tr>
+            <tr><td>Text Here Instead</td><td>Unsent messages and voice notes, a streak, 90-second urge breaks, export for a therapist</td><td>Free tier. $1.99/wk or $19.99 to unlock</td></tr>
+            <tr><td>Don't Text</td><td>An "impulse interceptor": tap when you want to text, read 4 reality checks, choose WAIT or act anyway</td><td>Free download, passes from $0.99 a day to $7.99 for 30 days</td></tr>
+            <tr><td>do not text them</td><td>Quotes, a widget, unsent drafts and an "I didn't text him" button. No account</td><td>$0.99 once</td></tr>
+            <tr><td>No Contact Companion</td><td>A 90-second pause before contact, unsent letters, a trigger journal</td><td>$7.99/wk or $29.99/yr. "There is no free trial"</td></tr>
+            <tr><td>Get Over Him</td><td>A "text simulator" for the text to him, an AI friend, a streak</td><td>From $4.99/wk. No free features</td></tr>
+          </tbody>
+        </table>
+        <p>
+          If you want the smallest possible tool, a $0.99 app or our free browser tool does the job. If you want something that talks back and tracks your days too, Heal is built for that. For full reviews, see <a href="/blog/articles/best-breakup-apps/">the best breakup apps</a> and <a href="/blog/articles/heal-vs-get-over-him-app/">Get Over Him vs Heal</a>.
+        </p>
+
+        <h2>What if you don't want an app?</h2>
+        <p>
+          You don't need one. Write the text in your notes app and read it again in the morning, call a friend, or leave the room your phone is in. Our list of <a href="/blog/articles/what-to-do-instead-of-texting-your-ex/">what to do instead of texting your ex</a> has twelve ideas, and the <a href="/tools/should-i-text-my-ex/">should I text my ex quiz</a> helps when you're genuinely unsure. For the bigger question, read <a href="/blog/articles/should-i-text-my-ex/">should I text my ex?</a>
+        </p>
+
+        <h2>FAQ: Apps to stop texting your ex</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+
+        <h2>Sources</h2>
+        <ul>
+          <li>Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. <em>Psychological Science</em>, 8(3), 162 to 166.</li>
+          <li>Marshall, T. C. (2012). Facebook surveillance of former romantic partners. <em>Cyberpsychology, Behavior, and Social Networking</em>, 15(10), 521 to 526.</li>
+          <li>App details and prices from each app's US App Store listing, checked {checked}.</li>
+        </ul>
+      </div>
+    </article>
+
+    <FinalCTA
+      title="Next time, open Heal instead."
+      text="Write everything you want to say to them. It never sends, and the coach replies. Free on iPhone and Android."
+      matchDevice
+    />
+  </main>
+  <Footer />
+</Base>

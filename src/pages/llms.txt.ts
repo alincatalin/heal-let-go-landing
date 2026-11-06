@@ -29,6 +29,7 @@ ${posts.map((p) => `- [${p.data.title}](${url(p.href)}): ${p.data.answer ?? p.da
 
 ## Optional
 
+- [App to stop texting your ex](${url("/app-to-stop-texting-your-ex/")}): how Heal's unsent texts and SOS button work in the minute before you text, and five other "don't text" apps compared.
 - [About Heal and how we write](${url("/about/")})
 - [Privacy policy](${url("/privacy/")})
 - [Terms](${url("/terms/")})
