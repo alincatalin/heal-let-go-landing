@@ -12,6 +12,11 @@ answer: "When family asks about your breakup, give one short, true sentence and 
 cta:
   title: "Get through the holidays with your streak intact"
   text: "Heal's no contact tracker counts every day you don't reach out, even the day your aunt brings him up. If you slip, your total and every day you made it stay on the calendar."
+appBox:
+  feature: tracker
+  title: "Track your streak through the holidays"
+  text: "Heal's no contact tracker puts every day without contact on a calendar, from Thanksgiving to New Year's. The SOS button is one tap away when someone brings him up. Free to download."
+  button: "Track my streak"
 ---
 
 You can picture it already. Plates going around, someone's uncle carving, and then, from across the table: "So where's Josh this year?"
@@ -111,12 +116,6 @@ You can just say:
 Then go to the bathroom, run cold water over your wrists, and breathe out slowly a few times. Come back when you're ready, or don't. Most families have seen worse over a turkey.
 
 If you want a plan for each hard day before it arrives, our free [Holiday Survival Plan](/tools/holiday-plan/) lets you pick the days you dread and gives you a short plan for each, including a line for when someone asks about your ex.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Track your streak through the holidays</p>
-<p>Heal's no contact tracker puts every day without contact on a calendar, from Thanksgiving to New Year's. The SOS button is one tap away when someone brings him up. Free to download.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Track my streak</a>
-</aside>
 
 ## What If My Family Still Talks to My Ex?
 

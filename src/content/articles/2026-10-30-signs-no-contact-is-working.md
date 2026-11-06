@@ -12,6 +12,11 @@ cluster: "no-contact"
 cta:
   title: "See how far you've come"
   text: "Heal's tracker lays out every day without contact on a calendar, so on the hard nights you can see the progress you can't feel. Free to start."
+appBox:
+  feature: tracker
+  title: "Track your streak"
+  text: "Heal counts every day you don't reach out and lays them out on a calendar. On the nights it feels like nothing has changed, you can see that it has. Free to download."
+  button: "Start my no contact count"
 ---
 
 Before the list, one gentle thing. A lot of articles about "signs no contact is working" mean signs that your ex is coming back. This isn't one of those. No contact is for you, so the signs below are about you. If part of you is still hoping it brings them back, that's human, and we'll come to it.
@@ -69,12 +74,6 @@ A pottery class, a weekend away, a new Sunday routine. You're doing it because y
 ### 8. The bad days are further apart
 
 You still have bad days. A song, an anniversary, a photo. But there's more space between them, and they don't wipe out the week.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Track your streak</p>
-<p>Heal counts every day you don't reach out and lays them out on a calendar. On the nights it feels like nothing has changed, you can see that it has. Free to download.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Start my no contact count</a>
-</aside>
 
 ## Why Does It Still Hurt if No Contact Is Working?
 

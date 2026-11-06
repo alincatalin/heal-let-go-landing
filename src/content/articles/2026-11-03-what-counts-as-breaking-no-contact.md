@@ -12,6 +12,11 @@ cluster: "no-contact"
 cta:
   title: "Know where you stand every day"
   text: "Heal counts each day without contact and gives you an SOS button for the moments you're about to reach out. If you slip, your total days stay."
+appBox:
+  feature: sos
+  title: "About to reach out?"
+  text: "Tap SOS in Heal before you tap their name. Say what's going on, breathe for a minute, then write the message where it never sends."
+  button: "Tap SOS before their name"
 ---
 
 No contact sounds simple until you're holding your phone, wondering if a heart on their post counts. Here's a clear line, and an honest look at the grey areas.
@@ -64,12 +69,6 @@ No contact isn't a rule for its own sake. It's there to give your mind a break f
 Checking who they follow, scrolling their old posts or rereading old chats doesn't reach them, but it does keep them at the center of your day. Each look restarts the same hope and the same hurt.
 
 A good question to ask: **"Am I doing this to feel better, or to get a reaction or an update?"** If it's the second, treat it like contact.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">About to reach out?</p>
-<p>Tap SOS in Heal before you tap their name. Say what's going on, breathe for a minute, then write the message where it never sends.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
 
 ## What If They Contact You?
 

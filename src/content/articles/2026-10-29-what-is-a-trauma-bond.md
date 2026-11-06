@@ -14,6 +14,11 @@ cluster: "no-contact"
 cta:
   title: "Keep the distance, one day at a time"
   text: "Heal counts every day without contact, catches you with an SOS when the pull gets strong, and keeps slips in context instead of resetting you to zero."
+appBox:
+  feature: tracker
+  title: "Track your streak"
+  text: "Heal counts every day you don't reach out and gives you an SOS button for the moments the pull gets strong. A slip shows up in context, and your total never resets. Free to start."
+  button: "Start counting"
 ---
 
 If you keep missing someone who hurt you, or keep going back, here's what the term means, when it fits and why distance helps.
@@ -68,12 +73,6 @@ The term fits best when there was a real pattern of harm (control, cruelty, thre
 Every message, every "I'm sorry, I've changed," every late call restarts it. No contact removes the next round of relief, which is what keeps the hoping alive.
 
 We should be honest about the evidence: that same review found no studies explaining how trauma bonds are broken. What we can say is that the cycle needs contact to keep going, and distance gives you room to see it. Expect the pull to last a while, though. In Dutton and Painter's study, attachment often outlasted the relationship. Our [no contact rule guide](/blog/articles/no-contact-rule-guide/) covers how to set it up, including when you share children or a home.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Track your streak</p>
-<p>Heal counts every day you don't reach out and gives you an SOS button for the moments the pull gets strong. A slip shows up next to your good days, never as a reset to zero.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Start counting</a>
-</aside>
 
 ## What Does the Pull Look Like on a Bad Night?
 

@@ -14,6 +14,11 @@ updated: "2026-10-28"
 cta:
   title: "Support for whichever stage you're in"
   text: "An AI coach to talk to, a journal for what you can't say out loud, and a no-contact count that shows progress you can't feel yet."
+appBox:
+  feature: coach
+  title: "Someone to talk to, whatever stage you're in"
+  text: "Heal's AI coach is there at 2am when the stage you're in feels endless. Talk it through, say what you'd say to them, and nothing ever reaches them. Free to start."
+  button: "Talk to the coach"
 ---
 
 *A brutally honest timeline of heartbreak, and why you're not broken, you're in stage 3*
@@ -334,7 +339,3 @@ If you can't eat, sleep or function, if the low mood isn't lifting at all, or if
 - [No Contact Rule: The Only Guide You Actually Need](/blog/articles/no-contact-rule-guide/)
 - [Should I Text My Ex? Read This Before You Hit Send](/blog/articles/should-i-text-my-ex/)
 - [Why Day 3 of No Contact Is the Hardest](/blog/articles/hardest-day-no-contact/)
-
-**Download the Heal app:**
-- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8)
-- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb)

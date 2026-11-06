@@ -13,6 +13,11 @@ cluster: "getting-over"
 cta:
   title: "Stop waiting for the next crumb"
   text: "Heal helps you go no contact: a tracker for every day you don't reply, an SOS button when their message lands, and a place to write what you'd say instead."
+appBox:
+  feature: sos
+  title: "When the next crumb lands"
+  text: "Don't answer it right away. Open Heal, tap SOS, and write your reply in a chat that looks like theirs. It never sends."
+  button: "Don't answer yet"
 ---
 
 A heart on your story. "Haha this reminded me of you" at 11pm. A voice note, then nothing for two weeks. Just enough to keep you hoping, never enough to go anywhere.
@@ -51,12 +56,6 @@ It happens in dating, in situationships and very often after a breakup, when an 
 Because the attention is unpredictable. You never know when the next message will come, so you keep checking. Each crumb brings relief and hope, and each silence brings the drop. That on-and-off pattern can make it harder to let go than a clean break would be. We explain more about that pull in [what is limerence](/blog/articles/what-is-limerence/).
 
 It also has a cost. In the Spanish study, about 1 in 6 participants had been breadcrumbed three or more times in the past year. Compared with people who hadn't, they reported lower life satisfaction and more feelings of loneliness and helplessness. Being ghosted, in that study, wasn't linked to those outcomes. The authors call it a preliminary study, and it can't show that breadcrumbing caused the feelings, but it matches what people describe.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">When the next crumb lands</p>
-<p>Don't answer it right away. Open Heal, tap SOS, and write your reply in a chat that looks like theirs. It never sends.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
 
 ## Why Does Someone Breadcrumb?
 

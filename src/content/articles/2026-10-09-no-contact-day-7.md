@@ -13,6 +13,11 @@ seriesDay: 7
 cta:
   title: "Look how far you've come"
   text: "Heal shows your no-contact count and when your urges tend to hit, so week two doesn't catch you off guard."
+appBox:
+  feature: tracker
+  title: "Look how far you've come"
+  text: "Heal shows your no contact count and when your urges tend to hit, so week two doesn't catch you off guard. Free to start."
+  button: "Keep my count going"
 ---
 
 Seven days.

@@ -13,6 +13,11 @@ seriesDay: 21
 cta:
   title: "Three weeks deserves a record"
   text: "Heal keeps your day count and your reasons together, so a hard evening at week three doesn't undo what you've built."
+appBox:
+  feature: tracker
+  title: "Three weeks deserves a record"
+  text: "Heal keeps your day count and your reasons together, so a hard evening at week three doesn't erase how far you've come. Free to start."
+  button: "Keep my count going"
 ---
 
 Three weeks.

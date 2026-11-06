@@ -13,6 +13,11 @@ seriesHub: true
 cta:
   title: "Whatever day you're on"
   text: "Heal counts your no-contact days, shows when your urges tend to hit, and keeps SOS one tap away for the hard ones."
+appBox:
+  feature: tracker
+  title: "Whatever day you're on"
+  text: "Heal counts your no contact days, shows when your urges tend to hit, and keeps SOS one tap away for the hard ones. Free to start."
+  button: "Start my no contact count"
 ---
 
 You're probably here because you're on a specific day and want to know if what you're feeling is normal. Short answer: almost certainly yes.

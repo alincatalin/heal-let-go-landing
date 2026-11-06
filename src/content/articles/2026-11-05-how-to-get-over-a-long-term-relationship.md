@@ -12,6 +12,11 @@ cluster: "getting-over"
 cta:
   title: "Take it one day at a time"
   text: "Heal gives you a no contact tracker, a private journal and a coach that's there at 2am. Free on iPhone and Android."
+appBox:
+  feature: unsent
+  title: "After years of texting them every day"
+  text: "The habit doesn't stop when the relationship does. Heal gives the urge somewhere to go: write the message in a chat that looks like theirs, and it never sends."
+  button: "Write it in Heal instead"
 ---
 
 When a relationship of five or ten years ends, it isn't one loss. It's dozens. The person, the morning routine, the shared friends, the plans, the version of you that existed with them.
@@ -53,12 +58,6 @@ That's why it can feel so much bigger than other breakups, and why "just move on
 **6. Let people help.** Long relationships often shrink your circle without you noticing. Reach out even if it feels awkward. Most friends are glad to hear from you.
 
 **7. Talk to a professional if it's too much.** If you can't sleep, eat or work for weeks, or you feel hopeless, talk to a doctor or therapist. If you're in crisis, find a local helpline at [findahelpline.com](https://findahelpline.com).
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">After years of texting them every day</p>
-<p>The habit doesn't stop when the relationship does. Heal gives the urge somewhere to go: write the message in a chat that looks like theirs, and it never sends.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
 
 ## What Not to Do
 

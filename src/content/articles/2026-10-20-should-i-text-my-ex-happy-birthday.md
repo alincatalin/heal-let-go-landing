@@ -12,6 +12,11 @@ cluster: "texting-your-ex"
 cta:
   title: "Write the birthday text. It never sends."
   text: "Heal gives you a chat that looks like theirs. Say happy birthday, and everything after it. Nothing reaches them, and the coach replies instead."
+appBox:
+  feature: unsent
+  title: "Write it here. It never sends."
+  text: "Heal has a chat that looks just like yours with them. Type the birthday text and everything you'd say after it. Nothing leaves your phone, and the coach replies instead. Free to start."
+  button: "Write my unsent text"
 ---
 
 You've known the date for weeks. Maybe it's in your calendar, maybe it's just in your head. And now it's here, and a two-word text feels like the most normal thing in the world.
@@ -43,12 +48,6 @@ It's also one of the few days when reaching out feels allowed. It's polite, and 
 Then it's a little harder, because now it feels rude not to return it.
 
 You don't owe a matching text. If they wished you well and you're in no contact, silence is still fine. If you want to acknowledge it, wait a day or two and keep it to one line: "Thanks for the birthday message." Then stop. Our guide on [what to text your ex](/blog/articles/what-to-text-your-ex/) covers replies like this in more detail.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Write it here. It never sends.</p>
-<p>Heal has a chat that looks just like yours with them. Type the birthday text and everything you'd say after it. Nothing leaves your phone, and the coach replies instead. Free to start.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Write my unsent text</a>
-</aside>
 
 ## What Do I Do With the Urge on the Day?
 

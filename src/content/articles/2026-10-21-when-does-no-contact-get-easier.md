@@ -12,6 +12,11 @@ cluster: "no-contact"
 cta:
   title: "Watch it get easier, one day at a time"
   text: "Heal's tracker lays out every day without contact on a calendar, so on the hard nights you can see progress you can't feel yet."
+appBox:
+  feature: tracker
+  title: "See the days you can't feel yet"
+  text: "Heal counts every day without contact and lays them out on a calendar. On the nights it feels like nothing has changed, you can see that it has. Free to start."
+  button: "Start my no contact count"
 ---
 
 If you're asking this, today is probably a hard one. You might be on day 4 and wondering how anyone does this, or on day 19 and confused about why it suddenly hurts again.
@@ -42,12 +47,6 @@ That reaching is strongest early on. It eases as the old routines stop getting a
 This is the part nobody warns you about. You have three good days, and then a song in a shop knocks you flat.
 
 That's normal. In a study that tracked young adults' feelings every day for a month after a breakup, emotions swung up and down along the way. Overall, love for the ex and sadness both eased over the month ([Sbarra and Emery, 2005](https://doi.org/10.1111/j.1350-4126.2005.00112.x)). A bad day in the middle of good ones isn't you going backwards. It's what the path looks like.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">See the days you can't feel yet</p>
-<p>Heal counts every day without contact and lays them out on a calendar. On the nights it feels like nothing has changed, you can see that it has. Free to start.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Start my no contact count</a>
-</aside>
 
 ## What Makes No Contact Get Easier Faster?
 

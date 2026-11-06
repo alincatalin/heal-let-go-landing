@@ -11,6 +11,11 @@ cluster: "getting-over"
 cta:
   title: "Try the one built for the urge to text"
   text: "Heal is free to download, with a 7-day trial of everything: unsent texts, the SOS button, a no contact tracker and an AI coach for the hard nights."
+appBox:
+  feature: unsent
+  title: "Write the text. It never sends."
+  text: "Try Heal free for 7 days: unsent texts, the SOS button, the no contact tracker and the coach. Cancel anytime."
+  button: "Try Heal free for 7 days"
 ---
 
 The best breakup app depends on what you need most: a no contact tracker, someone to talk to at 2am, or a way to stop texting your ex. Below, six apps are compared on what they do, what they cost and who they suit. One of them is ours, so we've tried hard to be fair to the rest.
@@ -54,12 +59,6 @@ Heal is our app, built around one situation: it's late, you're on your own, and 
 **Price:** free to download with a 7-day trial of everything, then $12.99 a month or $124.99 a year. A free tier stays after the trial.
 
 **Worth knowing:** Heal costs more than a basic tracker. If you mainly want a day counter, a cheaper or free one will do. Heal is worth it if texting them, or wanting to, is the thing you keep getting stuck on.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Write the text. It never sends.</p>
-<p>Try Heal free for 7 days: unsent texts, the SOS button, the no contact tracker and the coach. Cancel anytime.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Download Heal free</a>
-</aside>
 
 ## 2. Get Over Him: Breakup Healing
 

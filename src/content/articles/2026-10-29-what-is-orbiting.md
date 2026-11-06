@@ -13,6 +13,11 @@ cluster: "getting-over"
 cta:
   title: "Stop checking who viewed your story"
   text: "Heal helps you go no contact: a tracker for every day you hold the line, an SOS button when you see their name, and a place to write what you'd say instead."
+appBox:
+  feature: unsent
+  title: "Saw their name on your story again?"
+  text: "Before you message them, open Heal and write it in a chat that looks like theirs. It never sends."
+  button: "Write it in Heal instead"
 ---
 
 They haven't texted in three weeks. But every time you post a story, their name is near the top of the viewer list. Sometimes there's a like. Never a message.
@@ -62,12 +67,6 @@ Because it leaves the door half open. You can't grieve the relationship as over,
 The research gives a mixed picture. In the 2021 study, people who had been ghosted or orbited went through roughly four stages: "surprise and confusion," then "anger, sadness, and guilt," then "attempts of relational repair," and finally "acceptance." In the 2022 study of 176 adults, being ghosted was worse than being clearly rejected, and orbiting sat in between: the ambiguous signals "seemed to buffer the victims partially" from the effects of the breakup.
 
 So orbiting may sting a little less than being dropped completely in the moment. The cost comes from what you do with it. Checking an ex's profile is linked to more distress and longing for them, and less personal growth after a breakup, in a study of 464 people ([Marshall, 2012](https://doi.org/10.1089/cyber.2012.0125)). Orbiting gives you a reason to keep checking. If you're stuck on that, see [how to stop checking your ex's Instagram](/blog/articles/stop-checking-ex-instagram/).
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Saw their name on your story again?</p>
-<p>Before you message them, open Heal and write it in a chat that looks like theirs. It never sends.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
 
 ## What to Do When an Ex Is Orbiting You
 
