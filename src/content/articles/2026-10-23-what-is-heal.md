@@ -7,7 +7,7 @@ readTime: "3 min"
 excerpt: "Heal is a breakup app for iPhone and Android, built for the moment you want to text your ex. What it does, what's free, what Premium adds and who it's for."
 answer: "Heal is a breakup app for iPhone and Android that you open instead of texting your ex. You write the message in a chat that looks like theirs, it never sends, and an AI coach replies instead. It also has an SOS button for the urge, a no contact tracker and a private journal. It's free to download, with an optional Premium plan."
 author: "Heal Team"
-keywords: "what is heal app, heal app, heal breakup app, heal no contact app, app to stop texting my ex, app to text your ex without sending, heal app review, is heal app free"
+keywords: "what is heal app, heal app, heal breakup app, heal no contact app, heal app review, is heal app free"
 cluster: "texting-your-ex"
 cta:
   title: "Open Heal instead of their chat"
@@ -84,4 +84,4 @@ No. Heal is a self-help app for the hard moments. If you need more support, talk
 **How is Heal different from other breakup apps?**
 Most breakup apps focus on tracking days or general mood. Heal is built around one moment, the urge to text your ex, and gives you somewhere to write it. Our [breakup apps comparison](/blog/articles/best-breakup-apps/) covers the others honestly.
 
-Want to try the idea first? Our free [unsent text tool](/tools/unsent-text/) works in your browser, no download needed.
+Want to try the idea first? Our free [unsent text tool](/tools/unsent-text/) works in your browser, no download needed. Comparing other ways to stop yourself? See [apps to stop texting your ex](/app-to-stop-texting-your-ex/).
