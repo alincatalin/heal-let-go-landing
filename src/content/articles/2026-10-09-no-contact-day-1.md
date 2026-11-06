@@ -13,6 +13,11 @@ seriesDay: 1
 cta:
   title: "Start counting today"
   text: "Heal counts your no-contact days from the first one, and SOS is one tap away for the moment the urge hits tonight."
+appBox:
+  feature: tracker
+  title: "Start counting today"
+  text: "Heal counts your no contact days from the first one, and the SOS button is one tap away for the moment tonight when you want to reach out. Free to start."
+  button: "Start my no contact count"
 ---
 
 You decided. Maybe it was a calm decision after weeks of thinking. Maybe it was 1 AM after another conversation that went nowhere. Either way, today is day one of no contact.

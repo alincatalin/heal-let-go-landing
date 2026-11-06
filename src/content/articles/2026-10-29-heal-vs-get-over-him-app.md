@@ -12,6 +12,11 @@ cluster: "getting-over"
 cta:
   title: "Try Heal before you pay"
   text: "Heal is free to download, with a free tier and 7 days of everything: unsent texts, the SOS button, the no contact tracker and the AI coach."
+appBox:
+  feature: unsent
+  title: "Try it before you pay"
+  text: "Heal is free to download, with a free tier that stays and 7 days of everything to start. Next time you want to text him, open this instead."
+  button: "Try Heal free"
 ---
 
 If you searched for "get over him app," you've probably found two apps that look alike: Get Over Him and Heal. Heal is ours, so read this knowing that. We've stuck to what each App Store listing says, and we say where Get Over Him is the better pick.
@@ -69,12 +74,6 @@ It depends on how long you use it.
 
 Get Over Him's listing shows two different monthly prices ($14.99 and $29.99), so check which one the paywall offers you.
 
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Try it before you pay</p>
-<p>Heal is free to download, with a free tier that stays and 7 days of everything to start. Next time you want to text him, open this instead.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
-
 ## How Do They Handle Your Data?
 
 App Store privacy labels are filled in by each developer. Get Over Him's label says contact info, user content, identifiers and usage data are linked to you, and that usage data is used to track you. Heal's label lists the same kinds of data as not linked to you, with no tracking.
@@ -93,7 +92,7 @@ If what you write to your ex in an app is something you'd want kept away from yo
 - Texting him, or wanting to, is the thing you keep getting stuck on, and you want an SOS button for that moment.
 - You're on Android (Heal is on Google Play), or you want a journal and a calendar that keeps your days after a slip.
 
-If you mainly want a day counter, you may not need either. Our [best breakup apps](/blog/articles/best-breakup-apps/) comparison covers four more apps, including a free one.
+If you mainly want a day counter, you may not need either. Our [best breakup apps](/blog/articles/best-breakup-apps/) comparison covers four more apps, including a free one. Also looking at Let Them Go? See [Let Them Go app vs Heal](/blog/articles/heal-vs-let-them-go-app/).
 
 ## FAQ: Get Over Him App vs Heal
 

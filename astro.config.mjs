@@ -1,9 +1,13 @@
 import { defineConfig } from "astro/config";
+import { satteri } from "@astrojs/markdown-satteri";
+import { appBoxPlugin } from "./src/lib/app-box.ts";
 
 export default defineConfig({
   site: "https://tryheal.app",
   trailingSlash: "ignore",
   build: { format: "directory" },
+  // One app box per blog post, matched to its problem (front matter `appBox`).
+  markdown: { processor: satteri({ mdastPlugins: [appBoxPlugin] }) },
   redirects: {
     // Old React-router blog URLs from the Lovable site
     "/blog/no-contact-rule": "/blog/articles/no-contact-rule-guide/",

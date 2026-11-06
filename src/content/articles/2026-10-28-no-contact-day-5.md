@@ -13,6 +13,11 @@ seriesDay: 5
 cta:
   title: "Five days is real progress"
   text: "Heal counts every day without contact and keeps an SOS button one tap away for the evenings the replaying gets loud. Free to start."
+appBox:
+  feature: sos
+  title: "When the replaying starts"
+  text: "Heal's SOS button gives the moment somewhere to go: say what's happening, breathe for a minute, then write it out or talk to the coach. Nothing reaches them."
+  button: "Get through tonight"
 ---
 
 Five days. You're past the point most people expect to break, and probably still not feeling great about it. That's the strange thing about day 5: the urge to text is often quieter, but your head is louder.
@@ -48,12 +53,6 @@ Replaying isn't a sign you're going backwards. It does need an exit, though, or 
 **Give the loop an exit.** Write the conversation you keep replaying, in full, somewhere it can't send. Our free [unsent text tool](/tools/unsent-text/) works for this. Keep it to one go, though. A study of 90 recently separated adults found that people who kept going over and over why it happened did worse months later after emotional writing than after writing about neutral topics ([Sbarra et al., 2013](https://doi.org/10.1177/2167702612469801)). Write it to let it out, not to solve it.
 
 **Don't feed it.** Every look at their stories gives the loop new material. In a study of 464 people, those who kept checking an ex's Facebook page reported more distress and more longing for the ex ([Marshall, 2012](https://doi.org/10.1089/cyber.2012.0125)). If that's where you're slipping, read [how to stop checking their Instagram](/blog/articles/stop-checking-ex-instagram/).
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">When the replaying starts</p>
-<p>Heal's SOS button gives the moment somewhere to go: say what's happening, breathe for a minute, then write it out or talk to the coach. Nothing reaches them.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get through tonight</a>
-</aside>
 
 ## What Is He Thinking on Day 5 of No Contact?
 

@@ -12,6 +12,11 @@ cluster: "getting-over"
 cta:
   title: "Someone to talk to at 2am"
   text: "No breakup, no closure, and nobody who quite gets it? Heal's coach does. Talk it through any time, and write what you'd say to them where it never sends."
+appBox:
+  feature: coach
+  title: "Nobody gets it? Heal does."
+  text: "When there's no breakup to explain, it helps to have somewhere to say it. Heal's AI coach is there at 2am, takes it seriously, and nothing you write reaches them. Free to start."
+  button: "Talk it through"
 ---
 
 Maybe it was a friend you fell for. A coworker who flirted every Thursday and then got a girlfriend. Someone you talked to for six weeks and never actually met. Whatever it was, there was no breakup, so nobody brought you ice cream. You're still crying in the car, though, and this guide is for that.
@@ -74,12 +79,6 @@ Pick one friend and say plainly, "This is a real heartbreak for me, even though 
 ### Don't send the "just so you know" message
 
 There's a pull to confess, re-confess or send one more message that explains everything. Before you do, ask what you're hoping they'll reply. If the honest answer is "that they'll suddenly feel the same," write it somewhere it can't send first. Our [unsent text tool](/tools/unsent-text/) is made for exactly this.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Nobody gets it? Heal does.</p>
-<p>When there's no breakup to explain, it helps to have somewhere to say it. Heal's AI coach is there at 2am, takes it seriously, and nothing you write reaches them. Free to start.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Talk it through</a>
-</aside>
 
 ## What If We're Still Friends, or I See Them Every Day?
 

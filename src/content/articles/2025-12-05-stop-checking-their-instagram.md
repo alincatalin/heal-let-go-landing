@@ -13,6 +13,11 @@ cluster: "no-contact"
 cta:
   title: "Your thumb is already on the app"
   text: "Open Heal instead. SOS gives the urge somewhere to go, and your no-contact count shows what checking would cost."
+appBox:
+  feature: sos
+  title: "Your thumb is already on the app"
+  text: "When you're about to open their profile, open Heal instead. Tap SOS, name the urge and breathe for a minute while it passes. Your no contact count shows what checking would cost. Free to start."
+  button: "Open Heal instead"
 ---
 
 It's embarrassing how fast you can open Instagram without even thinking.

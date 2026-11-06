@@ -2,15 +2,21 @@
 title: "The Best Breakup Apps in 2026 (Honest Comparison)"
 slug: "best-breakup-apps"
 date: "2026-10-15"
+updated: "2026-11-06"
 category: "Breakup Healing"
 readTime: "9 min"
 excerpt: "Six breakup apps compared on what they do, what they cost and who they suit, from no contact trackers to AI coaches. Written by the team behind Heal."
 author: "Heal Team"
-keywords: "best breakup apps, breakup app, get over him app, get over him app free, no contact app, no contact tracker app, app to stop texting my ex, breakup recovery app, heartbreak app"
+keywords: "best breakup apps, breakup app, get over him app, get over him app free, app to stop texting my ex, breakup recovery app, heartbreak app"
 cluster: "getting-over"
 cta:
   title: "Try the one built for the urge to text"
   text: "Heal is free to download, with a 7-day trial of everything: unsent texts, the SOS button, a no contact tracker and an AI coach for the hard nights."
+appBox:
+  feature: unsent
+  title: "Write the text. It never sends."
+  text: "Try Heal free for 7 days: unsent texts, the SOS button, the no contact tracker and the coach. Cancel anytime."
+  button: "Try Heal free for 7 days"
 ---
 
 The best breakup app depends on what you need most: a no contact tracker, someone to talk to at 2am, or a way to stop texting your ex. Below, six apps are compared on what they do, what they cost and who they suit. One of them is ours, so we've tried hard to be fair to the rest.
@@ -26,9 +32,11 @@ Most of these apps only show their real prices on the paywall inside the app, an
 | Breakup Buddy | Talking things through with AI | In-app purchases $7.99 to $42.99 | Free chat credits to start |
 | No Contact Tracker: BreakUp | A simple day counter | In-app purchases $7.99 to $34.99, incl. a lifetime option | Free to start |
 | Breakup App: Let it Go | Community and human support | In-app purchases $9.99 to $139 | Free to download |
-| No Contact App | Spending nothing | Core features free | Yes |
+| No Contact App | A free day counter in your browser | In-app purchases $3.99 to $69.99 | Free web counter, 3-day app trial |
 
 We left star ratings out. They change week to week and mostly reflect how long an app has been around, not whether it fits you.
+
+Weighing Heal against one app in particular? See [Get Over Him app vs Heal](/blog/articles/heal-vs-get-over-him-app/) and [Let Them Go app vs Heal](/blog/articles/heal-vs-let-them-go-app/).
 
 ## How We Compared Them
 
@@ -54,12 +62,6 @@ Heal is our app, built around one situation: it's late, you're on your own, and 
 **Price:** free to download with a 7-day trial of everything, then $12.99 a month or $124.99 a year. A free tier stays after the trial.
 
 **Worth knowing:** Heal costs more than a basic tracker. If you mainly want a day counter, a cheaper or free one will do. Heal is worth it if texting them, or wanting to, is the thing you keep getting stuck on.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Write the text. It never sends.</p>
-<p>Try Heal free for 7 days: unsent texts, the SOS button, the no contact tracker and the coach. Cancel anytime.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Download Heal free</a>
-</aside>
 
 ## 2. Get Over Him: Breakup Healing
 
@@ -105,17 +107,17 @@ Let it Go combines a no contact tracker with a community of people going through
 
 **Best for:** not spending anything.
 
-No Contact App offers AI breakup help and no contact tracking for free, and says it has more than 100,000 users.
+No Contact App (listed on the App Store as "No Contact: AI Breakup Help") pairs a no contact streak, down to the second, with an AI coach, widgets and an unsent letters vault. Its website also has a free no contact counter that works in the browser, with no account.
 
-**Price:** free for core features, according to its website.
+**Price:** the browser counter is free. The app's website mentions a 3-day free trial, and its App Store listing says "Full access requires a subscription," with weekly, monthly and yearly in-app purchases from $3.99 to $69.99.
 
-**Worth knowing:** free is a real advantage when money is tight after a breakup. Start here if you're unsure whether an app will help you at all.
+**Worth knowing:** if money is tight, the free web counter does the basic job. The app itself is a paid product after the trial.
 
 ## Which Breakup App Is Right for You?
 
 - **You keep texting them, or nearly do:** Heal.
 - **You want to talk it through:** Breakup Buddy or Heal's coach.
-- **You want a counter and nothing else:** No Contact Tracker or No Contact App (free).
+- **You want a counter and nothing else:** No Contact Tracker, or No Contact App's free web counter. Our [no contact app](/no-contact-app/) page covers what a good tracker does after a slip.
 - **You want people who get it:** Let it Go.
 
 Whichever you pick, use the free trial or free tier for a few days before paying. You'll know quickly whether you open it when it matters.
@@ -141,16 +143,16 @@ At Heal, your journal and unsent texts are private to you, and unsent texts neve
 ## FAQ: Breakup Apps
 
 **What is the best app to get over a breakup?**
-It depends on what you struggle with most. For the urge to text your ex, Heal is built for that moment. For a free option, No Contact App. Try the free tier or trial first, since the right app is the one you'll actually open.
+It depends on what you struggle with most. For the urge to text your ex, Heal is built for that moment. For a free option, Let it Go keeps its tracker, journal and community free, and Heal has a free tier. Try the free tier or trial first, since the right app is the one you'll actually open.
 
 **Is there a free app to get over him?**
-Yes. No Contact App's core features are free, and Heal is free to download with a 7-day trial and a free tier after it. Most others have a short trial or a paywall soon after you sign up.
+Yes. Let it Go's tracker, journal, affirmations and community are free, and Heal is free to download with a 7-day trial and a free tier after it. Most others have a short trial or a paywall soon after you sign up.
 
 **Is there an app to stop texting my ex?**
 Yes. Heal gives you a chat that looks like your ex's but never sends, plus an SOS button for when the urge hits. Writing the message out without sending it often takes the pressure off.
 
 **What is the best no contact tracker app?**
-Most breakup apps include one. For tracking alone, No Contact Tracker is free to start and No Contact App is free. Heal's tracker shows slips in context and keeps your total when the streak restarts.
+Most breakup apps include one. For tracking alone, No Contact Tracker is free to start and No Contact App has a free counter in the browser. Heal's tracker shows slips in context and keeps your total when the streak restarts.
 
 **Can a breakup app replace therapy?**
 No. Breakup apps help with daily habits and hard moments, but they aren't therapy. If you're struggling to function or feel unsafe, talk to a doctor or therapist, or find a local helpline at findahelpline.com.
@@ -159,4 +161,4 @@ No. Breakup apps help with daily habits and hard moments, but they aren't therap
 
 - Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. *Psychological Science*, 8(3), 162 to 166.
 - Marshall, T. C. (2012). Facebook surveillance of former romantic partners. *Cyberpsychology, Behavior, and Social Networking*, 15(10), 521 to 526.
-- App details and in-app purchase prices from each app's US App Store listing, checked October 13, 2026. No Contact App pricing from nocontact.app.
+- App details and in-app purchase prices from each app's US App Store listing, checked October 13, 2026. No Contact App details from nocontact.app and its US App Store listing, checked November 6, 2026.

@@ -13,6 +13,11 @@ pillar: true
 cta:
   title: "Day one starts tonight"
   text: "Heal counts your no-contact days, and when the urge hits, SOS walks you through it before you reach for their name."
+appBox:
+  feature: tracker
+  title: "Day one starts tonight"
+  text: "Heal counts every day without contact, keeps your reasons close, and puts an SOS button one tap away for the moment you reach for their chat. A slip resets the streak, never your total. Free to start."
+  button: "Start my no contact count"
 ---
 
 You're reading this because you're either about to start no contact, you've already broken it twice, or you're three days in and wondering if you're doing it wrong.
@@ -488,11 +493,3 @@ You don't owe an immediate reply. If it's practical, answer the practical part b
 
 **I broke no contact. Do I have to start over?**
 Restart the count, but not the learning. You now know your danger moments, and that the urge passes. Our [day-by-day guide](/blog/articles/no-contact-day-by-day/) covers what each stage tends to feel like.
-
----
-
-*Starting your no contact journey? Download Heal to track your progress and get daily support designed specifically for what you're going through.*
-
-**Download the Heal app:**
-- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8)
-- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb)

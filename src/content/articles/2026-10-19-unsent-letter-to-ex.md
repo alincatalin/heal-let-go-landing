@@ -13,6 +13,11 @@ cluster: "texting-your-ex"
 cta:
   title: "Write it to them. It never sends."
   text: "Heal gives you a chat that looks like your chat with your ex. Write the letter, the text, the 2am paragraph. Nothing leaves your phone, and the coach replies instead."
+appBox:
+  feature: unsent
+  title: "Write it here. It never sends."
+  text: "Heal has a chat that looks like your chat with your ex. Type the letter, the rant or the \"I miss you.\" Nothing leaves your phone, and the coach answers instead. Free to start."
+  button: "Write my unsent text"
 ---
 
 You don't need to be a writer, and it doesn't need to be fair or finished. A notes app and twenty minutes is enough. The whole point is that you get to be honest with someone who will never read it.
@@ -102,12 +107,6 @@ These are short on purpose. Yours can be three lines or three pages. Change the 
 > Goodbye.
 
 If that last one sounds familiar, you're not overreacting. An ending with no clear moment can be harder to let go of than a big fight, because there's nothing to point to. Writing the goodbye yourself gives you the moment you didn't get.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Write it here. It never sends.</p>
-<p>Heal has a chat that looks like your chat with your ex. Type the letter, the rant or the "I miss you." Nothing leaves your phone, and the coach answers instead. Free to start.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Write my unsent text</a>
-</aside>
 
 ## Can Writing About a Breakup Ever Make It Worse?
 

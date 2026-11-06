@@ -12,6 +12,11 @@ cluster: "texting-your-ex"
 cta:
   title: "Draft it in Heal before you send it"
   text: "Write the text in a chat that looks like theirs. It never sends. The coach helps you check what you're hoping for, so you send only what you'd still send tomorrow."
+appBox:
+  feature: unsent
+  title: "Write it here. It never sends."
+  text: "Heal has a chat that looks just like your chat with your ex. Type the text you want to send. Nothing leaves your phone, and the coach replies instead. Free to start."
+  button: "Write my unsent text"
 ---
 
 We make an app that exists because so many people want to text their ex. So you might expect us to say "never." We won't. Some texts are fine, and a few are the right thing to do. The trick is telling which kind you're holding at 11pm with your thumb over the send button.
@@ -116,12 +121,6 @@ Wanting to send them doesn't make you weak. The problem is timing, because tired
 There's also the question of what you're starting. A study of nearly 800 young adults found that close to half of those in relationships had broken up and got back together at least once, and many had sex with an ex after splitting up ([Halpern-Meekin et al., 2013](https://doi.org/10.1177/0743558412464524)). The authors read this as a lot of uncertainty in young people's relationships. A single "are you awake?" can be the start of another round of that.
 
 If tonight is one of those nights, here's our list of [what to do instead of texting your ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/).
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Write it here. It never sends.</p>
-<p>Heal has a chat that looks just like your chat with your ex. Type the text you want to send. Nothing leaves your phone, and the coach replies instead. Free to start.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Write my unsent text</a>
-</aside>
 
 ## How Do I Check a Text Before I Send It?
 

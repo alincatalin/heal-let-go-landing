@@ -12,6 +12,11 @@ cluster: "texting-your-ex"
 cta:
   title: "Open Heal instead of their chat"
   text: "Free on iPhone and Android. Write what you want to say to them, and let it go nowhere. The coach replies instead."
+appBox:
+  feature: unsent
+  title: "Write it here. It never sends."
+  text: "Heal is free on iPhone and Android, with 7 days of everything to start. Next time you want to text them, open this instead."
+  button: "Get Heal free"
 ---
 
 It's late. You've typed the message three times and deleted it twice. Your thumb is over the send button.
@@ -44,17 +49,11 @@ Yes. Heal is free to download, and the core tools stay free. You can also try ev
 
 Prices are the US App Store prices in October 2026 and can differ by country.
 
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Write it here. It never sends.</p>
-<p>Heal is free on iPhone and Android, with 7 days of everything to start. Next time you want to text them, open this instead.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
-
 ## Who Is Heal For?
 
 Heal is for you if the hardest part of your breakup is not reaching out. Maybe you're trying [no contact](/blog/articles/no-contact-rule-guide/), maybe you keep drafting texts at 2am, or maybe you [broke no contact](/blog/articles/i-broke-no-contact/) last night and want to stop it happening again.
 
-It's probably not what you need if you only want a day counter. A simple free tracker will do that. Comparing apps? See how Heal stacks up against [the Get Over Him app](/blog/articles/heal-vs-get-over-him-app/). And Heal isn't therapy. If you're struggling to cope, talk to a doctor or therapist.
+It's probably not what you need if you only want a day counter. A simple free tracker will do that. Comparing apps? See how Heal stacks up against [the Get Over Him app](/blog/articles/heal-vs-get-over-him-app/) and [the Let Them Go app](/blog/articles/heal-vs-let-them-go-app/). And Heal isn't therapy. If you're struggling to cope, talk to a doctor or therapist.
 
 ## What Does Using Heal Look Like?
 

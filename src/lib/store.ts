@@ -5,9 +5,10 @@ export const APP_STORE_ID = "6754834593";
 export const PLAY_PACKAGE = "co.betafocus.heal";
 export const APP_STORE_PROVIDER_TOKEN = "127837885";
 
-// Smart App Banner on iPhone Safari. Off until v2.1 with the rating reset is live, so the
-// banner doesn't send blog readers to a 1.0-star listing (aso-daily-plan, Fri Oct 23).
-export const SHOW_SMART_APP_BANNER = false;
+// Smart App Banner on iPhone Safari. It was off while the listing showed 1.0 stars from 1 rating.
+// On (2026-11-06): iOS 3.0 is live and the US listing says "This app's overall rating was recently
+// reset", with no stars shown. Turn it off again if the new rating drops below about 4 stars.
+export const SHOW_SMART_APP_BANNER = true;
 
 // Custom product pages in App Store Connect, by blog cluster: each opens the store page whose
 // first screenshot matches what the reader came for. Empty ids fall back to the default page.
