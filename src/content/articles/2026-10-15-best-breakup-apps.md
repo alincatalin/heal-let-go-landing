@@ -30,6 +30,8 @@ Most of these apps only show their real prices on the paywall inside the app, an
 
 We left star ratings out. They change week to week and mostly reflect how long an app has been around, not whether it fits you.
 
+Weighing Heal against one app in particular? See [Get Over Him app vs Heal](/blog/articles/heal-vs-get-over-him-app/) and [Let Them Go app vs Heal](/blog/articles/heal-vs-let-them-go-app/).
+
 ## How We Compared Them
 
 We looked at each app's App Store listing, pricing and what reviewers say about it, and asked five questions:
