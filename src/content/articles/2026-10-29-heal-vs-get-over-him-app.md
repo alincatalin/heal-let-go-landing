@@ -92,7 +92,7 @@ If what you write to your ex in an app is something you'd want kept away from yo
 - Texting him, or wanting to, is the thing you keep getting stuck on, and you want an SOS button for that moment.
 - You're on Android (Heal is on Google Play), or you want a journal and a calendar that keeps your days after a slip.
 
-If you mainly want a day counter, you may not need either. Our [best breakup apps](/blog/articles/best-breakup-apps/) comparison covers four more apps, including a free one.
+If you mainly want a day counter, you may not need either. Our [best breakup apps](/blog/articles/best-breakup-apps/) comparison covers four more apps, including a free one. Also looking at Let Them Go? See [Let Them Go app vs Heal](/blog/articles/heal-vs-let-them-go-app/).
 
 ## FAQ: Get Over Him App vs Heal
 
