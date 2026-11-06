@@ -17,6 +17,7 @@ export async function GET(context: APIContext) {
 - App Store: https://apps.apple.com/app/id${APP_STORE_ID}
 - Google Play: https://play.google.com/store/apps/details?id=${PLAY_PACKAGE}
 - Contact: healletgo@proton.me
+- [No contact app](${url("/no-contact-app/")}): what Heal's no contact tracker does, what's free, how it handles a slip, and which other no contact apps have free tiers.
 
 ## Free tools
 

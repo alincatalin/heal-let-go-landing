@@ -15,6 +15,7 @@ export async function GET(context: APIContext) {
   const urls: { loc: string; lastmod?: string }[] = [
     { loc: "/", lastmod: latest && day(latest) },
     { loc: "/blog/", lastmod: latest && day(latest) },
+    { loc: "/no-contact-app/", lastmod: "2026-11-06" },
     { loc: "/tools/" },
     { loc: "/tools/should-i-text-my-ex/" },
     ...guides.map((p) => ({ loc: guideUrl(p), lastmod: day(p.data.updated ?? p.data.date) })),

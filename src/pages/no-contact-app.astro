@@ -1,0 +1,198 @@
+---
+import Base from "../layouts/Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Footer from "../components/Footer.astro";
+import PhoneMockup from "../components/PhoneMockup.astro";
+import StoreButtons from "../components/StoreButtons.astro";
+import FinalCTA from "../components/FinalCTA.astro";
+import { appStorePage } from "../lib/store";
+import today from "../assets/screens/today.png";
+import slips from "../assets/screens/progress-slips.png";
+
+// App-intent landing page for "no contact app" / "free no contact app" searches (GSC Jul to Oct 2026).
+// Competitor facts come from each app's US store listing, checked on the date below.
+const checked = "November 6, 2026";
+const title = "Free No Contact App: Day Counter and SOS Button | Heal";
+const description =
+  "Heal is a free no contact app for iPhone and Android: a day counter that keeps your total if you slip, an SOS button for the urge and a chat that never sends.";
+const answer =
+  "Heal is a no contact app for iPhone and Android. It counts every day you don't contact your ex, keeps your total and milestones if you slip, and gives you an SOS button and a chat where you can write the text without sending it. The tracker, SOS button and journal are free.";
+
+const faq = [
+  {
+    question: "Is there an app for no contact?",
+    answer:
+      "Yes. No contact apps count the days since you last contacted your ex and help you through the urge to reach out. Heal is one, free on iPhone and Android, with a day counter, an SOS button, unsent texts and an AI coach.",
+  },
+  {
+    question: "What is the best free no contact app?",
+    answer:
+      "It depends on what you need free. Heal keeps the tracker, SOS button, journal and 5 AI coach messages a day free. Let Them Go keeps its tracker and plant free, and Breakup App: Let it Go keeps its tracker and community free. Most other trackers ask for a subscription early.",
+  },
+  {
+    question: "What happens if I break no contact in the app?",
+    answer:
+      "In Heal, you tap \"I had contact\" and the slip is logged. Your current streak starts again the same day, but your total days, your longest streak and the milestones you reached all stay. Premium adds Streak Protection, so one slip doesn't reset the streak.",
+  },
+  {
+    question: "Can my ex see that I'm using a no contact app?",
+    answer:
+      "No. Heal doesn't connect to your contacts or messages, and nothing you write in it is sent to anyone. Unsent texts stay in the app.",
+  },
+  {
+    question: "Does a no contact app block my ex?",
+    answer:
+      "Heal doesn't block anyone or read your messages. If you want to block their number or profile, use your phone's or the social app's own block settings. Heal is for the moment you want to unblock them or reach out anyway.",
+  },
+  {
+    question: "Is a no contact app a replacement for therapy?",
+    answer:
+      "No. A no contact app helps with daily habits and hard moments. If you're struggling to cope or feel unsafe, talk to a doctor or therapist, or find a local helpline at findahelpline.com.",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/no-contact-app/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: title,
+    url,
+    description,
+    about: { "@id": `${site}#app` },
+    publisher: { "@id": `${site}#organization` },
+    dateModified: "2026-11-06",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "No Contact App", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="landing" storeCampaign="no-contact-app" storePage={appStorePage("no-contact")}>
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <section class="relative" data-cta="hero">
+      <div class="mx-auto grid max-w-6xl items-center gap-14 px-4 pb-16 pt-14 sm:px-6 md:pt-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
+        <div class="space-y-7">
+          <p class="eyebrow text-lavender">No contact app · free on iPhone and Android</p>
+          <h1 class="text-[2.5rem] leading-[1.08] sm:text-6xl">
+            The no contact app that <span class="italic text-lavender">keeps your days</span>, even after a slip.
+          </h1>
+          <p class="lede max-w-xl">{answer}</p>
+          <StoreButtons matchDevice />
+          <p class="text-sm text-ink-muted">Free to download. 7 days of everything to start, then a free tier that stays.</p>
+        </div>
+        <div class="relative mx-auto flex w-full max-w-[360px] justify-center">
+          <PhoneMockup screenshot={today} alt="Heal's no contact counter: 3 days, 4 days to the next milestone, longest 3, total 3, and an 'I had contact' button" width={290} eager />
+        </div>
+      </div>
+    </section>
+
+    <article class="mx-auto max-w-3xl px-4 pb-8 sm:px-6">
+      <div class="prose-heal">
+        <h2>What does a no contact app do?</h2>
+        <p>
+          A no contact app counts the days since you last reached out to your ex and helps you not reach out again. The counter is the easy part. What matters is what the app does at 1am when you're about to text them, and what it does the morning after if you did.
+        </p>
+        <p>Here's what to look for, and how Heal handles each part:</p>
+        <table>
+          <thead>
+            <tr><th>What you need</th><th>In Heal</th><th>Free?</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>A day counter</td><td>Days without contact, the next milestone (day 3, 7, 14, 30...) and your longest streak</td><td>Yes</td></tr>
+            <tr><td>A fair way to handle a slip</td><td>"I had contact" logs it. The streak restarts, but your total, longest streak and milestones stay</td><td>Yes. Streak Protection is Premium</td></tr>
+            <tr><td>Help with the urge</td><td>SOS button: name what's happening, breathe for a minute, then choose what helps</td><td>Yes</td></tr>
+            <tr><td>Somewhere to put the text</td><td>Unsent texts in a chat that looks like theirs. It never sends</td><td>Yes. Unlimited in Premium</td></tr>
+            <tr><td>Someone to talk to</td><td>An AI coach, in the tone you choose</td><td>5 messages a day. 25x more in Premium</td></tr>
+            <tr><td>A private journal and mood check-in</td><td>Journal entries and a daily mood check-in, kept in the app</td><td>Yes</td></tr>
+          </tbody>
+        </table>
+        <p>Heal Premium is $12.99 a month or $124.99 a year in the US, with 7 days free to start. Everything marked "Yes" stays free after that.</p>
+
+        <h2>What happens if you break no contact?</h2>
+        <p>
+          Most trackers send you back to zero, and seeing "Day 0" after three weeks is often what turns one slip into a week of texting. Heal resets only the current streak. In the app's own words: "Your total keeps counting, milestones you reached stay reached, and a new streak starts the same day."
+        </p>
+        <p>
+          Every day you didn't reach out stays on a calendar, with the slip marked next to them. If you just slipped, read <a href="/blog/articles/i-broke-no-contact/">I broke no contact, now what?</a>
+        </p>
+      </div>
+
+      <div class="my-12 flex justify-center">
+        <PhoneMockup screenshot={slips} alt="Heal's progress screen: every day so far as squares, slips marked, and a note that your total keeps counting after a slip" width={280} />
+      </div>
+
+      <div class="prose-heal">
+        <h2>Is there a free no contact app?</h2>
+        <p>
+          Yes, a few, though most "free" trackers put the useful parts behind a subscription. Here's what each one keeps free, from their US store listings on {checked}:
+        </p>
+        <table>
+          <thead>
+            <tr><th>App</th><th>Free</th><th>Paid</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Heal: No Contact & Breakup</td><td>Tracker, SOS button, journal, unsent texts, 5 coach messages a day</td><td>$12.99/mo or $124.99/yr, 7-day trial</td></tr>
+            <tr><td>No Contact: Let Them Go</td><td>Tracker, a plant you water daily, quotes, sounds, some healing tools</td><td>Panic button, journal, lessons. $4.99/wk or a yearly plan</td></tr>
+            <tr><td>Breakup App: Let it Go</td><td>Tracker, journal, affirmations, community</td><td>Premium plans and human "healer" chats, $9.99 to $139</td></tr>
+            <tr><td>Text Here Instead</td><td>A "generous free tier" (the listing doesn't say which features)</td><td>$1.99/wk or $19.99 to unlock</td></tr>
+            <tr><td>No Contact: AI Breakup Help</td><td>Basic features after onboarding, plus a free web counter</td><td>"Full access requires a subscription," $3.99 to $69.99</td></tr>
+            <tr><td>Get Over Him</td><td>Nothing: "There are no free features"</td><td>From $4.99 a week</td></tr>
+          </tbody>
+        </table>
+        <p>
+          Prices change often and the paywall decides what you're offered, so check before you subscribe. For longer reviews, see <a href="/blog/articles/best-breakup-apps/">the best breakup apps</a>, <a href="/blog/articles/heal-vs-get-over-him-app/">Get Over Him vs Heal</a> and <a href="/blog/articles/heal-vs-let-them-go-app/">Let Them Go vs Heal</a>.
+        </p>
+
+        <h2>Do no contact apps actually help?</h2>
+        <p>
+          An app can't do no contact for you, but it can change the moments where it usually breaks. Checking an ex's profile is linked to more distress and longing and less personal growth after a breakup (<a href="https://doi.org/10.1089/cyber.2012.0125" target="_blank" rel="noopener noreferrer">Marshall, 2012</a>). And writing about what you feel, instead of acting on it, has helped people in dozens of studies (<a href="https://doi.org/10.1111/j.1467-9280.1997.tb00403.x" target="_blank" rel="noopener noreferrer">Pennebaker, 1997</a>). A no contact app gives that urge somewhere else to go.
+        </p>
+        <p>
+          New to it? Start with the <a href="/blog/articles/no-contact-rule-guide/">no contact rule guide</a>, then follow <a href="/blog/articles/no-contact-day-by-day/">no contact day by day</a> to see what's normal at each stage.
+        </p>
+
+        <h2>FAQ: No contact apps</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+
+        <h2>Sources</h2>
+        <ul>
+          <li>Marshall, T. C. (2012). Facebook surveillance of former romantic partners. <em>Cyberpsychology, Behavior, and Social Networking</em>, 15(10), 521 to 526.</li>
+          <li>Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. <em>Psychological Science</em>, 8(3), 162 to 166.</li>
+          <li>App details and prices from each app's US App Store and Google Play listing, and nocontact.app, checked {checked}.</li>
+        </ul>
+      </div>
+    </article>
+
+    <FinalCTA
+      title="Count the days. Keep them."
+      text="Heal is free on iPhone and Android. Next time you want to reach out, tap SOS instead."
+      matchDevice
+    />
+  </main>
+  <Footer />
+</Base>
