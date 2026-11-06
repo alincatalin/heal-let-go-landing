@@ -7,7 +7,7 @@ category: "Breakup Healing"
 readTime: "9 min"
 excerpt: "Six breakup apps compared on what they do, what they cost and who they suit, from no contact trackers to AI coaches. Written by the team behind Heal."
 author: "Heal Team"
-keywords: "best breakup apps, breakup app, get over him app, get over him app free, app to stop texting my ex, breakup recovery app, heartbreak app"
+keywords: "best breakup apps, breakup app, get over him app, get over him app free, breakup recovery app, heartbreak app"
 cluster: "getting-over"
 cta:
   title: "Try the one built for the urge to text"
