@@ -1,5 +1,15 @@
 export const faqs = [
   {
+    question: "Is there an app to help me get over him?",
+    answer:
+      "Yes. Heal is a breakup app for iPhone and Android built for the hardest part of getting over him: not texting him. You write the message in a chat that looks like his, it never sends, and an AI coach replies instead. It also has an SOS button for the urge and a no contact tracker. It works the same if you're getting over her.",
+  },
+  {
+    question: "Is there a free get over him app?",
+    answer:
+      "Heal is free to download, and its free tier keeps the no contact tracker, the SOS button, unsent texts, the journal and 5 AI coach messages a day for as long as you like. Some other breakup apps, like Get Over Him, have no free features and ask you to subscribe first.",
+  },
+  {
     question: "Is Heal free?",
     answer:
       "Yes. Heal is free to download, and the core tools stay free, including the no contact tracker, the SOS button and 5 AI coach messages a day. Heal Premium ($12.99 a month or $124.99 a year) adds 25x more coach messages a day, unlimited fake texting and Streak Protection, and you can try it free for 7 days.",
