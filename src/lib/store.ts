@@ -21,11 +21,16 @@ export function appStorePage(cluster?: string) {
   return (cluster && APP_STORE_PAGES[cluster]) || undefined;
 }
 
-export function appStoreUrl(source: string, campaign?: string, page?: string) {
+// App Store Connect hides a campaign until it has at least 5 first-time downloads in the chosen
+// date range, so a token per blog post (blog-<slug>) would never show. iOS links therefore carry
+// only the source ("landing", "blog", "tool", "tiktok"...); the per-page campaign stays on the
+// Play referrer, which Firebase reports without a threshold. `campaign` is kept in the signature
+// so callers don't change.
+export function appStoreUrl(source: string, _campaign?: string, page?: string) {
   const url = new URL(`https://apps.apple.com/app/id${APP_STORE_ID}`);
   if (APP_STORE_PROVIDER_TOKEN) url.searchParams.set("pt", APP_STORE_PROVIDER_TOKEN);
   if (page) url.searchParams.set("ppid", page);
-  url.searchParams.set("ct", (campaign ? `${source}-${campaign}` : source).slice(0, 40));
+  url.searchParams.set("ct", source.slice(0, 40));
   url.searchParams.set("mt", "8");
   return url.toString();
 }
