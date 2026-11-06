@@ -14,6 +14,11 @@ cluster: "getting-over"
 cta:
   title: "Someone to talk to at 2am"
   text: "When your head is full of one person, Heal's coach is there to talk it through, day or night, and nothing you write ever reaches them."
+appBox:
+  feature: coach
+  title: "Talk it out before you reach out"
+  text: "Heal's AI coach is there at 2am when you can't stop thinking about him. Tell it what you'd say to him. It never sends. Free to start."
+  button: "Talk to the coach"
 ---
 
 If you've ever reread one text from him forty times trying to decode a full stop, you know the feeling already. Now it has a name.
@@ -78,12 +83,6 @@ Your brain keeps wanting him whether or not he wants you back.
 In a brain-scan study of 15 people who had just been rejected but were still intensely in love, seeing a photo of the ex lit up reward and craving regions, including ones tied to addiction. The authors suggest the brain's reward system is involved in romantic passion whether you're happily or unhappily in love ([Fisher et al., 2010](https://journals.physiology.org/doi/full/10.1152/jn.00784.2009)).
 
 Put limerence on top of that and a breakup becomes one long wait for a sign. A story view feels like a message. A breakup hands limerence exactly the uncertainty it feeds on, so it can feel worse after the ending than it did during the relationship.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Talk it out before you reach out</p>
-<p>Heal's AI coach is there at 2am when you can't stop thinking about him. Tell it what you'd say to him. It never sends. Free to start.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Talk to the coach</a>
-</aside>
 
 ## How Does Limerence Fade?
 

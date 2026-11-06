@@ -12,6 +12,11 @@ cluster: "getting-over"
 cta:
   title: "Someone to talk to at 2am"
   text: "Heal's AI coach is there when it's late and you can't explain this to anyone else. Write the text you won't send, talk it through, and see what's normal where you are."
+appBox:
+  feature: coach
+  title: "Someone to talk to at 2am"
+  text: "Hard to explain a situationship to friends at midnight? Heal's AI coach is there whenever it hits, with no \"but you weren't even together.\" Free to start."
+  button: "Talk to the coach"
 ---
 
 If you're here, you probably can't point to the day it ended. Maybe the texts got slower. Maybe they started seeing someone else and you found out on Instagram. Maybe you're technically still talking and you already know it's over.
@@ -77,12 +82,6 @@ That might mean telling them. If you want to send something, keep it short and d
 Or it might mean saying nothing at all, especially if they're the one who faded. You're allowed to end it in your own head and simply stop replying. If you're unsure whether to send anything, our guide on [what to text your ex](/blog/articles/what-to-text-your-ex/) covers when a message helps and when it only opens the door again, and the [Should I text my ex? quiz](/tools/should-i-text-my-ex/) takes two minutes.
 
 If there's a lot more you want to say than fits in a text, write it as a letter you won't send. Our guide to [writing an unsent letter to your ex](/blog/articles/unsent-letter-to-ex/) has an example for exactly this, the one where "it just faded."
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Someone to talk to at 2am</p>
-<p>Hard to explain a situationship to friends at midnight? Heal's AI coach is there whenever it hits, with no "but you weren't even together." Free to start.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Talk to the coach</a>
-</aside>
 
 ## What If They Keep Coming Back?
 

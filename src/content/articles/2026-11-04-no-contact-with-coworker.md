@@ -12,6 +12,11 @@ cluster: "no-contact"
 cta:
   title: "Get through the workday without reaching out"
   text: "Heal gives you an SOS button for the hard moments, like a meeting with them or seeing them at lunch, and a place to write what you'd want to say. It never sends."
+appBox:
+  feature: sos
+  title: "Before the 3pm meeting"
+  text: "Open Heal, tap SOS and take a minute. If there's something you want to say to them, write it in Heal instead. It never sends."
+  button: "Get through the workday"
 ---
 
 Most no contact advice assumes you never have to see them. But you sit two desks away, or you're in the same meeting on Thursday. You can't block your way out of that.
@@ -43,12 +48,6 @@ It becomes **work-only contact**. You talk to them about work, through work chan
 **Plan the hard moments.** Know when you'll see them: the Monday meeting, the coffee machine at 10, the walk to the car park. Have a plan for each, like arriving a little early, sitting with a friend, or a short walk after.
 
 **Check what your workplace expects.** If you worked closely together or one of you manages the other, it may help to talk to your manager or HR about how work is split. You don't need to share details.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Before the 3pm meeting</p>
-<p>Open Heal, tap SOS and take a minute. If there's something you want to say to them, write it in Heal instead. It never sends.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
 
 ## What If They Keep Contacting You?
 

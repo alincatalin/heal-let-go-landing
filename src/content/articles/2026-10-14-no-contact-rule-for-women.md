@@ -13,6 +13,11 @@ cluster: "no-contact"
 cta:
   title: "Count every day you choose yourself"
   text: "Heal tracks your no contact days, catches you with an SOS when you want to reach out, and keeps slips in context so one bad night doesn't erase your progress."
+appBox:
+  feature: tracker
+  title: "Watch the days add up"
+  text: "Heal's no contact tracker counts every day you don't reach out, and its SOS button is one tap away when you're about to. Free to download."
+  button: "Start my no contact count"
 ---
 
 If you've been reading about "female psychology during no contact," you've probably found two kinds of advice. One says no contact is a strategy to get him back. The other says it's about you. This guide is the second kind, and it'll explain why that's also the version that works.
@@ -71,12 +76,6 @@ At least 30 days. If you were together for years, live in the same area or keep 
 | You share kids, a lease or a job | Modified: logistics only | Full silence isn't possible, so keep it practical |
 
 The first two weeks are usually the hardest. Many people find [day 3 is the worst](/blog/articles/hardest-day-no-contact/), when the adrenaline of the breakup wears off and the missing starts in earnest. If you want to know what's normal along the way, here's what to expect on [day 1](/blog/articles/no-contact-day-1/), [day 7](/blog/articles/no-contact-day-7/), [day 14](/blog/articles/no-contact-day-14/), [day 21](/blog/articles/no-contact-day-21/) and [day 30](/blog/articles/no-contact-day-30/).
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Watch the days add up</p>
-<p>Heal's no contact tracker counts every day you don't reach out, and its SOS button is one tap away when you're about to. Free to download.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Start my no contact count</a>
-</aside>
 
 ## What Are the Rules of No Contact for Women?
 

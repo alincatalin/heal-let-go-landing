@@ -12,6 +12,11 @@ cluster: "no-contact"
 cta:
   title: "Put the question somewhere"
   text: "Write what you wish you could ask them in Heal's fake text. It never sends, and you get a reality check instead of a guess."
+appBox:
+  feature: unsent
+  title: "Put the question somewhere"
+  text: "Write what you wish you could ask him in Heal. It looks like your chat with him and never sends, and you get a reality check instead of a silence. Free to start."
+  button: "Write it in Heal"
 ---
 
 If you've typed "day 7 of no contact what is he thinking" into a search bar, you're far from alone. It's one of the most common things people search during no contact, alongside nearly every day count from 3 to 30.

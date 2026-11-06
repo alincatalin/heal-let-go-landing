@@ -13,6 +13,11 @@ seriesDay: 30
 cta:
   title: "Decide day 31 calmly"
   text: "Heal keeps your count, your reasons and the fake text that never sends, so the one-month decision is yours and not the urge's."
+appBox:
+  feature: unsent
+  title: "Write the day-31 text first"
+  text: "Before you decide whether to reach out, write the message in Heal. It looks like your chat with them and never sends, and you get a reality check on what's behind it. Free to start."
+  button: "Write it in Heal first"
 ---
 
 Thirty days.

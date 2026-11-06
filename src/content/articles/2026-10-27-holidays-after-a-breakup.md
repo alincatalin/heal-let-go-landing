@@ -12,6 +12,11 @@ cluster: "no-contact"
 cta:
   title: "Get to January with your streak intact"
   text: "Heal counts every day you don't reach out, has an SOS button for the Christmas Eve urge, and shows a slip next to all the days you made it instead of resetting you to zero."
+appBox:
+  feature: tracker
+  title: "Keep your streak through December"
+  text: "Heal's no contact tracker counts every day you don't reach out, right through the holidays. When the urge hits, the SOS button is one tap away. Free to download."
+  button: "Track my streak"
 ---
 
 The whole season is built around couples, family tables and year-in-review posts, and every bit of it points at the gap. You're not imagining that it's worse right now.
@@ -77,12 +82,6 @@ A few things make it easier to hold the line.
 4. If he texts first, you don't have to reply on the day. A short reply in a week, or no reply, are both fine. Our guide on [what to text your ex (and when not to)](/blog/articles/what-to-text-your-ex/) goes into this.
 
 If you're torn, take our two-minute [should I text my ex quiz](/tools/should-i-text-my-ex/) before you decide.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Keep your streak through December</p>
-<p>Heal's no contact tracker counts every day you don't reach out, right through the holidays. When the urge hits, the SOS button is one tap away. Free to download.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Track my streak</a>
-</aside>
 
 ## What About His Family?
 

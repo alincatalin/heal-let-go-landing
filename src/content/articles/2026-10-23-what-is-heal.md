@@ -12,6 +12,11 @@ cluster: "texting-your-ex"
 cta:
   title: "Open Heal instead of their chat"
   text: "Free on iPhone and Android. Write what you want to say to them, and let it go nowhere. The coach replies instead."
+appBox:
+  feature: unsent
+  title: "Write it here. It never sends."
+  text: "Heal is free on iPhone and Android, with 7 days of everything to start. Next time you want to text them, open this instead."
+  button: "Get Heal free"
 ---
 
 It's late. You've typed the message three times and deleted it twice. Your thumb is over the send button.
@@ -43,12 +48,6 @@ Yes. Heal is free to download, and the core tools stay free. You can also try ev
 | Price | $0 | $12.99 a month or $124.99 a year |
 
 Prices are the US App Store prices in October 2026 and can differ by country.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Write it here. It never sends.</p>
-<p>Heal is free on iPhone and Android, with 7 days of everything to start. Next time you want to text them, open this instead.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
 
 ## Who Is Heal For?
 

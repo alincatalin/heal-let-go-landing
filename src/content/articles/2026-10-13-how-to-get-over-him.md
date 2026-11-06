@@ -11,6 +11,11 @@ cluster: "getting-over"
 cta:
   title: "Your next 30 days, in one app"
   text: "Heal counts your days without contact, gives you somewhere to write the texts you won't send, and has a coach to talk to when missing him gets loud."
+appBox:
+  feature: unsent
+  title: "Write it to him. It never sends."
+  text: "Heal gives you a chat that looks like his, but nothing you type ever leaves your phone. Write it, read it back, and let the coach help you through the urge. Free to start."
+  button: "Write it to him in Heal"
 ---
 
 To get over him, you stop the contact that keeps the wound open, let yourself grieve on purpose instead of all day, and rebuild your days one small routine at a time. Most people feel a real shift within the first month. It won't be a straight line, but it is a direction, and you can plan for it.
@@ -48,12 +53,6 @@ You won't stop thinking about him in week one. The goal is to stop thinking abou
 **Write the text instead of sending it.** When you want to message him, write the whole thing out somewhere it can't reach him, like a text in Heal or an [unsent letter](/blog/articles/unsent-letter-to-ex/). Read it back. Ask what you were hoping he'd reply, and what's more likely to happen. Most of the time, the urge was about getting it out of your head, not about him reading it.
 
 **Plan for the nights.** Most of the urges hit late. Decide now where your phone sleeps and what you'll do instead. Here's our list of [what to do instead of texting your ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/).
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Write it to him. It never sends.</p>
-<p>Heal gives you a chat that looks like his, but nothing you type ever leaves your phone. Write it, read it back, and let the coach help you through the urge. Free to start.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
 
 ## Week 2: What Do I Do When I Miss Him?
 

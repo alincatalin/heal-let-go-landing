@@ -14,6 +14,11 @@ seriesDay: 3
 cta:
   title: "Day 3 is when people break"
   text: "Tap SOS before you text: breathe, reality-check the message, then read your own reasons. It's built for this exact day."
+appBox:
+  feature: sos
+  title: "Day 3 is when people break"
+  text: "Tap SOS in Heal before you tap their name. Say what's happening, breathe for a minute, then write the text where it never sends. Free to start."
+  button: "Get through day 3"
 ---
 
 You made it through [day one](/blog/articles/no-contact-day-1/). Then day two. You thought you were doing okay.
@@ -169,11 +174,3 @@ You just have to get through this one.
 ---
 
 > **Need support right now?** Heal's panic button is designed for exactly this moment—when the urge to text feels unbearable and you need something to get you through the next ten minutes. No judgment. Available at 3 AM. Because day three doesn't care what time it is.
-
----
-
-*Starting your no contact journey? Download Heal to track your progress and get daily support designed specifically for what you're going through.*
-
-**Download the Heal app:**
-- **iOS**: [Download from App Store](https://apps.apple.com/app/id6754834593?pt=127837885&ct=blog&mt=8)
-- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=co.betafocus.heal&referrer=utm_source%3Dblog%26utm_medium%3Dweb)

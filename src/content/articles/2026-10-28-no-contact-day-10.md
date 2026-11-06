@@ -13,6 +13,11 @@ seriesDay: 10
 cta:
   title: "Ten days, on a calendar"
   text: "Heal lays out every day without contact so you can see the progress on the nights you can't feel it. Free to start."
+appBox:
+  feature: sos
+  title: "Keep your reasons where you'll see them"
+  text: "Heal keeps your reasons one tap from the SOS button, so when \"maybe I overreacted\" shows up, you read them before you reach for their chat."
+  button: "Keep my reasons close"
 ---
 
 Ten days. Double digits. If you've made it here, you've already done the part most people find hardest: the first week, the [day 3 peak](/blog/articles/hardest-day-no-contact/) and your first weekend without them.
@@ -50,12 +55,6 @@ It also helps to know that ups and downs are expected. In a study that had young
 So a soft, nostalgic evening on day 10 isn't a sign you made a mistake. It's a normal swing, and contact would slow the overall easing down.
 
 **What helps:** reread the reasons list you wrote on [day 1](/blog/articles/no-contact-day-1/). Add anything you'd started to forget. If you never wrote one, write three real things that didn't work now, while you still remember them.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Keep your reasons where you'll see them</p>
-<p>Heal keeps your reasons one tap from the SOS button, so when "maybe I overreacted" shows up, you read them before you reach for their chat.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Start my count</a>
-</aside>
 
 ## How Do I Know It's Working by Day 10?
 

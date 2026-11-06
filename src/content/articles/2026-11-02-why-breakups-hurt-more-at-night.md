@@ -12,6 +12,11 @@ cluster: "getting-over"
 cta:
   title: "Keep Heal for the 2am moment"
   text: "When it's late and the message is half written, open Heal instead of their chat. Write it all out. It never sends, and the coach replies instead."
+appBox:
+  feature: unsent
+  title: "Write it here. It never sends."
+  text: "Heal has a chat that looks like theirs. Type everything you want to say at 2am. Nothing reaches them, and the coach replies instead."
+  button: "Write it in Heal tonight"
 ---
 
 You were fine at 4pm. Busy, even. Then it's 1am, the house is quiet, and the whole thing lands on you again as if it happened today.
@@ -45,12 +50,6 @@ If nights are the worst part of your breakup, you're not imagining it. There are
 Put those together and you get the classic 2am message. Low mood, weaker self-control, nobody around to talk you out of it, and a phone in your hand.
 
 The message almost never says what you hoped. And it's waiting there in the morning, when you feel different. If you've already sent one, read [what to do after you break no contact](/blog/articles/i-broke-no-contact/).
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Write it here. It never sends.</p>
-<p>Heal has a chat that looks like theirs. Type everything you want to say at 2am. Nothing reaches them, and the coach replies instead.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
 
 ## What Helps When It Hurts at Night?
 

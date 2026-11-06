@@ -12,6 +12,11 @@ cluster: "texting-your-ex"
 cta:
   title: "Keep this for the next 2am"
   text: "Heal's SOS walks you through the minute before you hit send: breathe, write the text where it can't reach them, and read your reasons."
+appBox:
+  feature: unsent
+  title: "Write it where it can't send"
+  text: "Heal has a text box that looks like a chat with them and never sends. Write it all out, then let Heal's SOS walk you through the next few minutes. It's free to download."
+  button: "Write it where it can't send"
 ---
 
 It's late. Everyone you could call is asleep. Your phone is in your hand, their name is one tap away, and the message is half written in your head.
@@ -41,12 +46,6 @@ Breathe in for four counts and out for six, for two minutes. A longer out-breath
 Write exactly what you want to say, in full, somewhere it can't reach them: your notes app, a journal, our free [unsent text tool](/tools/unsent-text/) right here in your browser, or Heal's fake text, which never sends. Often the urge isn't about them reading it. It's about getting it out of your head.
 
 Then read it back. Ask: what am I hoping they'll reply? What's more likely to happen? If they don't reply at all, how will I feel tomorrow?
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Write it where it can't send</p>
-<p>Heal has a text box that looks like a chat with them and never sends. Write it all out, then let Heal's SOS walk you through the next few minutes. It's free to download.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Get Heal free</a>
-</aside>
 
 ### 4. Read your reasons
 

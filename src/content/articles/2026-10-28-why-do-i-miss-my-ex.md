@@ -13,6 +13,11 @@ updated: "2026-10-28"
 cta:
   title: "Someone to talk to when you miss them"
   text: "Heal's coach is there at 2am when missing your ex gets loud. Say what you'd say to them, and get a kind, honest reply instead of silence. Free to start."
+appBox:
+  feature: coach
+  title: "Someone to talk to at 2am"
+  text: "When missing them wakes you up, Heal's AI coach is there. Talk it through, write what you'd say to them, and get a reply that helps you think instead of a silence that hurts. Free to start."
+  button: "Talk to the coach"
 ---
 
 Missing someone and wanting them back are different things, even when they feel identical at 1am.
@@ -77,12 +82,6 @@ When one of these catches you, you haven't gone backwards. Your brain is running
 A lot of what we call missing an ex is missing the shape of a relationship. Having a plus-one. Someone to tell about your day. Knowing who you'll spend the weekend with. Being chosen. Those needs are real, and they don't go away when the person does.
 
 Try this the next time it hits. Finish the sentence "Right now I miss..." with something specific. If the answer is "someone to talk to," "a hug," or "plans for Saturday," some of that can come from other people, today. If the answer is something only they gave you, that's grief, and grief needs room more than it needs fixing.
-
-<aside class="inline-cta not-prose" data-cta="inline">
-<p class="inline-cta-title">Someone to talk to at 2am</p>
-<p>When missing them wakes you up, Heal's AI coach is there. Talk it through, write what you'd say to them, and get a reply that helps you think instead of a silence that hurts. Free to start.</p>
-<a href="https://apps.apple.com/app/id6754834593" data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">Talk to the coach</a>
-</aside>
 
 ## Why Do I Feel Like I Lost Part of Myself?
 

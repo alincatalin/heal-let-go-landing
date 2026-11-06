@@ -13,6 +13,11 @@ seriesDay: 14
 cta:
   title: "Two weeks is worth protecting"
   text: "Heal keeps your count, your reasons and SOS in one place, for the evenings when the 'what ifs' get loud."
+appBox:
+  feature: tracker
+  title: "Two weeks is worth protecting"
+  text: "Heal keeps your count, your reasons and the SOS button in one place, for the evening when 'just checking in' starts to sound reasonable. Free to start."
+  button: "Protect my streak"
 ---
 
 Two weeks.

@@ -374,28 +374,113 @@ summary::-webkit-details-marker {
   border: 1px solid var(--hairline);
 }
 
-/* A short app pitch inside an article, written as raw HTML in the markdown:
- * <aside class="inline-cta not-prose" data-cta="inline"><p class="inline-cta-title">…</p><p>…</p><a data-platform="auto" …>…</a></aside> */
-.inline-cta {
-  margin: 2.5rem 0;
-  padding: 1.5rem 1.75rem;
+/* The one app box per blog post (src/lib/app-box.ts), placed after the first section by a remark
+ * plugin: copy matched to the post on the left, a real app screen on the right. */
+.app-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2.75rem 0;
+  padding: 1.75rem;
+  overflow: hidden;
   border-radius: 1.5rem;
-  background: radial-gradient(90% 120% at 100% 0%, rgba(109, 59, 216, 0.22) 0%, transparent 65%), var(--surface-2);
-  border: 1px solid rgba(164, 139, 247, 0.22);
-  box-shadow: var(--elev-2);
+  background: radial-gradient(90% 120% at 100% 0%, rgba(109, 59, 216, 0.3) 0%, transparent 65%), var(--surface-2);
+  border: 1px solid rgba(164, 139, 247, 0.3);
+  box-shadow: var(--elev-3);
   color: var(--ink-soft);
   font-size: 1rem;
-  line-height: 1.65;
+  line-height: 1.6;
 }
-.inline-cta .inline-cta-title {
-  margin-bottom: 0.4rem;
+@media (min-width: 640px) {
+  .app-box {
+    grid-template-columns: 1fr 9.5rem;
+    align-items: center;
+    padding: 2rem 2rem 2rem 2.25rem;
+  }
+}
+.app-box-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--lavender-hex);
+}
+.app-box-eyebrow img {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+}
+.app-box-title {
+  margin-bottom: 0.5rem;
   font-family: var(--display);
-  font-size: 1.35rem;
-  line-height: 1.3;
+  font-size: 1.6rem;
+  line-height: 1.2;
   color: var(--ink);
 }
-.inline-cta a {
-  margin-top: 1rem;
+.app-box-points {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+.app-box-points li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-top: 0.35rem;
+}
+.app-box-points li::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.62em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--lavender-hex);
+}
+.app-box-button {
+  margin-top: 1.4rem;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .app-box-button {
+    width: auto;
+  }
+}
+.app-box-stores {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+.app-box-stores a {
+  color: var(--lavender-hex);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.app-box-shot {
+  display: none;
+  margin: 0;
+}
+@media (min-width: 640px) {
+  .app-box-shot {
+    display: block;
+    padding: 5px;
+    border-radius: 1.6rem;
+    background: var(--surface-3, #221d33);
+    box-shadow: var(--elev-3);
+    transform: rotate(3deg);
+  }
+  .app-box-shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1.3rem;
+  }
 }
 
 /* The selected state from the app's choice rows: a violet edge, not a fill. */

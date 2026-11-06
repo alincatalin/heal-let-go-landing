@@ -1,6 +1,7 @@
 import { defineCollection } from "astro:content";
 import { z } from "astro/zod";
 import { glob } from "astro/loaders";
+import { APP_BOX_FEATURES } from "./lib/app-box";
 
 const post = z.object({
   title: z.string(),
@@ -27,6 +28,11 @@ const post = z.object({
   seriesHub: z.boolean().default(false),
   // Closing call to action, written for this post's topic.
   cta: z.object({ title: z.string(), text: z.string() }).optional(),
+  // The one app box after the first section, matched to the post's problem (see src/lib/app-box.ts):
+  // unsent = the text you want to send, coach = someone to talk to, tracker = no contact count, sos = the urge now.
+  appBox: z
+    .object({ feature: z.enum(APP_BOX_FEATURES), title: z.string(), text: z.string(), button: z.string() })
+    .optional(),
 });
 
 const articles = defineCollection({
