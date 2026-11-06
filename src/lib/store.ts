@@ -53,16 +53,44 @@ export function detectPlatform(userAgent: string): Platform | undefined {
   return undefined;
 }
 
-// Runs in the browser: re-tags every store link with the page's own UTM source/campaign
-// (so /?utm_source=tiktok reaches the store as "tiktok"), and on phones shows only the
-// matching store button inside [data-match-device] blocks.
+type Utm = { source: string; campaign?: string; medium?: string };
+const UTM_KEY = "heal-utm";
+
+// UTM tags from the link the visitor arrived on (e.g. the TikTok bio link). They are kept for the
+// rest of the visit, so someone who lands on /?utm_source=tiktok and then opens a tool or a post
+// still reaches the store as "tiktok" and not as "tool" or "blog". Storage can be blocked
+// (private mode, some in-app browsers); then only the landing page carries the tag.
+function visitUtm(search: string): Utm | undefined {
+  const params = new URLSearchParams(search);
+  const source = params.get("utm_source");
+  try {
+    if (source) {
+      const utm: Utm = {
+        source,
+        campaign: params.get("utm_campaign") ?? undefined,
+        medium: params.get("utm_medium") ?? undefined,
+      };
+      sessionStorage.setItem(UTM_KEY, JSON.stringify(utm));
+      return utm;
+    }
+    const saved = sessionStorage.getItem(UTM_KEY);
+    return saved ? (JSON.parse(saved) as Utm) : undefined;
+  } catch {
+    return source ? { source, campaign: params.get("utm_campaign") ?? undefined, medium: params.get("utm_medium") ?? undefined } : undefined;
+  }
+}
+
+// Runs in the browser: re-tags every store link with the visit's UTM source/campaign
+// (so /?utm_source=tiktok reaches the store as "tiktok"), falling back to the page's own
+// source (landing, blog, tool), and on phones shows only the matching store button inside
+// [data-match-device] blocks. Each link also gets data-source for the Umami "Store Click" event.
 export function tagStoreLinks(doc: Document, location: Location, userAgent: string) {
-  const params = new URLSearchParams(location.search);
+  const utm = visitUtm(location.search);
   const body = doc.body.dataset;
-  const source = params.get("utm_source") ?? body.storeSource ?? "web";
-  const campaign = params.get("utm_campaign") ?? body.storeCampaign ?? undefined;
+  const source = utm?.source ?? body.storeSource ?? "web";
+  const campaign = utm?.campaign ?? body.storeCampaign ?? undefined;
   const page = body.storePage || undefined;
-  const medium = params.get("utm_medium") ?? undefined;
+  const medium = utm?.medium;
   const platform = detectPlatform(userAgent);
 
   doc.querySelectorAll<HTMLAnchorElement>('a[href^="https://apps.apple.com/"]').forEach((a) => {
@@ -73,6 +101,9 @@ export function tagStoreLinks(doc: Document, location: Location, userAgent: stri
   });
   doc.querySelectorAll<HTMLAnchorElement>('a[data-platform="auto"]').forEach((a) => {
     a.href = platform === "android" ? playStoreUrl(source, campaign, medium) : appStoreUrl(source, campaign, page);
+  });
+  doc.querySelectorAll<HTMLAnchorElement>('a[href^="https://apps.apple.com/"], a[href^="https://play.google.com/store/"]').forEach((a) => {
+    a.dataset.source = source;
   });
   if (platform) {
     doc.querySelectorAll<HTMLElement>("[data-match-device] [data-platform]").forEach((el) => {

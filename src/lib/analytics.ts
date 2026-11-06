@@ -9,7 +9,8 @@ export function track(event: AnalyticsEvent, data?: Record<string, string>) {
 
 // One "Store Click" per tap on any App Store or Google Play link, with which store and which
 // placement (data-cta on the link or its container: "app-box", "final", "hero"...; "button" otherwise),
-// plus the page's source ("blog", "tool", "landing") and campaign (the post slug on blog posts).
+// plus the visit's source (data-source set by tagStoreLinks: "tiktok", or else the page's "blog",
+// "tool", "landing") and campaign (the post slug on blog posts).
 export function trackStoreClicks(doc: Document) {
   doc.addEventListener("click", (event) => {
     const link = (event.target as Element | null)?.closest<HTMLAnchorElement>("a[href]");
@@ -22,10 +23,11 @@ export function trackStoreClicks(doc: Document) {
     if (!store) return;
     const placement = link.closest<HTMLElement>("[data-cta]")?.dataset.cta ?? "button";
     const { storeSource, storeCampaign } = doc.body.dataset;
+    const source = link.dataset.source ?? storeSource;
     track("Store Click", {
       store,
       placement,
-      ...(storeSource ? { source: storeSource } : {}),
+      ...(source ? { source } : {}),
       ...(storeCampaign ? { page: storeCampaign } : {}),
     });
   });
