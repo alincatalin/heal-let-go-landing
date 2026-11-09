@@ -91,7 +91,7 @@ You're allowed to send a card or a kind message to someone in his family you wer
 
 If they reach out to you first, a warm, short reply is fine. "Thank you, that means a lot. Merry Christmas to you all." You don't need to arrange to see them, and you don't need to explain.
 
-And if he's going to be somewhere you are (a shared friend's party, a small hometown bar on the 26th), decide in advance whether you're going. Skipping one party isn't losing. If you do go, bring a friend who knows.
+And if he's going to be somewhere you are (a shared friend's party, a small hometown bar on the 26th), decide in advance whether you're going. Skipping one party isn't losing. If you do go, bring a friend who knows, and read our plan for [seeing your ex at a holiday party](/blog/articles/seeing-your-ex-at-a-holiday-party/).
 
 ## What Do I Do With Our Traditions?
 
