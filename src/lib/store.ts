@@ -11,11 +11,12 @@ export const APP_STORE_PROVIDER_TOKEN = "127837885";
 export const SHOW_SMART_APP_BANNER = true;
 
 // Custom product pages in App Store Connect, by blog cluster: each opens the store page whose
-// first screenshot matches what the reader came for. Empty ids fall back to the default page.
+// first screenshot matches what the reader came for. Created in App Store Connect 2026-11-06; until
+// Apple approves a page, its ppid opens the default page, so wiring them early is harmless.
 export const APP_STORE_PAGES: Record<string, string> = {
-  "texting-your-ex": "", // "Stop texting your ex"
-  "no-contact": "", // "No contact tracker"
-  "getting-over": "", // "Get over him"
+  "texting-your-ex": "d02b7db1-fa5d-429d-b36f-48f45d086b4a", // "Stop texting your ex"
+  "no-contact": "89a81955-9dcc-43e3-8f3b-89cfa7fbdec2", // "No contact tracker"
+  "getting-over": "1d2dd5aa-9858-4b67-a22c-a48245194d0a", // "Get over him"
 };
 
 export function appStorePage(cluster?: string) {
