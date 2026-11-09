@@ -80,8 +80,8 @@ const jsonLd = [
   <main class="relative overflow-hidden">
     <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
       <header class="mb-10 space-y-5 text-center">
-        <p class="eyebrow text-lavender">Free tool · nothing gets sent</p>
-        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">Write the text. We won't send it.</h1>
+        <p id="tool-eyebrow" class="eyebrow text-lavender">Free tool · nothing gets sent</p>
+        <h1 id="tool-title" class="text-[2.4rem] leading-[1.1] sm:text-5xl">Write the text. We won't send it.</h1>
         <p class="lede">Type the message you want to send them. Say all of it. It goes nowhere, and then we'll read it back together.</p>
       </header>
 
@@ -116,7 +116,7 @@ const jsonLd = [
         <p class="text-[17px] leading-relaxed text-ink-soft">
           Take a breath and answer these for yourself. You don't have to write anything down.
         </p>
-        <ol class="space-y-4">
+        <ol id="reflect-prompts" class="space-y-4">
           {
             prompts.map((p, i) => (
               <li class="flex gap-4">
@@ -136,6 +136,7 @@ const jsonLd = [
       <section id="after" hidden class="card-raised mt-6 space-y-5 p-6 md:p-9" aria-live="polite">
         <p class="eyebrow text-lavender">Done</p>
         <h2 class="text-3xl leading-tight md:text-4xl">That's one you didn't send.</h2>
+        <p id="after-holiday" class="text-[17px] leading-relaxed text-ink" hidden></p>
         <p class="text-[17px] leading-relaxed text-ink-soft">
           The urge usually peaks and then passes. If it comes back tonight, you can write here again, or put your phone in
           another room for ten minutes.
@@ -208,9 +209,45 @@ const jsonLd = [
 
 <script>
   type Umami = { track: (event: string, data?: Record<string, string>) => void };
-  // Only the action is tracked, never what someone wrote.
+  // Holiday mode: seasonal wording for the days people most often send "just saying hi" texts.
+  // ?occasion=thanksgiving|christmas|newyear picks one (holiday posts link that way); otherwise the date does.
+  const occasions = {
+    thanksgiving: {
+      eyebrow: "Free tool · Thanksgiving",
+      title: "Happy Thanksgiving. We won't send it.",
+      placeholder: "Happy Thanksgiving. I've been thinking about you…",
+    },
+    christmas: {
+      eyebrow: "Free tool · Christmas",
+      title: "Merry Christmas. We won't send it.",
+      placeholder: "Merry Christmas. I hope you're doing okay…",
+    },
+    newyear: {
+      eyebrow: "Free tool · New Year's Eve",
+      title: "Happy New Year. We won't send it.",
+      placeholder: "Happy New Year. I couldn't let midnight pass without…",
+    },
+  } as const;
+  type Occasion = keyof typeof occasions;
+
+  function pickOccasion(): Occasion | undefined {
+    const asked = new URLSearchParams(location.search).get("occasion");
+    if (asked && asked in occasions) return asked as Occasion;
+    const now = new Date();
+    const md = (now.getMonth() + 1) * 100 + now.getDate();
+    if (md >= 1120 && md <= 1130) return "thanksgiving";
+    if (md >= 1215 && md <= 1226) return "christmas";
+    if (md >= 1227 || md <= 102) return "newyear";
+  }
+  const occasion = pickOccasion();
+
+  // Only the action (and the holiday, if any) is tracked, never what someone wrote.
   const track = (result: string) =>
-    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "unsent-text", result });
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", {
+      tool: "unsent-text",
+      result,
+      ...(occasion ? { occasion } : {}),
+    });
 
   const form = document.getElementById("chat-form") as HTMLFormElement;
   const input = document.getElementById("chat-input") as HTMLTextAreaElement;
@@ -222,6 +259,21 @@ const jsonLd = [
   const after = document.getElementById("after")!;
   const keepMsg = document.getElementById("keep-msg")!;
   const written: string[] = [];
+
+  if (occasion) {
+    const o = occasions[occasion];
+    document.getElementById("tool-eyebrow")!.textContent = o.eyebrow;
+    document.getElementById("tool-title")!.textContent = o.title;
+    input.placeholder = o.placeholder;
+    const first = document.querySelector("#reflect-prompts li")!;
+    const extra = first.cloneNode(true) as HTMLElement;
+    extra.querySelector("span:last-child")!.textContent = "Would you be sending this if it weren't a holiday?";
+    first.before(extra);
+    document.querySelectorAll("#reflect-prompts li > span:first-child").forEach((n, i) => (n.textContent = String(i + 1)));
+    const note = document.getElementById("after-holiday")!;
+    note.textContent = "Holiday messages feel harmless, which is why they're the easiest ones to send. You didn't.";
+    note.hidden = false;
+  }
 
   nameInput.addEventListener("input", () => {
     initial.textContent = nameInput.value.trim().charAt(0).toUpperCase() || "?";
