@@ -37,7 +37,7 @@ Blocking is the right call when:
 - **They're harmful.** Threats, cruelty, control, harassment or anything that makes you feel unsafe. Block, keep screenshots of anything serious, and tell someone you trust.
 - **You can't stop checking.** If you look at their profile ten times a day, mute isn't enough. In a study of 464 people, those who kept looking at an ex's Facebook page reported more distress, more longing for the ex and less personal growth ([Marshall, 2012](https://doi.org/10.1089/cyber.2012.0125)).
 - **You keep texting them.** If you've [broken no contact](/blog/articles/i-broke-no-contact/) more than once, a block adds a step between you and the next message.
-- **They keep [breadcrumbing](/blog/articles/what-is-breadcrumbing/) you.** Likes, story views and "hey stranger" texts keep the hope alive.
+- **They keep [breadcrumbing](/blog/articles/what-is-breadcrumbing/) you.** Likes, story views and "hey stranger" texts keep the hope alive. If they only watch and never write, that's [orbiting](/blog/articles/what-is-orbiting/).
 
 ## When Is Muting Enough?
 
