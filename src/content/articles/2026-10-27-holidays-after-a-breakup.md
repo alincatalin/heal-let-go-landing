@@ -105,7 +105,7 @@ Then add one thing that's only yours. A solo trip to see the lights. A new ornam
 
 ## What If I'm Spending the Holidays Alone?
 
-Being alone on a holiday is different from being lonely, but after a breakup they tend to arrive together.
+Being alone on a holiday is different from being lonely, but after a breakup they tend to arrive together. Our guide to [spending Christmas alone after a breakup](/blog/articles/christmas-alone-after-breakup/) plans the day hour by hour.
 
 - **Plan the day in blocks.** A morning walk, a call with a friend at lunch, a film you've been saving, a proper dinner. The spiral tends to start in the empty hours.
 - Stay off his profile. People who kept checking an ex's Facebook reported more distress and longing, and less personal growth ([Marshall, 2012](https://doi.org/10.1089/cyber.2012.0125)). Holiday posts are hard to scroll past. Mute him, and anyone who posts him, before December.
