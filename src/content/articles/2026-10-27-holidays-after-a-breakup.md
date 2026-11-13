@@ -77,7 +77,7 @@ That matters more than it seems. In a study that followed young adults through t
 A few things make it easier to hold the line.
 
 1. **Decide before the day.** "I'm not texting him on Christmas" is easier to stick to if you decided on December 1, not at 11pm on the 24th.
-2. Write it, but don't send it. Get the whole message out somewhere it can't reach him.
+2. Write it, but don't send it. Get the whole message out somewhere it can't reach him, like our free [unsent text tool](/tools/unsent-text/?occasion=christmas).
 3. Tell one person: "If I go quiet on Christmas Eve, check on me."
 4. If he texts first, you don't have to reply on the day. A short reply in a week, or no reply, are both fine. Our guide on [what to text your ex (and when not to)](/blog/articles/what-to-text-your-ex/) goes into this.
 
