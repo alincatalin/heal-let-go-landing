@@ -38,7 +38,7 @@ The first three days are about damage control, not healing. You're not trying to
 
 **Day 1: Decide on no contact.** Pick a length, 30 days is a good start, and write it down. If you share kids, a lease or a job, keep contact to logistics only. Our [no contact rule guide](/blog/articles/no-contact-rule-guide/) covers how to do this properly.
 
-**Day 2: Remove the easy triggers.** Mute or archive the chat. Mute his stories. Move his photos into a hidden album you don't have to look at. You don't have to delete anything forever; you only have to stop seeing him by accident twenty times a day.
+**Day 2: Remove the easy triggers.** Mute or archive the chat. Mute his stories. Move his photos into a hidden album you don't have to look at. You don't have to delete anything forever; you only have to stop seeing him by accident twenty times a day. For the hoodie, the gifts and the rest, see [what to do with your ex's stuff](/blog/articles/what-to-do-with-your-exs-stuff/).
 
 **Day 3: Tell two people.** Pick two friends and say: "We broke up. I'm doing no contact. If I say I want to text him, talk me out of it." Day 3 is often one of the hardest days, and it helps to know [why day 3 hits so hard](/blog/articles/hardest-day-no-contact/) before it arrives.
 
@@ -139,7 +139,7 @@ The fastest route is the boring one: stop contact, stop checking his profiles, a
 Breakups activate the same reward and craving systems involved in addiction, so your brain keeps reaching for him. Thoughts usually come less often once they stop being fed by contact and social media. Giving them a set time each day can also help.
 
 **Should I stay friends with him?**
-Not yet. Trying to be friends while you still have feelings tends to keep you hoping. If a friendship is right, it will still be possible after you've had real distance and no longer want more.
+Not yet. Trying to be friends while you still have feelings tends to keep you hoping (more in [can you be friends with your ex](/blog/articles/can-you-be-friends-with-your-ex/)). If a friendship is right, it will still be possible after you've had real distance and no longer want more.
 
 **Is there an app to help me get over him?**
 Yes. Heal is built for this: it tracks your days without contact, gives you a place to write texts that never send, and has an AI coach for the moments you want to reach out. It's free to download on iPhone and Android.

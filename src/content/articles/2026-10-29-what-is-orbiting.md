@@ -74,7 +74,7 @@ So orbiting may sting a little less than being dropped completely in the moment.
 
 **2. Stop checking the viewer list.** This is the habit that keeps orbiting working. If you can't stop, make it harder: post less for a while, or post to close friends only.
 
-**3. Mute, hide or remove them.** You can hide your stories from one person or mute theirs, so you stop seeing each other. Removing or blocking is fine too. Pick what you can stick to.
+**3. Mute, hide or remove them.** You can hide your stories from one person or mute theirs, so you stop seeing each other. Removing or blocking is fine too. Pick what you can stick to, and if you can't decide, see [should I block my ex](/blog/articles/should-i-block-my-ex/).
 
 **4. Don't reply to a like or an emoji.** A reaction is not an opening. Answering it tells them the low-effort version of you is enough.
 

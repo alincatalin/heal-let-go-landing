@@ -1,0 +1,362 @@
+---
+import { ArrowRight, CalendarPlus, Share2 } from "@lucide/astro";
+import Base from "../../layouts/Base.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import Footer from "../../components/Footer.astro";
+import { APP_STORE_URL } from "../../lib/site";
+
+const title = "Holiday No Contact Challenge (Nov 20 to Jan 1) | Free Daily Prompts";
+const description =
+  "A free 43-day no contact challenge for the holidays after a breakup: one small task a day from November 20 to January 1, with calendar reminders. No sign-up.";
+
+// Day 1 is November 20; day 43 is January 1. One small task per day, timed to the holidays
+// (Thanksgiving is day 7, Christmas Eve day 35, New Year's Eve day 42).
+const START = "2026-11-20";
+const prompts = [
+  "Write down why you're doing this, in one sentence. Keep it somewhere you'll see it.",
+  "Archive or mute your chat with them. You don't have to delete anything. Just move it out of sight.",
+  "Tell one person you're doing this challenge. Pick the person you'll text instead.",
+  "Plan Thanksgiving: one line for when someone asks about them, and a way to leave early if you need it.",
+  "Mute or unfollow them on one app. Just one today.",
+  "The night before a holiday is a classic texting night. Plan tonight's last hour now.",
+  "Thanksgiving. Write down three things you're grateful for that have nothing to do with them.",
+  "The day after a big day. Get outside for twenty minutes, even if it's cold.",
+  "Cook or order something you love that they never liked.",
+  "Read your sentence from day 1. Is it still true?",
+  "If their birthday or your anniversary is coming up, put it in your calendar as a day to plan something for you.",
+  "December starts. Pick one tradition you'll do differently this year.",
+  "Write the text you want to send them somewhere it can't send. Then close it.",
+  "Put one of their things out of sight. A hoodie, a mug, the photo on the fridge.",
+  "Make a playlist with no songs that remind you of them.",
+  "Plan the weekend: one thing with people, and one thing on your own that you enjoy.",
+  "If you check their profile today, notice how you feel afterwards. Write it down.",
+  "Message a friend you've drifted from. Not about the breakup.",
+  "Charge your phone outside the bedroom tonight.",
+  "Write down three things you don't miss about them. Be specific.",
+  "Do one thing your future self will thank you for. A workout, a clean room, an appointment booked.",
+  "Party season. Decide your drink limit and your ride home before you go out.",
+  "Count the days you've made it so far. Every one of them counts.",
+  "Buy or make one small gift for yourself.",
+  "Write what you'd tell a friend in your exact situation. Then read it as if it's for you.",
+  "Next time the urge comes, don't act on it. Just time how long it takes to fade.",
+  "Plan Christmas Eve's quiet hour now. A film, a call, a walk.",
+  "Mute anyone who keeps posting about them, for now.",
+  "Try one new thing: a class, a recipe, a different way home.",
+  "See people today, even for an hour.",
+  "Write down one thing you've learned about what you want next time.",
+  "The longest night of the year. Go to bed early and let it be.",
+  "Decide now: no \"Merry Christmas\" text. If you need to write it, write it where it can't send.",
+  "Plan the next three days so the empty hours have something in them.",
+  "Christmas Eve. Use the plan you made for the quiet hour.",
+  "Christmas Day. Send your first message of the day to someone who's here for you.",
+  "The day after. Low energy is normal. A walk and an early night count as a win.",
+  "Tell your person how many days you've done.",
+  "Write a goodbye to this year, with them in it. Don't send it.",
+  "Plan New Year's Eve: who you'll be with at midnight, or that you'll be asleep. Both are fine.",
+  "If the chat crept back to the top, archive it again. Take their photos out of your favorites.",
+  "New Year's Eve. Phone face down in a bag at 11:30. You've come a long way.",
+  "Day 43. You got through the hardest season of the year without texting them. Write down how that feels.",
+];
+
+const start = new Date(`${START}T00:00:00Z`);
+const days = prompts.map((text, i) => {
+  const date = new Date(start);
+  date.setUTCDate(start.getUTCDate() + i);
+  const label = date.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" });
+  return { day: i + 1, label, text };
+});
+// Grouped by week for the full list further down the page.
+const weeks = Array.from({ length: Math.ceil(days.length / 7) }, (_, w) => days.slice(w * 7, w * 7 + 7));
+
+const faq = [
+  {
+    question: "What is the Holiday No Contact Challenge?",
+    answer:
+      "It's 43 days of no contact with your ex, from November 20 to January 1, with one small task a day. The tasks are timed to the hard days: Thanksgiving, the party season, Christmas Eve and New Year's Eve.",
+  },
+  {
+    question: "Can I join after November 20?",
+    answer:
+      "Yes. Start on whatever day it is. The calendar reminders begin from today, and the days you do count the same as anyone else's.",
+  },
+  {
+    question: "What counts as breaking no contact?",
+    answer:
+      "Reaching out to them in any way: a text, a call, a like, a comment, a message through a friend. Looking at their profile isn't contact, but it usually makes the next day harder, so try not to.",
+  },
+  {
+    question: "What if I slip and text them?",
+    answer:
+      "Then you slipped. It doesn't wipe out the days you already did. Don't send a second message to explain the first, and do the next day's task tomorrow.",
+  },
+  {
+    question: "Do I need to sign up?",
+    answer:
+      "No. There's no account and nothing is saved. The calendar file is made on your device. The Heal app has a no contact tracker if you want your days counted for you.",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/tools/holiday-challenge/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Holiday No Contact Challenge",
+    url,
+    description,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Any",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    publisher: { "@type": "Organization", name: "Heal", url: site },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Free Tools", item: new URL("/tools/", site).toString() },
+      { "@type": "ListItem", position: 3, name: "Holiday No Contact Challenge", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="holiday-challenge">
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
+      <header class="mb-10 space-y-5 text-center">
+        <p class="eyebrow text-lavender">Free · Nov 20 to Jan 1 · no sign-up</p>
+        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">The Holiday No Contact Challenge</h1>
+        <p class="lede">
+          43 days without texting your ex, through Thanksgiving, Christmas and New Year's Eve. One small task a day, so
+          you're never facing the hard days empty-handed.
+        </p>
+      </header>
+
+      <section id="today" class="card-raised space-y-5 p-6 text-center md:p-9" aria-live="polite">
+        <p id="today-eyebrow" class="eyebrow text-lavender">Day 1 of 43 · Fri, Nov 20</p>
+        <h2 id="today-title" class="text-3xl leading-tight md:text-4xl">Today's task</h2>
+        <p id="today-text" class="mx-auto max-w-[32rem] text-[19px] leading-relaxed text-ink">{prompts[0]}</p>
+        <div class="mx-auto h-2 max-w-[24rem] overflow-hidden rounded-full bg-surface-1" aria-hidden="true">
+          <div id="today-bar" class="h-full rounded-full bg-[#a48bf7]" style="width: 2%"></div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-3 pt-2">
+          <button type="button" id="join" class="btn btn-primary"><CalendarPlus /> Add daily reminders</button>
+          <button type="button" id="share" class="btn btn-quiet"><Share2 /> Share the challenge</button>
+        </div>
+        <p id="msg" class="text-sm text-ink-muted" hidden></p>
+      </section>
+
+      <div class="card-raised mt-6 space-y-4 p-6 md:p-8" data-cta="tool">
+        <p class="eyebrow text-lavender">Count your days</p>
+        <p class="text-[17px] leading-relaxed text-ink-soft">
+          Heal's no contact tracker counts every day you don't reach out, right through the holidays. When the urge hits,
+          the SOS button gets you through the next ten minutes, and unsent texts give the message somewhere to go that
+          isn't their phone. Free to start.
+        </p>
+        <a href={APP_STORE_URL} data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">
+          Track the challenge in Heal <ArrowRight />
+        </a>
+      </div>
+
+      <div class="prose-heal mt-16">
+        <h2>How does the challenge work?</h2>
+        <p>
+          From November 20 to January 1, you don't contact your ex. No texts, calls, likes, comments or messages through
+          friends. Each day has one small task, most of them five minutes or less. Come back to this page for today's, or
+          add the reminders to your calendar and get each task at 9am.
+        </p>
+        <p>
+          The tasks get you ready for the days that are hardest to get through. For those days, our free{" "}
+          <a href="/tools/holiday-plan/">Holiday Survival Plan</a> gives you a plan of your own, and our guide to{" "}
+          <a href="/blog/articles/holidays-after-a-breakup/">the holidays after a breakup</a> goes through the season in
+          order.
+        </p>
+
+        <h2>Why do no contact over the holidays?</h2>
+        <p>
+          Because the holidays hand you excuses to text. "Happy Thanksgiving." "Merry Christmas." Midnight on New Year's
+          Eve. Each one feels harmless, and each one tends to reopen what you've been trying to close. If you're new to it,
+          start with our <a href="/blog/articles/no-contact-rule-guide/">guide to the no contact rule</a>.
+        </p>
+
+        <h2>All 43 days</h2>
+        {
+          weeks.map((week, w) => (
+            <details class="challenge-week" open={w === 0}>
+              <summary>
+                Week {w + 1}: {week[0].label} to {week[week.length - 1].label}
+              </summary>
+              <ol start={week[0].day}>
+                {week.map((d) => (
+                  <li>
+                    <strong>{d.label}.</strong> {d.text}
+                  </li>
+                ))}
+              </ol>
+            </details>
+          ))
+        }
+
+        <h2>What if I break no contact?</h2>
+        <p>
+          It happens, especially in December. One message doesn't erase the days you already did. Don't send a second one
+          to explain the first, and pick the challenge back up tomorrow. Our guide on{" "}
+          <a href="/blog/articles/i-broke-no-contact/">what to do if you broke no contact</a> covers the next morning.
+        </p>
+
+        <h2>FAQ: The Holiday No Contact Challenge</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+      </div>
+
+      <aside class="mt-12 flex gap-4 rounded-[1.25rem] border border-[#f49aa7]/25 bg-[#f49aa7]/[0.06] p-5 text-sm leading-relaxed text-ink-soft">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#f49aa7]" aria-hidden="true"></span>
+        <span>
+          This challenge is not a substitute for professional help. If the holidays are bringing up more than you can carry,
+          or you feel unsafe, visit{" "}
+          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-[#f49aa7] underline underline-offset-4">findahelpline.com</a>{" "}
+          to reach a local helpline.
+        </span>
+      </aside>
+    </div>
+  </main>
+  <Footer />
+</Base>
+
+<script is:inline type="application/json" id="challenge-data" set:html={JSON.stringify({ start: START, prompts })} />
+
+<script>
+  type Umami = { track: (event: string, data?: Record<string, string>) => void };
+  const { start, prompts } = JSON.parse(document.getElementById("challenge-data")!.textContent!) as {
+    start: string;
+    prompts: string[];
+  };
+  const total = prompts.length;
+  const track = (result: string) =>
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "holiday-challenge", result });
+
+  // Calendar days in the viewer's own time zone, so day 1 starts at their midnight on Nov 20.
+  const [y, m, d] = start.split("-").map(Number);
+  const first = new Date(y, m - 1, d);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const dayIndex = Math.round((today.getTime() - first.getTime()) / 86400000);
+  const dateOf = (i: number) => new Date(y, m - 1, d + i);
+  const fmt = (date: Date) => date.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+
+  const eyebrow = document.getElementById("today-eyebrow")!;
+  const heading = document.getElementById("today-title")!;
+  const text = document.getElementById("today-text")!;
+  const bar = document.getElementById("today-bar")!;
+  const msg = document.getElementById("msg")!;
+
+  if (dayIndex < 0) {
+    const n = -dayIndex;
+    eyebrow.textContent = `Starts ${fmt(first)} · ${n} ${n === 1 ? "day" : "days"} to go`;
+    heading.textContent = "Day 1's task";
+    text.textContent = prompts[0];
+    bar.style.width = "0%";
+  } else if (dayIndex < total) {
+    eyebrow.textContent = `Day ${dayIndex + 1} of ${total} · ${fmt(today)}`;
+    heading.textContent = "Today's task";
+    text.textContent = prompts[dayIndex];
+    bar.style.width = `${Math.max(2, ((dayIndex + 1) / total) * 100)}%`;
+  } else {
+    eyebrow.textContent = `The challenge ended on ${fmt(dateOf(total - 1))}`;
+    heading.textContent = "You can still keep going";
+    text.textContent =
+      "The holidays are over, but the urge doesn't check the calendar. Keep counting your days, and come back next November.";
+    bar.style.width = "100%";
+    document.getElementById("join")!.hidden = true;
+  }
+
+  // One 10-minute event at 9am (the viewer's local time) for each remaining day, with the task as its title.
+  function ics() {
+    const pad = (n: number) => String(n).padStart(2, "0");
+    const ymd = (date: Date) => `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}`;
+    const esc = (s: string) => s.replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/([,;])/g, "\\$1");
+    const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+    const events = prompts.flatMap((prompt, i) => {
+      if (i < Math.max(0, dayIndex)) return [];
+      const day = ymd(dateOf(i));
+      return [
+        "BEGIN:VEVENT",
+        `UID:holiday-challenge-${day}@tryheal.app`,
+        `DTSTAMP:${stamp}`,
+        `DTSTART:${day}T090000`,
+        `DTEND:${day}T091000`,
+        `SUMMARY:${esc(`No contact day ${i + 1} of ${total}`)}`,
+        `DESCRIPTION:${esc(`${prompt}\n\nAbout to text them? Write it here instead: tryheal.app/tools/unsent-text/`)}`,
+        "BEGIN:VALARM",
+        "ACTION:DISPLAY",
+        `DESCRIPTION:${esc(`No contact day ${i + 1}`)}`,
+        "TRIGGER:PT0M",
+        "END:VALARM",
+        "END:VEVENT",
+      ];
+    });
+    return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Heal//Holiday Challenge//EN", "CALSCALE:GREGORIAN", ...events, "END:VCALENDAR"].join("\r\n");
+  }
+
+  document.getElementById("join")!.addEventListener("click", () => {
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(new Blob([ics()], { type: "text/calendar" }));
+    link.download = "holiday-no-contact-challenge.ics";
+    link.click();
+    URL.revokeObjectURL(link.href);
+    msg.textContent = "Open the file to add the reminders. Each day's task arrives at 9am.";
+    msg.hidden = false;
+    track("joined");
+  });
+
+  document.getElementById("share")!.addEventListener("click", async () => {
+    const shareText = "I'm doing the Holiday No Contact Challenge: no texting my ex from Nov 20 to Jan 1. Join me:";
+    const shareUrl = "https://tryheal.app/tools/holiday-challenge/";
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: "Holiday No Contact Challenge", text: shareText, url: shareUrl });
+      } else {
+        await navigator.clipboard.writeText(`${shareText} ${shareUrl}`);
+        msg.textContent = "Copied. Paste it into your story, or send it to a friend who needs it too.";
+        msg.hidden = false;
+      }
+      track("shared");
+    } catch {
+      // Closing the share sheet throws; nothing to report.
+    }
+  });
+</script>
+
+<style>
+  .challenge-week {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.75rem 0;
+  }
+  .challenge-week summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .challenge-week ol {
+    margin-top: 0.75rem;
+  }
+</style>

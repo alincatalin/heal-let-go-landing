@@ -9,6 +9,13 @@ export interface Tool {
 
 export const tools: Tool[] = [
   {
+    href: "/tools/holiday-challenge/",
+    name: "Holiday No Contact Challenge",
+    label: "Nov 20 to Jan 1",
+    blurb: "43 days without texting your ex, with one small task a day timed to Thanksgiving, Christmas and New Year's Eve.",
+    cta: "See today's task",
+  },
+  {
     href: "/tools/holiday-plan/",
     name: "Holiday Survival Plan",
     label: "For Thanksgiving to New Year",

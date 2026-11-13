@@ -77,7 +77,7 @@ That matters more than it seems. In a study that followed young adults through t
 A few things make it easier to hold the line.
 
 1. **Decide before the day.** "I'm not texting him on Christmas" is easier to stick to if you decided on December 1, not at 11pm on the 24th.
-2. Write it, but don't send it. Get the whole message out somewhere it can't reach him.
+2. Write it, but don't send it. Get the whole message out somewhere it can't reach him, like our free [unsent text tool](/tools/unsent-text/?occasion=christmas).
 3. Tell one person: "If I go quiet on Christmas Eve, check on me."
 4. If he texts first, you don't have to reply on the day. A short reply in a week, or no reply, are both fine. Our guide on [what to text your ex (and when not to)](/blog/articles/what-to-text-your-ex/) goes into this.
 
@@ -91,7 +91,7 @@ You're allowed to send a card or a kind message to someone in his family you wer
 
 If they reach out to you first, a warm, short reply is fine. "Thank you, that means a lot. Merry Christmas to you all." You don't need to arrange to see them, and you don't need to explain.
 
-And if he's going to be somewhere you are (a shared friend's party, a small hometown bar on the 26th), decide in advance whether you're going. Skipping one party isn't losing. If you do go, bring a friend who knows.
+And if he's going to be somewhere you are (a shared friend's party, a small hometown bar on the 26th), decide in advance whether you're going. Skipping one party isn't losing. If you do go, bring a friend who knows, and read our plan for [seeing your ex at a holiday party](/blog/articles/seeing-your-ex-at-a-holiday-party/).
 
 ## What Do I Do With Our Traditions?
 
@@ -105,7 +105,7 @@ Then add one thing that's only yours. A solo trip to see the lights. A new ornam
 
 ## What If I'm Spending the Holidays Alone?
 
-Being alone on a holiday is different from being lonely, but after a breakup they tend to arrive together.
+Being alone on a holiday is different from being lonely, but after a breakup they tend to arrive together. Our guide to [spending Christmas alone after a breakup](/blog/articles/christmas-alone-after-breakup/) plans the day hour by hour.
 
 - **Plan the day in blocks.** A morning walk, a call with a friend at lunch, a film you've been saving, a proper dinner. The spiral tends to start in the empty hours.
 - Stay off his profile. People who kept checking an ex's Facebook reported more distress and longing, and less personal growth ([Marshall, 2012](https://doi.org/10.1089/cyber.2012.0125)). Holiday posts are hard to scroll past. Mute him, and anyone who posts him, before December.
