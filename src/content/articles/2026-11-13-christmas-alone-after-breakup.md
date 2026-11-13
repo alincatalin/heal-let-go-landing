@@ -1,7 +1,7 @@
 ---
 title: "Spending Christmas Alone After a Breakup"
 slug: "christmas-alone-after-breakup"
-date: "2026-12-09"
+date: "2026-11-13"
 category: "Breakup Healing"
 readTime: "7 min"
 excerpt: "Christmas alone after a breakup, planned hour by hour: being alone versus lonely, filling the quiet hours, volunteering, social media, and the urge to text them."
