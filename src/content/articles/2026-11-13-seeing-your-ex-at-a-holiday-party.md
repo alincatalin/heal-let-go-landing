@@ -1,7 +1,7 @@
 ---
 title: "Seeing Your Ex at a Holiday Party: How to Get Through It"
 slug: "seeing-your-ex-at-a-holiday-party"
-date: "2026-12-01"
+date: "2026-11-13"
 category: "No Contact"
 readTime: "8 min"
 excerpt: "Your ex will be at the office party or your friend's holiday party. Whether to go, a plan for the night, what to say if they come over, and the morning after."
