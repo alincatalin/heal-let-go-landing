@@ -1,7 +1,7 @@
 ---
 title: "What to Do With Gifts From Your Ex"
 slug: "what-to-do-with-gifts-from-ex"
-date: "2026-12-21"
+date: "2026-11-13"
 category: "Breakup Healing"
 readTime: "8 min"
 excerpt: "Should you return gifts from your ex? When to keep, store, give away, sell or return them, what to do with the Christmas gift you already bought, and how to give things back without starting a conversation."
