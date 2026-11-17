@@ -159,6 +159,16 @@ const jsonLd = [
         <p id="msg" class="text-sm text-ink-muted" hidden></p>
       </section>
 
+      <!-- Shown from day 35 (Christmas Eve) on: the challenge ends Jan 1, the 2027 Reset Plan picks up from there. -->
+      <section id="next-plan" class="card-raised mt-6 space-y-4 p-6 md:p-8" hidden>
+        <p class="eyebrow text-lavender">After January 1</p>
+        <p id="next-plan-text" class="text-[17px] leading-relaxed text-ink-soft">
+          The challenge ends on January 1. The 2027 Reset Plan picks up the next day: four small weeks to start the year
+          without them.
+        </p>
+        <a href="/tools/new-year-reset/" class="btn btn-quiet">See the 2027 Reset Plan <ArrowRight /></a>
+      </section>
+
       <div class="card-raised mt-6 space-y-4 p-6 md:p-8" data-cta="tool">
         <p class="eyebrow text-lavender">Count your days</p>
         <p class="text-[17px] leading-relaxed text-ink-soft">
@@ -183,6 +193,10 @@ const jsonLd = [
           <a href="/tools/holiday-plan/">Holiday Survival Plan</a> gives you a plan of your own, and our guide to{" "}
           <a href="/blog/articles/holidays-after-a-breakup/">the holidays after a breakup</a> goes through the season in
           order.
+        </p>
+        <p>
+          When it ends on January 1, the <a href="/tools/new-year-reset/">2027 Reset Plan</a> takes over with four
+          small weeks for the new year.
         </p>
 
         <h2>Why do no contact over the holidays?</h2>
@@ -268,6 +282,20 @@ const jsonLd = [
   const text = document.getElementById("today-text")!;
   const bar = document.getElementById("today-bar")!;
   const msg = document.getElementById("msg")!;
+
+  // From Christmas Eve (day 35) the end is in sight: point at what comes after the challenge.
+  const nextPlan = document.getElementById("next-plan")!;
+  const nextPlanText = document.getElementById("next-plan-text")!;
+  if (dayIndex >= 34) {
+    nextPlan.hidden = false;
+    if (dayIndex >= 41 && dayIndex < total) {
+      nextPlanText.textContent =
+        "You're nearly through the hardest season of the year. Keep the momentum into January with the 2027 Reset Plan: four small weeks, starting tomorrow or any day you like.";
+    } else if (dayIndex >= total) {
+      nextPlanText.textContent =
+        "The challenge is over, but January is when the quiet days hit. The 2027 Reset Plan gives you four small weeks to keep going.";
+    }
+  }
 
   if (dayIndex < 0) {
     const n = -dayIndex;
