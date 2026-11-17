@@ -2,9 +2,10 @@
 title: "No Contact Rule: The Only Guide You Actually Need"
 slug: "no-contact-rule-guide"
 date: "2026-01-08"
+updated: "2026-11-17"
 category: "No Contact"
 readTime: "15 min"
-excerpt: "What it is, why it works, when to break it, and how to stop second-guessing yourself"
+excerpt: "The no contact rule means no texts, calls, likes or story views with your ex for 30 to 90 days. How long to do it, what counts and when to break it."
 answer: "The no contact rule means cutting off all communication with your ex for a set period: no texts, calls, DMs, likes or story views. Thirty days is the most common minimum, 60 suits most breakups, and 90 helps after long or on-and-off relationships. If you share kids, a home or a job, use limited contact instead."
 author: "Heal Team"
 keywords: "no contact rule, no contact rule guide, what is no contact rule, no contact after breakup, how to do no contact, no contact rule explained, no contact rule benefits"
@@ -76,9 +77,9 @@ Because ultimately, it's not about them. It's about you.
 
 Let's talk science for a second.
 
-When you go through a breakup, your brain responds the same way it responds to physical pain. Brain scans of people going through heartbreak show activation in the same regions associated with cocaine withdrawal.
+A breakup hits the brain harder than it sounds. In one brain-scan study, people who had just been rejected by a partner looked at their ex's photo, and the reward and craving areas linked to addiction lit up ([Fisher et al., 2010](https://journals.physiology.org/doi/full/10.1152/jn.00784.2009)). In another, looking at an ex after an unwanted breakup activated some of the same areas that process physical pain ([Kross et al., 2011](https://www.pnas.org/doi/10.1073/pnas.1102693108)).
 
-You're literally going through withdrawal from a person.
+It works a lot like withdrawal from a person.
 
 Every time you text your ex, check their social media, or "accidentally" drive past their apartment, you're giving yourself a tiny hit of that drug. You feel relief for about three seconds. Then you feel worse.
 
@@ -126,9 +127,15 @@ If you've been reading advice about "female psychology" during no contact, our g
 
 The internet loves to throw around specific numbers: 30 days, 60 days, 90 days.
 
-Here's the truth: there's no magic number.
+Here's the truth: there's no magic number, and no study sets one. But there are guidelines that actually make sense.
 
-But there are guidelines that actually make sense.
+| Your situation | Suggested length | Why |
+|---|---|---|
+| Short relationship (under a year), clean breakup | 30 days | Long enough to break the checking habit and get past the worst first weeks |
+| 1-3 years, or a messy or unclear ending | 60 days | Time to process, not just survive, and rebuild your routines |
+| 3+ years, on-and-off, or you keep going back | 90 days | Serious distance to undo serious patterns |
+| Toxic or controlling relationship | 90 days or permanent | Safety and distance come first; get outside support |
+| You share kids, a home, a job or money | Limited contact | Only practical topics, short and in writing |
 
 ### 30 Days: The Minimum
 
@@ -203,7 +210,7 @@ This is where people get tricky with themselves. So let's be really clear.
 
 ### The Social Media Problem
 
-Social media makes no contact exponentially harder. You can technically not reach out to someone while still being completely obsessed with their online presence.
+Social media makes no contact much harder. You can technically not reach out to someone while still being completely obsessed with their online presence. In a study of 464 people, those who kept checking an ex's Facebook page reported more distress, more longing for the ex and less personal growth ([Marshall, 2012](https://doi.org/10.1089/cyber.2012.0125)).
 
 Here's my recommendation: mute, don't block.
 
@@ -246,7 +253,7 @@ These feelings are real, but they're not good reasons to break no contact.
 
 ### Write the Text You Want to Send
 
-Open your notes app. Write exactly what you want to say to them. Get it all out.
+Open your notes app, or our free [unsent text tool](/tools/unsent-text/), a chat that never sends. Write exactly what you want to say to them. Get it all out.
 
 Then don't send it.
 
@@ -275,7 +282,7 @@ Read this when you want to break no contact. Remind yourself that your memory is
 
 This sounds like generic advice because it is. It's also true.
 
-When you're flooded with the urge to reach out, you have stress hormones coursing through your body. Movement helps metabolize them.
+When you're flooded with the urge to reach out, your body is in stress mode. Moving helps it come down.
 
 Walk around the block. Do twenty jumping jacks. Dance to one song. Anything to discharge that physical energy.
 
@@ -491,5 +498,14 @@ Use limited contact instead: only practical topics, in writing where possible, s
 **What if they reach out during no contact?**
 You don't owe an immediate reply. If it's practical, answer the practical part briefly. If it isn't, it's okay not to reply, or to wait until you're calm enough to decide.
 
+**Does the no contact rule make your ex miss you?**
+Sometimes, but that isn't what it's for, and nothing guarantees it. Use it to stop the checking-and-waiting loop and get your head back. If they do reach out, you'll be calm enough to decide what you actually want.
+
 **I broke no contact. Do I have to start over?**
 Restart the count, but not the learning. You now know your danger moments, and that the urge passes. Our [day-by-day guide](/blog/articles/no-contact-day-by-day/) covers what each stage tends to feel like.
+
+## Sources
+
+- Fisher, H. E., Brown, L. L., Aron, A., Strong, G., and Mashek, D. (2010). Reward, addiction, and emotion regulation systems associated with rejection in love. *Journal of Neurophysiology*, 104(1), 51 to 60. [doi.org/10.1152/jn.00784.2009](https://doi.org/10.1152/jn.00784.2009)
+- Kross, E., Berman, M. G., Mischel, W., Smith, E. E., and Wager, T. D. (2011). Social rejection shares somatosensory representations with physical pain. *PNAS*, 108(15), 6270 to 6275. [doi.org/10.1073/pnas.1102693108](https://doi.org/10.1073/pnas.1102693108)
+- Marshall, T. C. (2012). Facebook surveillance of former romantic partners: Associations with postbreakup recovery and personal growth. *Cyberpsychology, Behavior, and Social Networking*, 15(10), 521 to 526. [doi.org/10.1089/cyber.2012.0125](https://doi.org/10.1089/cyber.2012.0125)
