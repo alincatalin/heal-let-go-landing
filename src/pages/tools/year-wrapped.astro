@@ -1,0 +1,398 @@
+---
+import { ArrowRight, Download, Share2 } from "@lucide/astro";
+import Base from "../../layouts/Base.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import Footer from "../../components/Footer.astro";
+import { APP_STORE_URL } from "../../lib/site";
+
+const title = "Breakup Year Wrapped 2026 | Free Story Card for Your Year";
+const description =
+  "Make a free story card of your breakup year: days since it ended, days without texting them, the word for your year and what you're taking into 2027. Nothing is saved.";
+
+// The card shows the year it was made in; "next year" follows from it.
+const YEAR = 2026;
+const words = ["Survived", "Messy", "Healing", "Lonely", "Brave", "Free", "Growing", "Honest"];
+const takeaways = [
+  "Me, first.",
+  "Better boundaries.",
+  "The friends who showed up.",
+  "A quieter phone.",
+  "Knowing what I deserve.",
+];
+
+const faq = [
+  {
+    question: "What is Breakup Year Wrapped?",
+    answer:
+      "A free card that sums up your year after a breakup: how many days since it ended, how many days you've gone without contacting them, how often you almost texted, one word for the year and one thing you're taking into the next. It's sized for Instagram and TikTok stories.",
+  },
+  {
+    question: "Is anything I type saved or sent anywhere?",
+    answer:
+      "No. The card is drawn in your browser. Nothing you enter leaves your device, and there's no sign-up.",
+  },
+  {
+    question: "What if I'm still in contact with my ex?",
+    answer:
+      "Leave the last-contact date empty and the card skips that line. It still counts the days since it ended. If you want to stop, our Holiday No Contact Challenge runs to January 1 and you can start on any day.",
+  },
+  {
+    question: "Why look back on a breakup year at all?",
+    answer:
+      "Because the days blur. Seeing the number of days you got through, and the times you didn't send the text, makes progress you can't feel yet visible. Researchers call dates like January 1 'fresh start' moments: people are more likely to start a new habit right after one (Dai, Milkman and Riis, 2014).",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/tools/year-wrapped/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Breakup Year Wrapped",
+    url,
+    description,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Any",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    publisher: { "@type": "Organization", name: "Heal", url: site },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Free Tools", item: new URL("/tools/", site).toString() },
+      { "@type": "ListItem", position: 3, name: "Breakup Year Wrapped", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+
+const inputClass =
+  "w-full rounded-2xl bg-surface-1 px-4 py-3 text-[16px] text-ink placeholder:text-ink-muted focus:outline-none focus:ring-2 focus:ring-[#a48bf7]/50";
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="year-wrapped">
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
+      <header class="mb-10 space-y-5 text-center">
+        <p class="eyebrow text-lavender">Free · story-sized · nothing saved</p>
+        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">Your Breakup Year, Wrapped</h1>
+        <p class="lede">
+          The days you got through, the texts you didn't send, and what you're taking into {YEAR + 1}. One card for your
+          story, made from four answers.
+        </p>
+      </header>
+
+      <form id="wrapped-form" class="card-raised space-y-8 p-6 md:p-9" novalidate>
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">1. When did it end?</legend>
+          <label class="block">
+            <span class="sr-only">The date the relationship ended</span>
+            <input id="ended" name="ended" type="date" required class={inputClass} />
+          </label>
+          <label class="block space-y-2">
+            <span class="text-[15px] text-ink-soft">The last time you contacted them (leave empty if you still do)</span>
+            <input id="last-contact" name="last-contact" type="date" class={inputClass} />
+          </label>
+        </fieldset>
+
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">2. How often did you almost text them?</legend>
+          <select id="almost" name="almost" class={inputClass}>
+            <option value="">Skip this one</option>
+            <option>A few times</option>
+            <option>Every week</option>
+            <option>Most nights</option>
+            <option>More than I can count</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">3. One word for your year</legend>
+          <div class="flex flex-wrap gap-2">
+            {
+              words.map((w, i) => (
+                <label class="chip-option">
+                  <input type="radio" name="word" value={w} class="sr-only" checked={i === 0} />
+                  <span>{w}</span>
+                </label>
+              ))
+            }
+          </div>
+        </fieldset>
+
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">4. What are you taking into {YEAR + 1}?</legend>
+          <select id="takeaway" name="takeaway" class={inputClass}>
+            {takeaways.map((t) => <option>{t}</option>)}
+            <option value="custom">Write my own…</option>
+          </select>
+          <input id="takeaway-own" type="text" maxlength="36" placeholder="In a few words" class={inputClass} hidden />
+        </fieldset>
+
+        <p id="form-error" class="text-sm text-[#f49aa7]" hidden>Add the date it ended first.</p>
+        <button type="submit" class="btn btn-primary w-full justify-center">Make my card <ArrowRight /></button>
+      </form>
+
+      <section id="result" class="mt-8 space-y-5 text-center" hidden aria-live="polite">
+        <canvas id="card" width="1080" height="1920" class="mx-auto w-full max-w-[22rem] rounded-[1.25rem] shadow-2xl"
+          aria-label="Your Breakup Year Wrapped card"></canvas>
+        <div class="flex flex-wrap justify-center gap-3">
+          <button type="button" id="share" class="btn btn-primary"><Share2 /> Share to your story</button>
+          <button type="button" id="download" class="btn btn-quiet"><Download /> Save image</button>
+        </div>
+        <p id="msg" class="text-sm text-ink-muted" hidden></p>
+      </section>
+
+      <div class="card-raised mt-8 space-y-4 p-6 md:p-8" data-cta="tool">
+        <p class="eyebrow text-lavender">Make next year's card easier</p>
+        <p class="text-[17px] leading-relaxed text-ink-soft">
+          Heal counts every day without contact for you, catches the 2am urge with an SOS button, and gives the text
+          somewhere to go that isn't their phone. Free to start.
+        </p>
+        <a href={APP_STORE_URL} data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">
+          Start counting in Heal <ArrowRight />
+        </a>
+      </div>
+
+      <div class="prose-heal mt-16">
+        <h2>What does Breakup Year Wrapped show?</h2>
+        <p>
+          Breakup Year Wrapped turns your year after a breakup into a single story card: the days since it ended, the
+          days since you last contacted them, how often you almost texted, one word for the year, and one thing you're
+          taking into {YEAR + 1}. It takes under a minute and nothing you type is saved.
+        </p>
+
+        <h2>Why count the days?</h2>
+        <p>
+          Recovery is hard to feel from the inside. A number makes it visible: 214 days is 214 mornings you got up
+          anyway. Counting the days without contact works the same way, which is why most{" "}
+          <a href="/blog/articles/no-contact-rule-guide/">no contact rule</a> plans start with a tracker.
+        </p>
+        <p>
+          If the count is short, that's fine. The <a href="/tools/holiday-challenge/">Holiday No Contact Challenge</a>{" "}
+          runs to January 1 and you can join on any day. And if the urge to text them is strong tonight, write it in the{" "}
+          <a href="/tools/unsent-text/">unsent text tool</a> first, where it can't send.
+        </p>
+
+        <h2>FAQ: Breakup Year Wrapped</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Base>
+
+<script is:inline type="application/json" id="wrapped-data" set:html={JSON.stringify({ year: YEAR })} />
+
+<script>
+  type Umami = { track: (event: string, data?: Record<string, string>) => void };
+  const { year } = JSON.parse(document.getElementById("wrapped-data")!.textContent!) as { year: number };
+  const track = (result: string) =>
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "year-wrapped", result });
+
+  const form = document.getElementById("wrapped-form") as HTMLFormElement;
+  const ended = document.getElementById("ended") as HTMLInputElement;
+  const lastContact = document.getElementById("last-contact") as HTMLInputElement;
+  const almost = document.getElementById("almost") as HTMLSelectElement;
+  const takeaway = document.getElementById("takeaway") as HTMLSelectElement;
+  const own = document.getElementById("takeaway-own") as HTMLInputElement;
+  const error = document.getElementById("form-error")!;
+  const result = document.getElementById("result")!;
+  const canvas = document.getElementById("card") as HTMLCanvasElement;
+  const msg = document.getElementById("msg")!;
+
+  const todayIso = new Date().toLocaleDateString("en-CA");
+  ended.max = todayIso;
+  lastContact.max = todayIso;
+  takeaway.addEventListener("change", () => {
+    own.hidden = takeaway.value !== "custom";
+    if (!own.hidden) own.focus();
+  });
+
+  // Whole days between a yyyy-mm-dd date and today, in the viewer's time zone.
+  const daysSince = (iso: string) => {
+    const [y, m, d] = iso.split("-").map(Number);
+    const then = new Date(y, m - 1, d);
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+    return Math.max(0, Math.round((now.getTime() - then.getTime()) / 86400000));
+  };
+
+  function wrap(ctx: CanvasRenderingContext2D, text: string, maxWidth: number): string[] {
+    const lines: string[] = [];
+    let line = "";
+    for (const word of text.split(" ")) {
+      const next = line ? `${line} ${word}` : word;
+      if (ctx.measureText(next).width > maxWidth && line) {
+        lines.push(line);
+        line = word;
+      } else {
+        line = next;
+      }
+    }
+    if (line) lines.push(line);
+    return lines;
+  }
+
+  async function draw() {
+    await document.fonts.ready;
+    const ctx = canvas.getContext("2d")!;
+    const W = canvas.width;
+    const H = canvas.height;
+    const display = '"Fraunces Variable", Georgia, serif';
+    const sans = '"Figtree Variable", system-ui, sans-serif';
+
+    const bg = ctx.createLinearGradient(0, 0, W, H);
+    bg.addColorStop(0, "#1a1236");
+    bg.addColorStop(0.55, "#0c0a16");
+    bg.addColorStop(1, "#2a1240");
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, W, H);
+    const glow = ctx.createRadialGradient(W * 0.8, H * 0.12, 0, W * 0.8, H * 0.12, 700);
+    glow.addColorStop(0, "rgba(164,139,247,0.35)");
+    glow.addColorStop(1, "rgba(164,139,247,0)");
+    ctx.fillStyle = glow;
+    ctx.fillRect(0, 0, W, H);
+
+    const x = 96;
+    let y = 220;
+    ctx.textBaseline = "alphabetic";
+    ctx.fillStyle = "#c4b5fd";
+    ctx.font = `600 40px ${sans}`;
+    ctx.fillText(`MY BREAKUP YEAR · ${year}`, x, y);
+
+    const sinceEnd = daysSince(ended.value);
+    y += 300;
+    ctx.fillStyle = "#f3eef8";
+    ctx.font = `600 260px ${display}`;
+    ctx.fillText(String(sinceEnd), x - 8, y);
+    y += 80;
+    ctx.fillStyle = "#c9c0d6";
+    ctx.font = `500 52px ${sans}`;
+    ctx.fillText(sinceEnd === 1 ? "day since it ended" : "days since it ended", x, y);
+
+    const stat = (big: string, small: string) => {
+      y += 170;
+      ctx.fillStyle = "#f3eef8";
+      ctx.font = `600 96px ${display}`;
+      ctx.fillText(big, x, y);
+      y += 64;
+      ctx.fillStyle = "#c9c0d6";
+      ctx.font = `500 44px ${sans}`;
+      ctx.fillText(small, x, y);
+    };
+    if (lastContact.value) {
+      const n = daysSince(lastContact.value);
+      stat(String(n), n === 1 ? "day without contacting them" : "days without contacting them");
+    }
+    if (almost.value) stat(almost.value, "I almost texted them. I didn't always.");
+
+    const word = (form.querySelector('input[name="word"]:checked') as HTMLInputElement | null)?.value ?? "Survived";
+    y += 170;
+    ctx.fillStyle = "#c4b5fd";
+    ctx.font = `600 36px ${sans}`;
+    ctx.fillText("MY WORD FOR THE YEAR", x, y);
+    y += 110;
+    ctx.fillStyle = "#f3eef8";
+    ctx.font = `italic 600 110px ${display}`;
+    ctx.fillText(word, x, y);
+
+    const take = takeaway.value === "custom" ? own.value.trim() || "Me, first." : takeaway.value;
+    y += 150;
+    ctx.fillStyle = "#c4b5fd";
+    ctx.font = `600 36px ${sans}`;
+    ctx.fillText(`TAKING INTO ${year + 1}`, x, y);
+    ctx.fillStyle = "#f3eef8";
+    ctx.font = `500 64px ${display}`;
+    for (const line of wrap(ctx, take, W - x * 2).slice(0, 2)) {
+      y += 84;
+      ctx.fillText(line, x, y);
+    }
+
+    ctx.fillStyle = "#a39ab5";
+    ctx.font = `500 36px ${sans}`;
+    ctx.fillText("Make yours: tryheal.app/tools/year-wrapped", x, H - 110);
+  }
+
+  const toBlob = () => new Promise<Blob>((resolve) => canvas.toBlob((b) => resolve(b!), "image/png"));
+  const fileName = `breakup-year-wrapped-${year}.png`;
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!ended.value) {
+      error.hidden = false;
+      ended.focus();
+      return;
+    }
+    error.hidden = true;
+    await draw();
+    result.hidden = false;
+    result.scrollIntoView({ behavior: "smooth", block: "start" });
+    track("made");
+  });
+
+  document.getElementById("download")!.addEventListener("click", async () => {
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(await toBlob());
+    link.download = fileName;
+    link.click();
+    URL.revokeObjectURL(link.href);
+    track("downloaded");
+  });
+
+  document.getElementById("share")!.addEventListener("click", async () => {
+    const file = new File([await toBlob()], fileName, { type: "image/png" });
+    try {
+      if (navigator.canShare?.({ files: [file] })) {
+        await navigator.share({ files: [file], text: "My breakup year, wrapped. tryheal.app/tools/year-wrapped" });
+        track("shared");
+      } else {
+        document.getElementById("download")!.click();
+        msg.textContent = "Saved. Add it to your story from your photos.";
+        msg.hidden = false;
+      }
+    } catch {
+      // Closing the share sheet throws; nothing to report.
+    }
+  });
+</script>
+
+<style>
+  .chip-option span {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 999px;
+    border: 1px solid var(--hairline-strong);
+    padding: 0.5rem 1rem;
+    color: var(--ink-soft);
+  }
+  .chip-option input:checked + span {
+    background: rgba(164, 139, 247, 0.18);
+    border-color: rgba(164, 139, 247, 0.6);
+    color: var(--ink);
+  }
+  .chip-option input:focus-visible + span {
+    outline: 2px solid var(--violet-hex);
+    outline-offset: 2px;
+  }
+</style>

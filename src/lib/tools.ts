@@ -16,6 +16,13 @@ export const tools: Tool[] = [
     cta: "See today's task",
   },
   {
+    href: "/tools/year-wrapped/",
+    name: "Breakup Year Wrapped",
+    label: "Story card for 2026",
+    blurb: "Days since it ended, days without texting them and your word for the year, on one card for your story.",
+    cta: "Make my card",
+  },
+  {
     href: "/tools/holiday-plan/",
     name: "Holiday Survival Plan",
     label: "For Thanksgiving to New Year",
