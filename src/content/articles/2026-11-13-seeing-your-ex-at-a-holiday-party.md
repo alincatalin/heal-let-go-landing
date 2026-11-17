@@ -66,7 +66,7 @@ Make the decisions before you get there, when you can think clearly. Once you're
 5. **Pick your line.** One sentence for if they come over (see the next section).
 6. **Mute them before you leave the house.** Their stories and posts tonight will be full of the same party you're at. You don't need to watch it twice.
 
-If you want this written down for every hard date this season, our free [Holiday Survival Plan](/tools/holiday-plan/) makes a short plan for each day you're dreading, parties included.
+If you want this written down for every hard date this season, our free [Holiday Survival Plan](/tools/holiday-plan/) makes a short plan for each day you're dreading, parties included. For the whole season, the free [Holiday No Contact Challenge](/tools/holiday-challenge/) adds one small task a day from November 20 to January 1.
 
 ## What Do I Say If My Ex Comes Over?
 
