@@ -1,0 +1,191 @@
+---
+import { ArrowRight } from "@lucide/astro";
+import Base from "../../layouts/Base.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import Footer from "../../components/Footer.astro";
+import { APP_STORE_URL } from "../../lib/site";
+import { RESET_FUNNEL_URL } from "../../lib/funnel";
+
+const title = "New Year After a Breakup: Free 4-Week 2027 Reset Plan";
+const description =
+  "Start the new year after a breakup with a free 4-week plan: quiet their corner of your phone, get through the urges, make sense of it, and rebuild. Built from three questions.";
+
+// Every week points at something the Heal app already does (checked against the app on 2026-11-17), so the plan
+// never promises a feature that isn't there. "Heal+" is the paid tier; everything else is free.
+const weeks = [
+  {
+    name: "Week 1: Quiet their corner",
+    does: "Start your no contact count, write your reasons list, and mute or archive them on every app.",
+    where: "The no contact clock, and Today's steps \"Write your reasons list\" and \"Quiet their corner of your phone\".",
+    cost: "Free",
+  },
+  {
+    name: "Week 2: Get through the urges",
+    does: "When the urge hits, breathe, then write the text where it can't send. Pick up to three people to text instead.",
+    where: "SOS, unsent texts and your people. After a few logged urges, Heal learns your hardest hour and checks in before it.",
+    cost: "Free. An AI reality check on every unsent text is Heal+.",
+  },
+  {
+    name: "Week 3: Make sense of it",
+    does: "One short writing prompt a day, and someone to talk it through with at 2am.",
+    where: "Today's step, the journal and the AI coach.",
+    cost: "Free with 5 coach messages a day. Heal+ adds far more messages and the full library.",
+  },
+  {
+    name: "Week 4: Rebuild",
+    does: "Check in each day, read back your week, and reach the 30-day milestone.",
+    where: "Check-ins, the weekly recap and the milestone ladder (1, 3, 7, 14, 30 days).",
+    cost: "Free. Heal's written read of your week and backup to a new phone are Heal+.",
+  },
+];
+
+const faq = [
+  {
+    question: "How do I start the new year after a breakup?",
+    answer:
+      "Pick one clear goal for January, like no contact for 30 days, and make it small enough to keep: quiet their corner of your phone in week 1, plan for the urges in week 2, make sense of it in week 3, and rebuild in week 4. The 2027 Reset Plan lays out those four weeks for you.",
+  },
+  {
+    question: "Is the 2027 Reset Plan free?",
+    answer:
+      "Yes. The plan is free, and most of it runs on the free Heal app. Heal+ adds more AI coach messages, a reality check on every unsent text, the full library, a written read of your week and backup.",
+  },
+  {
+    question: "What if I still have to talk to my ex?",
+    answer:
+      "Choose limited contact when you build the plan. Heal has short scripts for kids, work, shared friends and returning things, and contact you mark as necessary doesn't reset your count.",
+  },
+  {
+    question: "When should I start?",
+    answer:
+      "Any day. January 1 is a natural start, but so is the day after a slip. If you're already doing the Holiday No Contact Challenge, the plan picks up where it ends.",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/tools/new-year-reset/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "The 2027 Reset Plan: four weeks to start the new year after a breakup",
+    description,
+    totalTime: "P28D",
+    step: weeks.map((w, i) => ({ "@type": "HowToStep", position: i + 1, name: w.name, text: w.does })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Free Tools", item: new URL("/tools/", site).toString() },
+      { "@type": "ListItem", position: 3, name: "2027 Reset Plan", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="new-year-reset">
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
+      <header class="mb-10 space-y-5 text-center">
+        <p class="eyebrow text-lavender">Free · 4 weeks · from January 1 or any day</p>
+        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">Your 2027 Reset Plan</h1>
+        <p class="lede">
+          A four-week plan for the new year after a breakup, built from three questions: when it ended, whether you
+          still have to be in contact, and what's hardest right now.
+        </p>
+      </header>
+
+      <section class="card-raised space-y-5 p-6 text-center md:p-9" data-cta="tool">
+        <p class="text-[17px] leading-relaxed text-ink-soft">
+          Answer three questions and get your four weeks, with each step pointing at the tool in Heal that does it.
+        </p>
+        {
+          RESET_FUNNEL_URL ? (
+            <a href={RESET_FUNNEL_URL} data-funnel class="btn btn-primary">
+              Build my plan <ArrowRight />
+            </a>
+          ) : (
+            <a href={APP_STORE_URL} data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">
+              Start the plan in Heal <ArrowRight />
+            </a>
+          )
+        }
+      </section>
+
+      <div class="prose-heal mt-16">
+        <h2>How do you start the new year after a breakup?</h2>
+        <p>
+          Keep it to one goal and four small weeks. Quiet their corner of your phone first, then plan for the urges,
+          then make sense of what happened, then rebuild your days around yourself. A clean start date helps:
+          researchers call dates like January 1 "fresh start" moments, when people are more likely to begin a new habit
+          (Dai, Milkman and Riis, 2014).
+        </p>
+
+        <h2>The four weeks</h2>
+        <div class="not-prose space-y-4">
+          {
+            weeks.map((w) => (
+              <section class="card-raised space-y-2 p-5">
+                <h3 class="text-xl font-semibold text-ink">{w.name}</h3>
+                <p class="text-[16px] leading-relaxed text-ink-soft">{w.does}</p>
+                <p class="text-[15px] leading-relaxed text-ink-muted">
+                  <span class="text-ink">In Heal:</span> {w.where}
+                </p>
+                <p class="text-[15px] leading-relaxed text-ink-muted">
+                  <span class="text-ink">Cost:</span> {w.cost}
+                </p>
+              </section>
+            ))
+          }
+        </div>
+
+        <h2>What if the holidays went badly?</h2>
+        <p>
+          Then this is the plan for you. A slip over Christmas doesn't erase the days before it, and the count starts
+          again from today. If it happened recently, read{" "}
+          <a href="/blog/articles/i-broke-no-contact/">what to do if you broke no contact</a> first. If you're still in
+          the <a href="/tools/holiday-challenge/">Holiday No Contact Challenge</a>, finish it: the plan picks up on
+          January 2.
+        </p>
+
+        <h2>What if the urge to text them hits tonight?</h2>
+        <p>
+          Write it in our <a href="/tools/unsent-text/">unsent text tool</a> first. It looks like a chat with them, but
+          nothing sends, and it asks what you're hoping they'll say.
+        </p>
+
+        <h2>FAQ: the 2027 Reset Plan</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+      </div>
+
+      <aside class="mt-12 flex gap-4 rounded-[1.25rem] border border-[#f49aa7]/25 bg-[#f49aa7]/[0.06] p-5 text-sm leading-relaxed text-ink-soft">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#f49aa7]" aria-hidden="true"></span>
+        <span>
+          This plan is not a substitute for professional help. If you feel unsafe, visit{" "}
+          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-[#f49aa7] underline underline-offset-4">findahelpline.com</a>{" "}
+          to reach a local helpline.
+        </span>
+      </aside>
+    </div>
+  </main>
+  <Footer />
+</Base>

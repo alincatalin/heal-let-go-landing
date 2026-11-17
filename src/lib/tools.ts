@@ -9,6 +9,13 @@ export interface Tool {
 
 export const tools: Tool[] = [
   {
+    href: "/tools/new-year-reset/",
+    name: "2027 Reset Plan",
+    label: "4 weeks, from Jan 1",
+    blurb: "A four-week plan for the new year after a breakup, from three questions, with each step pointing at a tool in Heal.",
+    cta: "See the plan",
+  },
+  {
     href: "/tools/holiday-challenge/",
     name: "Holiday No Contact Challenge",
     label: "Nov 20 to Jan 1",
