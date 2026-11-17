@@ -115,7 +115,7 @@ You can just say:
 
 Then go to the bathroom, run cold water over your wrists, and breathe out slowly a few times. Come back when you're ready, or don't. Most families have seen worse over a turkey.
 
-If you want a plan for each hard day before it arrives, our free [Holiday Survival Plan](/tools/holiday-plan/) lets you pick the days you dread and gives you a short plan for each, including a line for when someone asks about your ex.
+If you want a plan for each hard day before it arrives, our free [Holiday Survival Plan](/tools/holiday-plan/) lets you pick the days you dread and gives you a short plan for each, including a line for when someone asks about your ex. And if you want help not texting them through the whole season, try the free [Holiday No Contact Challenge](/tools/holiday-challenge/): one small task a day from November 20 to January 1.
 
 ## What If My Family Still Talks to My Ex?
 

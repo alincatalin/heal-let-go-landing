@@ -32,7 +32,7 @@ This guide goes through the season in order, from Thanksgiving to New Year's Eve
 | Days alone | The empty hours | Plan the day in blocks, mute him, get outside |
 | New Year's Eve | Midnight, couples and a few drinks | Archive the chat before you go, or skip midnight |
 
-Want it written down for your own dates? Our free [Holiday Survival Plan](/tools/holiday-plan/) makes a short plan for each day you're dreading, with a line ready for when someone asks.
+Want it written down for your own dates? Our free [Holiday Survival Plan](/tools/holiday-plan/) makes a short plan for each day you're dreading, with a line ready for when someone asks. If you'd rather not face the season one day at a time on your own, the free [Holiday No Contact Challenge](/tools/holiday-challenge/) gives you one small task a day from November 20 to January 1.
 
 ## Why Are the Holidays So Hard After a Breakup?
 
