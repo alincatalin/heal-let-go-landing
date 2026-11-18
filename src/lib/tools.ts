@@ -114,6 +114,16 @@ export const tools: Tool[] = [
     blurb: "Eight quick questions and an honest answer, plus what to do instead if now isn't the time.",
     cta: "Take the quiz",
   },
+  {
+    href: "/tools/is-my-ex-hoovering-me/",
+    group: "now",
+    useWhen: "Someone's ex has suddenly reappeared (a text, story views, likes) and they want to know if it's hoovering, breadcrumbing, orbiting or sincere.",
+    updated: "2026-11-18",
+    name: "Is My Ex Hoovering Me? Quiz",
+    label: "6 questions",
+    blurb: "They're back in your phone. Tell hoovering, breadcrumbing and orbiting from a sincere reach-out, and know what to do next.",
+    cta: "Take the quiz",
+  }
 ];
 
 // The one free tool boxed under each post: the post's own `tool:` front matter, else its cluster's default.

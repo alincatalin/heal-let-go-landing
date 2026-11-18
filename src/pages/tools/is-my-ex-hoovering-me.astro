@@ -1,0 +1,366 @@
+---
+import { ArrowLeft, ArrowRight, PenLine, RotateCcw } from "@lucide/astro";
+import Base from "../../layouts/Base.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import Footer from "../../components/Footer.astro";
+import MoreTools from "../../components/MoreTools.astro";
+import StoreButtons from "../../components/StoreButtons.astro";
+import { appStorePage } from "../../lib/store";
+
+const title = "Is My Ex Hoovering Me? Free 6-Question Quiz";
+const description =
+  "Your ex is back in your phone. Is it hoovering, breadcrumbing, orbiting, or a sincere reach-out? Six quick questions, an honest read, and what to do next.";
+
+// h = hoovering, b = breadcrumbing, o = orbiting, g = a genuine reach-out. Each option adds a point to one or two.
+const questions = [
+  {
+    id: "how",
+    text: "How did they show up?",
+    options: [
+      { label: "A message out of nowhere after weeks of silence", t: "h" },
+      { label: "They like my posts or watch my stories, but never message", t: "o" },
+      { label: "Every so often a flirty or vague message that goes nowhere", t: "b" },
+      { label: "A clear message asking if we could talk properly", t: "g" },
+      { label: "Through friends or family, or a reason to need me", t: "h" },
+    ],
+  },
+  {
+    id: "when",
+    text: "When did it happen?",
+    options: [
+      { label: "On a birthday, an anniversary or a holiday", t: "h" },
+      { label: "Right when I started doing better, or posted something happy", t: "h" },
+      { label: "At random. No pattern, often late at night", t: "b" },
+      { label: "After a real gap, at a calm time of day", t: "g" },
+      { label: "It's constant. They're always around online", t: "o" },
+    ],
+  },
+  {
+    id: "what",
+    text: "What did they say or do?",
+    options: [
+      { label: "\"I miss you\", \"I've changed\" or \"I can't stop thinking about you\"", t: "h" },
+      { label: "\"Hey\", a meme, or \"saw this and thought of you\"", t: "b" },
+      { label: "Nothing. They just watch", t: "o" },
+      { label: "An apology that names what they did, without asking for anything", t: "g" },
+      { label: "A crisis or emergency that needs me right now", t: "h" },
+    ],
+  },
+  {
+    id: "reply",
+    text: "If you replied, what happened next?",
+    options: [
+      { label: "Warm for a day, then distant again", t: "b" },
+      { label: "Intense at first, then back to how things were", t: "h" },
+      { label: "I haven't replied", t: "" },
+      { label: "Consistent and respectful, no pressure", t: "g" },
+    ],
+  },
+  {
+    id: "before",
+    text: "Has this happened before?",
+    options: [
+      { label: "Yes, after past breakups or fights, more than once", t: "h" },
+      { label: "They pop up every few weeks, always the same way", t: "b" },
+      { label: "They've never stopped watching what I post", t: "o" },
+      { label: "No, this is the first time", t: "g" },
+    ],
+  },
+  {
+    id: "feel",
+    text: "How do you feel afterwards?",
+    options: [
+      { label: "Pulled back in, and a bit confused", t: "h" },
+      { label: "Hopeful, then let down", t: "b" },
+      { label: "Watched, on edge", t: "o" },
+      { label: "Calm. It felt clear and respectful", t: "g" },
+    ],
+  },
+];
+
+const results = [
+  {
+    id: "h",
+    title: "This looks like hoovering.",
+    text: "Hoovering is when an ex tries to pull you back in, often right when you're getting better: a sudden \"I miss you\", a promise they've changed, an emergency only you can help with. It tends to repeat, and it's about getting you back, not about what you need.",
+    steps: [
+      "Don't reply tonight. A reply is what the message is fishing for.",
+      "Write what you want to say somewhere it can't send, then read it tomorrow.",
+      "If it keeps happening, mute or block. You don't owe a reply.",
+    ],
+    post: { href: "/blog/articles/what-is-hoovering/", label: "What is hoovering?" },
+  },
+  {
+    id: "b",
+    title: "This looks like breadcrumbing.",
+    text: "Breadcrumbing is small, irregular bits of attention that keep you hoping without ever turning into anything: a \"hey\", a meme, a late-night message that goes quiet the next day. It keeps you available on their terms.",
+    steps: [
+      "Notice the pattern: every crumb is followed by silence.",
+      "Leave it on read, or answer once, plainly, and see if anything real follows.",
+      "Mute them so the crumbs stop landing on your lock screen.",
+    ],
+    post: { href: "/blog/articles/what-is-breadcrumbing/", label: "What is breadcrumbing?" },
+  },
+  {
+    id: "o",
+    title: "This looks like orbiting.",
+    text: "Orbiting is when an ex stays in your online life without talking to you: viewing every story, liking posts, never sending a message. It keeps them on your mind, and it's hard to move on with them always in the corner of your screen.",
+    steps: [
+      "Hide your stories from them, or switch your account to close friends for a while.",
+      "Stop checking who viewed. That check feeds the loop.",
+      "If seeing them there hurts, block. It's allowed.",
+    ],
+    post: { href: "/blog/articles/what-is-orbiting/", label: "What is orbiting?" },
+  },
+  {
+    id: "g",
+    title: "This may be a sincere reach-out.",
+    text: "Some exes do reach out for real reasons: a real apology, a calm check-in, closure. Signs it's sincere: it names what happened, it doesn't push for a reply, and it doesn't come with drama or a crisis. Sincere doesn't mean you have to answer.",
+    steps: [
+      "Wait a day before you decide anything.",
+      "Ask what you'd want to happen next, and whether you'd be okay with no further contact.",
+      "If you reply, keep it short and in daylight.",
+    ],
+    post: { href: "/blog/articles/should-i-text-my-ex/", label: "Should I text my ex back?" },
+  },
+  {
+    id: "m",
+    title: "It's mixed, and that's the answer too.",
+    text: "Your answers point more than one way. Mixed signals usually mean the contact is about how they feel in the moment, not a clear decision about you. That's not something you have to solve tonight.",
+    steps: [
+      "Don't reply until you know what you'd want from it.",
+      "Write the reply somewhere it can't send, and read it back tomorrow.",
+      "Read up on hoovering, breadcrumbing and orbiting and see which one fits.",
+    ],
+    post: { href: "/blog/articles/what-is-hoovering/", label: "Hoovering, breadcrumbing and orbiting" },
+  },
+];
+
+const faq = [
+  {
+    question: "What does hoovering mean?",
+    answer:
+      "Hoovering is when an ex, often one who was controlling or hot-and-cold, tries to pull you back into the relationship after it ended, like a vacuum cleaner. It shows up as sudden messages, promises to change, guilt, or a crisis that needs you, often when you've started to move on.",
+  },
+  {
+    question: "What's the difference between hoovering, breadcrumbing and orbiting?",
+    answer:
+      "Hoovering tries to get you back. Breadcrumbing gives you just enough attention to keep you hoping, without commitment. Orbiting is watching your online life without talking to you. All three keep you tied to someone who isn't offering a real relationship.",
+  },
+  {
+    question: "Should I reply to an ex who's hoovering me?",
+    answer:
+      "Usually not, at least not right away. A reply is what the message is designed to get. Write what you'd say somewhere it can't send, wait a day, and if the pattern repeats, mute or block them.",
+  },
+  {
+    question: "Can this quiz tell me what my ex really wants?",
+    answer:
+      "No. It can only look at the pattern of what they did and how it left you feeling. Use it as a second opinion, not a verdict. If the relationship involved control, fear or harm, talk to someone you trust or a helpline.",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/tools/is-my-ex-hoovering-me/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Is My Ex Hoovering Me? Quiz",
+    url,
+    description,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Any",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    publisher: { "@type": "Organization", "@id": `${site}#organization`, name: "Heal", url: site },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Free Tools", item: new URL("/tools/", site).toString() },
+      { "@type": "ListItem", position: 3, name: "Is My Ex Hoovering Me?", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="is-my-ex-hoovering-me" storePage={appStorePage("texting-your-ex")}>
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
+      <header class="mb-10 space-y-5 text-center">
+        <p class="eyebrow text-lavender">Free quiz · 6 questions</p>
+        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">Is my ex hoovering me?</h1>
+        <p class="lede">They're back in your phone. Six quick questions to tell hoovering, breadcrumbing and orbiting from a sincere reach-out.</p>
+      </header>
+
+      <div id="quiz" class="card-raised scroll-mt-24 p-6 md:p-9">
+        <div class="mb-6 flex items-center justify-between gap-4 text-sm text-ink-muted">
+          <span id="quiz-count" aria-live="polite">Question 1 of {questions.length}</span>
+          <button id="quiz-back" type="button" class="btn btn-quiet h-9 px-3 text-sm" hidden><ArrowLeft /> Back</button>
+        </div>
+        <div class="mb-8 h-1.5 overflow-hidden rounded-full bg-surface-3" aria-hidden="true">
+          <div id="quiz-bar" class="h-full rounded-full bg-[#a48bf7] transition-all duration-300" style={`width: ${100 / questions.length}%`}></div>
+        </div>
+        <form id="quiz-form">
+          {
+            questions.map((q, qi) => (
+              <fieldset data-step={qi} hidden={qi > 0} class="space-y-3">
+                <legend class="mb-5 font-display text-2xl leading-snug text-ink md:text-[1.7rem]">{q.text}</legend>
+                {q.options.map((o, oi) => (
+                  <label class="quiz-option card card-link flex cursor-pointer items-center gap-4 px-5 py-4 text-[16px] text-ink-soft">
+                    <input type="radio" name={q.id} value={oi} data-t={o.t} class="h-4 w-4 shrink-0 accent-[#a48bf7]" />
+                    <span>{o.label}</span>
+                  </label>
+                ))}
+              </fieldset>
+            ))
+          }
+        </form>
+
+        {
+          results.map((r) => (
+            <section data-result={r.id} hidden class="space-y-5" aria-live="polite">
+              <p class="eyebrow text-lavender">Your answer</p>
+              <h2 class="text-3xl leading-tight md:text-4xl">{r.title}</h2>
+              <p class="text-[17px] leading-relaxed text-ink-soft">{r.text}</p>
+              <ul class="space-y-3 text-[16px] text-ink-soft">
+                {r.steps.map((s) => (
+                  <li class="flex gap-3">
+                    <span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-lavender" />
+                    <span>{s}</span>
+                  </li>
+                ))}
+              </ul>
+              <div class="flex flex-wrap gap-3">
+                <a href="/tools/unsent-text/" class="btn btn-primary"><PenLine /> Write your reply where it can't send</a>
+                <a href={r.post.href} class="btn btn-quiet">{r.post.label} <ArrowRight /></a>
+              </div>
+              <div class="rounded-[1.25rem] border border-[#a48bf7]/25 bg-surface-1 p-5" data-cta="tool">
+                <p class="text-[15px] font-semibold text-ink">When their name lights up your phone</p>
+                <p class="mt-1 text-[15px] leading-relaxed text-ink-soft">
+                  Heal has an SOS button for the minute you want to answer, a chat that looks like theirs but never sends,
+                  and a coach that helps you see the pattern. Free to start.
+                </p>
+                <StoreButtons matchDevice class="mt-4" />
+              </div>
+              <button type="button" data-restart class="btn btn-quiet h-10 px-3 text-sm"><RotateCcw /> Take it again</button>
+            </section>
+          ))
+        }
+      </div>
+
+      <div class="prose-heal mt-16">
+        <h2>Hoovering, breadcrumbing, orbiting: what's the difference?</h2>
+        <table>
+          <thead><tr><th></th><th>What they do</th><th>What it does to you</th><th>Read more</th></tr></thead>
+          <tbody>
+            <tr><td>Hoovering</td><td>Try to pull you back in: "I've changed", guilt, a crisis</td><td>Restarts the cycle, often just as you were getting better</td><td><a href="/blog/articles/what-is-hoovering/">What is hoovering?</a></td></tr>
+            <tr><td>Breadcrumbing</td><td>Small, irregular bits of attention that go nowhere</td><td>Keeps you hoping and available</td><td><a href="/blog/articles/what-is-breadcrumbing/">What is breadcrumbing?</a></td></tr>
+            <tr><td>Orbiting</td><td>Watch your stories and posts, never message</td><td>Keeps them on your mind</td><td><a href="/blog/articles/what-is-orbiting/">What is orbiting?</a></td></tr>
+            <tr><td>Sincere reach-out</td><td>A clear apology or check-in, no pressure</td><td>Lets you decide calmly</td><td><a href="/blog/articles/should-i-text-my-ex/">Should I text my ex?</a></td></tr>
+          </tbody>
+        </table>
+        <p>
+          All three keep you guessing. Attention that comes and goes leaves you waiting for the next bit, which is why a
+          single "hey" after weeks of silence can undo a good week. If you're deciding whether to
+          cut them off completely, read <a href="/blog/articles/should-i-block-my-ex/">should I block my ex?</a>, and if
+          you're doing no contact, see where you are on the <a href="/tools/no-contact-counter/">no contact counter</a>.
+        </p>
+
+        <h2>FAQ: Is my ex hoovering me?</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+      </div>
+
+      <aside class="mt-12 flex gap-4 rounded-[1.25rem] border border-[#f49aa7]/25 bg-[#f49aa7]/[0.06] p-5 text-sm leading-relaxed text-ink-soft">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#f49aa7]" aria-hidden="true"></span>
+        <span>
+          This quiz is not a substitute for professional help. If your ex controlled, scared or hurt you, or you feel unsafe, visit{" "}
+          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-[#f49aa7] underline underline-offset-4">findahelpline.com</a>{" "}
+          to reach a local helpline.
+        </span>
+      </aside>
+    </div>
+  </main>
+  <MoreTools current="/tools/is-my-ex-hoovering-me/" />
+  <Footer />
+</Base>
+
+<script>
+  type Umami = { track: (event: string, data?: Record<string, string>) => void };
+  const form = document.getElementById("quiz-form") as HTMLFormElement;
+  const steps = [...form.querySelectorAll<HTMLFieldSetElement>("fieldset[data-step]")];
+  const results = [...document.querySelectorAll<HTMLElement>("[data-result]")];
+  const count = document.getElementById("quiz-count")!;
+  const bar = document.getElementById("quiz-bar")!;
+  const back = document.getElementById("quiz-back")!;
+  let current = 0;
+
+  function show(index: number) {
+    current = index;
+    steps.forEach((step, i) => (step.hidden = i !== index));
+    results.forEach((r) => (r.hidden = true));
+    form.hidden = false;
+    count.textContent = `Question ${index + 1} of ${steps.length}`;
+    bar.style.width = `${((index + 1) / steps.length) * 100}%`;
+    back.hidden = index === 0;
+  }
+
+  function finish() {
+    const tally: Record<string, number> = { h: 0, b: 0, o: 0, g: 0 };
+    form.querySelectorAll<HTMLInputElement>("input:checked").forEach((i) => {
+      if (i.dataset.t) tally[i.dataset.t] += 1;
+    });
+    const sorted = Object.entries(tally).sort((a, b) => b[1] - a[1]);
+    // A clear lead wins; a tie at the top is "mixed". "Sincere" needs a clear majority, since one calm answer isn't enough.
+    let result = sorted[0][1] > sorted[1][1] ? sorted[0][0] : "m";
+    if (result === "g" && tally.g < 4) result = "m";
+    form.hidden = true;
+    back.hidden = true;
+    count.textContent = "Your result";
+    bar.style.width = "100%";
+    results.forEach((r) => (r.hidden = r.dataset.result !== result));
+    document.getElementById("quiz")!.scrollIntoView({ behavior: "smooth", block: "start" });
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "is-my-ex-hoovering-me", result });
+  }
+
+  form.addEventListener("change", () => {
+    window.setTimeout(() => (current < steps.length - 1 ? show(current + 1) : finish()), 220);
+  });
+  back.addEventListener("click", () => show(Math.max(0, current - 1)));
+  document.querySelectorAll("[data-restart]").forEach((b) =>
+    b.addEventListener("click", () => {
+      form.reset();
+      show(0);
+    }),
+  );
+</script>
+
+<style>
+  .quiz-option:has(input:checked) {
+    border-color: rgba(164, 139, 247, 0.55);
+    color: var(--ink);
+  }
+  .quiz-option:has(input:focus-visible) {
+    outline: 2px solid var(--lavender-hex);
+    outline-offset: 2px;
+  }
+</style>
