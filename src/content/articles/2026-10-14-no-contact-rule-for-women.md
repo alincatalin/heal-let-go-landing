@@ -9,6 +9,7 @@ answer: "The no contact rule for women is the same as for anyone: at least 30 da
 author: "Heal Team"
 updated: "2026-10-28"
 keywords: "no contact rule for women, no contact rule female psychology, female psychology during no contact, no contact rule for women rules, how long should a woman do no contact, does no contact work on men, no contact rule after breakup woman, 30 day no contact rule female psychology"
+tool: "no-contact-challenge"
 cluster: "no-contact"
 cta:
   title: "Count every day you choose yourself"

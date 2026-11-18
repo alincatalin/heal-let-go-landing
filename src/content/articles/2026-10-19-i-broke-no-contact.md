@@ -8,6 +8,7 @@ excerpt: "You texted them, or answered, or called. Here's what to do in the next
 answer: "Breaking no contact doesn't erase the days before it. Don't send a second message, don't wait by your phone for a reply, and start counting again from today. Then look at what set it off, like the time, a drink or a photo, and plan for that exact moment next time."
 author: "Heal Team"
 keywords: "broke no contact, i broke no contact, texted my ex during no contact, broke no contact now what, what to do after breaking no contact, does breaking no contact reset"
+tool: "no-contact-challenge"
 cluster: "no-contact"
 cta:
   title: "One slip doesn't erase the days you made it"

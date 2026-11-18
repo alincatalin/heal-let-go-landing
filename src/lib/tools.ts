@@ -45,6 +45,16 @@ export const tools: Tool[] = [
     cta: "See today's task",
   },
   {
+    href: "/tools/no-contact-challenge/",
+    group: "track",
+    useWhen: "Someone is starting no contact and wants structure: a 30-day challenge with one small task a day, starting any day.",
+    updated: "2026-11-18",
+    name: "30-Day No Contact Challenge",
+    label: "Start any day",
+    blurb: "Thirty days without contacting your ex, with one five-minute task a day and calendar reminders. Restart any time.",
+    cta: "See today's task",
+  },
+  {
     href: "/tools/year-wrapped/",
     group: "season",
     useWhen: "Someone wants to look back on their breakup year or share their progress on Instagram or TikTok stories.",

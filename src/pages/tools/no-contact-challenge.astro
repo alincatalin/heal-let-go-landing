@@ -1,0 +1,389 @@
+---
+import { ArrowRight, CalendarPlus, RotateCcw, Share2 } from "@lucide/astro";
+import Base from "../../layouts/Base.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import Footer from "../../components/Footer.astro";
+import MoreTools from "../../components/MoreTools.astro";
+import StoreButtons from "../../components/StoreButtons.astro";
+import { appStorePage } from "../../lib/store";
+
+const title = "30-Day No Contact Challenge: One Small Task a Day | Free";
+const description =
+  "A free 30-day no contact challenge you can start any day: one small task a day, from muting their chat to writing your reasons, with calendar reminders. No sign-up.";
+
+// Day 1 is the day the reader starts. Week 1 removes the easy triggers, week 2 gets through the urges,
+// week 3 makes sense of it, week 4 rebuilds. Each task takes about five minutes.
+const prompts = [
+  "Write down why you're doing this, in one sentence. Keep it where you'll see it.",
+  "Archive or mute your chat with them. You don't have to delete anything. Just move it out of sight.",
+  "Tell one person you're doing this. Pick the person you'll text instead of them.",
+  "Mute or unfollow them on one app. Just one today.",
+  "Charge your phone outside the bedroom tonight.",
+  "Write the text you want to send somewhere it can't send. Then close it.",
+  "One week. Do something small to mark it: a meal you love, a walk somewhere new.",
+  "Next time the urge comes, don't act on it. Time how long it takes to fade.",
+  "Write down three things you don't miss about them. Be specific.",
+  "Find your hard hour. Most urges come at the same time each day. Plan something for it.",
+  "Put one of their things out of sight. A hoodie, a mug, a photo.",
+  "Make a playlist with no songs that remind you of them.",
+  "If you check their profile today, notice how you feel after. Write it down.",
+  "Two weeks. Read your sentence from day 1. Is it still true?",
+  "Message a friend you've drifted from. Not about the breakup.",
+  "Write what you'd tell a friend in your exact situation. Then read it as if it's for you.",
+  "Name one thing the relationship taught you about what you need.",
+  "Write down one moment that hurt, without softening it. Then close the page.",
+  "Try one new thing: a class, a recipe, a different way home.",
+  "Plan this weekend: one thing with people, one thing on your own that you enjoy.",
+  "Three weeks. Count the urges you rode out. Every one of them counts.",
+  "Do one thing your future self will thank you for. A workout, a clean room, an appointment booked.",
+  "Pick up one thing you did before them, or stopped doing during it.",
+  "Take their photos out of your favorites and memories widgets.",
+  "Write down what you'd want from a partner next time. Three lines is enough.",
+  "See people today, even for an hour.",
+  "Buy or make one small thing for yourself.",
+  "Decide what happens after day 30: keep going to 60, or set your own next target.",
+  "Write a short goodbye to the relationship. Don't send it.",
+  "Day 30. You did a month. Write down how that feels, and what helped most.",
+];
+const total = prompts.length;
+
+const faq = [
+  {
+    question: "What is the 30-day no contact challenge?",
+    answer:
+      "Thirty days of not contacting your ex, with one small task a day. Week 1 removes the easy triggers, week 2 gets you through the urges, week 3 helps you make sense of it, and week 4 rebuilds your days. You can start on any day.",
+  },
+  {
+    question: "Why 30 days?",
+    answer:
+      "Thirty days is the most common minimum for no contact. It's long enough for the first, sharpest wave of urges to pass and short enough to feel doable. Many people keep going to 60 or 90 days afterwards.",
+  },
+  {
+    question: "What if I break no contact during the challenge?",
+    answer:
+      "Restart from day 1, but don't throw away what you learned. Notice what time it was and what set it off, and plan for that next time. Our guide on what to do if you broke no contact covers the morning after.",
+  },
+  {
+    question: "Is anything saved or sent?",
+    answer:
+      "Your start date is kept only in your own browser so today's task is ready when you come back. Nothing is sent to us. The calendar file is made on your device.",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/tools/no-contact-challenge/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "30-Day No Contact Challenge",
+    url,
+    description,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Any",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    publisher: { "@type": "Organization", "@id": `${site}#organization`, name: "Heal", url: site },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Free Tools", item: new URL("/tools/", site).toString() },
+      { "@type": "ListItem", position: 3, name: "30-Day No Contact Challenge", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+const weeks = [
+  { name: "Week 1: Quiet their corner", days: prompts.slice(0, 7) },
+  { name: "Week 2: Get through the urges", days: prompts.slice(7, 14) },
+  { name: "Week 3: Make sense of it", days: prompts.slice(14, 21) },
+  { name: "Week 4 and beyond: Rebuild", days: prompts.slice(21) },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="no-contact-challenge" storePage={appStorePage("no-contact")}>
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
+      <header class="mb-10 space-y-5 text-center">
+        <p class="eyebrow text-lavender">Free · start any day · no sign-up</p>
+        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">The 30-Day No Contact Challenge</h1>
+        <p class="lede">
+          Thirty days without contacting your ex, with one small task a day. Most take five minutes. Start today.
+        </p>
+      </header>
+
+      <section id="start" class="card-raised space-y-5 p-6 md:p-9">
+        <label class="block space-y-3">
+          <span class="text-xl font-semibold text-ink">When did you start (or when will you)?</span>
+          <input id="start-date" type="date" class="w-full rounded-2xl bg-surface-1 px-4 py-3 text-[16px] text-ink focus:outline-none focus:ring-2 focus:ring-[#a48bf7]/50" />
+        </label>
+        <button type="button" id="begin" class="btn btn-primary w-full justify-center">Show today's task <ArrowRight /></button>
+      </section>
+
+      <section id="today" class="card-raised mt-6 space-y-5 p-6 text-center md:p-9" hidden aria-live="polite">
+        <p id="today-eyebrow" class="eyebrow text-lavender">Day 1 of 30</p>
+        <h2 id="today-title" class="text-3xl leading-tight md:text-4xl">Today's task</h2>
+        <p id="today-text" class="mx-auto max-w-[32rem] text-[19px] leading-relaxed text-ink"></p>
+        <div class="mx-auto h-2 max-w-[24rem] overflow-hidden rounded-full bg-surface-1" aria-hidden="true">
+          <div id="today-bar" class="h-full rounded-full bg-[#a48bf7]" style="width: 3%"></div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-3 pt-2">
+          <button type="button" id="join" class="btn btn-primary"><CalendarPlus /> Add daily reminders</button>
+          <button type="button" id="share" class="btn btn-quiet"><Share2 /> Do it with a friend</button>
+          <button type="button" id="restart" class="btn btn-quiet"><RotateCcw /> I slipped, restart</button>
+        </div>
+        <p id="msg" class="text-sm text-ink-muted" hidden></p>
+      </section>
+
+      <div class="card-raised mt-6 space-y-4 p-6 md:p-8" data-cta="tool">
+        <p class="eyebrow text-lavender">For the hard minutes in between</p>
+        <p class="text-[17px] leading-relaxed text-ink-soft">
+          A task a day helps. The urge doesn't wait for tomorrow's task, though. Heal has an SOS button for that minute,
+          a chat that looks like theirs but never sends, and a tracker that keeps your total if you slip. Free to start.
+        </p>
+        <StoreButtons matchDevice />
+      </div>
+
+      <div class="prose-heal mt-16">
+        <h2>How does the 30-day no contact challenge work?</h2>
+        <p>
+          For 30 days, you don't contact your ex: no texts, calls, DMs, comments, likes or messages through friends. Each
+          day has one small task. Pick your start date, come back each day for the task, or add all 30 to your calendar
+          and get each one at 9am. If you want to see your day count and milestones too, use the{" "}
+          <a href="/tools/no-contact-counter/">no contact counter</a>.
+        </p>
+
+        <h2>The 30 tasks</h2>
+        <table>
+          <thead><tr><th>Week</th><th>Focus</th><th>Example task</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Quiet their corner of your phone</td><td>Archive or mute their chat</td></tr>
+            <tr><td>2</td><td>Get through the urges</td><td>Time how long one urge takes to fade</td></tr>
+            <tr><td>3</td><td>Make sense of it</td><td>Name one thing it taught you about what you need</td></tr>
+            <tr><td>4</td><td>Rebuild</td><td>Pick up one thing you did before them</td></tr>
+          </tbody>
+        </table>
+        {
+          weeks.map((week, w) => (
+            <details class="challenge-week" open={w === 0}>
+              <summary>{week.name}</summary>
+              <ol start={w * 7 + 1}>
+                {week.days.map((d) => <li>{d}</li>)}
+              </ol>
+            </details>
+          ))
+        }
+
+        <h2>Why small daily tasks?</h2>
+        <p>
+          The urge to contact an ex is strongest early, when rejection still lights up the brain's reward and craving
+          systems (<a href="https://doi.org/10.1152/jn.00784.2009">Fisher et al., 2010</a>). Willpower alone runs out.
+          Small, specific actions work better: deciding in advance what you'll do in a tricky moment makes people much
+          more likely to follow through (<a href="https://doi.org/10.1016/S0065-2601(06)38002-1">Gollwitzer and Sheeran,
+          2006</a>). Each task here is one of those decisions, made before the hard moment arrives.
+        </p>
+        <p>
+          New to no contact? Read the <a href="/blog/articles/no-contact-rule-guide/">no contact rule guide</a> first, and
+          see what each stage is like in <a href="/blog/articles/no-contact-day-by-day/">no contact day by day</a>.
+        </p>
+
+        <h2>FAQ: 30-day no contact challenge</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+
+        <h2>Sources</h2>
+        <ul>
+          <li>Fisher, H. E., Brown, L. L., Aron, A., Strong, G., and Mashek, D. (2010). Reward, addiction, and emotion regulation systems associated with rejection in love. <em>Journal of Neurophysiology</em>, 104(1), 51 to 60.</li>
+          <li>Gollwitzer, P. M., and Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. <em>Advances in Experimental Social Psychology</em>, 38, 69 to 119.</li>
+        </ul>
+      </div>
+
+      <aside class="mt-12 flex gap-4 rounded-[1.25rem] border border-[#f49aa7]/25 bg-[#f49aa7]/[0.06] p-5 text-sm leading-relaxed text-ink-soft">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#f49aa7]" aria-hidden="true"></span>
+        <span>
+          This challenge is not a substitute for professional help. If you're struggling or feel unsafe, visit{" "}
+          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer" class="text-[#f49aa7] underline underline-offset-4">findahelpline.com</a>{" "}
+          to reach a local helpline.
+        </span>
+      </aside>
+    </div>
+  </main>
+  <MoreTools current="/tools/no-contact-challenge/" />
+  <Footer />
+</Base>
+
+<script is:inline type="application/json" id="challenge-data" set:html={JSON.stringify({ prompts })} />
+
+<script>
+  type Umami = { track: (event: string, data?: Record<string, string>) => void };
+  const { prompts } = JSON.parse(document.getElementById("challenge-data")!.textContent!) as { prompts: string[] };
+  const total = prompts.length;
+  const track = (result: string) =>
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "no-contact-challenge", result });
+  const KEY = "heal-challenge-start";
+  const load = () => {
+    try { return localStorage.getItem(KEY) ?? ""; } catch { return ""; }
+  };
+  const save = (v: string) => {
+    try { localStorage.setItem(KEY, v); } catch { /* private mode */ }
+  };
+
+  const input = document.getElementById("start-date") as HTMLInputElement;
+  const todaySection = document.getElementById("today")!;
+  const msg = document.getElementById("msg")!;
+  const todayIso = new Date().toLocaleDateString("en-CA");
+  input.value = todayIso;
+
+  const parse = (iso: string) => {
+    const [y, m, d] = iso.split("-").map(Number);
+    return new Date(y, m - 1, d);
+  };
+  let startIso = todayIso;
+
+  function render() {
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+    const index = Math.round((now.getTime() - parse(startIso).getTime()) / 86400000);
+    const eyebrow = document.getElementById("today-eyebrow")!;
+    const heading = document.getElementById("today-title")!;
+    const text = document.getElementById("today-text")!;
+    const bar = document.getElementById("today-bar")!;
+    if (index < 0) {
+      eyebrow.textContent = `Starts in ${-index} ${index === -1 ? "day" : "days"}`;
+      heading.textContent = "Day 1's task";
+      text.textContent = prompts[0];
+      bar.style.width = "0%";
+    } else if (index < total) {
+      eyebrow.textContent = `Day ${index + 1} of ${total}`;
+      heading.textContent = "Today's task";
+      text.textContent = prompts[index];
+      bar.style.width = `${Math.max(3, ((index + 1) / total) * 100)}%`;
+    } else {
+      eyebrow.textContent = `Day ${index + 1} · challenge complete`;
+      heading.textContent = "You did 30 days";
+      text.textContent = "Keep going if it helps. Many people aim for 60 or 90. Your day count is on the no contact counter.";
+      bar.style.width = "100%";
+    }
+    todaySection.hidden = false;
+  }
+
+  document.getElementById("begin")!.addEventListener("click", () => {
+    if (!input.value) return;
+    startIso = input.value;
+    save(startIso);
+    render();
+    todaySection.scrollIntoView({ behavior: "smooth", block: "start" });
+    track("started");
+  });
+
+  document.getElementById("restart")!.addEventListener("click", () => {
+    startIso = todayIso;
+    input.value = todayIso;
+    save(startIso);
+    render();
+    msg.textContent = "Day 1 again. The days before still happened. Notice what set it off, and plan for that hour.";
+    msg.hidden = false;
+    track("restarted");
+  });
+
+  function ics() {
+    const start = parse(startIso);
+    const pad = (n: number) => String(n).padStart(2, "0");
+    const ymd = (date: Date) => `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}`;
+    const esc = (s: string) => s.replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/([,;])/g, "\\$1");
+    const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+    const events = prompts.flatMap((prompt, i) => {
+      const date = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
+      if (date < now) return [];
+      const day = ymd(date);
+      return [
+        "BEGIN:VEVENT",
+        `UID:no-contact-challenge-${startIso}-${i + 1}@tryheal.app`,
+        `DTSTAMP:${stamp}`,
+        `DTSTART:${day}T090000`,
+        `DTEND:${day}T091000`,
+        `SUMMARY:${esc(`No contact day ${i + 1} of ${total}`)}`,
+        `DESCRIPTION:${esc(`${prompt}\n\nAbout to text them? Write it here instead: tryheal.app/tools/unsent-text/`)}`,
+        "BEGIN:VALARM",
+        "ACTION:DISPLAY",
+        `DESCRIPTION:${esc(`No contact day ${i + 1}`)}`,
+        "TRIGGER:PT0M",
+        "END:VALARM",
+        "END:VEVENT",
+      ];
+    });
+    return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Heal//No Contact Challenge//EN", "CALSCALE:GREGORIAN", ...events, "END:VCALENDAR"].join("\r\n");
+  }
+
+  document.getElementById("join")!.addEventListener("click", () => {
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(new Blob([ics()], { type: "text/calendar" }));
+    link.download = "30-day-no-contact-challenge.ics";
+    link.click();
+    URL.revokeObjectURL(link.href);
+    msg.textContent = "Open the file to add the reminders. Each day's task arrives at 9am.";
+    msg.hidden = false;
+    track("joined");
+  });
+
+  document.getElementById("share")!.addEventListener("click", async () => {
+    const data = {
+      title: "30-Day No Contact Challenge",
+      text: "I'm doing 30 days of no contact, one small task a day. Do it with me:",
+      url: location.origin + location.pathname,
+    };
+    try {
+      if (navigator.share) await navigator.share(data);
+      else {
+        await navigator.clipboard.writeText(`${data.text} ${data.url}`);
+        msg.textContent = "Link copied.";
+        msg.hidden = false;
+      }
+      track("shared");
+    } catch {
+      // Closing the share sheet throws; nothing to report.
+    }
+  });
+
+  const saved = load();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(saved)) {
+    startIso = saved;
+    input.value = saved;
+    render();
+  }
+</script>
+
+<style>
+  .challenge-week {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.75rem 0;
+  }
+  .challenge-week summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .challenge-week ol {
+    margin-top: 0.75rem;
+  }
+</style>

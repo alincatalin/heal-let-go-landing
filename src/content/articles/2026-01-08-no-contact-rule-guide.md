@@ -9,6 +9,7 @@ excerpt: "The no contact rule means no texts, calls, likes or story views with y
 answer: "The no contact rule means cutting off all communication with your ex for a set period: no texts, calls, DMs, likes or story views. Thirty days is the most common minimum, 60 suits most breakups, and 90 helps after long or on-and-off relationships. If you share kids, a home or a job, use limited contact instead."
 author: "Heal Team"
 keywords: "no contact rule, no contact rule guide, what is no contact rule, no contact after breakup, how to do no contact, no contact rule explained, no contact rule benefits"
+tool: "no-contact-challenge"
 cluster: "no-contact"
 pillar: true
 cta:
