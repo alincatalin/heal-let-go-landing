@@ -11,7 +11,7 @@ import slips from "../assets/screens/progress-slips.png";
 
 // App-intent landing page for "no contact app" / "free no contact app" searches (GSC Jul to Oct 2026).
 // Competitor facts come from each app's US store listing, checked on the date below.
-const checked = "November 6, 2026";
+const checked = "November 18, 2026";
 const title = "Free No Contact App: Day Counter and SOS Button | Heal";
 const description =
   "Heal is a free no contact app for iPhone and Android: a day counter that keeps your total if you slip, an SOS button for the urge and a chat that never sends.";
@@ -142,7 +142,10 @@ const jsonLd = [
       <div class="prose-heal">
         <h2>Is there a free no contact app?</h2>
         <p>
-          Yes, a few, though most "free" trackers put the useful parts behind a subscription. Here's what each one keeps free, from their US store listings on {checked}:
+          Yes, a few, though most "free" trackers put the useful parts behind a subscription. Here's what each one keeps free:
+        </p>
+        <p class="rounded-2xl border border-hairline bg-surface-1 px-5 py-4 text-[15px]">
+          <strong>Data as of {checked}.</strong> From each app's US App Store and Google Play listing on that day. Apps change prices and free features often, the paywall can show different offers, and prices differ by country. Check the store page before you subscribe.
         </p>
         <table>
           <thead>
@@ -153,7 +156,8 @@ const jsonLd = [
             <tr><td>No Contact: Let Them Go</td><td>Tracker, a plant you water daily, quotes, sounds, some healing tools</td><td>Panic button, journal, lessons. $4.99/wk or a yearly plan</td></tr>
             <tr><td>Breakup App: Let it Go</td><td>Tracker, journal, affirmations, community</td><td>Premium plans and human "healer" chats, $9.99 to $139</td></tr>
             <tr><td>Text Here Instead</td><td>A "generous free tier" (the listing doesn't say which features)</td><td>$1.99/wk or $19.99 to unlock</td></tr>
-            <tr><td>No Contact: AI Breakup Help</td><td>Basic features after onboarding, plus a free web counter</td><td>"Full access requires a subscription," $3.99 to $69.99</td></tr>
+            <tr><td>No Contact: AI Breakup Help</td><td>Basic features after onboarding, plus a free web counter</td><td>"Full access requires a subscription," $3.99/wk to $69.99, 3-day trial</td></tr>
+            <tr><td>NoContact: Breakup Tracker</td><td>Nothing listed: "Subscription required"</td><td>$1.99/wk to $9.99/yr</td></tr>
             <tr><td>Get Over Him</td><td>Nothing: "There are no free features"</td><td>From $4.99 a week</td></tr>
           </tbody>
         </table>
