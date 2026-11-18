@@ -1,6 +1,7 @@
 ---
 import Logo from "./Logo.astro";
 import { SUPPORT_EMAIL } from "../lib/site";
+import { tools } from "../lib/tools";
 ---
 
 <footer class="border-t border-hairline bg-surface-1/40">
@@ -10,8 +11,7 @@ import { SUPPORT_EMAIL } from "../lib/site";
       <nav class="flex flex-wrap justify-center gap-x-7 gap-y-2 text-[15px]" aria-label="Footer">
         <a href="/blog/" class="text-ink-soft transition-colors hover:text-lavender">Blog</a>
         <a href="/no-contact-app/" class="text-ink-soft transition-colors hover:text-lavender">No contact app</a>
-        <a href="/tools/unsent-text/" class="text-ink-soft transition-colors hover:text-lavender">Unsent text</a>
-        <a href="/tools/should-i-text-my-ex/" class="text-ink-soft transition-colors hover:text-lavender">Should I text my ex?</a>
+        <a href="/tools/" class="text-ink-soft transition-colors hover:text-lavender">Free tools</a>
         <a href="/app-to-stop-texting-your-ex/" class="text-ink-soft transition-colors hover:text-lavender">App to stop texting your ex</a>
         <a href="/about/" class="text-ink-soft transition-colors hover:text-lavender">About</a>
         <a href="/privacy/" class="text-ink-soft transition-colors hover:text-lavender">Privacy</a>
@@ -19,6 +19,10 @@ import { SUPPORT_EMAIL } from "../lib/site";
         <a href={`mailto:${SUPPORT_EMAIL}`} class="text-ink-soft transition-colors hover:text-lavender">Email</a>
       </nav>
     </div>
+    <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[14px]" aria-label="Free tools">
+      <span class="text-ink-muted">Free tools:</span>
+      {tools.map((tool) => <a href={tool.href} class="text-ink-soft transition-colors hover:text-lavender">{tool.name}</a>)}
+    </nav>
     <div class="hairline"></div>
     <div class="space-y-3 text-center">
       <p class="quote text-lg text-ink-soft">Built by someone who's been exactly where you are</p>

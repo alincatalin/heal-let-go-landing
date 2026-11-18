@@ -1,0 +1,21 @@
+---
+// "More free tools" strip for the bottom of each /tools/ page, so every tool links to every other one.
+import ToolCard from "./ToolCard.astro";
+import { tools } from "../lib/tools";
+
+interface Props {
+  current: string; // href of the tool this strip sits on
+}
+const { current } = Astro.props;
+const others = tools.filter((t) => t.href !== current);
+---
+
+<section class="mx-auto max-w-4xl px-4 pb-16 sm:px-6" aria-labelledby="more-tools-heading">
+  <h2 id="more-tools-heading" class="mb-6 text-center text-3xl">More free breakup tools</h2>
+  <div class="grid gap-5 md:grid-cols-2">
+    {others.map((tool) => <ToolCard tool={tool} headingLevel="h3" />)}
+  </div>
+  <p class="mt-8 text-center text-ink-soft">
+    <a href="/tools/" class="text-lavender underline underline-offset-4">See all free tools</a>
+  </p>
+</section>

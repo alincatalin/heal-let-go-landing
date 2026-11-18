@@ -51,7 +51,7 @@ That's why it can feel so much bigger than other breakups, and why "just move on
 
 **3. Then give yourself distance.** Once the practical things are handled, step back from contact and from their social media. After years of talking every day, the pull to message them will be strong. That's habit and attachment, not a sign you made a mistake.
 
-**4. Rebuild your days, one routine at a time.** Don't try to fill every gap at once. Start with the hardest time of day, often evenings and weekends, and plan something for it.
+**4. Rebuild your days, one routine at a time.** Don't try to fill every gap at once. Start with the hardest time of day, often evenings and weekends, and plan something for it. If you want the first month laid out for you, our free [2027 Reset Plan](/tools/new-year-reset/) builds four weeks from four quick questions.
 
 **5. Find yourself again.** Who were your friends before? What did you do on a Saturday? Which hobby did you drop? You don't have to become someone new. You're finding out which parts of you were yours all along.
 

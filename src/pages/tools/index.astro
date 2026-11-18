@@ -8,7 +8,7 @@ import { tools } from "../../lib/tools";
 const site = Astro.site!.toString();
 const url = new URL("/tools/", site).toString();
 const description =
-  "Free breakup tools for the moment you want to text your ex: write the text in a chat that never sends, take a 2-minute quiz, or plan the holidays. Nothing is saved.";
+  "Free breakup tools: write the text in a chat that never sends, take the should I text my ex quiz, get through the holidays and plan your new year. No sign-up.";
 
 const jsonLd = [
   {
@@ -23,6 +23,7 @@ const jsonLd = [
         "@type": "ListItem",
         position: i + 1,
         name: tool.name,
+        description: tool.blurb,
         url: new URL(tool.href, site).toString(),
       })),
     },

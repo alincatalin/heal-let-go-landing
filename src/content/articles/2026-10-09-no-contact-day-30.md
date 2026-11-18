@@ -85,7 +85,7 @@ Whether they've reached out, posted, or started seeing someone isn't a measure o
 ## What Helps After a Month
 
 *   **Look back on purpose.** Re-read what you wrote on [day 1](/blog/articles/no-contact-day-1/) and notice how different it sounds from where you are now.
-*   **Mark it.** Do something that celebrates you, not the breakup: a meal out, a day trip, something you've been putting off.
+*   **Mark it.** Do something that celebrates you, not the breakup: a meal out, a day trip, something you've been putting off. Or put the number on a card with our free [Breakup Year Wrapped](/tools/year-wrapped/), just for you or for your story.
 *   **Set your next stretch.** Decide whether you're extending, and if so to when. A clear target protects you from bargaining.
 *   **Keep the reasons list.** You'll need it less often, but keep it. Bad days still come.
 *   **Get support if you're stuck.** If after a month you're struggling to function, sleep or eat, or the low mood isn't lifting at all, please talk to a doctor or therapist. That's not failure. Some breakups are more than willpower can carry.

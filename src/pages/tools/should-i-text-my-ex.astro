@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, RotateCcw } from "@lucide/astro";
 import Base from "../../layouts/Base.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import Footer from "../../components/Footer.astro";
+import MoreTools from "../../components/MoreTools.astro";
 import { APP_STORE_URL } from "../../lib/site";
 
 const title = "Should I Text My Ex? Take the 2-Minute Quiz";
@@ -178,7 +179,7 @@ const jsonLd = [
     operatingSystem: "Any",
     isAccessibleForFree: true,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    publisher: { "@type": "Organization", name: "Heal", url: site },
+    publisher: { "@type": "Organization", "@id": `${site}#organization`, name: "Heal", url: site },
   },
   {
     "@context": "https://schema.org",
@@ -329,6 +330,7 @@ const jsonLd = [
       </aside>
     </div>
   </main>
+  <MoreTools current="/tools/should-i-text-my-ex/" />
   <Footer />
 </Base>
 
