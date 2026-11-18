@@ -1,14 +1,13 @@
 ---
-import { ArrowRight } from "@lucide/astro";
+import { ArrowRight, Copy } from "@lucide/astro";
 import Base from "../../layouts/Base.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import Footer from "../../components/Footer.astro";
-import { APP_STORE_URL } from "../../lib/site";
-import { RESET_FUNNEL_URL } from "../../lib/funnel";
+import StoreButtons from "../../components/StoreButtons.astro";
 
 const title = "New Year After a Breakup: Free 4-Week 2027 Reset Plan";
 const description =
-  "Start the new year after a breakup with a free 4-week plan: quiet their corner of your phone, get through the urges, make sense of it, and rebuild. Built from three questions.";
+  "Start the new year after a breakup with a free 4-week plan: quiet their corner of your phone, get through the urges, make sense of it, and rebuild. Built from four quick questions.";
 
 // Every week points at something the Heal app already does (checked against the app on 2026-11-17), so the plan
 // never promises a feature that isn't there. "Heal+" is the paid tier; everything else is free.
@@ -38,6 +37,37 @@ const weeks = [
     cost: "Free. Heal's written read of your week and backup to a new phone are Heal+.",
   },
 ];
+
+// The quiz uses the app's own onboarding answers, so the plan matches what Heal shows after install.
+const ended = [
+  { id: "week", label: "Less than a week ago" },
+  { id: "month", label: "1 to 4 weeks ago" },
+  { id: "quarter", label: "1 to 3 months ago" },
+  { id: "half", label: "3 to 6 months ago" },
+  { id: "longer", label: "More than 6 months ago" },
+];
+const situations = [
+  { id: "none", label: "No, no contact" },
+  { id: "limited", label: "Yes: kids, work or friends" },
+  { id: "unsure", label: "Not sure yet" },
+];
+const hardest = [
+  { id: "texting", label: "Wanting to text them" },
+  { id: "socials", label: "Checking their socials" },
+  { id: "nights", label: "Nights" },
+  { id: "overthinking", label: "Overthinking" },
+  { id: "seeing", label: "Seeing them" },
+];
+const dreaded = ["Christmas Eve", "Christmas Day", "New Year's Eve", "January 1", "The days after"];
+
+// Week 2 leads with the tool that fits what's hardest.
+const urgeLines: Record<string, string> = {
+  texting: "When you want to text them, write it in Heal's unsent texts first. It looks like your chat, but it never sends.",
+  socials: "Do Heal's \"Quiet their corner of your phone\" step on every app: mute, archive, unfollow.",
+  nights: "Turn on Heal's heads-up before your hardest hour, and charge your phone outside the bedroom.",
+  overthinking: "When the loop starts, write one page in the journal, then talk it through with Heal's coach.",
+  seeing: "Before you'll see them, pick your exit and use Heal's shared-friends script.",
+};
 
 const faq = [
   {
@@ -102,26 +132,57 @@ const jsonLd = [
         <p class="eyebrow text-lavender">Free · 4 weeks · from January 1 or any day</p>
         <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">Your 2027 Reset Plan</h1>
         <p class="lede">
-          A four-week plan for the new year after a breakup, built from three questions: when it ended, whether you
-          still have to be in contact, and what's hardest right now.
+          A four-week plan for the new year after a breakup, built from four quick questions. Free, no sign-up, and nothing you
+          pick is saved.
         </p>
       </header>
 
-      <section class="card-raised space-y-5 p-6 text-center md:p-9" data-cta="tool">
-        <p class="text-[17px] leading-relaxed text-ink-soft">
-          Answer three questions and get your four weeks, with each step pointing at the tool in Heal that does it.
-        </p>
-        {
-          RESET_FUNNEL_URL ? (
-            <a href={RESET_FUNNEL_URL} data-funnel class="btn btn-primary">
-              Build my plan <ArrowRight />
-            </a>
-          ) : (
-            <a href={APP_STORE_URL} data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">
-              Start the plan in Heal <ArrowRight />
-            </a>
-          )
-        }
+      <form id="reset-form" class="card-raised space-y-8 p-6 md:p-9" novalidate>
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">1. When did it end?</legend>
+          <div class="flex flex-wrap gap-2">
+            {ended.map((o, i) => (<label class="chip-option"><input type="radio" name="ended" value={o.id} class="sr-only" checked={i === 2} /><span>{o.label}</span></label>))}
+          </div>
+        </fieldset>
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">2. Do you still have to talk to them?</legend>
+          <div class="flex flex-wrap gap-2">
+            {situations.map((o, i) => (<label class="chip-option"><input type="radio" name="situation" value={o.id} class="sr-only" checked={i === 0} /><span>{o.label}</span></label>))}
+          </div>
+        </fieldset>
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">3. What's hardest right now?</legend>
+          <div class="flex flex-wrap gap-2">
+            {hardest.map((o, i) => (<label class="chip-option"><input type="radio" name="hardest" value={o.id} class="sr-only" checked={i === 0} /><span>{o.label}</span></label>))}
+          </div>
+        </fieldset>
+        <fieldset class="space-y-3">
+          <legend class="mb-3 text-xl font-semibold text-ink">4. Which day are you dreading most?</legend>
+          <div class="flex flex-wrap gap-2">
+            {dreaded.map((o, i) => (<label class="chip-option"><input type="radio" name="dreaded" value={o} class="sr-only" checked={i === 2} /><span>{o}</span></label>))}
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary w-full justify-center">Build my plan <ArrowRight /></button>
+      </form>
+
+      <section id="plan" class="mt-8 space-y-4" hidden aria-live="polite">
+        <h2 class="text-center text-3xl leading-tight">Your 2027 Reset Plan</h2>
+        <p id="plan-intro" class="text-center text-[17px] leading-relaxed text-ink-soft"></p>
+        <ol id="plan-weeks" class="space-y-4"></ol>
+        <p id="plan-dreaded" class="card-raised p-5 text-[16px] leading-relaxed text-ink-soft"></p>
+        <div class="card-raised space-y-4 p-6 text-center md:p-8" data-cta="tool">
+          <p class="eyebrow text-lavender">Run the plan in Heal</p>
+          <p class="text-[17px] leading-relaxed text-ink-soft">
+            Every step above is a screen in the Heal app: the clock, SOS, unsent texts, the coach, check-ins and weekly
+            recaps. Free to start.
+          </p>
+          <StoreButtons matchDevice class="justify-center" />
+          <p class="hidden text-sm text-ink-muted md:block">On a computer? Open this page on your phone to get the app there.</p>
+        </div>
+        <div class="text-center">
+          <button type="button" id="copy-plan" class="btn btn-quiet"><Copy /> Copy my plan</button>
+          <p id="msg" class="mt-2 text-sm text-ink-muted" hidden></p>
+        </div>
       </section>
 
       <div class="prose-heal mt-16">
@@ -189,3 +250,113 @@ const jsonLd = [
   </main>
   <Footer />
 </Base>
+
+<script is:inline type="application/json" id="reset-data" set:html={JSON.stringify({ weeks, urgeLines })} />
+
+<script>
+  type Umami = { track: (event: string, data?: Record<string, string>) => void };
+  type Week = { name: string; does: string; where: string; cost: string };
+  const { weeks, urgeLines } = JSON.parse(document.getElementById("reset-data")!.textContent!) as {
+    weeks: Week[];
+    urgeLines: Record<string, string>;
+  };
+  const track = (result: string) =>
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "new-year-reset", result });
+
+  const form = document.getElementById("reset-form") as HTMLFormElement;
+  const plan = document.getElementById("plan")!;
+  const list = document.getElementById("plan-weeks")!;
+  const intro = document.getElementById("plan-intro")!;
+  const dreadedLine = document.getElementById("plan-dreaded")!;
+  const msg = document.getElementById("msg")!;
+  let planText = "";
+
+  const pick = (name: string) => (form.querySelector(`input[name="${name}"]:checked`) as HTMLInputElement).value;
+
+  function build() {
+    const ended = pick("ended");
+    const situation = pick("situation");
+    const hardest = pick("hardest");
+    const dreaded = pick("dreaded");
+
+    // The app's own words for the first days (Phase.FIRST_DAYS) and for later phases.
+    intro.textContent =
+      ended === "week"
+        ? "Everything hurts and nothing makes sense yet. Getting through each day is enough. Start week 1 today."
+        : ended === "month"
+          ? "Urges peak around now. Wanting to reach out is normal; acting on it is optional."
+          : "Four small weeks, starting January 2 or any day you choose.";
+
+    const extra: Record<number, string> = { 1: urgeLines[hardest] };
+    if (situation === "limited") {
+      extra[2] = "Keep messages to logistics. Heal has short scripts for kids, work and shared friends, and contact you mark as necessary doesn't reset your count.";
+    }
+
+    list.replaceChildren(
+      ...weeks.map((w, i) => {
+        const li = document.createElement("li");
+        li.className = "card-raised space-y-2 p-5";
+        const h = document.createElement("h3");
+        h.className = "text-xl font-semibold text-ink";
+        h.textContent = w.name;
+        const does = document.createElement("p");
+        does.className = "text-[16px] leading-relaxed text-ink-soft";
+        does.textContent = extra[i] ? `${w.does} ${extra[i]}` : w.does;
+        const where = document.createElement("p");
+        where.className = "text-[15px] leading-relaxed text-ink-muted";
+        where.textContent = `In Heal: ${w.where}`;
+        li.append(h, does, where);
+        return li;
+      }),
+    );
+
+    dreadedLine.textContent = `Your hardest day is ${dreaded}. Plan that evening's last hour now: who you'll be with, what you'll watch, and where your phone will be.`;
+
+    planText = [
+      "My 2027 Reset Plan",
+      intro.textContent,
+      ...weeks.map((w, i) => `${w.name}: ${extra[i] ? `${w.does} ${extra[i]}` : w.does}`),
+      dreadedLine.textContent,
+      "Made with tryheal.app/tools/new-year-reset/",
+    ].join("\n\n");
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    build();
+    plan.hidden = false;
+    plan.scrollIntoView({ behavior: "smooth", block: "start" });
+    track("built");
+  });
+
+  document.getElementById("copy-plan")!.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(planText);
+      msg.textContent = "Copied. Paste it into your notes.";
+    } catch {
+      msg.textContent = "Couldn't copy here. Take a screenshot instead.";
+    }
+    msg.hidden = false;
+    track("copied");
+  });
+</script>
+
+<style>
+  .chip-option span {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 999px;
+    border: 1px solid var(--hairline-strong);
+    padding: 0.5rem 1rem;
+    color: var(--ink-soft);
+  }
+  .chip-option input:checked + span {
+    background: rgba(164, 139, 247, 0.18);
+    border-color: rgba(164, 139, 247, 0.6);
+    color: var(--ink);
+  }
+  .chip-option input:focus-visible + span {
+    outline: 2px solid var(--violet-hex);
+    outline-offset: 2px;
+  }
+</style>
