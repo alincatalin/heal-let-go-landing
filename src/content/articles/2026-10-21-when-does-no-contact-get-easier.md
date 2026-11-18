@@ -8,6 +8,7 @@ excerpt: "When no contact starts to feel easier, why it isn't a straight line, w
 answer: "For most people no contact starts to feel easier within the first few weeks, though not in a straight line. The craving usually peaks around day 3, the urges get shorter before they get rarer, and by weeks three and four most people have more good days than bad. Every slip or look at their profile tends to slow it down."
 author: "Heal Team"
 keywords: "when does no contact get easier, does no contact get easier, how long until no contact gets easier, no contact getting harder, no contact feels worse, how long does no contact hurt"
+tool: "how-long-no-contact"
 cluster: "no-contact"
 cta:
   title: "Watch it get easier, one day at a time"
