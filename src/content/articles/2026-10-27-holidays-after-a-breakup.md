@@ -22,7 +22,7 @@ appBox:
 
 The whole season is built around couples, family tables and year-in-review posts, and every bit of it points at the gap. You're not imagining that it's worse right now.
 
-This guide goes through the season in order, from Thanksgiving to New Year's Eve, with what to do at each step.
+This guide goes through the season in order, from Thanksgiving to New Year's Eve, with what to do at each step. If you'd rather start with something to do, our [Christmas and New Year page](/holidays/) has a free tool for each of the hard days.
 
 | Moment | The hard part | The plan |
 |---|---|---|
