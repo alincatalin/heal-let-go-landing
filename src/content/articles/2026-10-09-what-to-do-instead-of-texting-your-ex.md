@@ -8,6 +8,7 @@ excerpt: "It's late, you're awake, and their name is right there. Here are 12 th
 answer: "When you want to text your ex at 2am, give it ten minutes before you decide, put the phone out of reach, and write the message somewhere it can't send. Then read your reasons for the breakup or message a friend instead. The urge is strongest at night because you're tired and alone, and it passes."
 author: "Heal Team"
 keywords: "what to do instead of texting your ex, how to stop texting your ex, want to text my ex at night, urge to text ex at 2am, things to do instead of texting your ex"
+tool: "reasons-not-to-text"
 cluster: "texting-your-ex"
 cta:
   title: "Keep this for the next 2am"

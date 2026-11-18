@@ -1,0 +1,299 @@
+---
+import { Download, Share2 } from "@lucide/astro";
+import Base from "../../layouts/Base.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import Footer from "../../components/Footer.astro";
+import MoreTools from "../../components/MoreTools.astro";
+import StoreButtons from "../../components/StoreButtons.astro";
+import { appStorePage } from "../../lib/store";
+
+const title = "Reasons Not to Text Your Ex: Free Lock Screen Maker";
+const description =
+  "Write your reasons not to text your ex and turn them into a lock screen wallpaper, so they're the first thing you see when you reach for your phone. Free, nothing saved.";
+
+const suggestions = [
+  "They had the chance and chose not to.",
+  "I always felt worse after we talked.",
+  "I deserve someone who doesn't make me guess.",
+  "Silence is an answer.",
+  "I'm not texting them to talk. I'm texting to feel better, and it won't work.",
+  "Future me will be glad I didn't.",
+];
+
+const faq = [
+  {
+    question: "Why write a list of reasons not to text your ex?",
+    answer:
+      "Because the urge arrives with selective memory: you remember the good parts and forget why it ended. A list written on a clear day gives you the other side at the moment you need it. Putting it on your lock screen means you see it before you open the chat.",
+  },
+  {
+    question: "What should I put on my reasons list?",
+    answer:
+      "Specific things, in your own words: what they did, how you felt after talking to them, what you want instead. \"They cancelled on my birthday\" works better than \"they were bad for me\". Three to five reasons is enough.",
+  },
+  {
+    question: "Is anything I write saved?",
+    answer:
+      "No. The wallpaper is drawn in your browser and saved only to your own phone when you download it. Nothing you type is sent to us.",
+  },
+  {
+    question: "How do I set it as my lock screen?",
+    answer:
+      "Save the image, then on iPhone go to Settings, Wallpaper, Add New Wallpaper, Photos. On Android, open the image in Photos or Gallery, tap the menu and choose Use as, then Wallpaper, and pick the lock screen.",
+  },
+];
+
+const site = Astro.site!.toString();
+const url = new URL("/tools/reasons-not-to-text/", site).toString();
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Reasons Not to Text Your Ex: Lock Screen Maker",
+    url,
+    description,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Any",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    publisher: { "@type": "Organization", "@id": `${site}#organization`, name: "Heal", url: site },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Free Tools", item: new URL("/tools/", site).toString() },
+      { "@type": "ListItem", position: 3, name: "Reasons Not to Text Your Ex", item: url },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+const inputClass =
+  "w-full rounded-2xl bg-surface-1 px-4 py-3 text-[16px] text-ink placeholder:text-ink-muted focus:outline-none focus:ring-2 focus:ring-[#a48bf7]/50";
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="reasons-not-to-text" storePage={appStorePage("texting-your-ex")}>
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
+      <header class="mb-10 space-y-5 text-center">
+        <p class="eyebrow text-lavender">Free · lock screen · nothing saved</p>
+        <h1 class="text-[2.4rem] leading-[1.1] sm:text-5xl">Your Reasons Not to Text Them</h1>
+        <p class="lede">
+          Write down why you're not texting your ex, on a day you can see it clearly. Get a lock screen, so your reasons
+          are the first thing you see when you reach for your phone.
+        </p>
+      </header>
+
+      <form id="reasons-form" class="card-raised space-y-6 p-6 md:p-9" novalidate>
+        <fieldset class="space-y-3">
+          <legend class="mb-2 text-xl font-semibold text-ink">Your reasons (3 to 5)</legend>
+          {[0, 1, 2, 3, 4].map((i) => (
+            <input name="reason" type="text" maxlength="80" placeholder={i < 3 ? `Reason ${i + 1}` : `Reason ${i + 1} (optional)`} class={inputClass} />
+          ))}
+        </fieldset>
+        <div>
+          <p class="mb-2 text-[15px] text-ink-soft">Stuck? Tap one to add it:</p>
+          <div class="flex flex-wrap gap-2">
+            {suggestions.map((s) => <button type="button" data-suggest={s} class="chip">{s}</button>)}
+          </div>
+        </div>
+        <p id="form-error" class="text-sm text-[#f49aa7]" hidden>Write at least one reason.</p>
+        <button type="submit" class="btn btn-primary w-full justify-center">Make my lock screen</button>
+      </form>
+
+      <section id="result" class="mt-8 space-y-5 text-center" hidden aria-live="polite">
+        <canvas id="wall" width="1170" height="2532" class="mx-auto w-full max-w-[18rem] rounded-[1.5rem] shadow-2xl" aria-label="Your reasons lock screen"></canvas>
+        <div class="flex flex-wrap justify-center gap-3">
+          <button type="button" id="download" class="btn btn-primary"><Download /> Save image</button>
+          <button type="button" id="share" class="btn btn-quiet"><Share2 /> Share</button>
+        </div>
+        <p class="text-sm text-ink-muted">Then set it as your lock screen. Steps are in the FAQ below.</p>
+        <p id="msg" class="text-sm text-ink-muted" hidden></p>
+      </section>
+
+      <div class="card-raised mt-8 space-y-4 p-6 md:p-8" data-cta="tool">
+        <p class="eyebrow text-lavender">When the lock screen isn't enough</p>
+        <p class="text-[17px] leading-relaxed text-ink-soft">
+          In Heal, your reasons are one tap away from the SOS button, next to a breathing pause and a chat that looks like
+          theirs but never sends. For the nights when you unlock the phone anyway. Free to start.
+        </p>
+        <StoreButtons matchDevice />
+      </div>
+
+      <div class="prose-heal mt-16">
+        <h2>Why a reasons list helps</h2>
+        <p>
+          When you miss someone, memory gets selective. The good parts come back first, and the reasons it ended fade.
+          A list written on a clear day keeps the other side close. Deciding in advance what you'll do when a tempting
+          moment comes ("when I reach for my phone, I'll read my reasons") makes people much more likely to follow
+          through than relying on willpower in the moment (<a href="https://doi.org/10.1016/S0065-2601(06)38002-1">Gollwitzer
+          and Sheeran, 2006</a>). The lock screen puts that plan where the moment happens.
+        </p>
+        <p>
+          If you still want to write to them after reading it, write it in the <a href="/tools/unsent-text/">unsent text
+          tool</a> first, where it can't send, or take the <a href="/tools/should-i-text-my-ex/">should I text my ex
+          quiz</a>. For more ideas for the next ten minutes, read
+          <a href="/blog/articles/what-to-do-instead-of-texting-your-ex/">what to do instead of texting your ex</a>.
+        </p>
+
+        <h2>FAQ: Reasons not to text your ex</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+
+        <h2>Sources</h2>
+        <ul>
+          <li>Gollwitzer, P. M., and Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. <em>Advances in Experimental Social Psychology</em>, 38, 69 to 119.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <MoreTools current="/tools/reasons-not-to-text/" />
+  <Footer />
+</Base>
+
+<script>
+  type Umami = { track: (event: string, data?: Record<string, string>) => void };
+  const track = (result: string) =>
+    (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "reasons-not-to-text", result });
+  const form = document.getElementById("reasons-form") as HTMLFormElement;
+  const inputs = [...form.querySelectorAll<HTMLInputElement>('input[name="reason"]')];
+  const canvas = document.getElementById("wall") as HTMLCanvasElement;
+  const msg = document.getElementById("msg")!;
+
+  document.querySelectorAll<HTMLButtonElement>("[data-suggest]").forEach((chip) =>
+    chip.addEventListener("click", () => {
+      const empty = inputs.find((i) => !i.value.trim());
+      if (empty) {
+        empty.value = chip.dataset.suggest!;
+        chip.disabled = true;
+      }
+    }),
+  );
+
+  function wrap(ctx: CanvasRenderingContext2D, text: string, maxWidth: number): string[] {
+    const lines: string[] = [];
+    let line = "";
+    for (const word of text.split(" ")) {
+      const next = line ? `${line} ${word}` : word;
+      if (ctx.measureText(next).width > maxWidth && line) {
+        lines.push(line);
+        line = word;
+      } else line = next;
+    }
+    if (line) lines.push(line);
+    return lines;
+  }
+
+  async function draw(reasons: string[]) {
+    await document.fonts.ready;
+    const ctx = canvas.getContext("2d")!;
+    const W = canvas.width;
+    const H = canvas.height;
+    const display = '"Fraunces Variable", Georgia, serif';
+    const sans = '"Figtree Variable", system-ui, sans-serif';
+    const bg = ctx.createLinearGradient(0, 0, W * 0.4, H);
+    bg.addColorStop(0, "#1a1236");
+    bg.addColorStop(0.6, "#0c0a16");
+    bg.addColorStop(1, "#2a1240");
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, W, H);
+    // The top third stays clear for the lock screen clock.
+    const x = 110;
+    let y = 1010;
+    ctx.fillStyle = "#c4b5fd";
+    ctx.font = `600 46px ${sans}`;
+    ctx.fillText("BEFORE YOU TEXT THEM", x, y);
+    ctx.font = `500 62px ${display}`;
+    for (const reason of reasons) {
+      y += 70;
+      ctx.fillStyle = "#c4b5fd";
+      ctx.fillText("·", x - 50, y + 64);
+      ctx.fillStyle = "#f3eef8";
+      for (const line of wrap(ctx, reason, W - x * 2)) {
+        y += 78;
+        ctx.fillText(line, x, y);
+      }
+    }
+    ctx.fillStyle = "#a39ab5";
+    ctx.font = `500 36px ${sans}`;
+    ctx.fillText("tryheal.app/tools/reasons-not-to-text", x, H - 150);
+  }
+
+  const toBlob = () => new Promise<Blob>((resolve) => canvas.toBlob((b) => resolve(b!), "image/png"));
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const reasons = inputs.map((i) => i.value.trim()).filter(Boolean);
+    const error = document.getElementById("form-error")!;
+    if (reasons.length === 0) {
+      error.hidden = false;
+      inputs[0].focus();
+      return;
+    }
+    error.hidden = true;
+    await draw(reasons);
+    const result = document.getElementById("result")!;
+    result.hidden = false;
+    result.scrollIntoView({ behavior: "smooth", block: "start" });
+    track("made");
+  });
+
+  document.getElementById("download")!.addEventListener("click", async () => {
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(await toBlob());
+    link.download = "reasons-not-to-text.png";
+    link.click();
+    URL.revokeObjectURL(link.href);
+    track("downloaded");
+  });
+
+  document.getElementById("share")!.addEventListener("click", async () => {
+    const file = new File([await toBlob()], "reasons-not-to-text.png", { type: "image/png" });
+    try {
+      if (navigator.canShare?.({ files: [file] })) {
+        await navigator.share({ files: [file] });
+        track("shared");
+      } else {
+        document.getElementById("download")!.click();
+        msg.textContent = "Saved to your device.";
+        msg.hidden = false;
+      }
+    } catch {
+      // Closing the share sheet throws; nothing to report.
+    }
+  });
+</script>
+
+<style>
+  .chip {
+    border-radius: 999px;
+    border: 1px solid var(--hairline-strong);
+    padding: 0.45rem 0.9rem;
+    font-size: 14px;
+    color: var(--ink-soft);
+    text-align: left;
+  }
+  .chip:hover:not(:disabled) {
+    border-color: rgba(164, 139, 247, 0.6);
+    color: var(--ink);
+  }
+  .chip:disabled {
+    opacity: 0.4;
+  }
+</style>

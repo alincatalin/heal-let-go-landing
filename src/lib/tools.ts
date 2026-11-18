@@ -75,6 +75,16 @@ export const tools: Tool[] = [
     cta: "Write the text",
   },
   {
+    href: "/tools/reasons-not-to-text/",
+    group: "now",
+    useWhen: "Someone keeps reaching for their phone to text their ex and wants a reminder of why not, such as a reasons list or a lock screen.",
+    updated: "2026-11-18",
+    name: "Reasons Not to Text Them",
+    label: "Lock screen maker",
+    blurb: "Write your reasons not to text your ex and turn them into a lock screen, so they're the first thing you see.",
+    cta: "Make my lock screen",
+  },
+  {
     href: "/tools/should-i-text-my-ex/",
     group: "now",
     useWhen: "Someone asks whether they should text their ex, or wants an honest yes or no before they send something.",
