@@ -2,10 +2,10 @@
 title: "The Best Breakup Apps in 2026 (Honest Comparison)"
 slug: "best-breakup-apps"
 date: "2026-10-15"
-updated: "2026-11-06"
+updated: "2026-11-18"
 category: "Breakup Healing"
 readTime: "9 min"
-excerpt: "Six breakup apps compared on what they do, what they cost and who they suit, from no contact trackers to AI coaches. Written by the team behind Heal."
+excerpt: "Six breakup apps compared, with prices checked November 18, 2026, on what they do, what they cost and who they suit, from no contact trackers to AI coaches. Written by the team behind Heal."
 author: "Heal Team"
 keywords: "best breakup apps, breakup app, get over him app, get over him app free, breakup recovery app, heartbreak app"
 cluster: "getting-over"
@@ -21,7 +21,7 @@ appBox:
 
 The best breakup app depends on what you need most: a no contact tracker, someone to talk to at 2am, or a way to stop texting your ex. Below, six apps are compared on what they do, what they cost and who they suit. One of them is ours, so we've tried hard to be fair to the rest.
 
-Most of these apps only show their real prices on the paywall inside the app, and those change often. For the other apps, the table lists the in-app purchase range shown on each US App Store listing in October 2026. Treat it as a rough guide and check the paywall before you subscribe.
+> **Prices and features as of November 18, 2026.** Everything below comes from each app's US App Store listing (and Google Play where the app is on Android) as it read on that day. Apps change prices often, many show different offers on the paywall inside the app, and prices differ by country. Check the store page before you subscribe. We'll re-check and update the date when we do.
 
 ## Breakup Apps at a Glance
 
@@ -30,7 +30,7 @@ Most of these apps only show their real prices on the paywall inside the app, an
 | Heal: No Contact & Breakup | The urge to text your ex | $12.99/mo or $124.99/yr | 7-day trial, free tier |
 | Get Over Him: Breakup Healing | No contact, aimed at women | In-app purchases $4.99 to $29.99 | No free features |
 | Breakup Buddy | Talking things through with AI | In-app purchases $7.99 to $42.99 | Free chat credits to start |
-| No Contact Tracker: BreakUp | A simple day counter | In-app purchases $7.99 to $34.99, incl. a lifetime option | Free to start |
+| No Contact Tracker: BreakUp | A simple day counter | In-app purchases $7.99 to $34.99, incl. a $29.99 lifetime option | 3-day free trial |
 | Breakup App: Let it Go | Community and human support | In-app purchases $9.99 to $139 | Free to download |
 | No Contact App | A free day counter in your browser | In-app purchases $3.99 to $69.99 | Free web counter, 3-day app trial |
 
@@ -59,7 +59,7 @@ Heal is our app, built around one situation: it's late, you're on your own, and 
 - **No contact tracker.** Every day without contact, laid out on a calendar. A slip restarts your streak, but your total stays and the slip shows up next to the days around it.
 - **AI coach, private journal and a phase-by-phase path** that shows what's normal where you are.
 
-**Price:** free to download with a 7-day trial of everything, then $12.99 a month or $124.99 a year. A free tier stays after the trial.
+**Price:** free to download with a 7-day trial of everything, then $12.99 a month or $124.99 a year (the App Store also lists a $89.99 yearly offer). A free tier stays after the trial, with 5 coach messages a day.
 
 **Worth knowing:** Heal costs more than a basic tracker. If you mainly want a day counter, a cheaper or free one will do. Heal is worth it if texting them, or wanting to, is the thing you keep getting stuck on.
 
@@ -79,7 +79,7 @@ Get Over Him is aimed squarely at women getting over a man. It focuses on no con
 
 Breakup Buddy has been around since 2023, longer than most apps here, and its focus is an AI you can chat with about your ex and the breakup.
 
-**Price:** new users get free chat credits. After that, the listing shows Pro plans at $17.99 and $42.99 and extra tokens at $7.99.
+**Price:** new users get 2,500 free chat credits. After that, the listing shows Pro plans at $17.99 and $42.99 and extra tokens at $7.99. iPhone only.
 
 **Worth knowing:** if what you want most is a conversation, any time of day, this is a focused option. It leans less on in-the-moment tools for the urge to text.
 
@@ -89,7 +89,7 @@ Breakup Buddy has been around since 2023, longer than most apps here, and its fo
 
 As the name says, this app is built around tracking your no contact streak. It's available in six languages and was updated recently.
 
-**Price:** free to start. The listing shows a weekly plan, a quarterly plan and a lifetime option, from $7.99 to $34.99.
+**Price:** free to download with a 3-day free trial; the listing says a subscription "is required to unlock full access." Plans are $7.99 a week, $34.99 a quarter or $29.99 once for lifetime.
 
 **Worth knowing:** if the paywall offers a one-time lifetime price, that's usually better value than a weekly plan, which adds up fast.
 
@@ -99,7 +99,7 @@ As the name says, this app is built around tracking your no contact streak. It's
 
 Let it Go combines a no contact tracker with a community of people going through the same thing, plus paid chats with human "healers." It's updated very often.
 
-**Price:** free to download. The listing shows premium plans (monthly, 3-month and yearly) and paid packs of human "healer" chat sessions, from $9.99 to $139.
+**Price:** free to download, and the listing says the tracker, journal, affirmations, trigger log and community are free. Premium is $9.99 a month, $19.99 for 3 months or $69 a year; human "healer" chats are $49.99 for 6 or $79.99 for 10, and a "Beyond Breakup" pack is $139. iPhone only.
 
 **Worth knowing:** if feeling less alone is what you need most, the community side sets it apart. Human support isn't the same as therapy, so check who you're talking to.
 
@@ -112,6 +112,20 @@ No Contact App (listed on the App Store as "No Contact: AI Breakup Help") pairs 
 **Price:** the browser counter is free. The app's website mentions a 3-day free trial, and its App Store listing says "Full access requires a subscription," with weekly, monthly and yearly in-app purchases from $3.99 to $69.99.
 
 **Worth knowing:** if money is tight, the free web counter does the basic job. The app itself is a paid product after the trial.
+
+## Other No Contact Apps We Checked
+
+Newer apps come out every month. These five are worth knowing about but didn't make the main list, mostly because nothing is free after the trial. Data as of November 18, 2026, from each app's US App Store listing.
+
+| App | What stands out | Price | Free? |
+|---|---|---|---|
+| No Contact: Let Them Go | A plant that grows with your streak, "Send to the Void" | $4.99/wk, yearly plans listed from $4.99 to $39.99 | Tracker and plant; panic button, journal and lessons need Pro |
+| NoContact: Breakup Tracker | A 30-day plan from a short quiz, a "Hold-On" breathing button | $1.99/wk to $9.99/yr | No. "Subscription required" |
+| Better off: No contact tracker | A fake text simulator, a log for the bad stuff, an AI companion | $12.99/wk or $34.99/quarter | No. Needs "an active subscription to access any features" |
+| ExDetox: No Contact & Breakup | A panic button that has you write the message instead, a blunt "Roast me" mode | $3.99/wk, $9.99/mo or $39.99/yr | No free features listed |
+| Text Here Instead | Unsent messages and voice notes, everything stays on your phone | $1.99/wk or $19.99 once | A "generous free tier" |
+
+We compare Heal with Let Them Go in detail in [Let Them Go app vs Heal](/blog/articles/heal-vs-let-them-go-app/).
 
 ## Which Breakup App Is Right for You?
 
@@ -161,4 +175,4 @@ No. Breakup apps help with daily habits and hard moments, but they aren't therap
 
 - Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. *Psychological Science*, 8(3), 162 to 166.
 - Marshall, T. C. (2012). Facebook surveillance of former romantic partners. *Cyberpsychology, Behavior, and Social Networking*, 15(10), 521 to 526.
-- App details and in-app purchase prices from each app's US App Store listing, checked October 13, 2026. No Contact App details from nocontact.app and its US App Store listing, checked November 6, 2026.
+- App details, ratings and in-app purchase prices from each app's US App Store listing, checked November 18, 2026. No Contact App's free web counter from nocontact.app, checked the same day.
