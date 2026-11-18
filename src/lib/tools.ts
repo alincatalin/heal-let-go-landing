@@ -11,6 +11,14 @@ export interface Tool {
 
 export const tools: Tool[] = [
   {
+    href: "/tools/no-contact-counter/",
+    updated: "2026-11-18",
+    name: "No Contact Counter",
+    label: "Day count + milestones",
+    blurb: "Pick the last day you contacted your ex. See which day of no contact you're on, your next milestone and what it tends to feel like.",
+    cta: "Count my days",
+  },
+  {
     href: "/tools/new-year-reset/",
     updated: "2026-11-18",
     name: "2027 Reset Plan",
