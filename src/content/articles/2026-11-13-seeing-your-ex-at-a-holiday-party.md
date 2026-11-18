@@ -8,6 +8,7 @@ excerpt: "Your ex will be at the office party or your friend's holiday party. Wh
 answer: "If you'll see your ex at a holiday party, decide in advance whether to go, and if you go, have a plan: arrive with a friend, set a leaving time, cap your drinks and keep one short line ready if they come over. Say hello if you have to, then move on. Don't text them afterward."
 author: "Heal Team"
 keywords: "seeing your ex at a party, ex at work christmas party, seeing your ex at a holiday party, how to act when you see your ex, ex at office party, ex at friend's party, how to act around your ex at a party"
+tool: "holiday-plan"
 cluster: "no-contact"
 cta:
   title: "Get through the party with your streak intact"

@@ -5,6 +5,8 @@ import SiteHeader from "../components/SiteHeader.astro";
 import Footer from "../components/Footer.astro";
 import FinalCTA from "../components/FinalCTA.astro";
 import PostCard from "../components/PostCard.astro";
+import ToolBox from "../components/ToolBox.astro";
+import type { Tool } from "../lib/tools";
 import { formatDate, readTimeLabel, SITE_NAME } from "../lib/site";
 import { APP_STORE_ID, PLAY_PACKAGE } from "../lib/store";
 import type { clusterLinks, seriesLinks } from "../lib/related";
@@ -38,9 +40,10 @@ interface Props {
   series?: ReturnType<typeof seriesLinks>;
   faq?: { question: string; answer: string }[];
   storePage?: string;
+  tool?: Tool;
 }
 
-const { kind, title, excerpt, answer, term, category, date, updated, readTime, author, image, related, slug, cluster, cta, series, faq = [], storePage } = Astro.props;
+const { kind, title, excerpt, answer, term, category, date, updated, readTime, author, image, related, slug, cluster, cta, series, faq = [], storePage, tool } = Astro.props;
 const seriesPath = (href: string) => href.replace(/\/$/, "");
 const isCurrent = (href: string) => seriesPath(href) === seriesPath(Astro.url.pathname);
 const site = Astro.site!.toString();
@@ -193,6 +196,8 @@ const jsonLd = [
         <div class="prose-heal">
           <slot />
         </div>
+
+        {tool && <ToolBox tool={tool} />}
 
         {
           cluster && (cluster.pillar || cluster.posts.length > 0) && (

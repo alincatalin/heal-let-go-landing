@@ -7,6 +7,7 @@ readTime: "8 min"
 excerpt: "Copy-and-paste lines for when family asks about your breakup: parents, grandma, the nosy aunt, kids, coworkers, and relatives who still talk to your ex."
 author: "Heal Team"
 keywords: "what to tell family about breakup, how to tell family you broke up, what to say when people ask about your ex, thanksgiving breakup questions, how to tell your parents you broke up, what to say when someone asks about your ex at thanksgiving, family still talks to my ex"
+tool: "holiday-plan"
 cluster: "no-contact"
 answer: "When family asks about your breakup, give one short, true sentence and then change the subject. \"We broke up. I'm doing okay. How was your trip?\" You don't owe anyone the story. Pick your line before you walk in, say it out loud once in the car, and repeat the same words if someone pushes."
 cta:

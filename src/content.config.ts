@@ -30,6 +30,8 @@ const post = z.object({
   cta: z.object({ title: z.string(), text: z.string() }).optional(),
   // The one app box after the first section, matched to the post's problem (see src/lib/app-box.ts):
   // unsent = the text you want to send, coach = someone to talk to, tracker = no contact count, sos = the urge now.
+  // The free tool boxed after the article (a /tools/<slug>/ slug). Defaults by cluster, see toolForPost in src/lib/tools.ts.
+  tool: z.string().optional(),
   appBox: z
     .object({ feature: z.enum(APP_BOX_FEATURES), title: z.string(), text: z.string(), button: z.string() })
     .optional(),

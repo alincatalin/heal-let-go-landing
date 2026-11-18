@@ -8,6 +8,7 @@ excerpt: "Should you return gifts from your ex? When to keep, store, give away, 
 answer: "Gifts from your ex are yours, so you don't have to return them. Keep what you'd still use, box what hurts to see, and give away or sell the rest once you're sure. Return family heirlooms and anything you feel you should, in one handoff with a short logistics-only message. Engagement rings can follow different rules."
 author: "Heal Team"
 keywords: "what to do with gifts from ex, should I return gifts from my ex, giving back gifts after breakup, should I give back gifts after a breakup, what to do with christmas gift for ex, keep gifts from ex, return engagement ring after breakup"
+tool: "holiday-challenge"
 cluster: "texting-your-ex"
 cta:
   title: "Write the \"I still have your gift\" text here"

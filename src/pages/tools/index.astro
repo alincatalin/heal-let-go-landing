@@ -10,6 +10,35 @@ const url = new URL("/tools/", site).toString();
 const description =
   "Free breakup tools: write the text in a chat that never sends, take the should I text my ex quiz, get through the holidays and plan your new year. No sign-up.";
 
+const groups = [
+  { id: "now", title: "Right now: you want to text them", tools: tools.filter((t) => t.group === "now") },
+  { id: "track", title: "Doing no contact", tools: tools.filter((t) => t.group === "track") },
+  { id: "season", title: "For the holidays and the new year", tools: tools.filter((t) => t.group === "season") },
+].filter((g) => g.tools.length > 0);
+
+const faq = [
+  {
+    question: "Are these breakup tools really free?",
+    answer:
+      "Yes. Every tool on this page is free, with no account and no email. They're made by the team behind Heal, a breakup app, and each one ends with a short note about the app if you want more help.",
+  },
+  {
+    question: "Is anything I type saved or sent?",
+    answer:
+      "No. The tools run in your browser. Nothing you write in the unsent text tool or the quiz is sent to us or to anyone else. The no contact counter remembers your date only on your own device.",
+  },
+  {
+    question: "Is there a free no contact tracker?",
+    answer:
+      "Yes. The No Contact Counter on this page shows which day of no contact you're on and your next milestone, in your browser. If you want it on your phone with reminders and an SOS button for the urge, Heal's tracker is free on iPhone and Android.",
+  },
+  {
+    question: "What should I do instead of texting my ex?",
+    answer:
+      "Write the text where it can't send, wait 20 minutes, and ask yourself what you're hoping they'll say. The Unsent Text tool does the first part. Our guide to what to do instead of texting your ex has twelve more ideas.",
+  },
+];
+
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -27,6 +56,15 @@ const jsonLd = [
         url: new URL(tool.href, site).toString(),
       })),
     },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
   },
   {
     "@context": "https://schema.org",
@@ -51,16 +89,43 @@ const jsonLd = [
         <p class="lede">No download, no sign-up. Nothing you type is sent or saved.</p>
       </header>
 
-      <div class="grid gap-5 md:grid-cols-2">
-        {tools.map((tool) => <ToolCard tool={tool} headingLevel="h2" />)}
+      <div class="space-y-14">
+        {
+          groups.map((group) => (
+            <section aria-labelledby={`group-${group.id}`}>
+              <h2 id={`group-${group.id}`} class="mb-6 text-3xl">{group.title}</h2>
+              <div class="grid gap-5 md:grid-cols-2">
+                {group.tools.map((tool) => <ToolCard tool={tool} headingLevel="h3" />)}
+              </div>
+            </section>
+          ))
+        }
       </div>
 
-      <p class="mt-14 text-center text-ink-soft">
-        Want more than a quick fix? Read our guide to{" "}
-        <a href="/blog/articles/should-i-text-my-ex/" class="text-lavender underline underline-offset-4">whether you should text your ex</a>{" "}
-        or browse{" "}
-        <a href="/blog/" class="text-lavender underline underline-offset-4">the blog</a>.
-      </p>
+      <div class="prose-heal mx-auto mt-20 max-w-3xl">
+        <h2>Why free breakup tools?</h2>
+        <p>
+          Most breakup advice is a list of things to do later. These tools are for the moment itself: the text you're
+          about to send, the day count you want to see, the holiday you're dreading. Each one takes a few minutes and
+          works without an app. If you find yourself coming back to them, the Heal app does the same things on your
+          phone, with a coach that replies and a tracker that keeps your total if you slip.
+        </p>
+        <p>
+          Want to read first? Start with the <a href="/blog/articles/no-contact-rule-guide/">no contact rule guide</a>{" "}
+          or <a href="/blog/articles/should-i-text-my-ex/">whether you should text your ex</a>, or browse{" "}
+          <a href="/blog/">the blog</a>.
+        </p>
+
+        <h2>FAQ: Free breakup tools</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+      </div>
     </div>
   </main>
   <Footer />
