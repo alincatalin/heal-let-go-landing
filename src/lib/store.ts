@@ -106,14 +106,6 @@ export function tagStoreLinks(doc: Document, location: Location, userAgent: stri
   doc.querySelectorAll<HTMLAnchorElement>('a[href^="https://apps.apple.com/"], a[href^="https://play.google.com/store/"]').forEach((a) => {
     a.dataset.source = source;
   });
-  // RevenueCat funnel links: RevenueCat reads standard UTM tags from the funnel URL.
-  doc.querySelectorAll<HTMLAnchorElement>("a[data-funnel]").forEach((a) => {
-    const url = new URL(a.href);
-    url.searchParams.set("utm_source", source);
-    url.searchParams.set("utm_medium", medium ?? "web");
-    if (campaign) url.searchParams.set("utm_campaign", campaign);
-    a.href = url.toString();
-  });
   if (platform) {
     doc.querySelectorAll<HTMLElement>("[data-match-device] [data-platform]").forEach((el) => {
       if (el.dataset.platform !== platform) el.hidden = true;
