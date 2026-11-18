@@ -122,7 +122,7 @@ Make a plan that doesn't put you in a room full of couples at midnight if you do
 
 If you're out, decide now what you'll do at 12:01 when you feel the pull to message him. Hand your phone to a friend, or archive the chat before you leave the house so it isn't the first thing you see.
 
-And try not to make January 1 a test. You don't need to be "over him" by the new year. You need to get to January with your streak and your self-respect.
+And try not to make January 1 a test. You don't need to be "over him" by the new year. You need to get to January with your streak and your self-respect. If you want something for after midnight, the free [2027 Reset Plan](/tools/new-year-reset/) gives you four small weeks to start the year with, and [Breakup Year Wrapped](/tools/year-wrapped/) turns your no contact count into a card for your story.
 
 ## What Does a Holiday Urge Look Like in Heal?
 

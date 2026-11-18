@@ -3,6 +3,7 @@ import { ArrowRight, CalendarPlus, Share2 } from "@lucide/astro";
 import Base from "../../layouts/Base.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import Footer from "../../components/Footer.astro";
+import MoreTools from "../../components/MoreTools.astro";
 import StoreButtons from "../../components/StoreButtons.astro";
 
 const title = "Holiday No Contact Challenge (Nov 20 to Jan 1) | Free Daily Prompts";
@@ -109,7 +110,7 @@ const jsonLd = [
     operatingSystem: "Any",
     isAccessibleForFree: true,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    publisher: { "@type": "Organization", name: "Heal", url: site },
+    publisher: { "@type": "Organization", "@id": `${site}#organization`, name: "Heal", url: site },
   },
   {
     "@context": "https://schema.org",
@@ -251,6 +252,7 @@ const jsonLd = [
       </aside>
     </div>
   </main>
+  <MoreTools current="/tools/holiday-challenge/" />
   <Footer />
 </Base>
 

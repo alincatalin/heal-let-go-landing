@@ -1,5 +1,6 @@
 import type { APIContext } from "astro";
 import { articleUrl, getArticles, getGuides, guideUrl } from "../lib/site";
+import { tools } from "../lib/tools";
 
 // Never advertise a lastmod later than the build: posts merged ahead of their date would otherwise
 // send future dates to Google.
@@ -12,19 +13,16 @@ export async function GET(context: APIContext) {
   const guides = await getGuides();
   const latest = [...articles, ...guides].map((p) => p.data.updated ?? p.data.date).sort((a, b) => b.getTime() - a.getTime())[0];
 
+  const toolsUpdated = tools.map((t) => t.updated).sort().at(-1);
+
   const urls: { loc: string; lastmod?: string }[] = [
     { loc: "/", lastmod: latest && day(latest) },
     { loc: "/blog/", lastmod: latest && day(latest) },
     { loc: "/no-contact-app/", lastmod: "2026-11-06" },
-    { loc: "/tools/" },
-    { loc: "/tools/should-i-text-my-ex/" },
+    { loc: "/tools/", lastmod: toolsUpdated },
     ...guides.map((p) => ({ loc: guideUrl(p), lastmod: day(p.data.updated ?? p.data.date) })),
     ...articles.map((p) => ({ loc: articleUrl(p), lastmod: day(p.data.updated ?? p.data.date) })),
-    { loc: "/tools/unsent-text/" },
-    { loc: "/tools/holiday-plan/" },
-    { loc: "/tools/year-wrapped/" },
-    { loc: "/tools/holiday-challenge/" },
-    { loc: "/tools/new-year-reset/" },
+    ...tools.map((t) => ({ loc: t.href, lastmod: t.updated })),
     { loc: "/app-to-stop-texting-your-ex/", lastmod: "2026-11-06" },
     { loc: "/about/" },
     { loc: "/privacy/" },

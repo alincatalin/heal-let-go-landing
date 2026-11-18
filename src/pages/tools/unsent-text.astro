@@ -3,6 +3,7 @@ import { ArrowRight, RotateCcw, Send } from "@lucide/astro";
 import Base from "../../layouts/Base.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import Footer from "../../components/Footer.astro";
+import MoreTools from "../../components/MoreTools.astro";
 import { APP_STORE_URL } from "../../lib/site";
 
 const title = "Write the Text. We Won't Send It. | Unsent Text to Your Ex";
@@ -52,7 +53,7 @@ const jsonLd = [
     operatingSystem: "Any",
     isAccessibleForFree: true,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    publisher: { "@type": "Organization", name: "Heal", url: site },
+    publisher: { "@type": "Organization", "@id": `${site}#organization`, name: "Heal", url: site },
   },
   {
     "@context": "https://schema.org",
@@ -204,6 +205,7 @@ const jsonLd = [
       </aside>
     </div>
   </main>
+  <MoreTools current="/tools/unsent-text/" />
   <Footer />
 </Base>
 

@@ -113,7 +113,7 @@ When the urge hits:
 3. **Write it where it can't send.** Our free [unsent text tool](/tools/unsent-text/?occasion=christmas) has a Christmas mode for exactly this. Get every word out, then close it.
 4. **Call your "break glass" person** if it's still loud.
 
-If you want something to hold on to before the day itself, the free [Holiday No Contact Challenge](/tools/holiday-challenge/) runs from November 20 to January 1 with one small task a day, and Christmas has its own.
+If you want something to hold on to before the day itself, the free [Holiday No Contact Challenge](/tools/holiday-challenge/) runs from November 20 to January 1 with one small task a day, and Christmas has its own. For the week after, the free [2027 Reset Plan](/tools/new-year-reset/) gives you four weeks to start January with.
 
 If it's been a long relationship and Christmas was a big part of it, our guide to [getting over a long-term relationship](/blog/articles/how-to-get-over-a-long-term-relationship/) covers rebuilding traditions as one person. And if you want to know what's normal in the weeks ahead, the [stages of a breakup](/blog/articles/7-stages-of-breakup/) are a good map.
 

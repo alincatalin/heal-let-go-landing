@@ -128,6 +128,7 @@ Start by changing one thing.
 - If you're waiting for them, write down what you'd want from them if they did come back. Then ask whether you'd want that from anyone.
 - If the relationship involved control or abuse and the pull feels impossible, read [what a trauma bond is](/blog/articles/what-is-a-trauma-bond/). That kind of attachment can take longer to loosen, and it's worth getting support for.
 - If you're about to send something, run it through the [should I text my ex? quiz](/tools/should-i-text-my-ex/) first.
+- If you need a fresh start with a shape to it, the free [2027 Reset Plan](/tools/new-year-reset/) lays out four weeks, one small step at a time.
 
 ## FAQ: Signs No Contact Is Working
 
