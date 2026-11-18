@@ -9,6 +9,7 @@ answer: "Breadcrumbing is when someone keeps you interested with small, occasion
 term: "Breadcrumbing"
 author: "Heal Team"
 keywords: "what is breadcrumbing, breadcrumbing meaning, breadcrumbing ex, signs of breadcrumbing, breadcrumbing in relationships, ex breadcrumbing me, breadcrumbing vs ghosting"
+tool: "is-my-ex-hoovering-me"
 cluster: "getting-over"
 cta:
   title: "Stop waiting for the next crumb"

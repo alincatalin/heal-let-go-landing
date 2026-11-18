@@ -9,6 +9,7 @@ answer: "Hoovering is when an ex tries to pull you back into a relationship afte
 term: "Hoovering"
 author: "Heal Team"
 keywords: "what is hoovering, hoovering meaning, hoovering ex, signs of hoovering, hoovering narcissist, how to respond to hoovering, ex trying to get me back"
+tool: "is-my-ex-hoovering-me"
 cluster: "getting-over"
 cta:
   title: "When they come back, have somewhere else to go"

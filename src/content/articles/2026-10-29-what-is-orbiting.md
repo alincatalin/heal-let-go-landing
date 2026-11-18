@@ -9,6 +9,7 @@ answer: "Orbiting is when someone ends contact with you, often without explainin
 term: "Orbiting"
 author: "Heal Team"
 keywords: "what is orbiting, orbiting meaning, orbiting dating, ex orbiting me, ex watching my stories, why does my ex watch my stories, orbiting vs ghosting, signs of orbiting"
+tool: "is-my-ex-hoovering-me"
 cluster: "getting-over"
 cta:
   title: "Stop checking who viewed your story"
