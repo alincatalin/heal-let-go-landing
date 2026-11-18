@@ -1,10 +1,11 @@
 ---
-import { ArrowLeft, ArrowRight, RotateCcw } from "@lucide/astro";
+import { ArrowLeft, ArrowRight, CalendarPlus, PenLine, RotateCcw, Share2 } from "@lucide/astro";
 import Base from "../../layouts/Base.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import Footer from "../../components/Footer.astro";
 import MoreTools from "../../components/MoreTools.astro";
-import { APP_STORE_URL } from "../../lib/site";
+import StoreButtons from "../../components/StoreButtons.astro";
+import { appStorePage } from "../../lib/store";
 
 const title = "Should I Text My Ex? Take the 2-Minute Quiz";
 const description =
@@ -16,9 +17,9 @@ const questions = [
     id: "why",
     text: "Why do you want to text them?",
     options: [
-      { label: "I miss them", score: 3 },
+      { label: "I miss them", score: 3, why: "You want the text to ease missing them, and a reply rarely does that for long." },
       { label: "I want answers or closure", score: 2 },
-      { label: "I want to know if they miss me too", score: 3 },
+      { label: "I want to know if they miss me too", score: 3, why: "You're looking for reassurance only they can give, which hands them your mood." },
       { label: "To say sorry or wish them well", score: 1 },
       { label: "Something practical: keys, bills, kids, a pet", score: 0, practical: true },
     ],
@@ -27,7 +28,7 @@ const questions = [
     id: "when",
     text: "When are you thinking of sending it?",
     options: [
-      { label: "Right now, and it's late at night", score: 3 },
+      { label: "Right now, and it's late at night", score: 3, why: "It's late. Feelings run higher at night and judgment runs lower." },
       { label: "Right now, during the day", score: 1 },
       { label: "Sometime in the next few days", score: 0 },
     ],
@@ -36,7 +37,7 @@ const questions = [
     id: "drinking",
     text: "Have you been drinking?",
     options: [
-      { label: "Yes", score: 3 },
+      { label: "Yes", score: 3, why: "You've been drinking. Alcohol narrows attention to the feeling in front of you." },
       { label: "No", score: 0 },
     ],
   },
@@ -44,7 +45,7 @@ const questions = [
     id: "since",
     text: "How long ago did you break up?",
     options: [
-      { label: "Less than 2 weeks", score: 3 },
+      { label: "Less than 2 weeks", score: 3, why: "It's been less than two weeks. The first weeks are when the pull is strongest." },
       { label: "2 weeks to a month", score: 2 },
       { label: "1 to 3 months", score: 1 },
       { label: "More than 3 months", score: 0 },
@@ -54,7 +55,7 @@ const questions = [
     id: "nocontact",
     text: "Are you doing no contact right now?",
     options: [
-      { label: "Yes", score: 2 },
+      { label: "Yes", score: 2, why: "You're doing no contact. One text restarts the count." },
       { label: "No", score: 0 },
     ],
   },
@@ -62,9 +63,9 @@ const questions = [
     id: "hope",
     text: "What do you hope happens after you send it?",
     options: [
-      { label: "We get back together", score: 3 },
+      { label: "We get back together", score: 3, why: "You're hoping it leads to getting back together, which is a lot for one text to carry." },
       { label: "They explain why it ended", score: 2 },
-      { label: "They reassure me or say they miss me", score: 3 },
+      { label: "They reassure me or say they miss me", score: 3, why: "You need a certain reply to feel okay." },
       { label: "Nothing, I just need to say it", score: 1 },
       { label: "The practical thing gets sorted", score: 0, practical: true },
     ],
@@ -73,7 +74,7 @@ const questions = [
     id: "noreply",
     text: "If they don't reply at all, how will you feel tomorrow?",
     options: [
-      { label: "Crushed", score: 3 },
+      { label: "Crushed", score: 3, why: "No reply would crush you, so the text is really a request." },
       { label: "Bad, but I'd cope", score: 1 },
       { label: "Fine, honestly", score: 0 },
     ],
@@ -99,8 +100,8 @@ const results = [
       "Put your phone across the room for ten minutes.",
       "Come back to this quiz tomorrow, in daylight, and see if your answers change.",
     ],
-    cta: "Write it in Heal instead",
-    ctaText: "Heal gives you a chat that looks like theirs but never sends, and an SOS button for the next ten minutes.",
+    cta: "For the next time it's 2am",
+    ctaText: "Heal keeps that never-sends chat on your phone, with a coach that replies instead of them and an SOS button for the next ten minutes. Free to start.",
   },
   {
     id: "sleep",
@@ -112,8 +113,8 @@ const results = [
       "Read it back in two days and cut anything that asks for a reply you need.",
       "Ask one friend to read it before it goes.",
     ],
-    cta: "Draft it in Heal",
-    ctaText: "Write it where it can't send, and talk it through with Heal's coach before you decide.",
+    cta: "Want to talk it through first?",
+    ctaText: "Heal's coach reads your draft and asks what you're hoping for before you decide. 5 messages a day are free.",
   },
   {
     id: "ok",
@@ -125,8 +126,8 @@ const results = [
       "Don't ask questions you need answered.",
       "Decide now that silence is an answer too.",
     ],
-    cta: "Get Heal for the days after",
-    ctaText: "Whatever they say, Heal has a coach and a journal for what comes next.",
+    cta: "For the days after you send it",
+    ctaText: "Whatever they say, or if they say nothing, Heal has a coach and a private journal for what comes next. Free to start.",
   },
   {
     id: "practical",
@@ -138,8 +139,8 @@ const results = [
       "Send it during the day.",
       "Keep any feelings for your journal, not the thread.",
     ],
-    cta: "Get Heal for everything else",
-    ctaText: "For the feelings that come up when you see their name again, Heal has a place to put them.",
+    cta: "For everything that isn't logistics",
+    ctaText: "Seeing their name again can stir things up. Heal has a journal and a chat that never sends for the feelings that don't belong in the thread.",
   },
 ];
 
@@ -202,7 +203,7 @@ const jsonLd = [
 ];
 ---
 
-<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="should-i-text-my-ex">
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="should-i-text-my-ex" storePage={appStorePage("texting-your-ex")}>
   <SiteHeader />
   <main class="relative overflow-hidden">
     <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
@@ -236,6 +237,7 @@ const jsonLd = [
                       value={oi}
                       data-score={o.score}
                       data-practical={o.practical ? "" : undefined}
+                      data-why={"why" in o ? o.why : undefined}
                       class="h-4 w-4 shrink-0 accent-[#a48bf7]"
                     />
                     <span>{o.label}</span>
@@ -252,6 +254,10 @@ const jsonLd = [
               <p class="eyebrow text-lavender">{r.eyebrow}</p>
               <h2 class="text-3xl leading-tight md:text-4xl">{r.title}</h2>
               <p class="text-[17px] leading-relaxed text-ink-soft">{r.text}</p>
+              <div data-reasons hidden class="rounded-[1.25rem] bg-surface-1 p-5">
+                <p class="eyebrow mb-3 text-lavender">What tipped it</p>
+                <ul class="space-y-2 text-[15px] text-ink-soft"></ul>
+              </div>
               <ul class="space-y-3 text-[16px] text-ink-soft">
                 {r.steps.map((s) => (
                   <li class="flex gap-3">
@@ -260,15 +266,30 @@ const jsonLd = [
                   </li>
                 ))}
               </ul>
-              <div class="rounded-[1.25rem] border border-lavender/20 bg-surface-1 p-5" data-cta="tool">
-                <p class="text-[15px] leading-relaxed text-ink-soft">{r.ctaText}</p>
-                <a href={APP_STORE_URL} data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary mt-4">
-                  {r.cta} <ArrowRight />
+              {(r.id === "wait" || r.id === "sleep") && (
+                <a href="/tools/unsent-text/" class="btn btn-primary w-full justify-center sm:w-auto">
+                  <PenLine /> Write it where it can't send
                 </a>
+              )}
+              {r.id === "sleep" && (
+                <button type="button" data-remind class="btn btn-quiet">
+                  <CalendarPlus /> Remind me in 48 hours
+                </button>
+              )}
+              <div class="rounded-[1.25rem] border border-[#a48bf7]/25 bg-surface-1 p-5" data-cta="tool">
+                <p class="text-[15px] font-semibold text-ink">{r.cta}</p>
+                <p class="mt-1 text-[15px] leading-relaxed text-ink-soft">{r.ctaText}</p>
+                <StoreButtons matchDevice class="mt-4" />
               </div>
-              <button type="button" data-restart class="btn btn-quiet h-10 px-3 text-sm">
-                <RotateCcw /> Take it again
-              </button>
+              <div class="flex flex-wrap gap-2">
+                <button type="button" data-restart class="btn btn-quiet h-10 px-3 text-sm">
+                  <RotateCcw /> Take it again
+                </button>
+                <button type="button" data-share class="btn btn-quiet h-10 px-3 text-sm">
+                  <Share2 /> Send this quiz to a friend
+                </button>
+              </div>
+              <p data-msg hidden class="text-sm text-ink-muted"></p>
             </section>
           ))
         }
@@ -291,6 +312,19 @@ const jsonLd = [
           It isn't a test you pass or fail, and it can't know your situation the way you do. Treat the answer as a second
           opinion from a friend who wants you to be okay tomorrow morning.
         </p>
+
+        <h2>Why these questions?</h2>
+        <p>Each question is there because it changes what a text is likely to do for you:</p>
+        <table>
+          <thead><tr><th>Question</th><th>Why it matters</th></tr></thead>
+          <tbody>
+            <tr><td>Late at night? Drinking?</td><td>Alcohol narrows attention to the strongest feeling in the moment and weakens the brakes on acting on it (<a href="https://doi.org/10.1037/0003-066X.45.8.921">Steele and Josephs, 1990</a>). Tiredness does something similar. That's why either one makes the answer "not tonight."</td></tr>
+            <tr><td>How long since the breakup?</td><td>Early on, rejection activates the brain's reward and craving systems, the same ones involved in addiction (<a href="https://doi.org/10.1152/jn.00784.2009">Fisher et al., 2010</a>). The pull is strongest in the first weeks.</td></tr>
+            <tr><td>What do you hope happens?</td><td>If the text is meant to get a certain reply, it's a request, and you can't control the answer.</td></tr>
+            <tr><td>If they don't reply?</td><td>The clearest single sign you're texting for yourself rather than for their response.</td></tr>
+            <tr><td>Have you written it out?</td><td>Putting feelings into words, without sending them, helps people process them (<a href="https://doi.org/10.1111/j.1467-9280.1997.tb00403.x">Pennebaker, 1997</a>). Often the urge fades once the words are out.</td></tr>
+          </tbody>
+        </table>
 
         <h2>What to do with your result</h2>
         <p>
@@ -318,6 +352,15 @@ const jsonLd = [
             </>
           ))
         }
+      </div>
+
+      <div class="prose-heal mt-10">
+        <h2>Sources</h2>
+        <ul>
+          <li>Steele, C. M., and Josephs, R. A. (1990). Alcohol myopia: Its prized and dangerous effects. <em>American Psychologist</em>, 45(8), 921 to 933.</li>
+          <li>Fisher, H. E., Brown, L. L., Aron, A., Strong, G., and Mashek, D. (2010). Reward, addiction, and emotion regulation systems associated with rejection in love. <em>Journal of Neurophysiology</em>, 104(1), 51 to 60.</li>
+          <li>Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. <em>Psychological Science</em>, 8(3), 162 to 166.</li>
+        </ul>
       </div>
 
       <aside class="mt-12 flex gap-4 rounded-[1.25rem] border border-[#f49aa7]/25 bg-[#f49aa7]/[0.06] p-5 text-sm leading-relaxed text-ink-soft">
@@ -369,6 +412,19 @@ const jsonLd = [
     count.textContent = "Your result";
     bar.style.width = "100%";
     results.forEach((r) => (r.hidden = r.dataset.result !== result));
+    const why = checked.map((input) => input.dataset.why).filter((w): w is string => Boolean(w));
+    const shown = results.find((r) => r.dataset.result === result)!;
+    const box = shown.querySelector<HTMLElement>("[data-reasons]");
+    if (box) {
+      box.hidden = why.length === 0 || result === "practical";
+      box.querySelector("ul")!.replaceChildren(
+        ...why.slice(0, 4).map((w) => {
+          const li = document.createElement("li");
+          li.textContent = w;
+          return li;
+        }),
+      );
+    }
     document.getElementById("quiz")!.scrollIntoView({ behavior: "smooth", block: "start" });
     (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "should-i-text-my-ex", result });
   }
@@ -377,6 +433,56 @@ const jsonLd = [
     window.setTimeout(() => (current < steps.length - 1 ? show(current + 1) : finish()), 220);
   });
   back.addEventListener("click", () => show(Math.max(0, current - 1)));
+
+  const note = (button: Element, text: string) => {
+    const msg = button.closest("[data-result]")?.querySelector<HTMLElement>("[data-msg]");
+    if (msg) {
+      msg.textContent = text;
+      msg.hidden = false;
+    }
+  };
+
+  document.querySelectorAll("[data-share]").forEach((button) =>
+    button.addEventListener("click", async () => {
+      const data = { title: "Should I text my ex?", text: "Before you send it, take this 2-minute quiz:", url: location.origin + location.pathname };
+      try {
+        if (navigator.share) {
+          await navigator.share(data);
+        } else {
+          await navigator.clipboard.writeText(`${data.text} ${data.url}`);
+          note(button, "Link copied. Paste it to your friend.");
+        }
+        (window as unknown as { umami?: Umami }).umami?.track("Tool Completed", { tool: "should-i-text-my-ex", result: "shared" });
+      } catch {
+        // Closing the share sheet throws; nothing to report.
+      }
+    }),
+  );
+
+  // A calendar file with one reminder two days from now, to look at the draft again in daylight.
+  document.querySelectorAll("[data-remind]").forEach((button) =>
+    button.addEventListener("click", () => {
+      const when = new Date(Date.now() + 48 * 3600 * 1000);
+      when.setHours(12, 0, 0, 0);
+      const pad = (n: number) => String(n).padStart(2, "0");
+      const local = `${when.getFullYear()}${pad(when.getMonth() + 1)}${pad(when.getDate())}T120000`;
+      const end = `${when.getFullYear()}${pad(when.getMonth() + 1)}${pad(when.getDate())}T121500`;
+      const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+      const ics = [
+        "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Heal//Should I Text My Ex//EN", "BEGIN:VEVENT",
+        `UID:text-ex-${stamp}@tryheal.app`, `DTSTAMP:${stamp}`, `DTSTART:${local}`, `DTEND:${end}`,
+        "SUMMARY:Read the text again before deciding",
+        "DESCRIPTION:Still want to send it? Take the quiz again: tryheal.app/tools/should-i-text-my-ex/",
+        "END:VEVENT", "END:VCALENDAR",
+      ].join("\r\n");
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+      link.download = "read-it-again.ics";
+      link.click();
+      URL.revokeObjectURL(link.href);
+      note(button, "Open the file to add the reminder for 2 days from now, at noon.");
+    }),
+  );
   document.querySelectorAll("[data-restart]").forEach((button) =>
     button.addEventListener("click", () => {
       form.reset();
