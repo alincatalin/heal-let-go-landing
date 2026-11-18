@@ -1,10 +1,11 @@
 ---
-import { ArrowRight, RotateCcw, Send } from "@lucide/astro";
+import { RotateCcw, Send, Timer } from "@lucide/astro";
 import Base from "../../layouts/Base.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import Footer from "../../components/Footer.astro";
 import MoreTools from "../../components/MoreTools.astro";
-import { APP_STORE_URL } from "../../lib/site";
+import StoreButtons from "../../components/StoreButtons.astro";
+import { appStorePage } from "../../lib/store";
 
 const title = "Write the Text. We Won't Send It. | Unsent Text to Your Ex";
 const description =
@@ -76,7 +77,7 @@ const jsonLd = [
 ];
 ---
 
-<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="unsent-text">
+<Base title={title} description={description} jsonLd={jsonLd} storeSource="tool" storeCampaign="unsent-text" storePage={appStorePage("texting-your-ex")}>
   <SiteHeader />
   <main class="relative overflow-hidden">
     <div class="mx-auto max-w-[44rem] px-4 py-12 sm:px-6 md:py-16">
@@ -139,17 +140,28 @@ const jsonLd = [
         <h2 class="text-3xl leading-tight md:text-4xl">That's one you didn't send.</h2>
         <p id="after-holiday" class="text-[17px] leading-relaxed text-ink" hidden></p>
         <p class="text-[17px] leading-relaxed text-ink-soft">
-          The urge usually peaks and then passes. If it comes back tonight, you can write here again, or put your phone in
-          another room for ten minutes.
+          The urge usually peaks and then passes. Give it ten minutes: put the phone face down and let the timer run.
+          If it comes back tonight, you can write here again.
         </p>
-        <div class="rounded-[1.25rem] border border-lavender/20 bg-surface-1 p-5" data-cta="tool">
-          <p class="text-[15px] leading-relaxed text-ink-soft">
-            In Heal, unsent texts go in a chat that looks like theirs, an AI coach answers instead of them, and the SOS
-            button gets you through the next ten minutes. Free to start.
+        <div class="rounded-[1.25rem] bg-surface-1 p-5 text-center">
+          <p id="timer" class="font-display text-5xl text-ink" aria-live="off">10:00</p>
+          <button type="button" id="timer-start" class="btn btn-quiet mt-3"><Timer /> Start the 10 minutes</button>
+          <p id="timer-done" class="mt-3 text-[15px] text-ink-soft" hidden>
+            Ten minutes. Most urges have passed by now. If this one hasn't, write again, or read
+            <a href="/blog/articles/what-to-do-instead-of-texting-your-ex/" class="text-lavender underline underline-offset-4">what to do instead of texting your ex</a>.
           </p>
-          <a href={APP_STORE_URL} data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary mt-4">
-            Write it in Heal next time <ArrowRight />
-          </a>
+        </div>
+        <p class="text-[15px] leading-relaxed text-ink-soft">
+          Doing no contact? This one counts. See where you are on the{" "}
+          <a href="/tools/no-contact-counter/" class="text-lavender underline underline-offset-4">no contact counter</a>.
+        </p>
+        <div class="rounded-[1.25rem] border border-[#a48bf7]/25 bg-surface-1 p-5" data-cta="tool">
+          <p class="text-[15px] font-semibold text-ink">Want something to write back?</p>
+          <p class="mt-1 text-[15px] leading-relaxed text-ink-soft">
+            In the Heal app, this chat looks like theirs and an AI coach replies instead of them, so the words don't just
+            sit there. There's an SOS button for nights like this, and you can start free.
+          </p>
+          <StoreButtons matchDevice class="mt-4" />
         </div>
         <button type="button" data-restart class="btn btn-quiet h-10 px-3 text-sm">
           <RotateCcw /> Write another
@@ -165,7 +177,11 @@ const jsonLd = [
         </p>
         <p>
           There's research behind this too. Writing about painful experiences, rather than keeping them in, is linked to
-          better wellbeing in many studies, and you don't need anyone to read it for that to work. Our guide to{" "}
+          better wellbeing in many studies, and you don't need anyone to read it for that to work (<a
+            href="https://doi.org/10.1111/j.1467-9280.1997.tb00403.x">Pennebaker, 1997</a>). Even naming a feeling in
+          words calms the brain's alarm response a little (<a href="https://doi.org/10.1111/j.1467-9280.2007.01916.x">Lieberman
+          et al., 2007</a>). The three questions after you write are there for that reason: they turn the urge into
+          words you can look at. Our guide to{" "}
           <a href="/blog/articles/unsent-letter-to-ex/">writing an unsent letter to your ex</a> goes deeper, with examples.
         </p>
 
@@ -193,6 +209,12 @@ const jsonLd = [
             </>
           ))
         }
+
+        <h2>Sources</h2>
+        <ul>
+          <li>Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. <em>Psychological Science</em>, 8(3), 162 to 166.</li>
+          <li>Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H., and Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. <em>Psychological Science</em>, 18(5), 421 to 428.</li>
+        </ul>
       </div>
 
       <aside class="mt-12 flex gap-4 rounded-[1.25rem] border border-[#f49aa7]/25 bg-[#f49aa7]/[0.06] p-5 text-sm leading-relaxed text-ink-soft">
@@ -356,6 +378,33 @@ const jsonLd = [
       input.focus();
     }),
   );
+
+  // Ten-minute urge timer after "Let it go": the urge usually peaks and passes within minutes.
+  let timerId: number | undefined;
+  document.getElementById("timer-start")!.addEventListener("click", (event) => {
+    const button = event.currentTarget as HTMLButtonElement;
+    const face = document.getElementById("timer")!;
+    const done = document.getElementById("timer-done")!;
+    const end = Date.now() + 10 * 60 * 1000;
+    button.hidden = true;
+    done.hidden = true;
+    window.clearInterval(timerId);
+    const tick = () => {
+      const left = Math.max(0, end - Date.now());
+      const m = Math.floor(left / 60000);
+      const sec = Math.floor((left % 60000) / 1000);
+      face.textContent = `${m}:${String(sec).padStart(2, "0")}`;
+      if (left === 0) {
+        window.clearInterval(timerId);
+        done.hidden = false;
+        button.hidden = false;
+        track("timer-done");
+      }
+    };
+    tick();
+    timerId = window.setInterval(tick, 1000);
+    track("timer");
+  });
 </script>
 
 <style>
