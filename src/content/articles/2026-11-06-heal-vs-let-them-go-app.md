@@ -2,6 +2,7 @@
 title: "Let Them Go App vs Heal: Which No Contact App Fits You?"
 slug: "heal-vs-let-them-go-app"
 date: "2026-11-06"
+updated: "2026-11-18"
 category: "Breakup Healing"
 readTime: "5 min"
 excerpt: "Let Them Go vs Heal, side by side: what's free, what's paid, prices and privacy from both store listings, and which no contact app fits your breakup."
@@ -16,7 +17,7 @@ cta:
 
 If you searched for "let them go app," you're probably doing no contact and want something on your phone to help you stick to it. Let Them Go and Heal are two of the apps you'll find. Heal is ours, so read this knowing that. We've stuck to what each store listing says, and we say where Let Them Go is the better pick.
 
-Everything below comes from the US App Store and Google Play listings as they read on November 6, 2026. Prices and features change, so check the listing before you subscribe.
+> **Data as of November 18, 2026.** Everything below comes from the US App Store and Google Play listings for both apps as they read on that day. Prices and features change, the paywall inside each app can show different offers, and prices differ by country, so check the listing before you subscribe.
 
 ## Let Them Go vs Heal at a Glance
 
@@ -33,6 +34,7 @@ Everything below comes from the US App Store and Google Play listings as they re
 | Price | $4.99 a week, yearly plans listed from $4.99 to $39.99 | $12.99 a month or $124.99 a year |
 | Free trial | Not mentioned in the listing | 7 days, on monthly and yearly plans |
 | Platforms | iPhone, iPad and Android | iPhone, iPad and Android |
+| Store ratings (Nov 18, 2026) | 4.7 from 54 ratings (App Store), 4.5 from about 1,190 reviews (Google Play), 10K+ downloads | App Store rating recently reset with version 3.0; 500+ downloads on Google Play |
 | App Store privacy label | Health, contact info, user content and identifiers "linked to you" | All listed data "not linked to you" |
 
 We left star ratings out, as in our other comparisons. Let Them Go has been around longer and has more reviews, with over 10,000 downloads on Google Play. That says it's established, not that it fits you.
@@ -121,6 +123,6 @@ Both track your streak. Let Them Go makes it a daily ritual with a plant. Heal k
 
 ## Sources
 
-- Apple App Store. "No Contact - Let Them Go" (Honey Wolf LLC), US listing, accessed November 6, 2026.
-- Google Play. "No Contact: Let Them Go" (Honey Wolf), US listing, accessed November 6, 2026.
-- Apple App Store. "Heal: No Contact & Breakup", US listing, accessed November 6, 2026.
+- Apple App Store. "No Contact - Let Them Go" (Honey Wolf LLC), US listing, accessed November 18, 2026.
+- Google Play. "No Contact: Let Them Go" (Honey Wolf), US listing, accessed November 18, 2026.
+- Apple App Store. "Heal: No Contact & Breakup", US listing, accessed November 18, 2026.
