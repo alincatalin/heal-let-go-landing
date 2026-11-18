@@ -23,6 +23,7 @@ export async function GET(context: APIContext) {
     { loc: "/tools/unsent-text/" },
     { loc: "/tools/holiday-plan/" },
     { loc: "/tools/holiday-challenge/" },
+    { loc: "/tools/new-year-reset/" },
     { loc: "/app-to-stop-texting-your-ex/", lastmod: "2026-11-06" },
     { loc: "/about/" },
     { loc: "/privacy/" },
