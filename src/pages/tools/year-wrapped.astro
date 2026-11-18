@@ -3,7 +3,7 @@ import { ArrowRight, Download, Share2 } from "@lucide/astro";
 import Base from "../../layouts/Base.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import Footer from "../../components/Footer.astro";
-import { APP_STORE_URL } from "../../lib/site";
+import StoreButtons from "../../components/StoreButtons.astro";
 
 const title = "Breakup Year Wrapped 2026 | Free Story Card for Your Year";
 const description =
@@ -162,9 +162,7 @@ const inputClass =
           Heal counts every day without contact for you, catches the 2am urge with an SOS button, and gives the text
           somewhere to go that isn't their phone. Free to start.
         </p>
-        <a href={APP_STORE_URL} data-platform="auto" target="_blank" rel="noreferrer" class="btn btn-primary">
-          Start counting in Heal <ArrowRight />
-        </a>
+        <StoreButtons matchDevice />
       </div>
 
       <div class="prose-heal mt-16">
