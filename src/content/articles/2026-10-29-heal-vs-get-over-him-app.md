@@ -2,6 +2,7 @@
 title: "Get Over Him App vs Heal: An Honest Comparison"
 slug: "heal-vs-get-over-him-app"
 date: "2026-10-29"
+updated: "2026-11-18"
 category: "Breakup Healing"
 readTime: "5 min"
 excerpt: "Get Over Him vs Heal, side by side: features, prices, free options and privacy from both App Store listings, and which one fits your breakup."
@@ -21,7 +22,7 @@ appBox:
 
 If you searched for "get over him app," you've probably found two apps that look alike: Get Over Him and Heal. Heal is ours, so read this knowing that. We've stuck to what each App Store listing says, and we say where Get Over Him is the better pick.
 
-Everything below comes from the two US App Store listings as they read on October 29, 2026. Prices and features change, so check the listing before you subscribe.
+> **Data as of November 18, 2026.** Everything below comes from the two US App Store listings as they read on that day. Prices and features change, the paywall inside each app can show different offers, and prices differ by country, so check the listing before you subscribe.
 
 ## Get Over Him vs Heal at a Glance
 
@@ -38,6 +39,7 @@ Everything below comes from the two US App Store listings as they read on Octobe
 | Free trial | Not mentioned | 7 days, on monthly and yearly plans |
 | Price | $4.99 a week, $14.99 or $29.99 a month, $18.99 a year | $12.99 a month, $124.99 a year |
 | Where to get it | App Store (iPhone, Mac, Vision Pro) | App Store and Google Play |
+| App Store rating (Nov 18, 2026) | 4.4 from 7 ratings | Recently reset with version 3.0 |
 | Privacy label | Some data "linked to you", usage data "used to track you" | All listed data "not linked to you" |
 
 We left star ratings out. Both apps have only a handful of ratings so far, and that says little about whether either fits you.
@@ -113,5 +115,5 @@ Both track your no contact streak. Heal also keeps your total days on a calendar
 
 ## Sources
 
-- Apple App Store. "Get Over Him - Breakup Healing" (Dial Labs LLC), US listing, accessed October 29, 2026.
-- Apple App Store. "Heal: No Contact & Breakup", US listing, accessed October 29, 2026.
+- Apple App Store. "Get Over Him - Breakup Healing" (Dial Labs LLC), US listing, accessed November 18, 2026.
+- Apple App Store. "Heal: No Contact & Breakup", US listing, accessed November 18, 2026.
