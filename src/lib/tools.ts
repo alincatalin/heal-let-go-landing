@@ -25,6 +25,16 @@ export const tools: Tool[] = [
     cta: "Count my days",
   },
   {
+    href: "/tools/how-long-no-contact/",
+    group: "track",
+    useWhen: "Someone asks how long no contact should last, whether 30 days is enough, or what to do if they share kids or a workplace with their ex.",
+    updated: "2026-11-18",
+    name: "How Long Should No Contact Last?",
+    label: "1-minute calculator",
+    blurb: "Five questions about your relationship and a number of days, a target date and why: 30, 60, 90, or low contact if you share kids or a job.",
+    cta: "Get my number",
+  },
+  {
     href: "/tools/new-year-reset/",
     group: "season",
     useWhen: "Someone wants a plan for January or a fresh start in the new year after a breakup.",
