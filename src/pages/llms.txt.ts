@@ -21,7 +21,9 @@ export async function GET(context: APIContext) {
 
 ## Free tools
 
-${tools.map((t) => `- [${t.name}](${url(t.href)}): ${t.blurb}`).join("\n")}
+Free, no sign-up, nothing sent anywhere. Each line says when the tool fits.
+
+${tools.map((t) => `- [${t.name}](${url(t.href)}): ${t.blurb} Use when: ${t.useWhen}`).join("\n")}
 
 ## Articles
 

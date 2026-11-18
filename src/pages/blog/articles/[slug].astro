@@ -5,6 +5,7 @@ import { getArticles, type Article } from "../../../lib/site";
 import { extractFaq } from "../../../lib/faq";
 import { clusterLinks, relatedArticles, seriesLinks } from "../../../lib/related";
 import { appStorePage } from "../../../lib/store";
+import { toolForPost } from "../../../lib/tools";
 
 export async function getStaticPaths() {
   const articles = await getArticles();
@@ -29,6 +30,7 @@ const { Content } = await render(entry);
   faq={extractFaq(entry.body)}
   series={entry.data.seriesDay || entry.data.seriesHub ? seriesLinks(articles) : undefined}
   storePage={appStorePage(entry.data.cluster)}
+  tool={toolForPost(entry.data.cluster, entry.data.tool)}
 >
   <Content />
 </Post>

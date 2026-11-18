@@ -8,6 +8,7 @@ excerpt: "What to text your ex when you really need to: example texts for logist
 author: "Heal Team"
 keywords: "what to text your ex, what to say to your ex, texts to send your ex, how to text your ex, apology text to ex, text ex to get stuff back, what to reply to your ex"
 answer: "Text your ex only when there's a real reason: logistics, returning things, shared kids or pets, or a sincere apology after real time apart. Keep it short and easy to answer. Most other texts, especially late-night ones about missing them, are better written somewhere they won't send. Write it first, wait until morning, then decide."
+tool: "should-i-text-my-ex"
 cluster: "texting-your-ex"
 cta:
   title: "Draft it in Heal before you send it"

@@ -8,6 +8,7 @@ excerpt: "Christmas alone after a breakup, planned hour by hour: being alone ver
 answer: "To spend Christmas alone after a breakup, plan the day in blocks before it arrives: a walk in the morning, a call at lunch, a film and a proper dinner. Fill the quiet late afternoon on purpose, mute your ex and their friends, and write any message to them somewhere it can't send."
 author: "Heal Team"
 keywords: "christmas alone after breakup, alone for the holidays after a breakup, spending the holidays alone, spending christmas alone after a breakup, alone on christmas after breakup, how to spend christmas alone"
+tool: "holiday-challenge"
 cluster: "getting-over"
 cta:
   title: "Someone to talk to on Christmas night"

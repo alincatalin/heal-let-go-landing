@@ -8,6 +8,7 @@ excerpt: "Your first holidays after a breakup, from Thanksgiving to New Year's E
 author: "Heal Team"
 keywords: "holidays after breakup, holidays after a breakup, first christmas after breakup, thanksgiving after breakup, new years eve after breakup, christmas alone after breakup, how to survive the holidays after a breakup, no contact over the holidays"
 answer: "To survive the holidays after a breakup, plan the hard moments before they arrive. Have one short answer ready for family questions. Decide now that you won't send the \"Merry Christmas\" text. Change one tradition you shared with your ex instead of repeating it. Fill the empty days with people on purpose. January usually feels lighter."
+tool: "holiday-challenge"
 cluster: "no-contact"
 cta:
   title: "Get to January with your streak intact"

@@ -8,6 +8,7 @@ excerpt: "Ending a relationship of many years means losing a partner, a routine,
 answer: "To get over a long-term relationship, expect it to take time and treat it as more than losing a partner: you're also losing routines, a shared future and part of your identity. Keep distance from your ex, sort practical ties early, rebuild your days one routine at a time, and reconnect with who you were outside the relationship."
 author: "Heal Team"
 keywords: "how to get over a long term relationship, getting over a long relationship, breakup after 5 years, breakup after 10 years, end of long term relationship, who am I after a breakup, moving on after a long relationship"
+tool: "new-year-reset"
 cluster: "getting-over"
 cta:
   title: "Take it one day at a time"

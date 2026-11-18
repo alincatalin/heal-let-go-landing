@@ -8,6 +8,7 @@ excerpt: "Should you text your ex? A yes-or-no checklist by situation, what usua
 answer: "Usually not, at least not yet. Text your ex only for a practical reason (belongings, kids, a shared lease) or once you're calm and fine with no reply. If you want them back, feel lonely, or it's late at night, wait 24 hours and write the text somewhere it can't send."
 keywords: "should i text my ex, should i text my ex yes or no, should i message my ex, should you text your ex, should i text my ex quiz, texting your ex after a breakup"
 author: "Heal Team"
+tool: "should-i-text-my-ex"
 cluster: "texting-your-ex"
 pillar: true
 updated: "2026-10-28"
