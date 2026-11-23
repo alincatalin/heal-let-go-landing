@@ -43,7 +43,7 @@ A large survey of 5,705 people in 96 countries found that women reported slightl
 3. **Tell one person the truth.** Not "I'm good, man." Something like "I'm not doing great, honestly." People with strong social connections tend to do better across the board: a large review of 148 studies found they had about 50% better odds of survival ([Holt-Lunstad, Smith and Layton, 2010](https://doi.org/10.1371/journal.pmed.1000316)).
 4. **Write it down instead of sending it.** The 2am message to her never goes the way you hope. Type it in our [unsent text tool](/tools/unsent-text/), where it never sends.
 5. **Move your body every day.** A run, the gym, a long walk. It burns off the restless energy and helps you sleep.
-6. **Watch the alcohol.** Drinking lowers your guard and raises the odds of a drunk text. In a survey of over 5,000 people, more anxious coping after a breakup was linked to more drinking and drug use ([Davis, Shaver and Vernon, 2003](https://doi.org/10.1177/0146167203252884)).
+6. **Watch the alcohol.** Drinking lowers your guard and raises the odds of a drunk text. In a survey of over 5,000 people, those who took a breakup most anxiously were more likely to cope with alcohol or drugs ([Davis, Shaver and Vernon, 2003](https://doi.org/10.1177/0146167203252884)).
 7. **Fill the evenings.** The hours you spent with her are the hardest now. Put something in them: friends, a sport, a class, a project.
 8. **Make a list of what didn't work.** Your memory will replay the best moments. Balance them with the real ones. Our [reasons not to text your ex tool](/tools/reasons-not-to-text/) helps you write and keep the list.
 9. **Track your days.** Watching the number grow is proof you're doing it. Use our free [no contact counter](/tools/no-contact-counter/).
@@ -103,7 +103,7 @@ Give it time and distance. Cut contact, mute her online, and let yourself feel i
 Because your brain still craves the connection. Every check of her profile or reread of old messages keeps that craving going. Less contact, fewer reminders and a full schedule help the thoughts fade.
 
 **Is it weak to be this upset over a girl?**
-No. Breakups hurt everyone, and research shows rejection activates the same brain areas as physical pain. Dealing with it properly takes more strength than pretending you're fine.
+No. Breakups hurt everyone, and research shows rejection activates some of the same brain areas as physical pain. Dealing with it properly takes more strength than pretending you're fine.
 
 **Should I text her to see how she's doing?**
 Usually not. It reopens the wound and puts you back in the position of waiting for a reply. If you're unsure, take our [should I text my ex quiz](/tools/should-i-text-my-ex/) first.
