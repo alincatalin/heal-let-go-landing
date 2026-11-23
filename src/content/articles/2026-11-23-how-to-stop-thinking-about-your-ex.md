@@ -87,7 +87,7 @@ What helps:
 
 - **Phone out of reach.** Charge it across the room. Most "just one look" checks happen in bed.
 - **Have a fixed wind-down.** The same podcast, audiobook or playlist each night, so your mind has somewhere to rest that isn't them.
-- **Keep a notepad by the bed.** When a thought won't leave, write it down and tell yourself you'll deal with it tomorrow.
+- **Keep a notepad by the bed.** When a thought won't leave, write it down and tell yourself you'll deal with it tomorrow. If sleep itself has gone, here's [what to do when you can't sleep after a breakup](/blog/articles/cant-sleep-after-a-breakup/).
 - **Have someone to talk to at 2am.** Friends sleep. That's the gap [Heal](https://apps.apple.com/app/id6754834593) was built for: open it instead of their chat, tell the coach what's going round your head, and get a calm reply. Nothing you write ever reaches your ex.
 
 If you're about to text them, read [what to do instead of texting your ex at 2am](/blog/articles/what-to-do-instead-of-texting-your-ex/) first.
