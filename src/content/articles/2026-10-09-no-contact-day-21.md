@@ -64,6 +64,8 @@ People who held firm on texting sometimes slip on checking at this point, becaus
 
 ## What Helps at Three Weeks
 
+If the missing is the hardest part right now, our guide on [how to stop missing someone](/blog/articles/how-to-stop-missing-someone/) has ten things that help. A few more for this stage:
+
 ### Plan around your triggers
 
 By now you probably know the dates, places and times that get to you. Look at the next two weeks and mark the risky ones: a birthday, a holiday, a weekend you'd normally have spent together. Plan something specific for each, with someone if you can. If it's the holiday season, here's [how to get through the holidays after a breakup](/blog/articles/holidays-after-a-breakup/).
