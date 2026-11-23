@@ -102,7 +102,7 @@ Or see [every day from 1 to 30](/blog/articles/no-contact-day-by-day/) on one pa
 He might, and he might not, and it can change from one day to the next. You can't tell from his silence. What you can tell is whether thinking about it is helping you or keeping you stuck.
 
 **Do men realize what they lost during no contact?**
-Some people reflect on a relationship after it ends, and some don't. There's no reliable timeline for it, and waiting for it to happen keeps your life on hold.
+Some people reflect on a relationship after it ends, and some don't. There's no reliable timeline for it, and waiting for it to happen keeps your life on hold. More in [will my ex come back?](/blog/articles/will-my-ex-come-back/)
 
 **Should I break no contact to find out what he's thinking?**
 Reaching out to get an answer usually gets you a short reply or none at all, and either can set you back to the start. If you need closure, it tends to come from your own understanding rather than from their message.
