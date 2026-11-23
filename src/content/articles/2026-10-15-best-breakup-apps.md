@@ -138,7 +138,7 @@ Whichever you pick, use the free trial or free tier for a few days before paying
 
 ## Do Breakup Apps Actually Work?
 
-An app can't make you get over someone. Time, people who care about you and, for some, a therapist do most of that work.
+An app can't make you get over someone. Time, people who care about you and, for some, a therapist do most of that work. (Our [breakup advice](/blog/articles/breakup-advice/) guide covers the rest.)
 
 What an app can do is change what happens in the hard moments. Checking an ex's profile, for example, is linked to more distress and longing and less personal growth after a breakup ([Marshall, 2012](https://doi.org/10.1089/cyber.2012.0125)). A tool that gives that urge somewhere else to go helps you stop feeding the loop.
 

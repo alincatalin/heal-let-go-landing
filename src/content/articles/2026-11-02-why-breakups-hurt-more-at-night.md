@@ -76,4 +76,4 @@ Yes. Trouble falling asleep, waking at 3am and early waking are all common in th
 Almost never. Wait until the morning and see if you still want to. Our [should I text my ex quiz](/tools/should-i-text-my-ex/) helps you check.
 
 **How long will the nights be this hard?**
-For most people the worst nights ease over the first few weeks, though some still hit hard later, often around dates and holidays. Each night you get through without reaching out makes the next one a little easier.
+For most people the worst nights ease over the first few weeks, though some still hit hard later, often around dates and holidays. Each night you get through without reaching out makes the next one a little easier. For the days in between, here's our [breakup advice](/blog/articles/breakup-advice/).
