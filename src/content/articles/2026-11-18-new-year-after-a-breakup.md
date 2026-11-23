@@ -93,7 +93,7 @@ That's normal, and it doesn't mean the plan isn't working.
 
 The holidays pack a lot of reminders into a few weeks: couples everywhere, family asking questions, midnight on New Year's Eve. If you've just got through that, January 1 might be the most tired you've felt in months. If you're dreading the night itself, our [Christmas and New Year after a breakup](/holidays/) page has a free tool or guide for each of the hard days.
 
-Don't use the first day of the year as a scorecard. Use it as day one of a count. Early January can even feel lighter for some people, simply because the holiday cues stop. If you want to look back before you look forward, [Breakup Year Wrapped](/tools/year-wrapped/) turns your year into one card: days since it ended, days without texting, and your word for the year.
+Don't use the first day of the year as a scorecard. Cover the basics first: sleep, food, a walk, one person (here's a simple [self-care checklist](/blog/articles/self-care-after-a-breakup/)). Use it as day one of a count. Early January can even feel lighter for some people, simply because the holiday cues stop. If you want to look back before you look forward, [Breakup Year Wrapped](/tools/year-wrapped/) turns your year into one card: days since it ended, days without texting, and your word for the year.
 
 If it's more than tired, if you're struggling to cope or feel unsafe, please talk to a doctor or therapist, or find a local helpline at [findahelpline.com](https://findahelpline.com).
 

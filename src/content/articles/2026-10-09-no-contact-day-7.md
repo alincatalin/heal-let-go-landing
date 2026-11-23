@@ -65,7 +65,7 @@ The work shifts now. Week one was about surviving the urges. Week two is about f
 
 ### Rebuild one routine
 
-Pick one thing the relationship crowded out (a workout, a weekly call with a friend, cooking a proper meal) and put it back in your week on purpose. Not as a distraction, but because it's yours.
+Pick one thing the relationship crowded out (a workout, a weekly call with a friend, cooking a proper meal) and put it back in your week on purpose. Not as a distraction, but because it's yours. Our [breakup self-care checklist](/blog/articles/self-care-after-a-breakup/) has more ideas.
 
 ### Update your reasons list
 
