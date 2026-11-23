@@ -20,7 +20,7 @@ appBox:
 
 To get over him, you stop the contact that keeps the wound open, let yourself grieve on purpose instead of all day, and rebuild your days one small routine at a time. Most people feel a real shift within the first month. It won't be a straight line, but it is a direction, and you can plan for it.
 
-That's what this guide is: a plan. Not a pep talk, not "just love yourself," but what to do in the first three days, each week after that, and on the days when it all comes back.
+That's what this guide is: a plan. Not a pep talk, not "just love yourself," but what to do in the first three days, each week after that, and on the days when it all comes back. (Getting over a woman? Read [how to get over her](/blog/articles/how-to-get-over-her/).)
 
 ## Why Is It So Hard to Get Over Him?
 

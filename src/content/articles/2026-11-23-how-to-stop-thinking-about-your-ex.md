@@ -121,7 +121,7 @@ Sometimes the thoughts are a sign of something bigger:
 ## FAQ: How to Stop Thinking About Your Ex
 
 **How do I stop thinking about my ex all the time?**
-Stop feeding the thoughts first: no checking their profile, no rereading old chats. Then give the thoughts a set time each day, and when they come outside it, switch to something that takes your full attention. Over weeks, "all the time" becomes "sometimes".
+Stop feeding the thoughts first: no checking their profile, no rereading old chats. Then give the thoughts a set time each day, and when they come outside it, switch to something that takes your full attention. Over weeks, "all the time" becomes "sometimes". If it's your ex-girlfriend you can't stop thinking about, our guide on [how to get over her](/blog/articles/how-to-get-over-her/) has a plan.
 
 **Why do I keep thinking about my ex after months?**
 Usually because something still feeds it: you're checking on them, you're still in contact, or there are questions you haven't let go of. Thoughts also come back around birthdays, holidays and when you hear news about them. A return isn't a relapse. It usually passes faster each time.

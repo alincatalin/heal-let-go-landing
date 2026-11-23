@@ -68,7 +68,7 @@ For the full approach, read our [no contact rule guide](/blog/articles/no-contac
 ## FAQ: No Contact With a Coworker
 
 **Can you do no contact if you work together?**
-Not fully, but you can keep it to work only. Talking about tasks in a professional way doesn't break no contact. Personal messages and conversations do.
+Not fully, but you can keep it to work only. Talking about tasks in a professional way doesn't break no contact. Personal messages and conversations do. For the rest of the healing, see [how to get over her](/blog/articles/how-to-get-over-her/) or [how to get over him](/blog/articles/how-to-get-over-him/).
 
 **Should I tell HR about the breakup?**
 Only if it affects your work, for example if one of you reports to the other, you work on the same small team, or there's any harassment. You don't need to share personal details.
