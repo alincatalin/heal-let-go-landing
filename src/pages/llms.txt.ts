@@ -18,6 +18,7 @@ export async function GET(context: APIContext) {
 - Google Play: https://play.google.com/store/apps/details?id=${PLAY_PACKAGE}
 - Contact: healletgo@proton.me
 - [No contact app](${url("/no-contact-app/")}): what Heal's no contact tracker does, what's free, how it handles a slip, and which other no contact apps have free tiers.
+- [Christmas and New Year after a breakup](${url("/holidays/")}): every free holiday tool and guide in date order, from family questions and Christmas alone to New Year's Eve and a fresh start in January.
 
 ## Free tools
 

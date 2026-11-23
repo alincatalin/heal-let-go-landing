@@ -1,0 +1,258 @@
+---
+import { ArrowRight } from "@lucide/astro";
+import Base from "../layouts/Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import Footer from "../components/Footer.astro";
+import ToolCard from "../components/ToolCard.astro";
+import StoreButtons from "../components/StoreButtons.astro";
+import { articleUrl, getArticles } from "../lib/site";
+import { tools } from "../lib/tools";
+import { appStorePage } from "../lib/store";
+
+// Christmas and New Year hub: every seasonal tool and post, in the order the days come.
+// Posts are looked up by slug and skipped until they exist, so this page can merge before them.
+const site = Astro.site!.toString();
+const url = new URL("/holidays/", site).toString();
+const description =
+  "Christmas and New Year after a breakup: free tools and guides for every hard day, from the family questions to Christmas alone, New Year's Eve and a fresh start in January.";
+
+const articles = await getArticles();
+const post = (slug: string) => articles.find((a) => a.id === slug);
+const tool = (slug: string) => tools.find((t) => t.href === `/tools/${slug}/`)!;
+
+const pillar = post("holidays-after-a-breakup");
+
+const stages = [
+  {
+    id: "now",
+    when: "Now to December",
+    start: "11-01",
+    end: "12-20",
+    title: "Before the holidays start",
+    text: "Decide now, while it's calm. Pick the days you're dreading, get a line ready for family, and start the challenge so the season has a count of its own.",
+    tools: [tool("holiday-challenge"), tool("holiday-plan")],
+    posts: ["what-to-say-when-family-asks-about-breakup", "what-to-do-with-your-exs-stuff"],
+  },
+  {
+    id: "christmas",
+    when: "December 21 to 27",
+    start: "12-21",
+    end: "12-27",
+    title: "Christmas",
+    text: "The quiet afternoon, the party they might be at, the Merry Christmas text you want to send. Write it where it can't send, and plan the day in blocks.",
+    tools: [tool("unsent-text"), tool("should-i-text-my-ex")],
+    posts: [
+      "should-i-text-my-ex-merry-christmas",
+      "christmas-alone-after-breakup",
+      "seeing-your-ex-at-a-holiday-party",
+      "what-to-do-with-gifts-from-ex",
+    ],
+  },
+  {
+    id: "nye",
+    when: "December 28 to 31",
+    start: "12-28",
+    end: "12-31",
+    title: "New Year's Eve",
+    text: "Plan where you'll be at midnight and what you'll do at 12:01. Archive the chat before you leave, and look back on the year you got through.",
+    tools: [tool("year-wrapped"), tool("reasons-not-to-text")],
+    posts: ["new-years-eve-after-a-breakup"],
+  },
+  {
+    id: "january",
+    when: "January",
+    start: "01-01",
+    end: "01-31",
+    title: "A fresh start",
+    text: "Not a new person by January 2. Four small weeks, one or two goals you'll do rather than avoid, and a count you can watch grow.",
+    tools: [tool("new-year-reset"), tool("no-contact-counter")],
+    posts: ["new-year-after-a-breakup", "no-contact-rule-guide"],
+  },
+].map((s) => ({ ...s, posts: s.posts.map(post).filter((p) => p !== undefined) }));
+
+const faq = [
+  {
+    question: "How do I get through the holidays after a breakup?",
+    answer:
+      "Plan the hard days before they arrive. Pick the days you're dreading, have one short line ready for when family asks, decide now that you won't text your ex, and fill the quiet hours on purpose. Each day you get through is one you never have to do for the first time again.",
+  },
+  {
+    question: "Should I text my ex Merry Christmas or Happy New Year?",
+    answer:
+      "Usually not, if you're in no contact or still hoping to get back together, because a holiday text tends to restart contact. Write it somewhere it can't send and decide in the morning. If you share kids, a short message about the kids is fine.",
+  },
+  {
+    question: "How do I spend New Year's Eve after a breakup?",
+    answer:
+      "Pick a plan that fits how you feel, not how the night is supposed to look: friends, a night in, or bed by eleven. Archive the chat with your ex before you go out, keep drinks in check, and decide what you'll do at 12:01 if you want to text them.",
+  },
+  {
+    question: "How do I make a fresh start in the new year after a breakup?",
+    answer:
+      "Keep it small. Choose one or two goals framed as things you'll do, like texting a friend instead of your ex, plan the first four weeks, and count progress in days. The free 2027 Reset Plan builds a four-week plan from four questions.",
+  },
+  {
+    question: "Are these holiday tools free?",
+    answer:
+      "Yes. Every tool on this page is free, with no account and no email, and runs in your browser. They're made by the team behind Heal, a breakup app for iPhone and Android.",
+  },
+];
+
+const allPosts = stages.flatMap((s) => s.posts);
+const allTools = stages.flatMap((s) => s.tools);
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Christmas and New Year After a Breakup",
+    url,
+    description,
+    publisher: { "@id": `${site}#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: [
+        ...allTools.map((t) => ({ name: t.name, url: new URL(t.href, site).toString() })),
+        ...allPosts.map((p) => ({ name: p.data.title, url: new URL(articleUrl(p), site).toString() })),
+      ].map((item, i) => ({ "@type": "ListItem", position: i + 1, ...item })),
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site },
+      { "@type": "ListItem", position: 2, name: "Christmas and New Year", item: url },
+    ],
+  },
+];
+---
+
+<Base
+  title="Christmas and New Year After a Breakup - Heal"
+  description={description}
+  jsonLd={jsonLd}
+  storeSource="tool"
+  storeCampaign="holidays"
+  storePage={appStorePage("no-contact")}
+>
+  <SiteHeader />
+  <main class="relative overflow-hidden">
+    <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 md:py-20">
+      <header class="mx-auto mb-12 max-w-3xl space-y-5 text-center">
+        <p class="eyebrow text-lavender">Christmas and New Year</p>
+        <h1 class="text-5xl leading-[1.08] md:text-6xl">
+          Your first holidays <span class="italic text-lavender">without them</span>
+        </h1>
+        <p class="lede">
+          A free tool or guide for each hard day, from the family questions to midnight on New Year's Eve and the first
+          week of January. No sign-up.
+        </p>
+      </header>
+
+      <div class="card mx-auto mb-14 max-w-3xl p-6 md:p-7">
+        <p class="text-[16px] leading-relaxed text-ink-soft">
+          <strong class="text-ink">The short version:</strong> plan the hard days before they arrive, decide now that
+          you won't text your ex, and write any message somewhere it can't send. Don't make January 1 a test. You don't
+          need to be over them by the new year. You need to get there with your count and your self-respect.
+        </p>
+        {
+          pillar && (
+            <a href={articleUrl(pillar)} class="mt-4 inline-flex items-center gap-2 font-semibold text-lavender">
+              Read the full guide to the holidays after a breakup <ArrowRight class="h-4 w-4" />
+            </a>
+          )
+        }
+      </div>
+
+      <nav aria-label="Jump to" class="mb-12 flex flex-wrap justify-center gap-2">
+        {stages.map((s) => <a href={`#${s.id}`} class="chip" data-stage-link={s.id}>{s.title}</a>)}
+      </nav>
+
+      <div class="space-y-16">
+        {
+          stages.map((s) => (
+            <section id={s.id} aria-labelledby={`${s.id}-title`} data-stage={s.id} data-start={s.start} data-end={s.end} class="scroll-mt-24">
+              <p class="eyebrow text-ink-muted">
+                {s.when}
+                <span class="stage-now ml-2 rounded-full bg-[#a48bf7]/20 px-2 py-0.5 text-lavender" hidden>
+                  You are here
+                </span>
+              </p>
+              <h2 id={`${s.id}-title`} class="mt-2 text-3xl md:text-4xl">{s.title}</h2>
+              <p class="mt-3 max-w-2xl text-[16px] leading-relaxed text-ink-soft">{s.text}</p>
+              <div class="mt-6 grid gap-5 md:grid-cols-2">
+                {s.tools.map((t) => <ToolCard tool={t} headingLevel="h3" />)}
+              </div>
+              {
+                s.posts.length > 0 && (
+                  <ul class="mt-6 space-y-2">
+                    {s.posts.map((p) => (
+                      <li>
+                        <a href={articleUrl(p)} class="group inline-flex items-start gap-2 text-[16px] text-ink hover:text-lavender">
+                          <ArrowRight class="mt-1 h-4 w-4 shrink-0 text-lavender" />
+                          <span>{p.data.title}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )
+              }
+            </section>
+          ))
+        }
+      </div>
+
+      <div class="card-raised mx-auto mt-20 max-w-3xl space-y-4 p-7 text-center" data-cta="tool">
+        <p class="eyebrow text-lavender">For the nights the tools aren't open</p>
+        <h2 class="text-3xl">Something to open instead of their chat</h2>
+        <p class="text-[16px] leading-relaxed text-ink-soft">
+          Heal counts every day without texting them through the season, has an SOS button for midnight on Christmas
+          Eve, and a chat that looks like theirs but never sends. Free on iPhone and Android.
+        </p>
+        <div class="flex justify-center">
+          <StoreButtons matchDevice />
+        </div>
+      </div>
+
+      <div class="prose-heal mx-auto mt-20 max-w-3xl">
+        <h2>FAQ: Christmas and New Year after a breakup</h2>
+        {
+          faq.map((item) => (
+            <>
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </>
+          ))
+        }
+        <p>
+          If the season is bringing up more than you can carry, please reach out. If you're struggling to cope or feel
+          unsafe, talk to a doctor or therapist, or find a local helpline at{" "}
+          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer">findahelpline.com</a>.
+        </p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Base>
+
+<script>
+  // Mark the stage that matches today's date ("You are here"). Purely visual; the page works without it.
+  const now = new Date();
+  const md = `${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+  document.querySelectorAll<HTMLElement>("[data-stage]").forEach((el) => {
+    const { start = "", end = "" } = el.dataset;
+    if (md >= start && md <= end) {
+      el.querySelector<HTMLElement>(".stage-now")?.removeAttribute("hidden");
+      document.querySelector(`[data-stage-link="${el.dataset.stage}"]`)?.classList.add("text-lavender");
+    }
+  });
+</script>

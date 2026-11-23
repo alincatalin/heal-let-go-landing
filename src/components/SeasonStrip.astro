@@ -1,0 +1,54 @@
+---
+import { ArrowRight } from "@lucide/astro";
+import { tools } from "../lib/tools";
+
+// Homepage strip for the Christmas and New Year season. Shown November to January; a small script
+// hides it the rest of the year, so it can stay in the page without a rebuild.
+const order = ["holiday-challenge", "holiday-plan", "year-wrapped", "new-year-reset"];
+const seasonal = tools
+  .filter((t) => t.group === "season")
+  .sort((a, b) => order.findIndex((o) => a.href.includes(o)) - order.findIndex((o) => b.href.includes(o)));
+---
+
+<section id="holidays" class="season-strip relative py-14 md:py-20" aria-labelledby="season-title">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="card-raised p-6 md:p-10">
+      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div class="max-w-2xl space-y-3">
+          <p class="eyebrow text-lavender">Christmas and New Year</p>
+          <h2 id="season-title" class="text-3xl leading-[1.12] md:text-4xl">
+            First holidays <span class="italic text-lavender">without them?</span>
+          </h2>
+          <p class="text-[16px] leading-relaxed text-ink-soft">
+            Free tools for the family questions, Christmas Eve, midnight on New Year's Eve and a fresh start in January.
+            No sign-up.
+          </p>
+        </div>
+        <a href="/holidays/" class="btn btn-quiet shrink-0 self-start md:self-auto">
+          See the whole season <ArrowRight class="h-4 w-4" />
+        </a>
+      </div>
+      <ul class="mt-8 grid grid-cols-2 gap-3 lg:grid-cols-4">
+        {
+          seasonal.map((t) => (
+            <li>
+              <a href={t.href} class="card card-link flex h-full flex-col p-4 sm:p-5">
+                <span class="eyebrow text-lavender">{t.label}</span>
+                <span class="mt-2 text-[15px] font-semibold leading-snug text-ink sm:text-[17px]">{t.name}</span>
+                <span class="mt-auto inline-flex items-center gap-1.5 pt-4 text-[14px] font-semibold text-lavender">
+                  {t.cta} <ArrowRight class="h-4 w-4" />
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Only November to January.
+  const month = new Date().getMonth();
+  if (month >= 1 && month <= 9) document.querySelector<HTMLElement>(".season-strip")?.setAttribute("hidden", "");
+</script>

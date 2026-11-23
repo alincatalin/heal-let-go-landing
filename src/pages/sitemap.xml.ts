@@ -20,6 +20,7 @@ export async function GET(context: APIContext) {
     { loc: "/blog/", lastmod: latest && day(latest) },
     { loc: "/no-contact-app/", lastmod: "2026-11-06" },
     { loc: "/tools/", lastmod: toolsUpdated },
+    { loc: "/holidays/", lastmod: "2026-11-18" },
     ...guides.map((p) => ({ loc: guideUrl(p), lastmod: day(p.data.updated ?? p.data.date) })),
     ...articles.map((p) => ({ loc: articleUrl(p), lastmod: day(p.data.updated ?? p.data.date) })),
     ...tools.map((t) => ({ loc: t.href, lastmod: t.updated })),
