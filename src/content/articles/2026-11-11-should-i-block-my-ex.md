@@ -82,3 +82,6 @@ Usually not on the channel you use for the kids. Mute them elsewhere and keep on
 
 **Is it okay to unblock my ex later?**
 Yes, once seeing their name or posts doesn't pull you back in. If you're not sure yet, it's too soon.
+
+**What if my ex blocked me first?**
+Then you're already in no contact. Don't try to get around it with new accounts or friends. Read [what to do when your ex blocks you](/blog/articles/my-ex-blocked-me/).

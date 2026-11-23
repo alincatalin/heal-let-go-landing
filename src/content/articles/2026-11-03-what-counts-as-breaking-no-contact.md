@@ -66,7 +66,7 @@ Keep these to the facts. "I'll drop the box off Saturday at 10" is logistics. "I
 
 No contact isn't a rule for its own sake. It's there to give your mind a break from them so the pull can fade. That's why the "technically not contact" things still matter.
 
-Checking who they follow, scrolling their old posts or rereading old chats doesn't reach them, but it does keep them at the center of your day. Each look restarts the same hope and the same hurt.
+Checking who they follow, scrolling their old posts or rereading old chats doesn't reach them, but it does keep them at the center of your day. Each look restarts the same hope and the same hurt. That includes checking whether they've [blocked you](/blog/articles/my-ex-blocked-me/).
 
 A good question to ask: **"Am I doing this to feel better, or to get a reaction or an update?"** If it's the second, treat it like contact.
 
