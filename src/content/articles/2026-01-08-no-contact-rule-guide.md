@@ -171,6 +171,8 @@ Ninety days is for when you need serious distance to undo serious patterns.
 - You've tried shorter periods and kept breaking
 - You genuinely need to rebuild your identity outside this person
 
+What the end of that stretch tends to feel like is in [3 months of no contact](/blog/articles/3-months-no-contact/).
+
 ### Here's What Actually Matters
 
 Pick a timeline and commit to it. Don't set a 30-day goal and then extend it to 60 halfway through because things are going well. Don't set 90 days and then cut it short because you feel better.

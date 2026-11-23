@@ -184,7 +184,7 @@ For many people it's around day 3, when the initial adrenaline is gone and the c
 Often somewhere between day 5 and day 10 the urges become less frequent and shorter, though bad days still come. By weeks three and four, most people report more good days than bad.
 
 **How long should no contact last?**
-Thirty days is the most common minimum. Many people extend to 60 or 90 days, especially if they still feel a strong pull toward their ex. Our [no contact rule guide](/blog/articles/no-contact-rule-guide/) covers how to decide.
+Thirty days is the most common minimum. Many people extend to 60 or 90 days, especially if they still feel a strong pull toward their ex (here's what [3 months of no contact](/blog/articles/3-months-no-contact/) tends to look like). Our [no contact rule guide](/blog/articles/no-contact-rule-guide/) covers how to decide.
 
 **Does a bad day mean no contact isn't working?**
 No. Healing isn't linear, and an unexpectedly hard day in week two or three is very common. What matters is that the bad moments pass faster than they used to.

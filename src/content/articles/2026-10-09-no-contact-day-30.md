@@ -102,6 +102,7 @@ Whether they've reached out, posted, or started seeing someone isn't a measure o
 
 *   **Looking back:** If this month felt uneven, re-read [day 14](/blog/articles/no-contact-day-14/) and [day 21](/blog/articles/no-contact-day-21/). The dips are part of the shape, not a reset.
 *   **The bigger picture:** [The 7 stages of a breakup](/blog/articles/7-stages-of-breakup/) covers what healing tends to look like beyond the first month.
+*   **Further on:** [Three months of no contact](/blog/articles/3-months-no-contact/) covers what usually changes by day 90.
 *   **The full rulebook:** Our [no contact rule guide](/blog/articles/no-contact-rule-guide/) covers longer stretches, what counts as contact, and what to do if they reach out.
 
 One month. Whatever you decide next, you've already proved you can do the hard part.
