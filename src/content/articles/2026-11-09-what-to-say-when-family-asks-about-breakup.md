@@ -91,7 +91,7 @@ You don't have to say it was recent, or who ended it. "A while ago" can mean thr
 A little. Here are lines for the most common situations.
 
 - **It's fresh (days or weeks):** "It's very new and I'm not ready to talk about it. I'll fill you in another time."
-- **You were dumped:** "He ended it. I'm sad, but I'll be okay." You don't have to pretend it was mutual, and you don't have to explain why.
+- **You were dumped:** "He ended it. I'm sad, but I'll be okay." You don't have to pretend it was mutual, and you don't have to explain why. (More on [getting through being dumped](/blog/articles/getting-dumped/).)
 - **You ended it:** "I ended it. It was the right call, even if it's hard." If someone says "But he was so nice," try: "He is nice. We weren't right."
 - **They want you to get back together:** "I know you liked us together. We're not getting back together, and it helps me most when people don't suggest it."
 - **They really liked him:** "I know you liked him. You're allowed to miss him too. I just can't be the one you talk to about it right now."
