@@ -1,7 +1,7 @@
 ---
 title: "How to Stop Thinking About Your Ex (What Actually Works)"
 slug: "how-to-stop-thinking-about-your-ex"
-date: "2026-11-24"
+date: "2026-11-23"
 category: "Getting Over"
 readTime: "9 min"
 excerpt: "How to stop thinking about your ex when they're on your mind all day: why pushing the thoughts away backfires, what research says works, and a plan for nights."
