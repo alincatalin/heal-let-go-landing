@@ -67,7 +67,7 @@ If the relationship swung between hurt and warmth, the pull can be even stronger
 
 **2. Remember why it ended.** Write down the reasons now, while you're clear, and read them when the message comes.
 
-**3. Decide whether to reply at all.** Silence is a full answer. If you do reply, keep it short: "I'm not going to get back together. Please don't contact me." Then stop.
+**3. Decide whether to reply at all.** Silence is a full answer, and [my ex texted me: should I text back?](/blog/articles/my-ex-texted-me/) walks through how to decide. If you do reply, keep it short: "I'm not going to get back together. Please don't contact me." Then stop.
 
 **4. Don't argue or explain.** Each reason you give is something they can push back on.
 
