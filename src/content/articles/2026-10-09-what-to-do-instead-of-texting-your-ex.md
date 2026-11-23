@@ -86,7 +86,7 @@ The urge tends to come back at the same time and in the same place. Decide now w
 
 ### 12. Count the night you didn't send it
 
-If you got through tonight without texting, that counts. Write it down. Every night you ride the urge out, it gets a little easier, and the record helps on the nights when it doesn't feel that way.
+If you got through tonight without texting, that counts. Write it down. Every night you ride the urge out, it gets a little easier, and the record helps on the nights when it doesn't feel that way. For the days in between, here's [what to do after a breakup](/blog/articles/what-to-do-after-a-breakup/), with 30 ideas for empty evenings.
 
 ## What If I Already Sent It?
 
