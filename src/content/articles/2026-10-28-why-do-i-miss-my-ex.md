@@ -143,7 +143,7 @@ Ending a relationship doesn't end the attachment. You can know it was the right 
 Attachment and craving don't check whether a person was good for you, and memory tends to keep the good moments. When kindness was unpredictable, those moments can feel even more precious. Missing them doesn't mean leaving was a mistake.
 
 **Why can't I stop thinking about my ex?**
-Your brain learned to expect them, so it keeps reaching for them, and every look at their profile tops that up. Habits and unanswered questions keep the loop going too. The thoughts usually get quieter with distance, not with willpower.
+Your brain learned to expect them, so it keeps reaching for them, and every look at their profile tops that up. Habits and unanswered questions keep the loop going too. The thoughts usually get quieter with distance, not with willpower. Here's [how to stop thinking about your ex](/blog/articles/how-to-stop-thinking-about-your-ex/) day to day.
 
 **Why do I miss my ex more as time goes on?**
 Often because the first weeks were numbed by shock and busyness, and the loss only feels real once that wears off. Friends check in less, memory keeps softening the bad parts, and dates like birthdays come round. It usually peaks and then eases, especially if you're not checking on them.
