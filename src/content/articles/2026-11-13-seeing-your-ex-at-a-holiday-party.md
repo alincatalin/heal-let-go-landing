@@ -97,7 +97,7 @@ If it happens without warning:
 - **Give yourself ten minutes.** Step outside, run cold water over your wrists, breathe out slowly a few times. Then decide whether to stay.
 - **Leave if you need to.** "I'm not feeling great, I'm going to head out" is a full explanation.
 
-Whatever their new relationship means, it isn't a verdict on you.
+Whatever their new relationship means, it isn't a verdict on you. If it started fast, here's what research says about [rebound relationships](/blog/articles/rebound-relationship/).
 
 ## Should I Drink at a Party Where My Ex Is?
 
