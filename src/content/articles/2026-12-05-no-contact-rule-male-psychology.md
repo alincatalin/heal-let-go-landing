@@ -1,5 +1,5 @@
 ---
-title: "No Contact Rule and Male Psychology: What's Real, What's Myth"
+title: "No Contact and Male Psychology: What's Real, What's Myth"
 slug: "no-contact-rule-male-psychology"
 date: "2026-12-05"
 category: "No Contact"
