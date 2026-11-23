@@ -127,7 +127,7 @@ Yes. Grief that others don't recognize is called disenfranchised grief, and it's
 Stop feeding the hope. Mute their stories, stop rereading old messages and stop asking about them. Write down what you imagined so it becomes a loss you can be sad about, then put that energy into people who give some back.
 
 **Should I tell them how I feel to get closure?**
-Only if you can accept any answer, including silence. If you're secretly hoping it changes their mind, write it out first somewhere it won't send and see how you feel the next day.
+Only if you can accept any answer, including silence. If you're secretly hoping it changes their mind, write it out first somewhere it won't send and see how you feel the next day. Our guide on [how to get closure after a breakup](/blog/articles/how-to-get-closure/) covers ways to find it without them.
 
 **How do I get over someone I see every day?**
 Cut the extras rather than the person: stop late-night chats and personal messages, keep in-person contact friendly and brief, and avoid hearing about their dating life. A few weeks of lower contact gives the feeling room to fade.
