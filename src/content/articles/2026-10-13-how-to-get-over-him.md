@@ -136,7 +136,7 @@ There's no fixed number, and it depends on how long you were together and how it
 The fastest route is the boring one: stop contact, stop checking his profiles, and fill the gaps he left with people and routines. Every look at his page or late-night text restarts the craving, so cutting those out is what actually speeds things up.
 
 **Why can't I stop thinking about him?**
-Breakups activate the same reward and craving systems involved in addiction, so your brain keeps reaching for him. Thoughts usually come less often once they stop being fed by contact and social media. Giving them a set time each day can also help.
+Breakups activate the same reward and craving systems involved in addiction, so your brain keeps reaching for him. Thoughts usually come less often once they stop being fed by contact and social media. Giving them a set time each day can also help. More in [how to stop thinking about your ex](/blog/articles/how-to-stop-thinking-about-your-ex/).
 
 **Should I stay friends with him?**
 Not yet. Trying to be friends while you still have feelings tends to keep you hoping (more in [can you be friends with your ex](/blog/articles/can-you-be-friends-with-your-ex/)). If a friendship is right, it will still be possible after you've had real distance and no longer want more.

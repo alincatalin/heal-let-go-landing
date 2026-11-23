@@ -94,7 +94,7 @@ Tennov described three typical endings ([Psychology Today](https://www.psycholog
 
 After a breakup, starvation is the one you get some say in. That means taking away the fuel: no texts, no checking his profile, no asking friends what he's up to. It's why [no contact](/blog/articles/no-contact-rule-guide/) helps so much with limerence, and why [checking his Instagram](/blog/articles/stop-checking-ex-instagram/) keeps it alive.
 
-It also helps to argue with the idealized version: write down three real things that didn't work, and read them when the highlight reel starts.
+It also helps to argue with the idealized version: write down three real things that didn't work, and read them when the highlight reel starts. Research backs this up, with a catch, in [how to stop thinking about your ex](/blog/articles/how-to-stop-thinking-about-your-ex/).
 
 ### Signs Limerence Is Fading
 
