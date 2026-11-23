@@ -1,5 +1,5 @@
 ---
-title: "Breakup Advice: 15 Things That Actually Help (Backed by Research)"
+title: "Breakup Advice: 15 Things That Actually Help"
 slug: "breakup-advice"
 date: "2026-12-08"
 category: "Breakup Healing"
