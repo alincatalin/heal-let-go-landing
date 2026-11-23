@@ -304,7 +304,7 @@ Missing them is normal, but it isn't a reason to message them. The feeling usual
 Probably not. A week isn't enough time to process the breakup or break the emotional dependence. If you're thinking about texting after just a week, it's likely driven by craving, not clarity.
 
 **What should I text my ex if I want them back?**
-Don't text to get them back. If the relationship is meant to restart, it will happen through mutual growth and time — not through a persuasive text. Texting from a place of hope usually leads to regret.
+Don't text to get them back. If the relationship is meant to restart, it will happen through mutual growth and time — not through a persuasive text. Texting from a place of hope usually leads to regret. If you're seriously weighing a second try, answer the [10 questions in should I get back with my ex?](/blog/articles/should-i-get-back-with-my-ex/) first.
 
 **How do I know if I should text my ex or move on?**
 If you're asking this question, the answer is almost always "move on." When you're genuinely ready to text (if ever), you won't need to ask — you'll know, and the outcome won't matter to your healing.

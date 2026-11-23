@@ -38,7 +38,7 @@ Staying close is also how many couples drift back together. In a study of nearly
 | You'd be friends even if nothing romantic had happened | The friendship is the only way to stay in their life |
 | Talking to them leaves you calm | Every message brings hope, then a crash |
 
-If most of your answers are in the right column, that's normal, and it means you need distance first.
+If most of your answers are in the right column, that's normal, and it means you need distance first. If what you really want is the relationship back, read [should I get back with my ex?](/blog/articles/should-i-get-back-with-my-ex/) instead.
 
 ## Why Does My Ex Want to Be Friends?
 
