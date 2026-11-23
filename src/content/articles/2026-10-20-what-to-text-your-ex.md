@@ -103,6 +103,8 @@ You don't owe them a reply, especially in the first weeks. If it's practical, an
 >
 > **You:** (no reply, or if you need to: "I'm not ready to talk right now. Please give me some space.")
 
+For what their message usually means and more replies you can copy, see [my ex texted me: should I text back?](/blog/articles/my-ex-texted-me/)
+
 If you're doing no contact, our [no contact rule guide](/blog/articles/no-contact-rule-guide/) has more on handling messages from them without starting the clock over in your head.
 
 ## Which Texts Should You Not Send to Your Ex?

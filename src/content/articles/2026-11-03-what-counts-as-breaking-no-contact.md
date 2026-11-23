@@ -87,7 +87,7 @@ Treat it as if it does. You're not sending anything, but your name shows up in t
 Yes. A like sends them a notification with your name, which is a small way of saying "I'm still here."
 
 **If my ex texts me, does replying break no contact?**
-Yes. Any reply is contact. Not replying, or replying only to practical matters you can't avoid, keeps it intact.
+Yes. Any reply is contact. Not replying, or replying only to practical matters you can't avoid, keeps it intact. If you're deciding right now, read [my ex texted me: should I text back?](/blog/articles/my-ex-texted-me/)
 
 **Do I have to start over if I break no contact?**
 Your current streak starts again, but the days you made it still happened and still count toward getting over them. What matters most is going back to no contact quickly.

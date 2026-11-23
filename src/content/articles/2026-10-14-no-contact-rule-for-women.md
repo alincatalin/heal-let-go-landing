@@ -82,7 +82,7 @@ The first two weeks are usually the hardest. Many people find [day 3 is the wors
 
 The core rule is simple. These are the situations where people get stuck.
 
-**If he texts you.** You don't have to reply. If it's logistics (a key, a bill, a pet), answer briefly and only about that. If it's "hey, how are you?", you can leave it. Replying usually restarts the clock in your head, even if it doesn't in your tracker.
+**If he texts you.** You don't have to reply. If it's logistics (a key, a bill, a pet), answer briefly and only about that. If it's "hey, how are you?", you can leave it. Here's [how to decide whether to text your ex back](/blog/articles/my-ex-texted-me/). Replying usually restarts the clock in your head, even if it doesn't in your tracker.
 
 **If you share friends.** Ask them not to pass on news about him, and not to tell him about you. Most friends will respect that if you say it plainly.
 
