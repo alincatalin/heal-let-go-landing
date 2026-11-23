@@ -54,7 +54,7 @@ That's why it can feel so much bigger than other breakups, and why "just move on
 
 **4. Rebuild your days, one routine at a time.** Don't try to fill every gap at once. Start with the hardest time of day, often evenings and weekends, and plan something for it. If you want the first month laid out for you, our free [2027 Reset Plan](/tools/new-year-reset/) builds four weeks from four quick questions.
 
-**5. Find yourself again.** Who were your friends before? What did you do on a Saturday? Which hobby did you drop? You don't have to become someone new. You're finding out which parts of you were yours all along.
+**5. Find yourself again.** Who were your friends before? What did you do on a Saturday? Which hobby did you drop? You don't have to become someone new. You're finding out which parts of you were yours all along. Our [10 steps to get over a breakup](/blog/articles/how-to-get-over-a-breakup/) explain why this matters so much.
 
 **6. Let people help.** Long relationships often shrink your circle without you noticing. Reach out even if it feels awkward. Most friends are glad to hear from you.
 

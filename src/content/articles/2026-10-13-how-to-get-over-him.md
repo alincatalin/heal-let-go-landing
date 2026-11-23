@@ -133,7 +133,7 @@ If you'd like a day-by-day view of what's normal, our [no contact day by day gui
 There's no fixed number, and it depends on how long you were together and how it ended. Many people feel a clear shift within the first month of no contact, and the sharpest pain often eases in the first few weeks. Bad days can still show up months later, and that's normal.
 
 **How do I get over him fast?**
-The fastest route is the boring one: stop contact, stop checking his profiles, and fill the gaps he left with people and routines. Every look at his page or late-night text restarts the craving, so cutting those out is what actually speeds things up.
+The fastest route is the boring one: stop contact, stop checking his profiles, and fill the gaps he left with people and routines. Every look at his page or late-night text restarts the craving, so cutting those out is what actually speeds things up. For the full list, see [how to get over a breakup: 10 steps that help](/blog/articles/how-to-get-over-a-breakup/).
 
 **Why can't I stop thinking about him?**
 Breakups activate the same reward and craving systems involved in addiction, so your brain keeps reaching for him. Thoughts usually come less often once they stop being fed by contact and social media. Giving them a set time each day can also help. More in [how to stop thinking about your ex](/blog/articles/how-to-stop-thinking-about-your-ex/).

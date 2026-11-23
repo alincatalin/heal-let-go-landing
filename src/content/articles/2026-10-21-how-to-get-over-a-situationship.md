@@ -106,7 +106,7 @@ Here's what we'd suggest, kept small on purpose.
 
 **Week three:** Write down what you actually wanted. Not from them, from a relationship. Consistency? Someone who actually texts back? That list is useful later, when someone new shows up and you're tempted to settle for "maybe" again.
 
-**Week four onwards:** Add one thing to your week that has nothing to do with dating. A pottery class, or a standing Tuesday dinner with a friend. Something that's yours.
+**Week four onwards:** Add one thing to your week that has nothing to do with dating. A pottery class, or a standing Tuesday dinner with a friend. Something that's yours. The rest of the plan is in [how to get over a breakup](/blog/articles/how-to-get-over-a-breakup/), which works for situationships too.
 
 If you want a broader map of what tends to happen after any kind of breakup, read [the 7 stages of a breakup](/blog/articles/7-stages-of-breakup/). Our [30-day plan to get over him](/blog/articles/how-to-get-over-him/) goes week by week too, and most of it applies here.
 
