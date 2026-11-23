@@ -133,6 +133,7 @@ We compare Heal with Let Them Go in detail in [Let Them Go app vs Heal](/blog/ar
 - **You want to talk it through:** Breakup Buddy or Heal's coach.
 - **You want a counter and nothing else:** No Contact Tracker, or No Contact App's free web counter. Our [no contact app](/no-contact-app/) page covers what a good tracker does after a slip.
 - **You want people who get it:** Let it Go.
+- **You're looking for a friend who's going through it:** read [how to help a friend through a breakup](/blog/articles/how-to-help-a-friend-through-a-breakup/), then share whichever app fits them.
 
 Whichever you pick, use the free trial or free tier for a few days before paying. You'll know quickly whether you open it when it matters.
 

@@ -42,7 +42,7 @@ Parents get a little more, ideally by phone before the big day, so the dinner ta
 
 > "I wanted to tell you before Thanksgiving: Josh and I broke up. I'm sad, but I'm okay. I don't want to talk about it much at dinner. Could you help me keep it low-key?"
 
-That last line turns them into allies. If your mom is the type who'll tell everyone anyway, ask her to: "Can you let the aunts know so I don't have to say it ten times?"
+That last line turns them into allies. (If they want to know how to help, send them our guide on [helping someone through a breakup](/blog/articles/how-to-help-a-friend-through-a-breakup/).) If your mom is the type who'll tell everyone anyway, ask her to: "Can you let the aunts know so I don't have to say it ten times?"
 
 ## What About Grandparents?
 
