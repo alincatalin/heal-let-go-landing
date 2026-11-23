@@ -75,7 +75,7 @@ Then the relationship ends.
 
 And your brain doesn't get the memo that this is supposed to be healthy or growth-oriented or whatever you're telling yourself. All it knows is that a major source of neurochemical reward has been removed, and it responds the same way it would respond to any withdrawal: with panic, craving, and disorientation.
 
-Brain scans of people recently rejected by a partner show activity in reward and craving regions linked to addiction ([Fisher et al., 2010](https://doi.org/10.1152/jn.00784.2009)), and rejection also activates areas that process physical pain ([Kross et al., 2011](https://doi.org/10.1073/pnas.1102693108)).
+Brain scans of people recently rejected by a partner show activity in reward and craving regions linked to addiction ([Fisher et al., 2010](https://doi.org/10.1152/jn.00784.2009)), and rejection also activates areas that process physical pain ([Kross et al., 2011](https://doi.org/10.1073/pnas.1102693108)). We explain both in [why breakups hurt so much](/blog/articles/why-do-breakups-hurt-so-much/).
 
 This is why breakups hurt in your chest, not just your mind. This is why you can't sleep, can't eat, can't focus. Your brain is in survival mode, trying to get you to do whatever it takes to restore the source of reward it's been conditioned to depend on.
 
