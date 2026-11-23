@@ -57,7 +57,7 @@ A lot. Over months or years together, two people start to regulate each other. Y
 
 Psychologists David Sbarra and Cindy Hazan describe this as coregulation: in a close relationship, partners' bodies and moods become linked, and losing that partner can leave your sleep and stress levels off balance for a while ([Sbarra and Hazan, 2008](https://doi.org/10.1177/1088868308315702)). Recovery, in their account, mostly comes from learning to settle yourself again.
 
-So when you miss them at the end of a bad day, part of what you miss is the person who used to bring your heart rate down. That's a real loss. Settling yourself is something you can relearn, and friends can do a lot of the calming in the meantime.
+So when you miss them at the end of a bad day, part of what you miss is the person who used to bring your heart rate down. That's a real loss. Settling yourself is something you can relearn, and friends can do a lot of the calming in the meantime. If the missing feels like panic, our guide to [anxious attachment after a breakup](/blog/articles/anxious-attachment-breakup/) can help.
 
 ## Why Do I Only Remember the Good Times?
 
