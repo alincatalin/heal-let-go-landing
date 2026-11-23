@@ -62,7 +62,7 @@ The message almost never says what you hoped. And it's waiting there in the morn
 
 It does get easier. For many people the nights are the last part to soften, but they do. Our post on [when no contact gets easier](/blog/articles/when-does-no-contact-get-easier/) covers what the weeks tend to look like.
 
-If the nights bring thoughts of hurting yourself, please reach out to someone now. You can find a free, local helpline at [findahelpline.com](https://findahelpline.com).
+If the nights bring thoughts of hurting yourself, please reach out to someone now. You can find a free, local helpline at [findahelpline.com](https://findahelpline.com). If the lows last all day, read about [depression after a breakup](/blog/articles/depression-after-a-breakup/).
 
 ## FAQ: Breakups and Nighttime
 
