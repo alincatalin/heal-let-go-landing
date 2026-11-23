@@ -113,7 +113,7 @@ That's what "new year, new me" looks like in real life. Not a different person. 
 Yes, if they're small and specific. Research found people who made resolutions were far more likely to have changed something six months later than people who wanted to change but didn't commit. Pick one or two, and phrase them as things you'll do.
 
 **What's a good New Year's resolution after a breakup?**
-One you can count. "Reach 30 days of no contact," "see a friend every week" or "write every morning in January" all work better than "get over him," which you can't measure and can't control.
+One you can count. "Reach 30 days of no contact," "see a friend every week" or "write every morning in January" all work better than "get over him," which you can't measure and can't control. If dating again is on your list, check [the signs you're ready](/blog/articles/dating-after-a-breakup/) first.
 
 **How do I stop thinking about my ex in the new year?**
 You probably won't stop entirely, at least not at first. Give the thoughts a set place, like five minutes of writing each morning, and fill the evenings with plans that have a start time.
