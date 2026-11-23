@@ -137,7 +137,7 @@ Like you can't get them out of your head. Your heart races when their name appea
 Yes. A breakup adds the uncertainty it feeds on, so it often gets stronger after the ending.
 
 **How do I stop limerence after a breakup?**
-Take away what feeds it. Stop texting, stop checking their profile and stop asking friends about them, so there's nothing left to decode. Writing down a few real things that didn't work helps when your mind replays only the good parts.
+Take away what feeds it. Stop texting, stop checking their profile and stop asking friends about them, so there's nothing left to decode. Writing down a few real things that didn't work helps when your mind replays only the good parts. More techniques in [how to stop loving someone](/blog/articles/how-to-stop-loving-someone/).
 
 **What is a limerent object?**
 It's Tennov's term for the person you feel limerence for, the one your thoughts and moods revolve around.

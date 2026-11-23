@@ -110,7 +110,7 @@ Yes, as a research concept. Psychologists have studied traumatic bonding in abus
 There's no research showing how, and a review of the evidence found no studies on how trauma bonds are broken at all. The bond runs on the cycle of harm and relief, and staying usually keeps the cycle going. If you're weighing this, talk it through with a domestic abuse advocate or therapist first.
 
 **How long does it take to break a trauma bond?**
-There's no research-based timeline. Distance and support from people outside the relationship tend to help, and many people need a therapist or domestic abuse advocate for this.
+There's no research-based timeline. Distance and support from people outside the relationship tend to help, and many people need a therapist or domestic abuse advocate for this. Our guide on [how to stop loving someone](/blog/articles/how-to-stop-loving-someone/) covers the day-to-day side.
 
 ## Sources
 
