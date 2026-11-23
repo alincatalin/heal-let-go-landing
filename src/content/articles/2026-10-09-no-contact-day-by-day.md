@@ -115,7 +115,7 @@ A common day for curiosity about them: not frantic, just "I wonder how they are.
 
 ### Day 19
 
-You might be seeing the relationship more clearly: patterns you couldn't see while you were in it. **What helps:** write down what you've learned about what you need and what you won't accept next time.
+You might be seeing the relationship more clearly: patterns you couldn't see while you were in it. **What helps:** write down what you've learned about what you need and what you won't accept next time. These [breakup journal prompts](/blog/articles/breakup-journal-prompts/) can get you started.
 
 ### Day 20
 

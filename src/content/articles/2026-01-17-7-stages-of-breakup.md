@@ -221,7 +221,7 @@ You don't reach acceptance and stay there permanently. You'll have days where yo
 
 Acceptance isn't the end of the story. What tends to come after it is quieter, and easy to miss while it's happening.
 
-**Your identity comes back online.** You remember the hobbies you dropped and the friends you stopped calling. You go a few hours, then a whole day, without thinking about them. Small habits do most of the work here: a walk, some sun, a few sentences in a journal, time with people who feel safe rather than people you have to perform being okay for.
+**Your identity comes back online.** You remember the hobbies you dropped and the friends you stopped calling. You go a few hours, then a whole day, without thinking about them. Small habits do most of the work here: a walk, some sun, a few sentences in a journal ([prompts here](/blog/articles/breakup-journal-prompts/)), time with people who feel safe rather than people you have to perform being okay for.
 
 **Things get lighter.** Their name comes up and you don't spiral. The breakup stops being your main story. You think about the future and feel something other than dread. Protect the boundaries you rebuilt to get here; some of them were hard-won.
 
