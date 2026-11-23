@@ -316,7 +316,7 @@ Shock, denial, bargaining, anger, depression, testing and acceptance. They're a 
 Rarely. Most people move back and forth, feel several stages in one day, or skip one and meet it months later. What matters is that you're moving, not the sequence.
 
 **How long does it take to get over a breakup?**
-There's no fixed timeline. Many people feel a real shift after the first month or two, but it depends on the length of the relationship, how it ended, and the support you have. In one study that followed young adults daily after a breakup, sadness dropped most in the first weeks ([Sbarra and Emery, 2005](https://doi.org/10.1111/j.1350-4126.2005.00112.x)).
+There's no fixed timeline. Many people feel a real shift after the first month or two, but it depends on the length of the relationship, how it ended, and the support you have. In one study that followed young adults daily after a breakup, sadness dropped most in the first weeks ([Sbarra and Emery, 2005](https://doi.org/10.1111/j.1350-4126.2005.00112.x)). For a week-by-week picture and what speeds it up, see [how long it takes to get over a breakup](/blog/articles/how-long-does-it-take-to-get-over-a-breakup/).
 
 **What are the stages of moving on?**
 The same seven, seen from the far end: shock, denial, bargaining, anger, depression, testing and acceptance. Moving on usually shows up in testing and acceptance, when you start building a life that isn't organized around them.

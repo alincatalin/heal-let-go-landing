@@ -152,7 +152,7 @@ Often because the first weeks were numbed by shock and busyness, and the loss on
 Yes. Missing an ex often comes in waves for months, set off by a song, a place or a bad day. What matters is whether it's easing overall, even slowly. If it isn't easing at all and you can't sleep or work, talk to a doctor or therapist.
 
 **How long will I keep missing my ex?**
-There's no fixed timeline. Many people notice it easing over the first month or two without contact, though bad days can show up for longer. Every check-in tends to top the craving back up, so distance helps.
+There's no fixed timeline. Many people notice it easing over the first month or two without contact, though bad days can show up for longer. Every check-in tends to top the craving back up, so distance helps. More on the timeline in [how long does it take to get over a breakup](/blog/articles/how-long-does-it-take-to-get-over-a-breakup/).
 
 **Does missing my ex mean I still love them?**
 Sometimes, but not necessarily. Often you miss the comfort, the habits and the person you were in the relationship as much as the person themselves. Asking "what exactly do I miss right now?" can help you tell the difference.
