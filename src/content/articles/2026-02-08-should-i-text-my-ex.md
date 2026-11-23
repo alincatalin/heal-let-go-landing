@@ -76,7 +76,7 @@ Before you type a single word, name *why* you want to send it. Most texts to an 
 *   **Anxiety** says: "If I don't text them, they'll forget me."
 *   **Necessity** says: "I need to arrange picking up my things so I can move on."
 
-If it's anxiety, the text won't fix the feeling. It hands the feeling to them and waits for a reply.
+If it's anxiety, the text won't fix the feeling. It hands the feeling to them and waits for a reply. Here's [how to calm breakup anxiety](/blog/articles/anxiety-after-a-breakup/) without them.
 
 ### The 24-hour rule
 
