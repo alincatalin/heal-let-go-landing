@@ -74,7 +74,7 @@ Write down what you imagined. The trip, the inside jokes, meeting their family. 
 
 ### Find someone who will take it seriously
 
-Pick one friend and say plainly, "This is a real heartbreak for me, even though we never dated." Most people will meet you there if you ask. The ones who say "but you weren't even together" are not the right people for this one.
+Pick one friend and say plainly, "This is a real heartbreak for me, even though we never dated." Most people will meet you there if you ask. The ones who say "but you weren't even together" are not the right people for this one. A broken heart is a broken heart, and [the same things help it heal](/blog/articles/how-to-heal-a-broken-heart/).
 
 ### Don't send the "just so you know" message
 

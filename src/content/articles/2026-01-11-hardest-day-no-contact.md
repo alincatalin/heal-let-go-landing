@@ -74,7 +74,7 @@ The hardest part of morning is often the first five minutes. You wake up, and fo
 
 **Don't reach for your phone first thing.** Seriously. Leave it charging across the room if you have to. The first thing you see in the morning shouldn't be their empty message thread or the temptation to check their social media.
 
-Instead, give yourself one small physical task: make your bed, take a shower, drink a full glass of water. These aren't going to heal your heartbreak, but they're going to get you moving before your brain has time to spiral.
+Instead, give yourself one small physical task: make your bed, take a shower, drink a full glass of water. These aren't going to heal your heartbreak, but they're going to get you moving before your brain has time to spiral. (For the longer road, here's [how to heal a broken heart](/blog/articles/how-to-heal-a-broken-heart/).)
 
 If you absolutely need to vent about them before noon, write it down somewhere. A notes app. A journal. Our free [unsent text tool](/tools/unsent-text/), which works in your browser. The Heal app's fake text feature, where you can draft every message you want to send and watch it disappear into the void where it belongs.
 
