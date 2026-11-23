@@ -25,7 +25,7 @@ So here's the honest answer, and then something more useful than a guess.
 
 ## The Honest Answer: You Can't Know
 
-Nobody can tell you what your ex is thinking on day 3, day 7 or day 21. Not a blog, not a TikTok, not a friend who "knows how guys work." Articles that claim to map out the male (or female) mind day by day during no contact are guessing, and they're guessing about a stranger.
+Nobody can tell you what your ex is thinking on day 3, day 7 or day 21. Not a blog, not a TikTok, not a friend who "knows how guys work." Articles that claim to map out the male (or female) mind day by day during no contact are guessing, and they're guessing about a stranger. (We looked at what research does say in [no contact and male psychology](/blog/articles/no-contact-rule-male-psychology/).)
 
 People react to breakups in very different ways:
 
