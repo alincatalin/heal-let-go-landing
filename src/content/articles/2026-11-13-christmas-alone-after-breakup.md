@@ -28,7 +28,7 @@ That's a plan, but it's not much of one. Here's how to make the day feel like yo
 
 No, though after a breakup they tend to show up together.
 
-Being alone is a situation. Being lonely is a feeling. You can feel lonely at a table of twelve, and you can spend a quiet day by yourself and feel mostly okay.
+Being alone is a situation. Being [lonely](/blog/articles/lonely-after-a-breakup/) is a feeling. You can feel lonely at a table of twelve, and you can spend a quiet day by yourself and feel mostly okay.
 
 Research on solitude backs up that difference. In a set of experiments, people who spent 15 minutes sitting alone came out calmer and less wound up, both less excited and less anxious. It wasn't all good: some felt a little lonelier and sadder too, and that dip was smaller when they chose what to think about ([Nguyen, Ryan and Deci, 2018](https://doi.org/10.1177/0146167217733073)). And people got more of the relaxing side when they had chosen to be alone.
 

@@ -74,7 +74,7 @@ What you can know is what you're thinking. When the question loops, try turning 
 
 ### Give the loneliness somewhere to go
 
-Plan at least two things this week with other people, even small ones: a coffee, a walk, a call. Loneliness lies about how much people want to hear from you. They usually do.
+Plan at least two things this week with other people, even small ones: a coffee, a walk, a call. Loneliness lies about how much people want to hear from you. They usually do. More ideas in [lonely after a breakup](/blog/articles/lonely-after-a-breakup/).
 
 ### Add to your reasons list, and to your other list
 
