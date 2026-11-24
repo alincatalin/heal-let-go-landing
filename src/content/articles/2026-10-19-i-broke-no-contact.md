@@ -58,7 +58,7 @@ Most slips have a pattern, and it's usually not random. Look back at the moment:
 | A date or anniversary | The day carried the memory | Plan that day in advance, with people |
 | You felt really good | You told yourself you were "fine now" | Wait a week before testing it |
 
-There's no shame in any of these. They're just the moments to plan for.
+There's no shame in any of these. They're just the moments to plan for. If the slip felt more like panic than a choice, you may relate to [anxious attachment after a breakup](/blog/articles/anxious-attachment-breakup/).
 
 If you keep going back to someone who also hurt you, and the pull is strongest right after they apologize, read [what a trauma bond is](/blog/articles/what-is-a-trauma-bond/). That pattern isn't a willpower problem, and it's worth getting support for.
 

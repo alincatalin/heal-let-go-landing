@@ -56,7 +56,7 @@ There's no single cause, and it can happen to anyone. Tennov found that some peo
 2. **A hint that they might feel it too.** Tennov stressed that it starts with how you read events: you "see, or think you see the hint of possible reciprocity" ([Psychology Today](https://www.psychologytoday.com/us/basics/limerence)).
 3. **Uncertainty.** You can't tell how they really feel. Mixed signals, slow replies and on-again, off-again contact keep it alive.
 
-Some things seem to make people more prone to it. Researchers have linked limerence with anxiety, depression and an anxious attachment style, and with earlier experiences of abandonment or trauma ([Psychology Today](https://www.psychologytoday.com/us/basics/limerence)). Those are links, not proof that one causes the other.
+Some things seem to make people more prone to it. Researchers have linked limerence with anxiety, depression and an anxious attachment style, and with earlier experiences of abandonment or trauma ([Psychology Today](https://www.psychologytoday.com/us/basics/limerence)). Those are links, not proof that one causes the other. If you recognize the anxious pattern, read [anxious attachment after a breakup](/blog/articles/anxious-attachment-breakup/).
 
 ## How Is Limerence Different From Love?
 
