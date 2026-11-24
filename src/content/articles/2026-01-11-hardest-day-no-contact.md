@@ -151,7 +151,7 @@ For most people it's day 3. The shock of the first two days has worn off and the
 In the first week, and especially in the evening and late at night, when you're tired and alone with your phone. Anniversaries, birthdays and holidays can bring a hard day back later on.
 
 **Why is no contact so hard?**
-Because losing someone you're attached to triggers craving in the brain's reward system, much like withdrawal. The urge to text them is that craving, not a sign that you should.
+Because losing someone you're attached to triggers craving in the brain's reward system, much like withdrawal. The urge to text them is that craving, not a sign that you should. More on [why breakups hurt so much](/blog/articles/why-do-breakups-hurt-so-much/).
 
 **Does no contact get easier after day 3?**
 Usually, yes. Urges keep coming in the days after, but they tend to pass faster. Most people notice longer calm stretches by the end of week two. See [when no contact gets easier](/blog/articles/when-does-no-contact-get-easier/).

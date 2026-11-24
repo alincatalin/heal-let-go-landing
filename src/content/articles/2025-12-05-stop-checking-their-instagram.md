@@ -52,7 +52,7 @@ It also keeps you stuck. In one study, people who kept checking an ex's Facebook
 
 ## Why It Hurts Every Single Time
 
-You already know this, but it's worth saying clearly: every time you check, you reopen the wound.
+You already know this, but it's worth saying clearly: every time you check, you reopen the wound. (Here's [why breakups hurt so much](/blog/articles/why-do-breakups-hurt-so-much/) in the first place.)
 
 You see something and your brain immediately starts spinning. A new photo means they're happy without you. No new posts means they're depressed and maybe thinking of you. They watched your story, so maybe there's hope. They didn't watch your story, so they must hate you. A comment from someone you don't recognize becomes evidence of a new relationship that may not even exist.
 
