@@ -36,7 +36,7 @@ And then there's the most practical reason: it isn't a text. You get to say "I s
 
 ## How Do I Write an Unsent Letter to My Ex?
 
-Pick a time with 20 to 30 minutes of privacy. Earlier in the evening is kinder to you than bed at 2am.
+Pick a time with 20 to 30 minutes of privacy. Earlier in the evening is kinder to you than bed at 2am. If you don't know where to start, pick one of these [50 breakup journal prompts](/blog/articles/breakup-journal-prompts/).
 
 Then go roughly in this order. You can skip any part.
 
