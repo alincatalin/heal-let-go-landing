@@ -47,7 +47,7 @@ That reaching is strongest early on. It eases as the old routines stop getting a
 
 This is the part nobody warns you about. You have three good days, and then a song in a shop knocks you flat.
 
-That's normal. In a study that tracked young adults' feelings every day for a month after a breakup, emotions swung up and down along the way. Overall, love for the ex and sadness both eased over the month ([Sbarra and Emery, 2005](https://doi.org/10.1111/j.1350-4126.2005.00112.x)). A bad day in the middle of good ones isn't you going backwards. It's what the path looks like.
+That's normal. In a study that tracked young adults' feelings every day for a month after a breakup, emotions swung up and down along the way. Overall, love for the ex and sadness both eased over the month ([Sbarra and Emery, 2005](https://doi.org/10.1111/j.1350-4126.2005.00112.x)). A bad day in the middle of good ones isn't you going backwards. It's what the path looks like, and [accepting a breakup](/blog/articles/how-to-accept-a-breakup/) happens in waves too.
 
 ## What Makes No Contact Get Easier Faster?
 
