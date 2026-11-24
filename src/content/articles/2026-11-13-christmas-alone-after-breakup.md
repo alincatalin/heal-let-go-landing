@@ -81,7 +81,7 @@ If volunteering isn't possible, a smaller version still helps: drop a card at a 
 
 ## Who Else Is on Their Own on Christmas?
 
-More people than you'd think from your feed. A friend who works abroad. A coworker whose family is far away. Someone else who went through a breakup this year.
+More people than you'd think from your feed. A friend who works abroad. A coworker whose family is far away. Someone else who went through a breakup this year. (If that's a friend of yours, here's [how to help a friend through a breakup](/blog/articles/how-to-help-a-friend-through-a-breakup/).)
 
 You don't have to make it a big event. Try:
 
