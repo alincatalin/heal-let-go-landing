@@ -119,7 +119,7 @@ Shock is your brain's circuit breaker. When the pain is too large to process all
 
 If you're in shock right now, don't try to force yourself to feel. Don't think something is wrong because you're not crying or because it hasn't "hit you yet." It will hit you. Your brain is just buying you time.
 
-**How long it lasts:** Hours to days, sometimes longer for sudden or traumatic breakups.
+**How long it lasts:** Hours to days, sometimes longer for sudden or traumatic breakups. If yours came out of nowhere, read [how to get through a breakup you didn't see coming](/blog/articles/how-to-get-through-a-breakup-you-didnt-see-coming/).
 
 ---
 

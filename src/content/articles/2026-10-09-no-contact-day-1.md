@@ -38,7 +38,7 @@ Both are normal. Neither predicts how no contact will go. The people who make it
 
 ## Why the First Day Feels So Strange
 
-When you're close to someone, they become part of your routine in ways you don't notice until they're gone: the good-morning text, the lunch-break call, the "home safe?" message at night. On day one, every one of those moments arrives and nothing fills it.
+When you're close to someone, they become part of your routine in ways you don't notice until they're gone: the good-morning text, the lunch-break call, the "home safe?" message at night. On day one, every one of those moments arrives and nothing fills it. If the breakup itself [came out of nowhere](/blog/articles/how-to-get-through-a-breakup-you-didnt-see-coming/), the shock can make today feel unreal too.
 
 Researchers who scanned the brains of people who'd recently been rejected by a partner (Helen Fisher and colleagues, 2010) found activity in the same reward and craving systems involved in addiction. That's a useful way to think about today. You're not weak for wanting to reach out. You're cutting off something your brain has learned to expect, and it's going to ask for it.
 

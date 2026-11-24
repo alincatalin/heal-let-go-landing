@@ -62,7 +62,7 @@ That's why it can feel so much bigger than other breakups, and why "just move on
 
 ## What Not to Do
 
-- **Don't make big decisions in the first weeks** unless you have to, like moving cities or quitting a job.
+- **Don't make big decisions in the first weeks** unless you have to, like moving cities or quitting a job. That goes double if the breakup [came out of nowhere](/blog/articles/how-to-get-through-a-breakup-you-didnt-see-coming/).
 - **Don't jump straight into "friends."** You may get there one day, but not while you still hope for more. See [why you miss your ex so much](/blog/articles/why-do-i-miss-my-ex/).
 - **Don't compare your timeline** to theirs. If they seem fine already, that tells you nothing about how they really feel or how long you should take.
 
