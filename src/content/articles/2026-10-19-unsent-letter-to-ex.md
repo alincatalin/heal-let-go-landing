@@ -66,6 +66,8 @@ These are short on purpose. Yours can be three lines or three pages. Change the 
 
 ### When they ended it
 
+If it was very recent, start with our guide to [getting dumped](/blog/articles/getting-dumped/), then come back to this.
+
 > Dear Josh,
 >
 > You told me on a Tuesday, in the car, outside my apartment. You'd clearly practiced it. I hadn't, so I said "okay" and went inside and sat on the kitchen floor.

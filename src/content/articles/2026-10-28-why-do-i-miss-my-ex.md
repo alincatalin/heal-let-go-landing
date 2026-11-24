@@ -47,7 +47,7 @@ People are often embarrassed by how much they miss an ex, as if it says somethin
 
 Because, in a real sense, it is a kind of withdrawal.
 
-When researchers scanned 15 people who had recently been dumped but were still in love, a photo of the ex activated brain regions tied to reward, craving and motivation, including areas also linked to cocaine addiction ([Fisher et al., 2010](https://doi.org/10.1152/jn.00784.2009)). Your brain learned that this person meant good things. Now the good things have stopped arriving, and it keeps asking for them.
+When researchers scanned 15 people who had recently been dumped but were still in love, a photo of the ex activated brain regions tied to reward, craving and motivation, including areas also linked to cocaine addiction ([Fisher et al., 2010](https://doi.org/10.1152/jn.00784.2009)). Your brain learned that this person meant good things. Now the good things have stopped arriving, and it keeps asking for them. (If you were the one left, our guide to [getting dumped](/blog/articles/getting-dumped/) covers the first days.)
 
 That's why missing them can feel physical: the restless hands, the urge to check your phone, the ache in your chest when their name comes up. It's also why one look at their profile can undo a good afternoon. Each hit tells your brain the supply might still be there.
 
