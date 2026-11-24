@@ -38,7 +38,7 @@ The key part is "visibly." Stories and likes show your name to the other person.
 - They stopped replying or went quiet, but still watch your stories, often quickly
 - They like old or new posts without saying anything
 - They react to a story with an emoji, then don't follow up
-- They follow you on a new platform after the breakup
+- They follow you on a new platform after the breakup, or [unblock you](/blog/articles/ex-unblocked-me/) and start watching again
 - If you message them, the reply is short or never comes
 - You find yourself checking your viewer list for their name
 

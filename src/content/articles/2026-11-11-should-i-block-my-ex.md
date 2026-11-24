@@ -67,7 +67,7 @@ If you want, you can tell them first: "I need some space, so I'm going to block 
 
 The urge to unblock usually comes at night, after a bad day, or when you hear something about them. It's the same urge as wanting to text them, just one step earlier.
 
-Wait at least a day. Ask yourself what you're hoping to find. If the answer is "to see if they miss me" or "to see if they're with someone", unblocking will almost always make you feel worse. Our [should I text my ex quiz](/tools/should-i-text-my-ex/) works for this too.
+Wait at least a day. Ask yourself what you're hoping to find. If the answer is "to see if they miss me" or "to see if they're with someone", unblocking will almost always make you feel worse. Our [should I text my ex quiz](/tools/should-i-text-my-ex/) works for this too. And if it's your ex who unblocked you, read [what an unblock means](/blog/articles/ex-unblocked-me/).
 
 ## FAQ: Blocking Your Ex
 

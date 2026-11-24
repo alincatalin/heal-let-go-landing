@@ -35,6 +35,7 @@ It isn't a clinical or scientific term. It comes from writing about abusive rela
 - **Going through others.** Messages via friends or family, or reaching out to your relatives.
 - **Gifts or showing up.** Flowers at your door, turning up at your work or your gym.
 - **Timing.** It arrives when you start dating, post that you're happy, or go quiet for a while.
+- **A quiet unblock.** They unblock or re-follow you and wait to see if you reach out. More in [my ex unblocked me](/blog/articles/ex-unblocked-me/).
 
 ## Hoovering vs Breadcrumbing vs a Real Second Chance
 
