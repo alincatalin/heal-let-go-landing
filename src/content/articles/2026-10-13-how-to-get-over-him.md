@@ -62,7 +62,7 @@ When you miss him, try this in order:
 
 1. **Name what you miss.** Often it isn't him exactly. It's the good-morning text, having a plus-one, feeling chosen. Those are real needs, and some of them can be met by other people.
 2. **Read your reasons.** Write three real reasons it ended, in plain words, and keep them on your phone. Missing someone edits out the bad parts. The list doesn't.
-3. **Do one thing with your body.** A walk, a shower, a stretch. Missing someone lives in your chest as much as your head, and moving helps it pass.
+3. **Do one thing with your body.** A walk, a shower, a stretch. Missing someone lives in your chest as much as your head, and moving helps it pass. (More ideas in [how to stop missing someone](/blog/articles/how-to-stop-missing-someone/).)
 
 Week two is also when people start wondering what he's thinking. If that's you, our honest take on [what he's thinking during no contact](/blog/articles/what-is-he-thinking-during-no-contact/) might save you some 2am guessing.
 

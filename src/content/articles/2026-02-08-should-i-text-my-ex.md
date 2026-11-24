@@ -298,7 +298,7 @@ What will help:
 For most people right after a breakup, no. Text only for a practical reason, or once you've been calm for a while and would be fine with no reply. If you're unsure, the [2-minute quiz](/tools/should-i-text-my-ex/) gives you an answer for your situation.
 
 **Should I message my ex if I miss them?**
-Missing them is normal, but it isn't a reason to message them. The feeling usually passes in a few hours; a message can restart weeks of waiting and checking. Write it in an [unsent text](/tools/unsent-text/) instead.
+Missing them is normal, but it isn't a reason to message them. The feeling usually passes in a few hours; a message can restart weeks of waiting and checking. Write it in an [unsent text](/tools/unsent-text/) instead, and see [how to stop missing someone](/blog/articles/how-to-stop-missing-someone/) for what helps.
 
 **Is it okay to text my ex after a week of no contact?**
 Probably not. A week isn't enough time to process the breakup or break the emotional dependence. If you're thinking about texting after just a week, it's likely driven by craving, not clarity.
