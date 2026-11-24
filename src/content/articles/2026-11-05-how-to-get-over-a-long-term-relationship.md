@@ -69,7 +69,7 @@ That's why it can feel so much bigger than other breakups, and why "just move on
 ## FAQ: Getting Over a Long-Term Relationship
 
 **How long does it take to get over a long-term relationship?**
-There's no fixed rule. Many people feel noticeably better within a few months, with harder days around anniversaries and holidays for longer. If it feels like nothing is changing after several months, talking to a therapist can help.
+There's no fixed rule. Many people feel noticeably better within a few months, with harder days around anniversaries and holidays for longer. If it feels like nothing is changing after several months, talking to a therapist can help. Our [breakup recovery timeline](/blog/articles/how-long-does-it-take-to-get-over-a-breakup/) shows what each stretch usually looks like.
 
 **Is it normal to feel lost after a long relationship ends?**
 Yes. Research shows people's sense of who they are gets less clear after a breakup, and that adds to how hard it feels. It comes back as you rebuild routines, friendships and interests.
