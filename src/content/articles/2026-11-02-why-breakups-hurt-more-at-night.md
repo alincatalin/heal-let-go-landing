@@ -58,7 +58,7 @@ The message almost never says what you hoped. And it's waiting there in the morn
 - **Move the phone.** Charge it across the room. Mute or archive their chat so it's not the first thing you see.
 - **Have a 2am plan.** One song, one breathing exercise, one person you can text instead. Our list of [things to do instead of texting your ex](/blog/articles/what-to-do-instead-of-texting-your-ex/) has more.
 - **Don't decide anything big tonight.** If a thought feels urgent at 3am, write it down and look at it again after breakfast.
-- **Protect sleep in the daytime.** Regular wake-up times, daylight in the morning and less caffeine late in the day all make the nights a little easier.
+- **Protect sleep in the daytime.** Regular wake-up times, daylight in the morning and less caffeine late in the day all make the nights a little easier. More in [can't sleep after a breakup?](/blog/articles/cant-sleep-after-a-breakup/)
 
 It does get easier. For many people the nights are the last part to soften, but they do. Our post on [when no contact gets easier](/blog/articles/when-does-no-contact-get-easier/) covers what the weeks tend to look like.
 

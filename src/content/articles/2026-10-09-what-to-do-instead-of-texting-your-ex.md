@@ -60,7 +60,7 @@ If you made a list of why the relationship ended, read it now. If you haven't, s
 
 ### 6. Change rooms, change the light
 
-Get up. Sit somewhere else, turn on a low light, get a glass of water. Lying in the dark replaying the relationship keeps the loop going. Moving breaks it a little.
+Get up. Sit somewhere else, turn on a low light, get a glass of water. Lying in the dark replaying the relationship keeps the loop going. Moving breaks it a little. If this happens most nights, see [can't sleep after a breakup](/blog/articles/cant-sleep-after-a-breakup/).
 
 ### 7. Get it out on paper
 
