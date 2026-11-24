@@ -225,7 +225,7 @@ Acceptance isn't the end of the story. What tends to come after it is quieter, a
 
 **Things get lighter.** Their name comes up and you don't spiral. The breakup stops being your main story. You think about the future and feel something other than dread. Protect the boundaries you rebuilt to get here; some of them were hard-won.
 
-**You move forward, not just on.** You look back with understanding instead of longing. You don't need closure from them, because you gave it to yourself. If you date again, you're not looking for someone to fix you. You're looking for someone who matches the person you've become.
+**You move forward, not just on.** You look back with understanding instead of longing. You don't need closure from them, because you [gave it to yourself](/blog/articles/how-to-get-closure/). If you date again, you're not looking for someone to fix you. You're looking for someone who matches the person you've become.
 
 ---
 

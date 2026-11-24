@@ -170,7 +170,7 @@ Wait until you don't need a reply. Name the specific thing you did, say you're s
 It's rarely a good idea. Late at night you're tired and more emotional, and texts written then often feel very different in the morning. Write it somewhere it can't send and decide after you've slept.
 
 **Should I text my ex for closure?**
-Usually not. A closure text tends to ask them for something, like an explanation or an apology, and you can't control whether you get it. Write it as an [unsent letter](/blog/articles/unsent-letter-to-ex/) first. If you still want to send something a week later, keep it short and don't end with a question.
+Usually not. A closure text tends to ask them for something, like an explanation or an apology, and you can't control whether you get it. Write it as an [unsent letter](/blog/articles/unsent-letter-to-ex/) first. If you still want to send something a week later, keep it short and don't end with a question. More in [how to get closure without your ex](/blog/articles/how-to-get-closure/).
 
 **Is there an app where you can text your ex without sending it?**
 Yes. Heal (listed as Heal: No Contact & Breakup on the App Store and Google Play) has a chat that looks like your chat with your ex, but nothing you type ever sends, and an AI coach replies instead. For a quick version in your browser, try our free [unsent text tool](/tools/unsent-text/).
