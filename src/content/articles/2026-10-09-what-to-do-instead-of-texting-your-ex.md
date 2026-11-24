@@ -22,7 +22,7 @@ appBox:
 
 It's late. Everyone you could call is asleep. Your phone is in your hand, their name is one tap away, and the message is half written in your head.
 
-You don't need a lecture right now. You need something to do with the next ten minutes. So here's a list, starting with the fastest.
+You don't need a lecture right now. You need something to do with the next ten minutes. So here's a list, starting with the fastest. (For the daytime version, see our [breakup advice that actually helps](/blog/articles/breakup-advice/).)
 
 ## First: Give It Ten Minutes
 
