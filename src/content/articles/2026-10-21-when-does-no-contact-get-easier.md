@@ -80,7 +80,7 @@ For many people it starts to ease within the first couple of weeks, once the cra
 Often because week two swaps craving for loneliness and doubt, which can feel worse even though you're progressing. Checking their profiles or a recent slip can also make it harder for a while.
 
 **Is it normal to feel worse during no contact?**
-Yes. Feelings swing up and down after a breakup, and a bad day after a few good ones is common. If it's not easing at all after several weeks, or you can't function, talk to a doctor or therapist.
+Yes. Feelings swing up and down after a breakup, and a bad day after a few good ones is common. If it's not easing at all after several weeks, or you can't function, talk to a doctor or therapist. These are the [signs it may be depression](/blog/articles/depression-after-a-breakup/).
 
 **Does no contact get easier if they reach out?**
 Usually not. Contact from them tends to restart the hoping and waiting. It gets easier with distance, not with messages.

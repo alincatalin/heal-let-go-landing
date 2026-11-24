@@ -179,7 +179,7 @@ The danger is getting stuck in anger—using it as a permanent shield against vu
 
 This is the stage most people try to skip, and it's the one you can't skip.
 
-Depression in this context isn't the same as clinical depression (though it can trigger it if you're vulnerable). It's grief. It's the part where you actually feel the loss instead of defending against it.
+Depression in this context isn't the same as clinical depression (though it can trigger it if you're vulnerable). It's grief. It's the part where you actually feel the loss instead of defending against it. Here's [how to tell breakup sadness from clinical depression](/blog/articles/depression-after-a-breakup/).
 
 All those earlier stages—shock, denial, bargaining, anger—they're all ways of not fully feeling what happened. Depression is when the defenses come down and you finally let it in.
 
