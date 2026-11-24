@@ -41,7 +41,7 @@ None of this is a schedule. Everyone's week looks different, and plenty of peopl
 
 ## The Day 7 Traps
 
-The danger at one week usually isn't a wave of raw panic. It's reasoning that sounds sensible.
+The danger at one week usually isn't a wave of raw panic (if you are having those, see [anxiety after a breakup](/blog/articles/anxiety-after-a-breakup/)). It's reasoning that sounds sensible.
 
 ### "I'm doing better, so one message wouldn't hurt."
 

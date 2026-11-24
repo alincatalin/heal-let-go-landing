@@ -388,7 +388,7 @@ When you're in a relationship—especially a consuming one—you outsource a lot
 
 When that's gone, you have to sit with feelings you've been avoiding.
 
-Loneliness. Boredom. Anxiety. The fear that you'll never find someone again. The fear that you will.
+Loneliness. Boredom. [Anxiety](/blog/articles/anxiety-after-a-breakup/). The fear that you'll never find someone again. The fear that you will.
 
 No contact forces you to deal with all of it without your usual coping mechanism (them).
 
