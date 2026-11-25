@@ -155,7 +155,7 @@ Yes. Missing an ex often comes in waves for months, set off by a song, a place o
 There's no fixed timeline. Many people notice it easing over the first month or two without contact, though bad days can show up for longer. Every check-in tends to top the craving back up, so distance helps. More on the timeline in [how long does it take to get over a breakup](/blog/articles/how-long-does-it-take-to-get-over-a-breakup/).
 
 **Does missing my ex mean I still love them?**
-Sometimes, but not necessarily. Often you miss the comfort, the habits and the person you were in the relationship as much as the person themselves. Asking "what exactly do I miss right now?" can help you tell the difference.
+Sometimes, but not necessarily. Often you miss the comfort, the habits and the person you were in the relationship as much as the person themselves. Asking "what exactly do I miss right now?" can help you tell the difference. If it is love, here's [how to stop loving someone](/blog/articles/how-to-stop-loving-someone/) you can't be with.
 
 ## Sources
 
