@@ -54,7 +54,7 @@ Not sure what to keep? Don't decide now. Put everything that hurts into one box 
 
 Out of sight really does help. When researchers showed people who had just been rejected a photo of their ex, it lit up the brain's reward and craving areas ([Fisher et al., 2010](https://doi.org/10.1152/jn.00784.2009)). Every object you see each day is a small version of that photo.
 
-Breakups make everything feel urgent, including throwing things away. Deleting every photo in the first week can feel good on the day and sad a year later. A box gives you distance now and choice later.
+Breakups make everything feel urgent, including throwing things away. Deleting every photo in the first week can feel good on the day and sad a year later. A box gives you distance now and choice later. (The rest of the first-week list is in [what to do after a breakup](/blog/articles/what-to-do-after-a-breakup/).)
 
 Set a reminder for three months from now. Open the box then and decide what you want to keep. It's often easier than you expect, and some things you were sure you'd throw out turn out to be fine to keep.
 

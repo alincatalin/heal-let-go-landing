@@ -118,5 +118,6 @@ The next few days usually get harder before they get easier. That's not a sign y
 *   **Day 2 to 3:** The adrenaline wears off and the craving gets louder. Here's how to [survive day 3](/blog/articles/hardest-day-no-contact/), which many people find the hardest.
 *   **Day 7:** The acute edge starts to dull, and a different set of challenges shows up. Read [what day 7 feels like](/blog/articles/no-contact-day-7/).
 *   **The whole picture:** Our [no contact rule guide](/blog/articles/no-contact-rule-guide/) covers how long to do it, what counts as contact, and what to do if they reach out.
+*   **Beyond no contact:** a checklist for the first day to the third month in [what to do after a breakup](/blog/articles/what-to-do-after-a-breakup/).
 
 You've already done the hardest part of day one: you started. Now just get to tomorrow.
