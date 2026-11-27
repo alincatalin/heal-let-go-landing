@@ -127,7 +127,7 @@ If you still want to talk to him after that, decide in daylight, with a clear he
 It's the same 30 days of no contact, described through how women often feel during a breakup: replaying everything, wanting closure, missing him most in the first two weeks. Research suggests women often feel a breakup more intensely at first and recover more fully over time. The 30 days are for your recovery, not a test of him.
 
 **Does the no contact rule work on men?**
-No contact isn't meant to work on him. It works on you: it gives the attachment time to loosen so you can think clearly. Some men do reach out during no contact and some don't, and neither outcome is a good measure of whether it worked.
+No contact isn't meant to work on him. It works on you: it gives the attachment time to loosen so you can think clearly. Some men do reach out during no contact and some don't, and neither outcome is a good measure of whether it worked. If you're doing it hoping he'll return, read [will my ex come back?](/blog/articles/will-my-ex-come-back/) first.
 
 **How long should a woman do no contact?**
 At least 30 days. If the relationship was long, you live close by or you keep slipping, aim for 60 to 90 days. The first two weeks are usually the hardest.
