@@ -161,7 +161,7 @@ Because your brain is still attached to them and wants information: are they oka
 If you keep checking, yes, or at least mute them. Unfollowing or muting removes the accidental sightings. If you still go looking, blocking adds a step between you and their profile. You can always change it later.
 
 **Does my ex know I look at their Instagram?**
-Instagram doesn't tell people who visited their profile, but it does show who watched their stories. Liking an old post by accident is visible too.
+Instagram doesn't tell people who visited their profile, but it does show who watched their stories. Liking an old post by accident is visible too. And if they're the one watching yours, here's what those [signs your ex misses you](/blog/articles/signs-your-ex-misses-you/) really mean.
 
 **How long does it take to stop checking?**
 The urge usually gets weaker within the first week if you stop feeding it. Start with 7 days, then extend it.

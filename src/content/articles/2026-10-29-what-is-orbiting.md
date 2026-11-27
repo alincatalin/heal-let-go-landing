@@ -88,7 +88,7 @@ If you want to say something to them, write it first in our free [unsent text to
 ## FAQ: Orbiting
 
 **Does orbiting mean they want me back?**
-Not on its own. A view or a like takes one second and can mean curiosity, boredom or habit. Someone who wants you back will message you and make a plan, not just watch.
+Not on its own. A view or a like takes one second and can mean curiosity, boredom or habit. Someone who wants you back will message you and make a plan, not just watch. Here's what each [sign your ex misses you](/blog/articles/signs-your-ex-misses-you/) usually means.
 
 **Is orbiting a form of manipulation?**
 Sometimes it's done on purpose to stay on your mind. Often it's just low-effort curiosity. Either way, you can step back without working out which.

@@ -82,7 +82,7 @@ If they've just messaged you and you're unsure whether to answer, try our [shoul
 It can be, when someone does it on purpose to keep you available. Often it's more about their own avoidance or need for attention. Either way, the effect on you is the same, so you can step back without working out their motives.
 
 **Why does my ex keep breadcrumbing me?**
-Usually because it costs them little and keeps you within reach. It isn't a sign they're about to come back. If they wanted to, they would be clear about it.
+Usually because it costs them little and keeps you within reach. It isn't a sign they're about to come back. If they wanted to, they would be clear about it. See the difference between [signs your ex misses you and signs they want you back](/blog/articles/signs-your-ex-misses-you/).
 
 **What's the difference between breadcrumbing and being slow to commit?**
 Direction. Someone slow to commit still moves forward: more time together, more plans, honest talk about where it's going. Breadcrumbing stays in the same place for months.
