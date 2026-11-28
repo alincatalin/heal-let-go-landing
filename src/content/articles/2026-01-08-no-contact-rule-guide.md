@@ -402,7 +402,7 @@ Not texting your ex isn't a personality. You need things to actually do.
 
 ### The Basics
 
-**Feel your feelings.** Don't numb out with substances, rebounds, or constant distraction. Let yourself be sad. Let yourself be angry. Emotions processed are emotions that pass.
+**Feel your feelings.** Don't numb out with substances, [rebounds](/blog/articles/rebound-relationship/), or constant distraction. Let yourself be sad. Let yourself be angry. Emotions processed are emotions that pass.
 
 **Take care of your body.** Sleep. Eat real food. Move. Shower. The basics matter more than you think when you're in survival mode.
 

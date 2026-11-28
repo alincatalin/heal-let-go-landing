@@ -104,7 +104,7 @@ Here's what we'd suggest, kept small on purpose.
 
 **Week two:** Give the thinking a slot. Twenty minutes in the evening to replay it, cry or write. When they come into your head at other times, tell yourself "later." This is easier than trying not to think about them at all.
 
-**Week three:** Write down what you actually wanted. Not from them, from a relationship. Consistency? Someone who actually texts back? That list is useful later, when someone new shows up and you're tempted to settle for "maybe" again.
+**Week three:** Write down what you actually wanted. Not from them, from a relationship. Consistency? Someone who actually texts back? That list is useful later, when someone new shows up and you're tempted to settle for "maybe" again. (And if someone new shows up very soon, read up on [rebound relationships](/blog/articles/rebound-relationship/) first.)
 
 **Week four onwards:** Add one thing to your week that has nothing to do with dating. A pottery class, or a standing Tuesday dinner with a friend. Something that's yours. The rest of the plan is in [how to get over a breakup](/blog/articles/how-to-get-over-a-breakup/), which works for situationships too.
 
