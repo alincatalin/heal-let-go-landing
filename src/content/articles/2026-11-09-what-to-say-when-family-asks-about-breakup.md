@@ -50,7 +50,7 @@ Short and warm. Grandparents mostly want to know you're looked after.
 
 > "We're not together anymore, Grandma. I'm doing fine, and I've got good people around me."
 
-If they say "You'll find someone better," you can just say "I hope so" and squeeze their hand. You don't need to explain modern dating at the table.
+If they say "You'll find someone better," you can just say "I hope so" and squeeze their hand. You don't need to explain modern dating at the table. (If you're wondering whether you're ready, here's [how to know you're ready to date again](/blog/articles/dating-after-a-breakup/).)
 
 ## How Do I Handle the Nosy Aunt?
 
